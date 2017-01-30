@@ -64,7 +64,7 @@
 
 	var _IndexPage2 = _interopRequireDefault(_IndexPage);
 
-	var _PostsPage = __webpack_require__(262);
+	var _PostsPage = __webpack_require__(246);
 
 	var _PostsPage2 = _interopRequireDefault(_PostsPage);
 
@@ -26961,9 +26961,7 @@
 
 	var _BaseComponent3 = _interopRequireDefault(_BaseComponent2);
 
-	var _PostDao = __webpack_require__(246);
-
-	var _PostDao2 = _interopRequireDefault(_PostDao);
+	var _reactRouter = __webpack_require__(178);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26983,16 +26981,15 @@
 	  }
 
 	  _createClass(IndexPage, [{
-	    key: "test",
-	    value: function test() {
-	      var postDao = new _PostDao2.default();
-	      postDao.insert('firebase with react.js', '## hello world\nlets get loud');
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      var goto = this.props.params.goto;
+
+	      if (goto != null) _reactRouter.browserHistory.push(goto);
 	    }
 	  }, {
 	    key: "render",
 	    value: function render() {
-	      var _this2 = this;
-
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "index-page" },
@@ -27001,13 +26998,6 @@
 	          "div",
 	          null,
 	          "hello world"
-	        ),
-	        _react2.default.createElement(
-	          "button",
-	          { onClick: function onClick() {
-	              return _this2.test();
-	            } },
-	          "TEST BUTTON"
 	        )
 	      );
 	    }
@@ -27273,21 +27263,163 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Header = __webpack_require__(241);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	var _BaseComponent2 = __webpack_require__(245);
+
+	var _BaseComponent3 = _interopRequireDefault(_BaseComponent2);
+
+	var _PostDao = __webpack_require__(247);
+
+	var _PostDao2 = _interopRequireDefault(_PostDao);
+
+	var _Spinner = __webpack_require__(263);
+
+	var _Spinner2 = _interopRequireDefault(_Spinner);
+
+	var _Post = __webpack_require__(287);
+
+	var _Post2 = _interopRequireDefault(_Post);
+
+	__webpack_require__(290);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var PostsPage = function (_BaseComponent) {
+	  _inherits(PostsPage, _BaseComponent);
+
+	  function PostsPage() {
+	    _classCallCheck(this, PostsPage);
+
+	    var _this = _possibleConstructorReturn(this, (PostsPage.__proto__ || Object.getPrototypeOf(PostsPage)).call(this));
+
+	    _this.postDao = new _PostDao2.default();
+	    _this.isNoMoreToLoad = false;
+	    _this.page = 1;
+
+	    _this.state = {
+	      isLoading: true,
+	      posts: []
+	    };
+	    return _this;
+	  }
+
+	  _createClass(PostsPage, [{
+	    key: "componentWillMount",
+	    value: function componentWillMount() {
+	      this.requestPosts(this.page);
+	    }
+	  }, {
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      this.onScrollBottom(function () {
+	        return _this2.scrollToLoad();
+	      });
+	    }
+	  }, {
+	    key: "scrollToLoad",
+	    value: function scrollToLoad() {
+	      var isLoading = this.state;
+	      if (isLoading === true || this.isNoMoreToLoad === true) return;
+
+	      this.requestPosts(this.page + 1);
+	    }
+	  }, {
+	    key: "requestPosts",
+	    value: function requestPosts(page) {
+	      var _this3 = this;
+
+	      this.setState({ isLoading: true });
+
+	      this.page = page;
+
+	      this.postDao.findPostsByPage(page).then(function (posts) {
+	        if (posts.length !== _PostDao2.default.itemsPerPage) _this3.isNoMoreToLoad = true;
+
+	        var newPosts = _this3.state.posts.concat(posts);
+	        _this3.setState({
+	          posts: newPosts,
+	          isLoading: false
+	        });
+	      });
+	    }
+	  }, {
+	    key: "renderPosts",
+	    value: function renderPosts() {
+	      return this.state.posts.map(function (post) {
+	        return _react2.default.createElement(
+	          "div",
+	          { key: post.uuid, className: "post-wrapper" },
+	          _react2.default.createElement(_Post2.default, { post: post })
+	        );
+	      });
+	    }
+	  }, {
+	    key: "renderSpinner",
+	    value: function renderSpinner() {
+	      if (this.state.isLoading === false) return;
+
+	      return _react2.default.createElement(_Spinner2.default, null);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "posts-page" },
+	        _react2.default.createElement(_Header2.default, null),
+	        this.renderPosts(),
+	        this.renderSpinner()
+	      );
+	    }
+	  }]);
+
+	  return PostsPage;
+	}(_BaseComponent3.default);
+
+	exports.default = PostsPage;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-	var _FirebaseDao2 = __webpack_require__(247);
+	var _FirebaseDao2 = __webpack_require__(248);
 
 	var _FirebaseDao3 = _interopRequireDefault(_FirebaseDao2);
 
-	var _marked = __webpack_require__(254);
+	var _marked = __webpack_require__(255);
 
 	var _marked2 = _interopRequireDefault(_marked);
 
-	var _uuid = __webpack_require__(255);
+	var _uuid = __webpack_require__(256);
 
 	var _uuid2 = _interopRequireDefault(_uuid);
 
-	var _PostStore = __webpack_require__(260);
+	var _PostStore = __webpack_require__(261);
 
 	var _PostStore2 = _interopRequireDefault(_PostStore);
 
@@ -27384,7 +27516,7 @@
 	exports.default = PostDao;
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27395,7 +27527,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _firebase = __webpack_require__(248);
+	var _firebase = __webpack_require__(249);
 
 	var _firebase2 = _interopRequireDefault(_firebase);
 
@@ -27484,7 +27616,7 @@
 	exports.default = FirebaseDao;
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27494,16 +27626,16 @@
 	 *
 	 *   firebase = require('firebase');
 	 */
-	var firebase = __webpack_require__(249);
-	__webpack_require__(250);
+	var firebase = __webpack_require__(250);
 	__webpack_require__(251);
 	__webpack_require__(252);
 	__webpack_require__(253);
+	__webpack_require__(254);
 	module.exports = firebase;
 
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {var firebase = (function(){
@@ -27542,10 +27674,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(249);
+	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(250);
 	(function(){
 	/*! @license Firebase v3.6.7
 	    Build: 3.6.7-rc.1
@@ -27790,10 +27922,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(249);
+	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(250);
 	(function(){
 	/*! @license Firebase v3.6.7
 	    Build: 3.6.7-rc.1
@@ -28061,10 +28193,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(249);
+	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(250);
 	(function(){
 	/*! @license Firebase v3.6.7
 	    Build: 3.6.7-rc.1
@@ -28120,10 +28252,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(249);
+	/* WEBPACK VAR INJECTION */(function(global) {var firebase = __webpack_require__(250);
 	(function(){
 	/*! @license Firebase v3.6.7
 	    Build: 3.6.7-rc.1
@@ -28166,7 +28298,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -29459,11 +29591,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var v1 = __webpack_require__(256);
-	var v4 = __webpack_require__(259);
+	var v1 = __webpack_require__(257);
+	var v4 = __webpack_require__(260);
 
 	var uuid = v4;
 	uuid.v1 = v1;
@@ -29473,14 +29605,14 @@
 
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Unique ID creation requires a high quality random # generator.  We feature
 	// detect to determine the best RNG source, normalizing to a function that
 	// returns 128-bits of randomness, since that's what's usually required
-	var rng = __webpack_require__(257);
-	var bytesToUuid = __webpack_require__(258);
+	var rng = __webpack_require__(258);
+	var bytesToUuid = __webpack_require__(259);
 
 	// **`v1()` - Generate time-based UUID**
 	//
@@ -29582,7 +29714,7 @@
 
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// Unique ID creation requires a high quality random # generator.  In the
@@ -29622,7 +29754,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports) {
 
 	/**
@@ -29651,11 +29783,11 @@
 
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var rng = __webpack_require__(257);
-	var bytesToUuid = __webpack_require__(258);
+	var rng = __webpack_require__(258);
+	var bytesToUuid = __webpack_require__(259);
 
 	function v4(options, buf, offset) {
 	  var i = buf && offset || 0;
@@ -29686,7 +29818,7 @@
 
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29697,7 +29829,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _BaseStore2 = __webpack_require__(261);
+	var _BaseStore2 = __webpack_require__(262);
 
 	var _BaseStore3 = _interopRequireDefault(_BaseStore2);
 
@@ -29762,7 +29894,7 @@
 	exports.default = PostStore;
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -29816,148 +29948,6 @@
 	}();
 
 	exports.default = BaseStore;
-
-/***/ },
-/* 262 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Header = __webpack_require__(241);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	var _BaseComponent2 = __webpack_require__(245);
-
-	var _BaseComponent3 = _interopRequireDefault(_BaseComponent2);
-
-	var _PostDao = __webpack_require__(246);
-
-	var _PostDao2 = _interopRequireDefault(_PostDao);
-
-	var _Spinner = __webpack_require__(263);
-
-	var _Spinner2 = _interopRequireDefault(_Spinner);
-
-	var _Post = __webpack_require__(287);
-
-	var _Post2 = _interopRequireDefault(_Post);
-
-	__webpack_require__(290);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var PostsPage = function (_BaseComponent) {
-	  _inherits(PostsPage, _BaseComponent);
-
-	  function PostsPage() {
-	    _classCallCheck(this, PostsPage);
-
-	    var _this = _possibleConstructorReturn(this, (PostsPage.__proto__ || Object.getPrototypeOf(PostsPage)).call(this));
-
-	    _this.postDao = new _PostDao2.default();
-	    _this.isNoMoreToLoad = false;
-	    _this.page = 1;
-
-	    _this.state = {
-	      isLoading: true,
-	      posts: []
-	    };
-	    return _this;
-	  }
-
-	  _createClass(PostsPage, [{
-	    key: "componentWillMount",
-	    value: function componentWillMount() {
-	      this.requestPosts(this.page);
-	    }
-	  }, {
-	    key: "componentDidMount",
-	    value: function componentDidMount() {
-	      var _this2 = this;
-
-	      this.onScrollBottom(function () {
-	        return _this2.scrollToLoad();
-	      });
-	    }
-	  }, {
-	    key: "scrollToLoad",
-	    value: function scrollToLoad() {
-	      var isLoading = this.state;
-	      if (isLoading === true || this.isNoMoreToLoad === true) return;
-
-	      this.requestPosts(this.page + 1);
-	    }
-	  }, {
-	    key: "requestPosts",
-	    value: function requestPosts(page) {
-	      var _this3 = this;
-
-	      this.setState({ isLoading: true });
-
-	      this.page = page;
-
-	      this.postDao.findPostsByPage(page).then(function (posts) {
-	        if (posts.length !== _PostDao2.default.itemsPerPage) _this3.isNoMoreToLoad = true;
-
-	        var newPosts = _this3.state.posts.concat(posts);
-	        _this3.setState({
-	          posts: newPosts,
-	          isLoading: false
-	        });
-	      });
-	    }
-	  }, {
-	    key: "renderPosts",
-	    value: function renderPosts() {
-	      return this.state.posts.map(function (post) {
-	        return _react2.default.createElement(
-	          "div",
-	          { key: post.uuid, className: "post-wrapper" },
-	          _react2.default.createElement(_Post2.default, { post: post })
-	        );
-	      });
-	    }
-	  }, {
-	    key: "renderSpinner",
-	    value: function renderSpinner() {
-	      if (this.state.isLoading === false) return;
-
-	      return _react2.default.createElement(_Spinner2.default, null);
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "posts-page" },
-	        _react2.default.createElement(_Header2.default, null),
-	        this.renderPosts(),
-	        this.renderSpinner()
-	      );
-	    }
-	  }]);
-
-	  return PostsPage;
-	}(_BaseComponent3.default);
-
-	exports.default = PostsPage;
 
 /***/ },
 /* 263 */
@@ -32522,7 +32512,7 @@
 
 	var _Post2 = _interopRequireDefault(_Post);
 
-	var _PostDao = __webpack_require__(246);
+	var _PostDao = __webpack_require__(247);
 
 	var _PostDao2 = _interopRequireDefault(_PostDao);
 
