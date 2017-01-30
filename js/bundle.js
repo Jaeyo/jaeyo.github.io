@@ -26983,7 +26983,7 @@
 	  _createClass(IndexPage, [{
 	    key: "componentDidMount",
 	    value: function componentDidMount() {
-	      var goto = this.props.query.goto;
+	      var goto = this.props.location.query.goto;
 
 	      if (goto != null) _reactRouter.browserHistory.push(goto);
 	    }
