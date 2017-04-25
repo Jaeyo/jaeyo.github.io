@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <script type="text/javascript">
-    	var originalPath = window.location.pathname;
-    	window.location.replace('https://jaeyo.github.com/?goto=' + originalPath);
-    </script>
-  </head>
-  <body>
-  </body>
-</html>
+---
+layout: page
+title: 404
+sitemap:
+  exclude: 'yes'
+---
+
+<h2 class="go-home">
+    I suggest you <a href="/">going home</a>, it's 404 and it's getting dark!
+</h2>
+
+
+<!-- Adding the glitch effect -->
+<script> document.getElementsByTagName('body')[0].classList.add('glitch'); </script>
