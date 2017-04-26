@@ -6,9 +6,38 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Apr 2017 19:26:20 +0900</pubDate>
-    <lastBuildDate>Tue, 25 Apr 2017 19:26:20 +0900</lastBuildDate>
+    <pubDate>Wed, 26 Apr 2017 11:34:08 +0900</pubDate>
+    <lastBuildDate>Wed, 26 Apr 2017 11:34:08 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Too many open files</title>
+        <description>&lt;p&gt;집에서 기타치면서 놀고 있었는데 외출했던 아내가 귀가중이라는 메시지를 받았다. 집 앞 지하척 역으로 마중나가려고 핸드폰을 챙겨서 나가려는데 슬랙 메시지가 뭐가 많이 와있다. 평소 팀에서 커뮤니케이션을 슬랙으로 하기 때문에 별 생각없이 슬랙 메시지들을 확인해보고 있는데 서버쪽에 장애가 날 때 메시지가 오는 채널에 몇개의 메시지가 와있다. 순간 심장이 덜컹하며 확인해보니 _가지 종류의 에러메시지가 꽤 여러번 발생한 형태다.&lt;/p&gt;
+
+&lt;p&gt;첫번째 에러는 too many open files
+두번째 에러는 unable to find servet blabla&lt;/p&gt;
+
+&lt;p&gt;두번째 에러로그는 심지어 디비서버를 못찾는다는 에러메시지!
+디비 서버를 못찾았다면 서비스 자체가 안될텐데.
+마음을 졸이며 우리 서비스에 들어가보니 일단 접속도 잘 되고 데이터 로딩도 문제없이 된다. 그렇다면 사태는 일단락 되었다는 이야긴데..&lt;/p&gt;
+
+&lt;p&gt;그렇다고 손놓고 다시 기타나 뚱기뚱기할 수는 없으니 다시 로그를 뒤진다. was 로그와 syslog 등등을 종합적으로 뒤지고 수상해보이는 놈들은 죄 구글링을 해봤지만 별게 안나왔다.
+할 수 없이 에러로그에 집중해보니, 일단 too many open files가 먼저 나고 그 다음에 디비서버를 못찾았다. 혹시나 싶어 로드밸런서에 물려있는 다른 서버를 확인해봤는데 다른 서버는 문제가 없었다. 그렇다면 실제 디비서버가 나가리가 되었다거나 한 문제는 아니라고 볼 수 있겠다고 생각했다.&lt;/p&gt;
+
+&lt;p&gt;일단 too many open files가 떠있으니 ulimit 일 확인해주는데, 어라? 1024? 왜 이렇게 값이 작지?&lt;/p&gt;
+
+&lt;p&gt;찬찬히 머리속에서 히스토리들을 뒤져보는데 한달전쯤 was를 변경했고 was가 변경되면서 리눅스 계정이 바꼈고 바뀐 리눅스 계정에 대해서 ulimit 값을 변경….을 안해줬구나. 아…&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Apr 2017 04:25:01 +0900</pubDate>
+        <link>http://localhost:4000/design/tool/2017/04/26/too-many-open-files.html</link>
+        <guid isPermaLink="true">http://localhost:4000/design/tool/2017/04/26/too-many-open-files.html</guid>
+        
+        
+        <category>design</category>
+        
+        <category>tool</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -33,75 +62,6 @@
         
         
         <category>design</category>
-        
-        <category>tool</category>
-        
-      </item>
-    
-      <item>
-        <title>Sample post from Daktilo</title>
-        <description>&lt;p&gt;Just a sample post to show some of the &lt;em&gt;typography&lt;/em&gt; elements supported from
-&lt;strong&gt;daktilo&lt;/strong&gt; theme.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A blockquote:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We are Hitchhikers in the road of open source knowledge.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
-
-&lt;p&gt;Duis lacinia commodo dui, vel aliquam metus hendrerit eu. Integer et scelerisque dui. Sed nec molestie quam. Donec sit amet nisl a massa commodo ultrices nec quis nunc. Aenean aliquet eu arcu adipiscing dignissim. Nunc dictum elit vitae dolor molestie aliquet.&lt;/p&gt;
-
-&lt;p&gt;Example code:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;light&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Light&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;switchUp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FlipUpCommand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;light&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;switchDown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FlipDownCommand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;light&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Switch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;storeAndExecute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;switchUp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;storeAndExecute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;switchDown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;A list:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc&lt;/li&gt;
-  &lt;li&gt;Donec ante est, volutpat in mi et, pulvinar congue dolor.&lt;/li&gt;
-  &lt;li&gt;Quisque ultrices pulvinar sollicitudin.&lt;/li&gt;
-  &lt;li&gt;Duis elementum odio eu euismod suscipit.&lt;/li&gt;
-  &lt;li&gt;Integer enim lorem, interdum sit amet consectetur non, bibendum eget neque.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A numbered list:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc.&lt;/li&gt;
-  &lt;li&gt;Donec ante est, volutpat in mi et, pulvinar congue dolor.&lt;/li&gt;
-  &lt;li&gt;Quisque ultrices pulvinar sollicitudin.&lt;/li&gt;
-  &lt;li&gt;Duis elementum odio eu euismod suscipit.&lt;/li&gt;
-  &lt;li&gt;Integer enim lorem, interdum sit amet consectetur non, bibendum eget neque.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Definition list:&lt;/p&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;Curabitur cursus magna eu sem cursus&lt;/dt&gt;
-  &lt;dd&gt;ac ultrices urna pharetra.&lt;/dd&gt;
-  &lt;dd&gt;Duis scelerisque ipsum eu luctus elementum.&lt;/dd&gt;
-  &lt;dt&gt;Pellentesque habitant morbi tristique senectus&lt;/dt&gt;
-  &lt;dd&gt;Curabitur malesuada lacus ac gravida porttitor&lt;/dd&gt;
-  &lt;dd&gt;Duis sodales feugiat lorem et mollis.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Want to suggest something? Please &lt;a href=&quot;https://github.com/kronik3r/daktilo/issues/new&quot;&gt;Send me a request&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 20 Aug 2014 08:56:45 +0900</pubDate>
-        <link>http://localhost:4000/tool/2014/08/20/sample-post.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tool/2014/08/20/sample-post.html</guid>
-        
         
         <category>tool</category>
         

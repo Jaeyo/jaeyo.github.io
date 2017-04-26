@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /* =Colors */
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+/* font-family: 'Inconsolata', ; */
 /* =Base */
 body {
-  font-family: "Inconsolata";
+  font-family: "Jeju Gothic";
   color: #333333;
   background-color: #F5F5F5; }
 
