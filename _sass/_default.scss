@@ -1,9 +1,9 @@
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
 
     /* font-family: 'Inconsolata', ; */
 /* =Base */
 body {
-	font-family: 'Jeju Gothic',;
+	font-family: 'Jeju Myeongjo', serif;
     color: $iron;
     background-color: $dorian;
 }
@@ -19,8 +19,8 @@ a {
 }
 
 p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 17px;
+    line-height: 33px;
 }
 
 img {
@@ -144,6 +144,7 @@ strong {
 
 .post-title__text {
     font-size: 40px;
+	margin-bottom: 13px;
 }
 
 .post-title__subtitle {
