@@ -23,7 +23,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2017-04-26T12:02:22+09:00</lastmod>
+        <lastmod>2017-04-26T12:11:50+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -36,9 +36,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/categories/design/</loc>
+      <loc>http://localhost:4000/categories/daily/</loc>
       
-        <lastmod>2017-04-26T12:02:22+09:00</lastmod>
+        <lastmod>2017-04-26T12:11:50+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -55,7 +55,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2017-04-26T12:02:22+09:00</lastmod>
+        <lastmod>2017-04-26T12:11:50+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -69,44 +69,14 @@
     
   
     
-    <url>
-      <loc>http://localhost:4000/categories/productivity/</loc>
-      
-        <lastmod>2017-04-26T12:02:22+09:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
   
-    
-  
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/categories/tools/</loc>
-      
-        <lastmod>2017-04-26T12:02:22+09:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
     
   
     
     <url>
       <loc>http://localhost:4000/categories/troubleshoot/</loc>
       
-        <lastmod>2017-04-26T12:02:22+09:00</lastmod>
+        <lastmod>2017-04-26T12:11:50+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
