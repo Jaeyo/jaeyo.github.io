@@ -2,7 +2,7 @@
 layout: post
 title:  "아닌 밤중에 리퀘스트가 튄다?"
 subtitle: "왠놈이냐"
-date:   2017-04-26 12:00:01
+date:   2017-04-25 12:00:01
 categories: [troubleshoot]
 ---
 신규 서비스를 오픈하면서 서버 모니터링을 위해 aws cloudwatch를 사용하게 되었다. 원래는 cloudwatch와 newrelic 을 모두 선택지에 올려놓고 마지막까지 고민을 했다. newrelic 쪽이 기능도 많고 레퍼런스도 확실했지만 일부 서버에서 agent의 설치가 안되는 문제가 있었다. 사실 agent 설치 안되는 문제야 조금 더 시간을 들여서 파보면 해결할 수 있는 문제였겠지만 당장에 서비스 오픈을 코앞에 둔 상황에서 시간적인 여유가 부족했고, cloudwatch도 우리가 필요한 기능을 대부분 제공하고 있었기 때문에 cloudwatch로 가기로 했다.

@@ -16,6 +16,81 @@
     </url>
     
   
+    
+    <url>
+      <loc>http://localhost:4000/troubleshoot/2017/04/25/weird-requests.html/</loc>
+      
+        <lastmod>2017-04-25T21:00:01+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/daily/2017/04/25/spaces.html/</loc>
+      
+        <lastmod>2017-04-25T20:00:01+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/daily/2016/08/25/job-interview.html/</loc>
+      
+        <lastmod>2016-08-25T23:40:55+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/daily/2016/02/22/while-leaving-work.html/</loc>
+      
+        <lastmod>2016-02-22T21:00:01+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/daily/2016/01/12/advicer.html/</loc>
+      
+        <lastmod>2016-01-12T21:00:01+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority>
+      
+    </url>
+    
+  
   
     
   
@@ -23,7 +98,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2017-04-26T13:55:39+09:00</lastmod>
+        <lastmod>2017-04-26T14:46:54+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -38,7 +113,7 @@
     <url>
       <loc>http://localhost:4000/categories/daily/</loc>
       
-        <lastmod>2017-04-26T13:55:39+09:00</lastmod>
+        <lastmod>2017-04-26T14:46:54+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -55,7 +130,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2017-04-26T13:55:39+09:00</lastmod>
+        <lastmod>2017-04-26T14:46:54+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -76,7 +151,7 @@
     <url>
       <loc>http://localhost:4000/categories/troubleshoot/</loc>
       
-        <lastmod>2017-04-26T13:55:39+09:00</lastmod>
+        <lastmod>2017-04-26T14:46:54+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
