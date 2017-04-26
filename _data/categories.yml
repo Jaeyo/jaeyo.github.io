@@ -1,11 +1,5 @@
-- slug: design
-  name: Design
-
-- slug: tools
-  name: Tools
-
-- slug: productivity
-  name: Productivity
-
 - slug: troubleshoot
   name: Troubleshoot
+
+- slug: daily
+  name: Daily
