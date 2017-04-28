@@ -3,6 +3,21 @@
   
     
     <url>
+      <loc>http://localhost:4000/tech/2017/04/29/mysql-multi-source-replication.html/</loc>
+      
+        <lastmod>2017-04-29T02:51:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/troubleshoot/2017/04/26/too-many-open-files.html/</loc>
       
         <lastmod>2017-04-26T04:25:01+09:00</lastmod>
@@ -61,36 +76,6 @@
     </url>
     
   
-    
-    <url>
-      <loc>http://localhost:4000/daily/2016/02/22/while-leaving-work.html/</loc>
-      
-        <lastmod>2016-02-22T21:00:01+09:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.7</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/daily/2016/01/12/advicer.html/</loc>
-      
-        <lastmod>2016-01-12T21:00:01+09:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.7</priority>
-      
-    </url>
-    
-  
   
     
   
@@ -98,7 +83,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2017-04-26T16:40:04+09:00</lastmod>
+        <lastmod>2017-04-28T17:54:35+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -113,7 +98,7 @@
     <url>
       <loc>http://localhost:4000/categories/daily/</loc>
       
-        <lastmod>2017-04-26T16:40:04+09:00</lastmod>
+        <lastmod>2017-04-28T17:54:35+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -130,7 +115,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2017-04-26T16:40:04+09:00</lastmod>
+        <lastmod>2017-04-28T17:54:35+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -151,7 +136,7 @@
     <url>
       <loc>http://localhost:4000/categories/troubleshoot/</loc>
       
-        <lastmod>2017-04-26T16:40:04+09:00</lastmod>
+        <lastmod>2017-04-28T17:54:35+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

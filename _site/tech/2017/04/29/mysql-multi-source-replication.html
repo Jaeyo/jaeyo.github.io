@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> mariadb multi source replication —  &raquo;  FlowerBud</title>
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<meta name="keywords" content="">
+<link rel="canonical" href="http://localhost:4000/tech/2017/04/29/mysql-multi-source-replication.html">
+        
+
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="mariadb multi source replication" />
+<meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" />
+<meta name="twitter:image" content="http://localhost:4000" />
+
+<!-- Google plus -->
+<meta name="author" content="">
+<link rel="author" href="">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mariadb multi source replication">
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<meta property="og:url" content="http://localhost:4000/tech/2017/04/29/mysql-multi-source-replication.html">
+<meta property="og:site_name" content="FlowerBud">
+
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/assets/vendor/highlight/styles/solarized_dark.css">
+
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">FlowerBud</a>
+
+        <ul class="menu">
+            <li class="menu__entry"><a href="/about">About</a></li>
+            <li class="menu__entry"><a href="/">Blog</a></li>
+        </ul>
+    </div>
+
+    <ul class="social-links">
+        
+            <a href="https://github.com/Jaeyo" class="social-links__entry" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        
+
+        
+            <a href="https://twitter.com/flower_bud_" class="social-links__entry" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        
+    </ul>
+</header>
+
+            <h1 class="page-title post-title">
+    <div class="page-title__text post-title__text">mariadb multi source replication</div>
+    <div class="page-title__subtitle post-title__subtitle"></div>
+</h1>
+
+<div class="content">
+    <h2 id="multi-source-replication-절차">multi source replication 절차</h2>
+<p>slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c"># /etc/mysql/maridb.conf.d/50-server.cnf</span>
+<span class="o">[</span>mysqld]
+<span class="nv">server_id</span><span class="o">=</span>19823759 <span class="c"># master와 겹치지 않게</span>
+replicate-ignore-db<span class="o">=</span>mysql <span class="c"># mysql 데이터베이스는 복제하지 않음</span>
+</code></pre>
+</div>
+
+<p>master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>grant replication slave on <span class="k">*</span>.<span class="k">*</span> to ‘repl’@‘%’ identified by ‘!repl123’;
+</code></pre>
+</div>
+
+<p>mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mysqldump --databases database_1 database_2 --single_transaction --master-data<span class="o">=</span>1 -h host_path -u account -p &gt; dump.sql
+</code></pre>
+</div>
+
+<p>락이 걸리는 걸 방지하기 위해 <code class="highlighter-rouge">—single-transaction</code> 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 <code class="highlighter-rouge">—master-data=1</code> 옵션 추가한다. 그러면 덤프 파일 상단에 <code class="highlighter-rouge">change master … </code> 구문이 생성되는데 multi source 로부터 replication 을 받아야 하기 때문에 아래와 같이 수정해준다.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>CHANGE MASTER <span class="s1">'master_name'</span> TO
+<span class="nv">master_host</span><span class="o">=</span><span class="s1">'host_path'</span>,
+<span class="nv">master_user</span><span class="o">=</span><span class="s1">'account'</span>,
+<span class="nv">master_password</span><span class="o">=</span><span class="s1">'password'</span>,
+<span class="nv">master_port</span><span class="o">=</span>3306,
+<span class="nv">MASTER_LOG_FILE</span><span class="o">=</span><span class="s1">'mysql-bin-changelog.052616'</span>, <span class="nv">MASTER_LOG_POS</span><span class="o">=</span>886626; <span class="c"># dump에 기록된 그대로 유지</span>
+</code></pre>
+</div>
+
+<p>만약 덤프 파일이 너무 커서 수정하기가 힘든 경우 아래와 같이 파일을 잘라서 수정한 후에 합치는 방법을 사용할 수 있다.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>head -n 30 dump.sql &gt; new_dump.sql
+vim new_dump.sql
+tail -n +30 dump.sql &gt;&gt; new_dump.sql
+</code></pre>
+</div>
+
+<p>slave가 될 데이터베이스에 덤프를 밀어넣는다.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mysql -h hostpath -u account -p database_name &lt; dump.sql
+</code></pre>
+</div>
+
+<p>여기서 database_name은 덤프 내 여러개의 데이터베이스가 담겨 있다고 해도 그 중 하나만 지정해도 되지만 지정된 데이터베이스는 미리 생성되어 있어야 한다.</p>
+
+<p>replication 스레드를 시작시킨다:</p>
+
+<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">start</span> <span class="n">slave</span> <span class="s1">'master_name'</span>
+</code></pre>
+</div>
+
+<h2 id="기타-유의사항">기타 유의사항</h2>
+<ul>
+  <li>replication 설정을 위해서는 super previleges가 필요한데 aws rds를 이용하면 일반 사용자가 super previleges를 가질 수 없다.</li>
+  <li>binary log가 너무 빨리 rotate 되는 경우에는 아래와 같이 retention 값을 확인 및 조정할 수 있다.
+    <ul>
+      <li><code class="highlighter-rouge">call mysql.rds_show_configuration()</code> 으로 <code class="highlighter-rouge">binlog retention hours</code> 값 확인
+        <ul>
+          <li><code class="highlighter-rouge">call mysql.rds_set_configuration(‘binlog retention hours’, 1);</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<div class="about">
+    <div class="about__devider">*****</div>
+    <div class="about__text">
+        Written by <strong>  leejy </strong>
+        on <strong>29 April 2017</strong>
+    </div>
+</div>
+
+
+        </div>
+
+        <script src="/assets/vendor/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+        
+    </body>
+</html>

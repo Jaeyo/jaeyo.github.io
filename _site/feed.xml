@@ -6,9 +6,87 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Apr 2017 16:40:04 +0900</pubDate>
-    <lastBuildDate>Wed, 26 Apr 2017 16:40:04 +0900</lastBuildDate>
+    <pubDate>Fri, 28 Apr 2017 17:54:35 +0900</pubDate>
+    <lastBuildDate>Fri, 28 Apr 2017 17:54:35 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>mariadb multi source replication</title>
+        <description>&lt;h2 id=&quot;multi-source-replication-절차&quot;&gt;multi source replication 절차&lt;/h2&gt;
+&lt;p&gt;slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# /etc/mysql/maridb.conf.d/50-server.cnf&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;mysqld]
+&lt;span class=&quot;nv&quot;&gt;server_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;19823759 &lt;span class=&quot;c&quot;&gt;# master와 겹치지 않게&lt;/span&gt;
+replicate-ignore-db&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;mysql &lt;span class=&quot;c&quot;&gt;# mysql 데이터베이스는 복제하지 않음&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;grant replication slave on &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; to ‘repl’@‘%’ identified by ‘!repl123’;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysqldump --databases database_1 database_2 --single_transaction --master-data&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 -h host_path -u account -p &amp;gt; dump.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;락이 걸리는 걸 방지하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;—single-transaction&lt;/code&gt; 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;—master-data=1&lt;/code&gt; 옵션 추가한다. 그러면 덤프 파일 상단에 &lt;code class=&quot;highlighter-rouge&quot;&gt;change master … &lt;/code&gt; 구문이 생성되는데 multi source 로부터 replication 을 받아야 하기 때문에 아래와 같이 수정해준다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CHANGE MASTER &lt;span class=&quot;s1&quot;&gt;'master_name'&lt;/span&gt; TO
+&lt;span class=&quot;nv&quot;&gt;master_host&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'host_path'&lt;/span&gt;,
+&lt;span class=&quot;nv&quot;&gt;master_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'account'&lt;/span&gt;,
+&lt;span class=&quot;nv&quot;&gt;master_password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'password'&lt;/span&gt;,
+&lt;span class=&quot;nv&quot;&gt;master_port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3306,
+&lt;span class=&quot;nv&quot;&gt;MASTER_LOG_FILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'mysql-bin-changelog.052616'&lt;/span&gt;, &lt;span class=&quot;nv&quot;&gt;MASTER_LOG_POS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;886626; &lt;span class=&quot;c&quot;&gt;# dump에 기록된 그대로 유지&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;만약 덤프 파일이 너무 커서 수정하기가 힘든 경우 아래와 같이 파일을 잘라서 수정한 후에 합치는 방법을 사용할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;head -n 30 dump.sql &amp;gt; new_dump.sql
+vim new_dump.sql
+tail -n +30 dump.sql &amp;gt;&amp;gt; new_dump.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;slave가 될 데이터베이스에 덤프를 밀어넣는다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql -h hostpath -u account -p database_name &amp;lt; dump.sql
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;여기서 database_name은 덤프 내 여러개의 데이터베이스가 담겨 있다고 해도 그 중 하나만 지정해도 되지만 지정된 데이터베이스는 미리 생성되어 있어야 한다.&lt;/p&gt;
+
+&lt;p&gt;replication 스레드를 시작시킨다:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;slave&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'master_name'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;기타-유의사항&quot;&gt;기타 유의사항&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;replication 설정을 위해서는 super previleges가 필요한데 aws rds를 이용하면 일반 사용자가 super previleges를 가질 수 없다.&lt;/li&gt;
+  &lt;li&gt;binary log가 너무 빨리 rotate 되는 경우에는 아래와 같이 retention 값을 확인 및 조정할 수 있다.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;call mysql.rds_show_configuration()&lt;/code&gt; 으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;binlog retention hours&lt;/code&gt; 값 확인
+        &lt;ul&gt;
+          &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;call mysql.rds_set_configuration(‘binlog retention hours’, 1);&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 29 Apr 2017 02:51:00 +0900</pubDate>
+        <link>http://localhost:4000/tech/2017/04/29/mysql-multi-source-replication.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tech/2017/04/29/mysql-multi-source-replication.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>Too many open files</title>
@@ -108,62 +186,6 @@
         <pubDate>Thu, 25 Aug 2016 23:40:55 +0900</pubDate>
         <link>http://localhost:4000/daily/2016/08/25/job-interview.html</link>
         <guid isPermaLink="true">http://localhost:4000/daily/2016/08/25/job-interview.html</guid>
-        
-        
-        <category>daily</category>
-        
-      </item>
-    
-      <item>
-        <title>퇴근하다가</title>
-        <description>&lt;p&gt;저녁 여섯시 반.&lt;/p&gt;
-
-&lt;p&gt;15층 빌딩에서 나와 습관처럼 이이폰을 귀에 꼽는다. 핸드폰을 들고 뭔가 재미있는 게 없나 뒤적인다. 아차, 장례식장에 들려야 한다. 무의식적으로 걷던 퇴근길에 멈춰서서 장례식장으로 가는 교통편을 찾는다. 음, 두 블럭 정도를 걸어 버스를 타야 한다. 핸드폰에서 시선을 떼고 평소와 다른 길로 걷는다. 가장 빠른 길로는 가지 않았다. 조금 돌아가더라도 인적이 드물고 시끄럽지 않은 길로 들어선다. 그냥 왠지 그러고 싶었다.&lt;/p&gt;
-
-&lt;p&gt;그제서야 따뜻한 빛의 석양이 보인다. 한낮이 남겨놓은 여유로운 공기가 아직은 남아 행복한 기분이 든다. 오늘은 의미없이 핸드폰을 들여다보지 않고 이런저런 잡생각을 하며 걷기로 결심한다.&lt;/p&gt;
-
-&lt;p&gt;날은 아직 후덥지근 하다. 인도 바깥 쪽에 한 여자와 남자가 대화를 나누고 있다. 주로 여자가 남자에게 무엇인가를 설명하고, 남자는 시선을 돌린 채 관심없는 모습이다. 흡사 여자가 남자에게 무언가를 팔거나 하는 모습이다. 혹은 사이비 종교의 포교활동 인지도 모른다. 테헤란로에서는 그런 상황을 자주 볼 수 있다. 이어폰으로 새어나오는 음악 때문에 대화 내용은 듣지 못한채 지나쳤다.&lt;/p&gt;
-
-&lt;p&gt;그러고보니 우리가 하루에 나누는 대부분의 대화는 그 이면에 무언가 항상 목적을 두고 있구나 하는 생각에 다다르게 되었다. 대화라는 건 내가 가진 목적을 상대방에게 관철시키는 것, 그리고 상대의 말 뒤에 가려진 목적이라던가 본심을 읽어내는 행위의 조합이 아닌가 싶다. 어쩌면 본인의 목적을 최대한 가린 채로 그 목적을 달성하는 대화 전술들을 우리는 달변이라고 일컫는지도 모르겠다. 나는 그런 것들을 그다지 좋아하지 않는다. 부차적인 것들은 전부 내려놓고 핵심만 주고 받는 대화를 좋아한다. 나는 네가 좋아. 널 보면 가슴 한 구석이 부풀어 올라 헬륨풍선처럼 둥둥 떠다닐 수 있을 것 같아 하고 솔직하게 표현하고 싶다. 그치만 본심을 그대로 노출시켜놓은 채 대화를 하는 것은 꽤 위험하다. 소위 밀당이라는 것이 필요할지도 모른다. 혹은 누추한 나를 감추고 그럴 듯한 가면을 쓰는 것이 세상 사는데 꽤 유리할 지도 모른다.&lt;/p&gt;
-
-&lt;p&gt;그런 것들을 생각하고 있자면 머리가 지끈거려서 차라리 입을 닫고 필요한 것 외에는 말을 하지 않는 것이 편하다. 이것도 익숙해져서 하루종일 말을 거의 하지 않더라도 답답하지도, 심심하지도 않다. 마음 속 고요를 유지하는데 제격이다.&lt;/p&gt;
-
-&lt;p&gt;버스를 타면 왠지 앉아서 갈 수 있을 것 같다는 기대를 했다. 하지만 퇴근 시간 대의 버스에서 그것은 조금 욕심이었는지도 모르겠다. 하지만 운이 좋게도 금새 자리가 났다. 경직된 다리를 조금은 쉬게 할 수 있었다.&lt;/p&gt;
-
-&lt;p&gt;수유에 있는 장례식장에 도착하니 어느새 해는 늬억늬억 지고 있었다. 조문할 때 절을 먼저 해야 하는지, 향을 먼저 피워야 하는지 헷갈려 잠시 검색해보았다. 그러고보니 누군가 그랬다. “네가 보기에 괜찮아 보이는 사람들은, 실은 자신의 못난 것들을 잘 감추는 사람들”이라고. 내 또래 친구들과 이야기를 나누다 보면, 아직 소년티가 짙게 남아있다는 생각을 자주 하게 된다. 어쩌면 남자는 평생 소년티를 벗지 못한채로 살아가는게 아닌가 싶다. 세상 일에 미숙하고 한없이 유약하다. 유치하기 짝이 없지만 또 제 아랫사람들에게는 어른 티를 꽤나 자연스럽게 내는 나이가 되었다. 20대를 횡단하는 이들에게 공통적으로 주어진 과제 중 하나인 “어른스러워지기”란, 사실은 이처럼 이룰 수 없는 과제가 아닌가 싶다. 그냥 어른처럼 보이는 법을 하나 둘씩 연습하고 체득하면서 이냥저냥 살아가면 그걸로 책잡힐 일은 없다.&lt;/p&gt;
-
-&lt;p&gt;인터넷에서 본대로 향을 먼저 꼽고 절을 했다. 그리고 상주와 마주보고 다시 절을 했다. 인터넷에서는 “얼마나 상심이 많으신지요.” 정도의 말들을 주고 받으면 된다고 했지만 절대 그 따위 말은 할 수가 없었다. 말하는 나도, 듣는 상대방도 곤혹스럽고 어색해질 말이라는 생각이 들었다.&lt;/p&gt;
-
-&lt;p&gt;하루가 다 저물었다.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 22 Feb 2016 21:00:01 +0900</pubDate>
-        <link>http://localhost:4000/daily/2016/02/22/while-leaving-work.html</link>
-        <guid isPermaLink="true">http://localhost:4000/daily/2016/02/22/while-leaving-work.html</guid>
-        
-        
-        <category>daily</category>
-        
-      </item>
-    
-      <item>
-        <title>조언자</title>
-        <description>&lt;p&gt;고민상담의 도에는 크게 두 가지의 갈림길이 있다.&lt;/p&gt;
-
-&lt;p&gt;왼쪽 길은 고민에 대해 실제로 도움이 될 수 있을 만한 조언을 주는 길이다. 고민을 등에 이고 있는 이의 상황을 듣고 제3자로써 판단을 내려준다. 그 고민의 무게를 덜 수 있는 현실적인 조언을 찾아 해주고, 해답이 필요하다면 나름의 해답을 찾아준다.&lt;/p&gt;
-
-&lt;p&gt;오른쪽 길은 그냥 들어주는 길이다. 차근히 귀를 열고 있는 힘을 다해 들어준다. 화자에 대해 이해와 연민, 그리고 공감의 태도로 등에 이고 있는 고민들을 함께 보고 들어준다.&lt;/p&gt;
-
-&lt;p&gt;신기하게도 그냥 들어주고 공감해주는 것 만으로 고민을 이고 있는 이에게 위로를 줄 수 있다. 또 그것만으로 고민의 무게가 가벼워질 수조차 있다. 사실 대부분은 고민에 대한 객관적인 해답을 모르고 있지는 않다. 그냥 들어줄 사람이 필요한 것이다.&lt;/p&gt;
-
-&lt;p&gt;“공부가 잘 안되요” 라고 고민을 털어놓는 학생에게, “공부하는 시간을 어떻게 어떻게 조절해봐”, “이러이러한 공부법을 한 번 이용해봐” 하는 조언들 보다는 “그렇구나, 공부가 안되서 스트레스를 받는구나. 나도 그 기분이 어떤지 알 것 같아. 많이 힘들겠구나” 라는 대답이 필요한 경우가 더 많다.&lt;/p&gt;
-
-&lt;p&gt;하지만 현실적인 조언이 필요한 경우도 있다.&lt;/p&gt;
-
-&lt;p&gt;고민 상담의 도에는 크게 두 가지의 갈림길이 있다. 하나는 고민에 대해 실제로 도움이 될 수 있을만한 조언을 주는 길이고, 다른 하나는 그 고민에 차근차근히 들어주고 이해와 연민, 공감의 태도로 고민을 가지고 있는 이로 하여금 위로를 받을 수 있게끔 하는 길이다. 사람에 따라, 또 상황에 따라 필요한 상담의 태도는 다를 것이다. 하지만 주로 후자의 방식이 더 효과적으로 느껴지는 상황들이 많다. 대부분의 고민은 들어주기만 해도 그 고민의 짐이 한껏 가벼워지는 경우가 많다. 억지로 그 지게의 짐을 어떻게 줄일지, 지게를 어떻게 매야 더 수월하게 걸을 수 있을 지 답을 내주지 않고, 나란히 서서 같이 걷기만 해도 지게의 짐을 많이 덜 수 있다. 사실 대부분은 그 고민의 짐을 어떻게 줄일 수 있는지에 대한 객관적인 답을 모르고 있지는 않다.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 12 Jan 2016 21:00:01 +0900</pubDate>
-        <link>http://localhost:4000/daily/2016/01/12/advicer.html</link>
-        <guid isPermaLink="true">http://localhost:4000/daily/2016/01/12/advicer.html</guid>
         
         
         <category>daily</category>
