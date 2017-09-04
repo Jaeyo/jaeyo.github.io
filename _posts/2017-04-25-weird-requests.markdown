@@ -10,6 +10,7 @@ categories: [troubleshoot, tech]
 cpu, 메모리, 디스크 사용량 등의 지표를 대시보드로 구성해놓고 며칠 모니터링하고 있으려니까 좀 이상한 현상이 눈에 띄었다.
 
 ![](http://i.imgur.com/H99gBeu.png)
+![](https://lh3.googleusercontent.com/KD5sjsepV6FYN8Y_EutVOCyu7S_OyZFGTuLbhmijklZdU0H9m8UWJhyRWjm6d7TfQEnRriPTf4-4VSVJYT1hf6LFsii9T5_eq_uowi3C-TQon-Y-z9Kaj1DgAw3yZXcyyVVx73n6mB4BDgaJ5WOibUoplg62zaCQNorrYDk8PD5JrQ3kig6N0fe0-SdlBOfAZ5qDghSPguABrCmaKizHRMsZxuToHJweMMNgRz7g2DmNpcnhd46yiq272SyiY7-9wUPlDiecVPwnh4x70UbN5Ja-I_tl3c-rOlWwTLKkP0e_OZ659YWf-0qkG5ywKsqycHBnVjZn7fdTcwzLIOugviCBegJKxdb6UPWuuGxKMwPJC6-v92jJS-77cHRQnwf0oY1xQfC2cW6fIYHeA3TKarEvTdJypPKz_sfzdXwO82kRWdLY0J7vP9jAu1xthFyR4u8GoXCsFQbvYHFMcPMmi5RgJeikfkDeV_xvfeeQ8DVK1242w-A5OU0GSk4EWTWvmZ4tOsxHdzR65iQtdbPXTTRUugC4fWoG-3lpJoYwfhJtxH1ViqeC5ofujv-5SUwwiBF8f6fV4ERrjqd7YVQJqoC4q1DDDuNKsoSZ5eRKQjLddEnY94NBqw=w720-h960-no)
 
 일부 서버에서 주기적으로 network out이 튀고 있었다. 시간도 정확하게 6시 반쯤에 시작해서 11시에는 정상으로 돌아왔다. 제일 먼저 해당 서버에서 주기적으로 스케쥴링되어 돌고 있는 태스크가 있는지 확인했다. 하지만 스케쥴이 걸려있는 태스크라고는 cloudwatch 메트릭 값을 수집하는 agent 뿐이었고 이 에이전트도 5분마다 한번씩 실행되도록 구성되어 있었기 때문에 용의선상에서 벗어났다. 그외에 여러 의심되는 부분들을 샅샅이 뒤져봤으나 애초에 해당 서버는 aws s3에 있는 데이터들을 변환해 던져주는 역할만 하는 심플한 서버였기 때문에 원인을 진단하기가 어려웠다. network out이 튀는 정도가 분당 평균 5mb 근처였기 때문에 당장 서비스 운영에 문제를 줄만한 사안이 아니었고 이 문제 말고도 긴급을 요하는 태스크들이 많았기 때문에 자연히 칸반 보드의 todo list 어딘가로 해당 이슈는 쳐박히게 되었다.
 
