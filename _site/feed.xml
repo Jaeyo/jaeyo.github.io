@@ -6,9 +6,247 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 May 2017 00:32:35 +0900</pubDate>
-    <lastBuildDate>Thu, 18 May 2017 00:32:35 +0900</lastBuildDate>
+    <pubDate>Sun, 08 Oct 2017 15:09:48 +0900</pubDate>
+    <lastBuildDate>Sun, 08 Oct 2017 15:09:48 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>리디스토리 프론트엔드 개발기</title>
+        <description>&lt;p&gt;본 포스팅은 &lt;a href=&quot;https://www.ridicorp.com/blog/2017/09/13/how-to-develop-ridistory-front/&quot;&gt;회사 블로그에 올려놓았던 글&lt;/a&gt;을 옮겨놓은 것입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 제로경으로 대표되는 악의 무리와 부딪힙니다. 제로경은 니트로 박사라는 부하가 만들어준 로봇을 타고 주인공의 앞길을 막고, 쫓고 쫓기는 아슬아슬한 활극 끝에 결국 정의의 편인 주인공이 승리하곤 합니다. 여기서 제로경과 니트로 박사가 주고받는 대화가 일품입니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;제로경: 니트로 박사, 사정을 설명해보실까? &lt;br /&gt;
+니트로 박사: 지금이라도 시간과 예산을 조금만 더 주신다면… &lt;br /&gt;
+제로경: &lt;strong&gt;변명은 죄악이란 걸 모르나!&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;오래된 기억 상자 속에서 몬타나 존스라는 만화영화 이야기를 꺼낸 이유는 신규 서비스를 개발하는 입장에서 니트로 박사에게 어쩐지 묘하게 공감했기 때문입니다. 스타트업에서 개발을 하는 많은 개발자분들도 공감할 수 있는 이야기라는 생각이 듭니다.&lt;/p&gt;
+
+&lt;p&gt;우리에게 시간이 좀 더 있다면! 예산이 더 있다면! 인력이 더 있다면!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;가장-큰-문제는-시간&quot;&gt;가장 큰 문제는 시간&lt;/h2&gt;
+&lt;p&gt;아, 시간! 콘텐츠 플랫폼의 비즈니스 가치는 유료 회원수와 콘텐츠의 질에 따라 결정됩니다. 그렇기 때문에 초기 시장을 선점하는 일은 굉장히 중요합니다. 이미 사용자는 기존 플랫폼이 제공하는 UX에 익숙해져 있습니다. 특별한 이유가 없다면 다른 제품을 사용하지 않습니다. 또한 콘텐츠 제공자는 시장에 영향력을 가진 플랫폼을 선호하기 때문에, 신생 플랫폼 입장에서 콘텐츠를 확보하려면 많은 노력이 필요합니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 리디스토리 개발이 시작될 당시 이미 굳건한 위치를 잡고 있는 플랫폼들이 많이 있었습니다. 따라서 리디스토리는 골리앗에게 도전하는 다윗의 심정으로 조금이라도 더 누구보다 빠르게 남들과는 다르게 출시해야 했습니다.&lt;/p&gt;
+
+&lt;p&gt;이러한 사정은 비단 리디스토리 만의 이야기는 아닙니다. 많은 스타트업들이 빠르게 시장에 진입하기 위해 기반기술 같은 부분들은 가능하면 매니지드 서비스를 이용하고 생산성이 좋은 언어와 프레임워크를 이용하는 것이 요즘 트렌드인 것 같습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;웹앱-그리고-더-빠르게&quot;&gt;웹앱, 그리고 더 빠르게&lt;/h2&gt;
+&lt;p&gt;그래서 웹앱이었습니다. 서비스 론칭까지 4개월, 선택지는 그리 많지 않았습니다. 사실 개발 초기에는 서버 개발자 2명밖에 없었습니다. 팀 내에 네이티브 앱 개발 경험을 가진 개발자가 있더라도 빠른 서비스 론칭을 위해서는 결국 웹앱 쪽으로 방향을 잡을 수밖에 없었습니다. 동일한 서비스를 구현하는 코드를 Android, iOS 각각의 플랫폼별로 두 벌을 만들어 유지하고 각각의 코드에서 발생할 이슈들까지 잡아나가기엔 시간과 인력의 효율 면에서 좋지 못했습니다.&lt;/p&gt;
+
+&lt;p&gt;방향이 웹앱으로 정해지고 나서부터 리디스토리 개발팀은 익숙하고 빠르게 결과물을 낼 수 있는 방식으로 작업을 하기 시작했습니다. 서비스에 필요한 UI를 HTML로 구성하고 그 안에서 동적으로 변경되는 부분들은 &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt;에서 지원하는 &lt;a href=&quot;http://jinja.pocoo.org/&quot;&gt;Jinja2&lt;/a&gt;라는 템플릿을 통해서 구성하는 전통적인(?) 방식이었습니다. 그렇게 서비스의 얼개가 대강 잡혔을 때쯤 우리는 그동안 우리 안에서 가지고 있던 불안에 대해 꺼내놓고 이야기하기 시작했습니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;이거 너무 느린데요?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;네, 너무 느렸습니다. 느릴 수밖에 없었습니다. 스마트폰에 앱이라는 형태로 인스톨된 이상 사용자는 여타 다른 네이티브 애플리케이션과 비슷한 반응성을 기대하며 리디스토리 앱을 이용하게 됩니다. 하지만 리디스토리 앱의 내부는 웹과 동일한 형태로 구현이 되었으니 사용자 입장에서는 어딘가 모르게 굼뜨다는 인상을 받게 됩니다. 매 화면 이동마다 흰 화면이 순간적으로 노출되고 인터랙션도 어딘가 모르게 답답합니다.&lt;/p&gt;
+
+&lt;p&gt;개발팀은 하던 일을 모두 중지하고 회의실에 모여 머리를 맞대고 대책을 강구하기 시작했습니다. 길고 긴 회의 끝에 기존의 방법을 버리고 Single Page Application(이하  SPA)으로 전면 개편이라는 선택지로 겁도 없이 손을 뻗었습니다. SPA 개발을 도와줄 도구로서 &lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;React&lt;/a&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;Angular&lt;/code&gt;를 비교했고, 학습곡선이 낮고 좀 더 자유로운 방식으로 사용 가능한 &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;React-router&lt;/code&gt;를 곁들여 사용하기로 했습니다. 그때부터 이른바 고난의 행군이 시작되었습니다.&lt;/p&gt;
+
+&lt;p&gt;개발팀 태스크보드에는 서비스 화면의 이름이 쓰인 태스크들이 무더기로 등장했습니다. 개발자들은 그 태스크들을 하나씩 가져와 기존에 Jinja2 템플릿으로 되어 있던 화면을 &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt; 기반으로 옮기기 시작했습니다. 단순 포팅을 넘어서 화면의 각 구성요소를 적절하게 컴포넌트화하여 재사용성을 높이고, 각 화면들의 시나리오들을 &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt; 라이프사이클에 적절하게 녹여내야 했습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.ridicorp.com/blog/img/2017-09-13/code_deleted_added.png&quot; alt=&quot;git commit graph&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;어마어마한 양의 코드들이 삭제되고 또 추가되었습니다. &lt;/figcaption&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;그냥-redux-쓸-걸&quot;&gt;그냥 Redux 쓸 걸&lt;/h2&gt;
+&lt;p&gt;우리가 겪은 기술적인 문제들은 대부분 &lt;strong&gt;웹이면서 웹이 아닌 척해야 하는 웹앱&lt;/strong&gt;의 숙명으로부터 비롯된 것이었습니다. 순조롭게 진행되는가 싶던 SPA로의 전환 작업의 첫 번째 고난은 댓글 화면에서 시작되었습니다. 사용자는 댓글 목록 화면에서 새로운 댓글을 쓰기 위해 댓글 작성 화면으로 이동하게 됩니다. 새로운 댓글을 성공적으로 올리고 댓글 목록 화면으로 돌아왔을 때, 사용자는 자신이 방금 작성한 댓글이 댓글 목록에 없는 것을 발견하게 됩니다. 댓글 목록에 있는 댓글은 새로운 댓글을 적기 전에 받아온 데이터니까요. 그리고 이는 용납하기 어려운 사용자 경험입니다.&lt;/p&gt;
+
+&lt;p&gt;이 문제를 해결하기 위해 우리는 클라이언트에서 상태와 데이터를 저장하고 관리하는 코드들을 추가하기 시작했습니다. 서버로부터 받아온 댓글 목록 데이터를 변수에 저장하고 사용자가 새로운 댓글을 작성하면 서버로 전송됨과 동시에 그 변수에도 추가하게 됩니다. 이제 댓글 목록 화면으로 돌아오더라도 이 저장소에 있는 데이터를 기반으로 화면을 그리기 때문에 방금 작성한 댓글도 댓글 목록에 볼 수 있습니다. 댓글 외에도 클라이언트에서 유지해야 하는 데이터의 종류들은 상당히 많았습니다. 예를 들어, 로그인된 사용자의 정보는 많은 화면에서 공통으로 사용하기 때문에 매번 서버에서 받아오는 것은 비효율적이었습니다.&lt;/p&gt;
+
+&lt;p&gt;게다가 문제는 또 있었습니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt;로 코딩하다 보면 화면의 구성요소들을 컴포넌트 단위로 잘게 나누고 그 컴포넌트들을 조합하는 방식을 사용하게 됩니다. 따라서 화면이 복잡한 경우에는 A 컴포넌트가 B 컴포넌트를 포함하고, B 컴포넌트는 또 다른 C 컴포넌트를 포함하는 식으로 depth가 깊어지기에 십상인데요, 이때 A 컴포넌트에서 가지고 있는 데이터를 C 컴포넌트까지 내려주려면 B 컴포넌트를 통해서 props라는 형태로 내려주어야 합니다. depth가 깊어질수록 문제가 커지죠. 개발팀은 다시 회의실에 모여 이야기합니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;그냥 Redux 쓸 걸 그랬네요.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;네, 사실 &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt; 도입 단계에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;Redux&lt;/code&gt;까지 고려했으나 당시 필요 이상의 엔지니어링이라는 판단이 들어 배제했었고 나중에야 그것이 잘못된 판단이라는 것을 깨달았습니다. 클라이언트에서 상태를 유지하는 문제, 컴포넌트 depth를 따라서 데이터를 내려줘야 하는 문제 모두 &lt;code class=&quot;highlighter-rouge&quot;&gt;Redux&lt;/code&gt;를 도입함으로써 깔끔하게 해결할 수 있는 문제였습니다. 잠깐 후회했지만 빠르게 &lt;code class=&quot;highlighter-rouge&quot;&gt;Redux&lt;/code&gt;를 서비스에 적용했습니다. 더불어 &lt;code class=&quot;highlighter-rouge&quot;&gt;Redux-thunk&lt;/code&gt; 라던가 &lt;code class=&quot;highlighter-rouge&quot;&gt;Reselect&lt;/code&gt; 같은 &lt;code class=&quot;highlighter-rouge&quot;&gt;Redux&lt;/code&gt;와 함께 묶어서 사용할 수 있는 라이브러리들까지 도입하면서 프론트엔드 코드를 좀 더 깔끔하게 작성할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;entity의-등장&quot;&gt;Entity의 등장&lt;/h2&gt;
+&lt;p&gt;앞서 언급한 사용자 정보에 대한 데이터 외에도 여러 화면에서 공통으로 사용되는 데이터는 또 있었습니다. 바로 작품에 대한 메타데이터였습니다. 작품의 Primary Key(이하 pk)와 제목, 저자 정보 등으로 구성된 이 데이터는 여러 화면에서 공통으로 사용되고 있었고 매화면 이동 시마다 중복해서 서버에서 내려주고 있었습니다. 예를 들면 아래와 같은 시나리오입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;럭키박스 발급 화면에서 작품 이용권 당첨&lt;br /&gt;
+→ 작품의 제목을 표시하기 위해 작품 메타데이터를 서버에서 전달&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;해당 작품을 터치해 작품 상세 화면으로 이동&lt;br /&gt;
+→ 작품의 상세 정보들을 표시하기 위해 작품 메타데이터를 &lt;strong&gt;또&lt;/strong&gt; 서버에서 전달&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;해당 작품을 읽기 위해 뷰어 화면으로 이동&lt;br /&gt;
+→ 작품의 제목을 표시하기 위해 작품 메타데이터를 &lt;strong&gt;또다시&lt;/strong&gt; 서버에서 전달&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;클라이언트에서 데이터가 중복으로 저장되어 메모리 사용량이 늘어나는 것은 차치하더라도 전송 시마다 트래픽을 과하게 소비하면서 화면 로딩을 늦추는 것을 우리는 용서할 수 없었습니다. 
+이 적폐를 청산하기 위해서 작품 메타데이터를 조금 특별하게 취급하기로 했습니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;Redux&lt;/code&gt; store에 &lt;code class=&quot;highlighter-rouge&quot;&gt;Entity&lt;/code&gt; 라는 개념을 만들고 메타데이터들을 저장하고 관리하기로 했습니다.&lt;/p&gt;
+
+&lt;p&gt;기존에 메타데이터를 내려주던 API들에서는 메타데이터에 대한 pk만을 내려줍니다.
+클라이언트에서는 이 pk를 이용해 가지고 있지 않은 pk들만 별도의 메타데이터 API에 요청하도록 하였습니다. 
+이렇게 받아온 메타데이터는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Entity&lt;/code&gt;에서 관리하면서 다른 화면에서 재사용할 수 있도록 했고요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.ridicorp.com/blog/img/2017-09-13/entity.png&quot; alt=&quot;Entity 설명 이미지&quot; data-action=&quot;zoom&quot; /&gt;&lt;/p&gt;
+&lt;figcaption&gt;Entity는 이렇게 동작합니다.&lt;/figcaption&gt;
+
+&lt;p&gt;이렇게 구조를 변경하고 나니 각 API의 응답 데이터 사이즈가 눈에 띄게 줄었고 결과적으로 좀 더 빠르게 화면을 그려줄 수 있게 되었습니다. 어쩌면 수십 ms 정도의 차이겠지만 티끌 모아 태산이니까요.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;웹-같은-앱-앱-같은-웹-그리고-앞으로는&quot;&gt;웹 같은 앱, 앱 같은 웹 그리고 앞으로는?&lt;/h2&gt;
+&lt;p&gt;리디스토리는 웹앱으로 개발되었습니다. 웹앱으로 하면 하나의 코드로 모든 플랫폼에 대응할 수 있으며, 개발 편의성도 높습니다. 또한, 버그 수정 및 기능추가를 빠르게 실 서비스에 적용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 그에 따른 단점들도 있습니다. 네이티브에 비해 속도도 느리고 사용성도 좋지 않습니다. 
+개발팀은 네이티브앱 처럼 보이기 위해 많은 노력을 했습니다. 특히 성능 개선 측면에서 많은 시도를 했습니다. 여러 화면에서 데이터를 최신으로 유지하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;Redux&lt;/code&gt;를 도입한다던가, &lt;code class=&quot;highlighter-rouge&quot;&gt;Entity&lt;/code&gt;라는 개념을 만들어 중복 데이터 및 서버 응답의 용량을 줄이는 것도 이런 노력의 일환이었죠. 저사양 안드로이드 기기들을 위해 커스텀 웹뷰를 어플에 내장하기도 했습니다. 물론 이것 외에도 필연적으로 느릴 수 밖에 없는 실행속도를 UX를 통해 개선하는 것들도 있었습니다. 그렇지만 아무리 최적화를 해도 개선에는 한계가 있고, 최적화를 하는 시간이 예상보다 많이 소요되었습니다.&lt;/p&gt;
+
+&lt;p&gt;여전히 팀에서는 “지금이라도 네이티브로 가야 할까?” 혹은 “리액트 네이티브라도 도입을 해볼까?”라는 이야기가 종종 나오는 편입니다. 이렇듯 적은 인원으로 빠르게 개발하면서 높은 사용성을 추구하는 것은 매우 도전적인 일입니다. 하지만 그만큼 기술적인 문제를 해결했을 때의 보람이 있다고 생각합니다.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 08 Oct 2017 23:57:00 +0900</pubDate>
+        <link>http://localhost:4000/tech/2017/10/08/how-to-develop-ridistory-frontend.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tech/2017/10/08/how-to-develop-ridistory-frontend.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
+    
+      <item>
+        <title>여수 여행</title>
+        <description>&lt;p&gt;금요일 저녁, 아내와 반은 즉흥적으로 여수 여행을 결심했다. 남해바다를 보는 것은 아주 오랜만이라 왠지 설레는 기분이었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/agMAeqVFokH_IuyQIhFGFQkDd6zvsXwTe1Tf4126wvFhgixWGhAp8ZJy5DX6Km3M2EVCE_EQyoQQD44W1zKGDU2riL5TBKcROlDrRTs_6sO9XkMPCcQ6t9oEnUYneJXGROpB9NrCmZcmU83WUzLKmiw0OFTZksaPjj0YO9_c8N7Ha9pdVs9lqQy6TtmT7KkrBzpmcucx6MElKImpeay6HxkN8BnlAwLcHnK73QCieOjxGVYBmlnu66KDtvEo11yp5To4b_CGFHYWT3rgdtVpeVLCXJG4IrJ9cszpCoJmt18tsxskQMlFcW8kFYU3nQBEbf9cFRphDCzNKFoajT8a_1AK3o9LihDMQ4JPLXZ3NT8Z2AEhc46lq5vlTmfOPY5KBMPbEy5WxkNLy-DCd386kZH-J9IFQfudSWNdrsaS_69-pi7Urqks734tet6PROySs9yPYdVzmfYiUj8U7yYNPsUaf3bDtxDGP0ODtSKaZKALeYShluHe6NLxUXUOFjfDG1XNFHtPU5kVXtindeLr9oGae--MloNoEUTR8yWnvZCre_53-nKNHFmPCL7pmJqqakAA6kMxzIDLH1lkZKbt5nmR67CKvvBFDXMXvuHYpfgtyhPu7ZdBOA=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;차에 기름이 별로 없었기 때문에 서울을 얼마 벗어나지 못해 휴게소에 들러야 했다. 다행히 1445원 이었나 하는, 비교적 저렴한 가격에 주유를 할 수 있었다. 5만원을 넣으니 기름 게이지가 풀로 올라가고 주행 가능 거리에는 900km가 넘게 떴다. 준비 끝.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/fUyeLPv7IlEL5rpKTYBfvGKzwAh9y6JEc-_I57XZfI-mHSOGuMfkr_TxeWy9WTAXqUa1t2Ll-nS9Nv_xlhLtmkjmIWmnMd0qER-uRX_IZxfTAsF3qayr8TMasMR-IIBUl-9py7DPJ55JcKz5QotCvfQIkGcSR4wOa6n7epAjx5vM73fErAjKxcc36cjJy05M5uUQXt_MXyCfy3R_bpIDapWT4ycl3qPMw8rRs_JhXF2iGqXPn3bv2ROwyeXI2NLRpA1ouXk_QwlxAN8oc5aBRuJDs2RrbFJGB1riYwT2fdXkS_gkb527Hse527r65sTIhTLVsOuPt-CDYX7_OwUnt92aol9hQeMt3Nv19Dw7z6mgMaK1htvfX0nDHeDJFSlGZGsHT_Szrl-xYKYZwyC4NgrbZo01WLOlP-zitaUsslV1lsPBPeQ-6D5aDH1d6k0N8swhG9KutK0jScCd4Nx5sQM8lEQxY1MRipUFkOLO_SonyPzIw9U-mH51J9-LbELEcXcO_StgL5Aq86Oa2VplYVi_eppGDk7kSafK-gVSQh5AlPfLOAMTTpPuyI5p0kgPW2RLuVWegprGaaE2ZeQ4U479TtRkqRkJLnzfRzgIRZ-3tv20MCoeEw=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;두 시간 정도를 달려 대전에 도착했다.
+출발한지 얼마나 됐다고 아내는 옆 자리에서 꾸벅꾸벅 졸고 있었다. 그러다가 옆 차선에 트럭이나 버스라도 지나가면 화들짝 놀라다가도 다시금 꾸벅꾸벅.
+회사에서 퇴근한 뒤에 밥만 먹고 바로 출발한지라 여수까지 한 방에 갈 수 있으리라는 생각은 하지 못했다. 대전에서 숙소를 잡고 1박을 했다.
+오랜만의 야간 장거리 운전은 피곤했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/vhEq9jYJE69Mu68Nn4ZjTJzmpfnPT7EYsSg9kVCu0ZVK8kVGC5Ie-Qiv0hrzIQaGjewqblE0LJwEBQMCis7xqBz5LEtZaudlkzYCPcsv2DmtxjsHKIFlOMSoUm4hEfGISRJW4pqy-JydaO56J1C-leBMIaLT94u5lUlmL4JGcErpAt4RXN3bfL7yz3m-vmgTkImGHHpAFQ70PLf3f-8AZP7X_qb7nHm3aaNfpg-5aiZKGU8GKaQZipho4kd65ekKom7DRVz-CPioK6rUj1jEIsa7pv68HGpnJ8Ak1JDqRgT9sFVVzGW_PjRk7ggG0dcPQwBkLjtkxcL5crlFxAAwRdIgYS40y0d9_oU1GPXtVFsujT-D5TqxR9frM1fWOfcE_FOIzrZAaSEMK7UhsHjPrVF9O1PNnstcMixwervdrypg0vAmGP5g_sixPFqgsUmY5AOXJ6DPbf5uLtHf7nfHugbDwrQuAcsNnRHmFwupl3EGG26ZSKvHPA_ry02k50e8GSr_rahdTfAD0mFHt_U6nbY9OBWkZ-bP4YApuSYFIB9rMyHFdjXpGutjOVwvmJkKSoRRTyQlBwihf6c0WrK_txtKhMyUyHmFPw2HNCugfjSt8cG5AlvFNg=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;다음날 아침, 개운한 기분으로 숙소에서 나왔다. 하늘은 어느새 가을 하늘이었다. 주변에 시야를 가리는 높은 건물들이 없어 하늘이 더 예뻐 보였다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/sni0t5cvpKG3pg5lL9BBXoTdpRSJngcKjkw4KmpIPEsEw4chgJoCKG_jX0YCVzgl2aZUkFUeNAeDBV2D_nTnsTL1yvNRZtlSEWpovG4hBbmvz8gyZJaIUTryqCalk3Rhidtlr4WajFNfTqrRpD1bNkhXT8ZmnrUypQ-aOodXt67j7-0E9GxDN0NQX9IRqaMW75AcjkD8toB3TewIIC2UAndurTpfAzHy_jrc7qJcaRonBm3tjug4kZDMp_QIQ_EIf53Kh5cWueX6xian2x0rXuUHlsLFeDxAbi7DhKaaPdMdpCRTJkILSIdrwbaoNn3IDMdCfrc6vhD43heygbjNdnNfnJNGO74xJMdpCorPu0cWsXa-Rl1IyaLoq7Eqo2TuWoq4F7MlyreQrHUD_xH70zbCeFA07IpYpeKXfL9qdZvOSKVZZbqpJHr-pE8T2h9fFNTVgRhS6bM9aejpRT_wR6vPXvtIqO_v-k85AARdJbmBei41KcPWVEln2qmGi2zDYrsuaed6-zdMCYjOEsoKFgYi3Tw1RgL6HLSmP9hj851zRfkiCyhGVK_fokDqSn3pI5DIqZHI_VB5ED3VGDw08DI_kKejlyps46smx3ccgv4VZ3iTxP6NHg=w1078-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;대전을 나가기 전에 성심당이라는 빵집에 들려 요기를 채웠다. 맛은 그냥 저냥 그럭 저럭.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/KD5sjsepV6FYN8Y_EutVOCyu7S_OyZFGTuLbhmijklZdU0H9m8UWJhyRWjm6d7TfQEnRriPTf4-4VSVJYT1hf6LFsii9T5_eq_uowi3C-TQon-Y-z9Kaj1DgAw3yZXcyyVVx73n6mB4BDgaJ5WOibUoplg62zaCQNorrYDk8PD5JrQ3kig6N0fe0-SdlBOfAZ5qDghSPguABrCmaKizHRMsZxuToHJweMMNgRz7g2DmNpcnhd46yiq272SyiY7-9wUPlDiecVPwnh4x70UbN5Ja-I_tl3c-rOlWwTLKkP0e_OZ659YWf-0qkG5ywKsqycHBnVjZn7fdTcwzLIOugviCBegJKxdb6UPWuuGxKMwPJC6-v92jJS-77cHRQnwf0oY1xQfC2cW6fIYHeA3TKarEvTdJypPKz_sfzdXwO82kRWdLY0J7vP9jAu1xthFyR4u8GoXCsFQbvYHFMcPMmi5RgJeikfkDeV_xvfeeQ8DVK1242w-A5OU0GSk4EWTWvmZ4tOsxHdzR65iQtdbPXTTRUugC4fWoG-3lpJoYwfhJtxH1ViqeC5ofujv-5SUwwiBF8f6fV4ERrjqd7YVQJqoC4q1DDDuNKsoSZ5eRKQjLddEnY94NBqw=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;본격적으로 다시 여수로 달리기 시작했다. 하늘이 너무 예뻤는데 운전 때문에 제대로 감상하지 못한 것이 아쉬웠다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/WL81CSzj6DoQHQQfOnuRYV0wdFFnqlaGH7PnIJABD3QBJPa6e6IFhwXIbwHqAhxfaRI4mPO-4llv82pa0BFHoYqH1RUXcASg9MpwlR9eJWN2R8B5VaTbWHkS52_RfXCg40nlRW25L-sRmvEaqAhiFvgCtTf5i9QB3sxRFeaAzKO5Oth3eMLldoRkzlsn58DBfDmz7nu_QRptWgjJTr0eJz4nGFSbEis3rlJ1EsXAK_87DYkue8mUFR9IO6Kjmw0695p2ewgFnCA7HUZ4gqol7v7f9D29GHKGFlCHRdPk-JJS5IGvSq5ab3sjFY3sYxmMHElUhwM_X2ADHhvzWiM7Is_HEvUmB0uueWXNCSfv5B7tm12PX9HTJROmV0DxJDSWoplGoTvwSsEakCavA6-DGIJCFNlnKtw1weJD6RGTMeN9OW9LNI23aIeO7BBfn5msyQd-U4dLyewh3urVAWCktsBKRF3MhVyklOPfCpGLW5_Q7IPbcxgjEdP-2ljY-T4uynRhAKLFY5geof-NjaXrjDAfWtdv96QcfbaYAZ8fnML8mnTo6-jeZB4L98i-lqrKDbhl5oeCeFjcvQxKeKukM5yinzp79hz78DLDYF04KzlYS-t0QZDvnw=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;중간에 벌교에 들러 꼬막을 한 번 먹어보려고 했는데 인터넷에 평을 보니 추천하지 않는 다는 글들이 많았다. 계획을 바꿔 순천으로 향했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/r_Pi2W8eIqpZTA4hteE__UNMnakLGWpGLX9XeA2pWVjl78jxHsU-9Ar1Ct2X2QIMB8HVBoz2wsaUBkIIwfNKTiUJ-DRtRXtFs0HB6cA7KHMZ_3CCkUWkZsxeD3aZhti936yMipil82BYhiERxaE2rLFO4fiaPW80UjXnDdFddAeXPkgEERDk5Sm37SVR6PfzhNPn8QoGX9mLaHcFSKpopzBn8NplPNU8sd4FeBJqd-FcR7YrGZzfv7l3niBD2JRxbrbbDaLk3PX704AbOGYWELFtUYh40ZKP8y1zGPzEqC-N1q92PHgaqvl62y-nR5xMbMX0wgKlybMUG5ZsoR4OQSC_12aTlGeMQytC-W7FodSsxOhQf9MBZQHJ8hJBrTaVYbgo0ojVT0T1YztXJ3WOW7RyNzqMwXsDUPcvPlW30Rx9iWmoV8EpV-tLuBivs3aDiMhmMmt393XgwEvyBpFZtH2T3EtgRr0wKPO01JNxwMe9qL9NbOf9lxgKhGIAUTmMMdy4OYVB-Ha6K82wFkBsGYjoRigkKd40B7RIjUPP4uE8KvtKmoXesrBn2bVbjBLeTjHre9Qa5uinBuR43iP-L2Mn6iBdxP_KCO7qGoCsuLX7pnk24TV1Iw=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;순천만 가든에서 꼬막 정식 2인분을 시켰다.
+전주에서 만큼은 아니지만 반찬 가지수를 보니 여기가 전라도가 맞긴 하구나 하는 실감이 든다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/vibOWyoBKKYdSTQ_Op3NA0UzEaY3a0oKngYEuoDQWHVtMXMT-KMPRfBKQSQexYltoUGMGh47oo9RwRug9qJXcPvQsaCCCLN7ySgwVuaFEtgg1jk3XYAj0iGeoSSkhfuBfeFUMlKt3ETrZj7ruXNDPosNIaKpCROQ_XG5hs1fuJdWKP3FAeNzSRbPTmUYDhrbjmLhMe-Zxwqv5xURVDZjtPv6kJeNzTBR9ep8uwnbQKweiDpQW8AwZQmjAHSF__Jb_nYESj_BnbND1r6woBMTtHxT53tUBauqmn5mSFT5UY4RKvNkuW8FY8ACOP4Xk0VKfb6mkKGQi9T_vo2hk5AZTEoRneHToUP8GwK6AyltLKxoeY9cIu__yqT6R8yTsBZvJm-xcECFAaMKHjqIOOvFY2Oiohag0YuNtW5Sg9XV0iPmKtx-Rc5cpJFy_OjdSJTrHoHDZIJIm0g2ZGb9sumN9Tz1i0rHjzUesAV5V8Jmiw0FWkoAomm0zKoUSOYEjoi0KtlgtCOZyCtD5eYF5anJfckUdTk-aF102H5SLGrnSuPRtxVMnLRpfHn2uCuVTPpKG8afsrDsVAz5k12EqL3VXEXlHJl_L9KKSQf17OI0yekassuYcONm6A=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;순천 드라마 세트장에 들렀다.
+60년대, 80년대 옛날 건물들이 그럴 듯 하게 재현되어 있었다. 하지만 그보다 재미있는 부분은 그 시절 교복을 대여해주는 부분이었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/XFhNI4kAVLVwiyX0sOO3ilDEoVs9HYuNrYG51PXInPaGxjngZrt7Chhax2v_D1eV7ohypuiOuSAa0TVNQRRgv0mQ3V_Z7Cwz_3K8-iQwt0uHwetBEbKB8fAJUhE-b2k_rLWJqI59Z_Hy-HnR8OZlNP_KSNLGYhTvopj-SL_C3_LU_dCjro0NGtGo-iUqW3MiLLg_n0Eg4Kzd_MfQN_uSYLj1Ozzamaf4K-TleS-Pm25StFrAyeiNLd_T2O6puQ3evGIQGHyWT79nMfU6KOJjK9mfPNZ__ZMgVNQUermBY6iGHxEcBDkZ3VAdCaYWQUdh_pLVCzYY-2i5ykgHof0fOhyy9vxTqn4U9ZpwKfW3edUjTO_S4yiGEyt4r_23kyXKJ6BhLuJtSTO0PXx6LNPWhGSSiS9NeUcaxrQUVL6QSL5uD0PXyNCP8YbHdBunuhpqhm_nmA5d5cC-0CHwGvUSCbP3AOMTO5g7ZFn9jmpUSAa53LD6uK1Lgf3tqtKjT1_YvseM3zjxDU_PGiKu7jDyL90psINRnEfHjeRH6a7MDDHLw4eNOgyK6F3xghOdah7ojdFUjaIwkqJvq72m6UmRF0Sx8Qn7NbC6AE3SpSfS4mD7v8q1c2O2Ow=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;요금은 50분에 2천원 정도로 기억한다.
+엄마 아부지와 함께 왔으면 좋았겠다 라는 생각을 했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/1QZoFug6bVPLdyyUDrNF__5CkAkoO_16X4-Xy4OkTlIfHOGCpU9x-j58OFseLtk5i---yUDs-ETpkyqTcVCkxILAeIQ87P1ykTK9gdgAalqoTAxzPAY_uRtz1GkMEiZxPgzUP8-gHmpVI8eQime4EFA4nREvqWCCMsTI-x4yyFng4gU_GRZt3htdJ7HaY0zYhc52J1xlrj5KnpjJZ7LYxtBnnkHTtsD8K5l_WWCmPyCZ358g-BaRaheUaNJnFLB_b8LjtgE32Mn5EgH4PXwLXuNVbb2drLn5J-YeVBYLVVULhik1YbxCT10RjmdToaqz9pcabyji4AGZalTXyU0yV9biM0jNo1NaElLRF_l0NWhW2fvkCkbjaGsYD-8GS-mW_Pgw3XI6tjQbwRQdWM5AMHx_Qg1aEsFBmDfeJfnW3PzvyPiC1_2XO1M5ZLr-Mwjx1Jjq3yuh94rsURJ-4a7Gyjz3FLh5lHRh09gTqYpNjhVHnb_54ufl6Au8Y1yZTXEZQJWyTCm8sxA2dJrc300UUHfweHDgv4Lk-lFEKKabDLQEWw5jEZABJygpJtogjwSFKiB7U0gdVg_LbceDF2s73W4dmgYv5zLLPXC8qbvkgV8XJM4uOo6a_g=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;드디어 여수에 들어섰다. 향일암을 가는 길에 방산포 해수욕장 방면으로 보이는 산이 너무 예뻐서 한 컷.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/VD0JJhB28iczA7vv9tnEXXTM8PpQWLRCsB0U_C8hrZKtbj0-36wbAFJ5I4TL0zRS1SD1DdWUTZyQyINIRZsJZr5Zo-JVb7wnoejlhjTWv-RNoKUkqELsIGgjpzjF3fQDiGCCmP62zrKI3WLTEYb_HU1UN3Udtt8vbfUiSQ7A8OUPfK1okv2plNx6z_o3WY99q50NxYp6MUpWge9ZIbGb5WvRLa_3e5i2V7YCXn7TY0IdSlFTBaSNp1WHVx_3UdyNpl7Nom1yEp9_5hwqpjDFdcwL8yyVBanZC3SYHAXcZQU-Ut2IJkBvQWA1F6-H-trPiLURlEKnfusvZM3xk1_kJBb85HdcfAKhcI8e5ZCSx9hCpz9EQC1168SVTXBaBeibP4xTlbiBBqDK-uvUrfcXsIJ_3C4gcOTvICndAuwhP6KttCYWtm6-sjdCp1qlDXG5keKj5ntnS9ur0XjPx8WZSgomWpvNs7AJuOHd-9vRdDc6aNCfbP2NqukotFgUunPSpSE1DMIpaZwjDg1oQeShgqrjiYUE7hMaxZuaVNtXcnXSH-Xqwi0Lylc1BzaHNeQ4-GHHFB4hO-go02VzRQNlvNygx4G7M3RKenCnvHe7r6MT2XwxFc66Ww=w1046-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;아침부터 이래저래 무리를 했더니 체력이 간당간당했다. 향일암을 오르기 전에 차에서 한시간 정도 누워서 빈둥거리니 금새 체력이 충전되었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/FILEqZ1ZKSSoxOSIM2-UC4Ey1Iosq-0BU4ciQpYuGQ1Y7n8grNvb7zzIMxOHmtzGyVNFZuyROot2dPE3xG9q04sa0VO_GjgpoqsAvJ0t85A91m7Ud_HAWkbRqJH7XX1QhcxT6aA8xt0GKgIAbPGtbTcf6zb4VDZ-4oxElxC7437FTCp2BaNWFjB-b_YetKTZbUCTKCQ3hsMDbnNj6qetqx4RKcs2WdxzFcnp11h9InYkFwGWmhVDitvEFTmjQaNzN1IZRXUg3R-_A4xgE4_eHKeWMKb91uPeigunMybqNe2DI4llD5CaQvtW9NT8KJzvtwWdJJjJNGT1Kr8rbZ_y7obGVmrKTILIoOBYm0x2X_a3Bp93LMbJxHGDdCAdN0RIaRm9YACxy7ofCj_8U_OTZAhWHLdwHE_FegF0pBSL5ZWjB8NV8geGU7R4BbC6CYLjl8y9sHN71A66Z6_2zH1PkTQSS6d5tou7W-nDuihiDtj88F8TntwkIIl9qCVq_Jp_Jciccb_ESQHuBRxpUkGdW3ND3S_sJpLPc6tQuCA7zkyHXACvVQrDQQehAg2c0pewkj44ORKmNMPEtZG7zRvkM56QsvJSbKqnu64lEveAGhy5Br4zuqJSOg=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;향일암 입구.
+특이했던 것은, 산 여기 저기에 집채만한 돌이 적지 않은 수가 보였다. 
+향일암에 올라가는 길은 평지와 계단 두가지 길이 있는데 우리는 계단 길을 선택했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/AG241MbfblTIgiwzrP95VZVBFndLnHuZNEbfotY5Os6fEoPD29FUUYXt2rcDTlXwj4yVVdnSQcMtPiSssPLktHmHLWfs3MT1xqRjt58GXgt_9e9HenU--RqoPHSDmYRX59cqcDjC50pL3tF-c9ugVYI_TNUjU1uSvqC6CnErFHSfEF-AgoJJ_oLGqCMNAPddOJFVJrowg1x_g2J2maqmjOlVq-HixOI2e4k6EybUvGaUXzLF0TJc-jj1zZg9nZIwKtzs-OhV4nF3tdt805SzeYUJas9WIuRhu20EJ2kTM0mRnfmU7BlzrmPjKTnj086ovHC2n1LfTLJt12-xjud7BcRuUuq_Ove8sN47m-WxJr4qJFvOunEmgVNOgLX_e3gxanKj_OR6M8nYIt4e2I4tBOSuECxV9ZkfKL2FiqF9mG3lNcvhP6VhmHrTYooLd9jFp4hjjuMmk3TYZ0wN-hXisRK2_WVzEbP_WMoy6FrHhixdTZMy4CEQVmujgieEpCcoVSYDX-b8k7W7UmYG56uJv8sA6hYBhXuIdvlDm8ONxvbRVA1Etf1zlelfKijEL38WIhFTF2ViEZfGWqtpSfpzvwxF3e9bAIFLiUNWWmnL5vJl_VzLLBAKFw=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;절 사방에 있는 조각물들, 바위들 위에 동전 들이 가득 가득 쌓여있었다. 누군가의 소원들을 담고 있을 동전들을 보면서 저걸 다 쓸어담으면 얼마 정도 될까 하는 불경스러운 생각을 잠시 해봤다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/uDPZfeYsa7WI1lS9YFz3q5cCHWrde5vtOOryNsKNld44bedzc0xM_ZpNESXywbpAiZJk219SFXJ3NGK8PJ4PK7rZWKDsIf3D-SAwqRKw6C99hbRZCDU90DBmWj1eM0IG74-fN1c5vuV3df6qF_UsKZUzhIhhNG8NysJJs6OuVrP8_90_vx3wW0vJ-vDfoIH8H3AA0zm4CY9Qr1AwNe700aIcT4qCk3EDLYeY2gWvJKmiLIfxo1taiMFMrUxRZcENtAycDNeMrGaelPDbkzOUigjphTdKd-sjPSB1IoNceTau9RRX1xwlIs23SkAoe4Tf1Z87VmxdibDc_rAMSa0-EcT_aRibKz-qq7U2xoR-jPmLs5EeFS3X_ZKo31ijrmbwJwnjGjZsC9PFGp2215YcTud7YmObx0ZvSZhTJhcqAYJEwq3gSvHiynrv_rP3Kh7QC7Sf7tZsoj61cXjiFxEKYJu4jPWWzatyQbiAJ3Ed8uXQ9LHYb8CuXajVeEcdNTMSyFxLeEwHlQCniQv-4f0UAQXijBKd07jLxnHM27kQ-WKrlI9w3lPYa_8FCEAgM6gM67rZ_MQmT6iMMQk9qPckMm_TxElmCKj-ykKVz_Pn-Cpa5xFoH4Z3-w=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;날씨는 기가 막혔다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/9xssdsHZLHCAPIghI1o_LkJkbfMjA7bwqXsdYCcsT-2X41mVCeoVMFN83-owDS1rNIep-nlOEnMGXl7hE-cKiujYemqeKk7qI8UyLDKoXGLiHeufcXP5pwOgifvkQOmalsuAp6oc0BI5E8vgx1jagsVo4MsOSABFfnf6KVSExae1ZqnqOXGOHeDLFO80hO45U67RjocHTpKIzm7oFTU-mTMsduWIEd7Lj5bg57LrMmzHua-Tk25NEkM638Q6YPgYmp5C3OFRspGjLz3TQqWdBCvYbpS6EAT-T0ozG1AVT_QDG_UjSVxSexoQaorsDe4OkBuC9Mb984XfYgCFtu1x-99CDurrLrWmx4BaWJp0m1t6rn5rWSpkRYC4PIT6ZoV0Sb2rhVVrOZN9dAr7auUstSoQGVhS9Pf4hyA1utxRY2Ovp-vGZTSWDlhlqwP-wJJsXJy3HYnseuhPGM0vrHTycnvrbMV2rnMFay7SS6H0a_aJIe1fOcTr1PwOJ7Xi2FVAdyT-9Xy2q_Wl_oS-UeNABTO5DvlVN7W9frkS8KT12QZSmXkD4gm_gSD8t2bO7_yliMWc7b9Uqs7hWw25mW5S21Z-u9OJVhcTDaOuVIaM_M6pSZluhy5EzQ=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;좁은 바위 틈새를 몇 번이나 지나야 한다. 이런 길을 어떻게 찾아냈을까 싶다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Sep 2017 05:39:01 +0900</pubDate>
+        <link>http://localhost:4000/trip/2017/09/05/yeosu-trip.html</link>
+        <guid isPermaLink="true">http://localhost:4000/trip/2017/09/05/yeosu-trip.html</guid>
+        
+        
+        <category>trip</category>
+        
+      </item>
+    
+      <item>
+        <title>삶은 무지개 색이어야 한다.</title>
+        <description>&lt;p&gt;아침부터 찌는 듯이 덥다가도 오후가 되니 거짓말처럼 폭우가 들이닥친다. 더운 공기가 사라진 것은 다행이지 싶지만 여전히 끈덕진걸 보니 여름은 여름인 모양이다.&lt;/p&gt;
+
+&lt;p&gt;사실 “여름”이라는 단어를 곱씹고 있자면 어쩐지 그리운 느낌이 스물스물 든다. 꼬맹이 시절 방학숙제는 내팽게쳐놓고 하루종일 산으로 들로 뛰댕기던 모습들, 열대야에 잠못이룰때 티비에서 보던 공포영화 같은 것들이 생각난다. 친구들과 자전거 한 대에 둘씩 타고는 30분을 걸려 계곡으로 물놀이를 가던 장면들, 근처 실내 수영장에서 입술이 파래지도록 놀고 나온 후 수영장 옆 문구사에서 사먹었던 컵라면 같은 것들이 스쳐간다.&lt;/p&gt;
+
+&lt;p&gt;그로부터 약 십여년이 지났고 내 삶은 많이도 변했다. 민증이 나오고 술, 담배를 합법적으로 하게 되었을 때도 어른이라는 자각은 그다지 없었지만 매달 내 통장을 스쳐 지나가는 대출이자를 보고 있자니 어른이란게 무언지 어렴풋이 알 것 같은 기분이다. 어느새 집에서 독립을 하니 주민등록등본 상에 엄마 아버지 이름이 없고 내가 세대주란다. 거기다 어찌어찌 결혼을 하고 나니 친구들은 나보고 이제 가장이란다. 삶이 참 많이도 변했다.&lt;/p&gt;
+
+&lt;p&gt;나이를 한 살 두 살 먹을 때마다 “산다”는 것에 대해 새롭게 생각하게 된다. 입시란 걸 진지하게 준비하기 시작했던 시절부터 였을까, 당시의 나는 “산다”는 것은 무엇을 이루기 위해 준비해야 하는 과정 쯤으로 생각했던 것 같다. 어릴 때 엄마가 사주셨던 위인전 세트 때문 이었을까, 인서울을 했다던 학교 선배 이야기 때문 이었을까. 아니면 티비에 나오던 성공한 사람들의 화려한 삶의 단면 때문 이었을까.&lt;/p&gt;
+
+&lt;p&gt;아침 8시까지 등교를 하고나면 밤 12시는 되어야 그 교문을 다시 나올 수는 있었다. 지겹고 답답했지만 버틸 만 했다. 끝이 분명히 있었고, 학교를 다니는 것 외에 삶을 즐겁게 만들 만한 취미도 딱히 없었으니까. 한달에 한번씩 치루는 모의고사 점수표가 일종의 당근과 채찍이 되어주었다. 원하는 대학에 진학을 하기 위한 “과정”을 그렇게 어찌어찌 버텨내었고 다행스럽게도 고3 겨울 수능날을 기점으로 그 길고 길었던 인내의 끝에 무사히 도달할 수 있었다.&lt;/p&gt;
+
+&lt;p&gt;문득 지금의 삶과 비교를 해보게 된다. 지금도 나는 어딘가의 종착지에 닿기 위한 “과정”의 삶을 살고 있는걸까. 종착지로 삼기 좋은 것들은 차고 넘친다. 좋은 직장, 높은 연봉, 사회적인 명예나 좋은 차 같은 것들. 다소 속물스러운 늬앙스를 풍긴다는 점만 빼면 아주 매력적인 종착지 들이다. 고생스럽겠지만 페달을 밟아볼만 하다. 그 곳에 닿고 나면 삶은 행복해질테니까.&lt;/p&gt;
+
+&lt;p&gt;아니, 삶은 행복해지지 않을 것이다.&lt;/p&gt;
+
+&lt;p&gt;내일의 무언가를 위해 오늘을 희생하는 삶의 태도를 견지하는 이상, 내일도 다른 내일을 위해 희생될 수 밖에 없다. 목표했던 종착지에 닿았다고 생각했을 때에도 어느샌가 생겨버린 다른 종착지에 다시 닿기 위해 자전거에서 내릴 수 없을 것이다. 쉬지 않고 페달을 밟아야 한다. 아주 쉬운 이야기다. 삶이 행복해지기를 원한다면 그 시점은 내일이 아닌 오늘 이어야 한다.&lt;/p&gt;
+
+&lt;p&gt;사실 이런 논리는 일과 삶의 균형에 대한 주제에 대해 이야기할 때 자주 나오는 흔한 클리셰다. 삶이 일이라는 괴물에 잡아먹히기 직전의 마지막 순간에서 모두가 하나같이 외치는 절규다. 또한 이런 외침을 반박하기 위한 논리 역시 어렵지 않게 찾아볼 수 있다. 사실 이 글을 쓰기 시작한 이유도 이와 관련이 있다.&lt;/p&gt;
+
+&lt;p&gt;일이 삶이고 삶이 일인 사람들이 분명 있다. 그들에게 있어서 삶은 일에 잡아먹히는 성질의 것이 아니며 삶과 일이 자연스럽게 섞여있다. 특히 개발자들 사이에도 그런 사람들을 쉽게 찾아볼 수 있다. “좋아하는 일 = 잘 하는 일 = 돈이 되는 일” 정도가 되면 흔히들 덕업일치의 축복을 받았다고들 한다. 개인적으로 나는 이게 굉장히 큰 행운이라고 생각한다. 덕업일치가 안 되었더라면 나는 일찍히 개발자를 때려쳤겠지. 그렇게 되었다면 장사를 하고 있었을까. 그건 잘 모르겠다.&lt;/p&gt;
+
+&lt;p&gt;현데 사람 산다는 게 또 참 어려운 것이, 덕업일치가 되는 단 몇가지의 즐거움 만으로 인생을 색칠해나가기에는 물감의 종류가 너무도 많다. 단 하나의 물감으로 인생을 색칠해나가는 것이 나쁘다는 이야기는 아니다. 오히려 위대해진 사람들은 대부분이 몇가지 안되는 물감에 선택과 집중을 한 사람들 일 것이다. 페이스북을 만든 주커버그 라던가, 만유인력을 발견한 뉴턴이라던가 뭐 그런 위인 격에 드는 사람들 말이다.&lt;/p&gt;
+
+&lt;p&gt;하지만 나를 포함하여 대부분의 사람들은 단색으로 인생을 칠해나가는 것이 잘 되지도 않고, 또 그렇게 할 필요도 없다. 재미있는 일들, 하고 싶은 일들은 64색 크레파스 보다도 많다. 뷔페라도 온 마냥 그것들을 하나씩 물고 뜯고 즐기다보면 그 일들이 내가 잘하는 일이 아니기도 하고, 돈이 안되는 일이기도 하다. 그때부터 어른의 삶은 고달파진다.&lt;/p&gt;
+
+&lt;p&gt;기타를 아주 그럴듯하게 치는 친구를 하나 알고 있다. 스쿨밴드로 시작해서 이제는 제법 난이도가 높은 곡들도 착착 연주해내고 언젠가부터는 자작곡을 만들어 페이스북에 간간히 올리곤 한다. 물론 프로 지향은 아니다. 단순히 연주를 하고 곡을 쓰는 것이 재미있는 것이다. 단지 그것만으로도 그의 삶에는 색깔이 하나 더해졌고 더 행복해졌을 것이다. 기타를 집었다고 해서 기타로 위대해질 필요는 없다. 인생은 그렇게 치열하게 사는 것이 아니라고 내 아버지는 말하셨다. 누군가는 기타로 세기의 클래식을 내면서 위대해지겠지만 내 친구에게 기타는 여가시간을 즐겁게 보내기 위한 수단일 뿐이다.&lt;/p&gt;
+
+&lt;p&gt;졸릴 눈을 비비며 오랜만에 주저리 주저리 떠들다보니 글이 두서가 없다. 하고 싶은 말은 삶을 가능한 무지개 색으로 칠하면서 살자는 것이다. 여러 분야에 아마추어로 부담없이 걸치며 오늘을 좀 더 다채롭게 만들자는 이야기다. 위대해지기 위해서 오늘을 희생하지 말고 바로 오늘 행복하자는 이야기다. 사실 이 이야기들은 내 자신에게 해주고 싶은 이야기 이기도 하다. 위대해지기 위해서 거리낌없이 오늘들을 희생했던 어린날의 나에게 몇년을 더 산 지금의 내가 해주고 싶은 충고같은 이야기이기도 하다.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Jul 2017 15:21:00 +0900</pubDate>
+        <link>http://localhost:4000/daily/2017/07/08/life-with-rainbow-colors.html</link>
+        <guid isPermaLink="true">http://localhost:4000/daily/2017/07/08/life-with-rainbow-colors.html</guid>
+        
+        
+        <category>daily</category>
+        
+      </item>
     
       <item>
         <title>운전을 하고 싶다</title>
@@ -16,7 +254,7 @@
 
 &lt;p&gt;헌데 운전이 하고 싶다. 참으로 이상스런 일이 아닐 수 없다. 택시 앞자리에 앉으면 전방의 차들과 차선을 째려보며 마치 내가 운전을 하는 양 몰입을 하게 된다. 어쩌다 한번씩 고향에 내려가 엄마 차를 몰게 되기라도 하면 몇 시간이고 지치지 않고 여기, 또 저기로 쏘다니기 바쁘다. 이전까지는 몰랐다. 마음만 먹으면 언제든, 또 어디로든 갈 수 있다는 말이 주는 설렘을 전혀 알지 못했다. 아주 설레다 못해 명치께가 간질거리기까지 한다.&lt;/p&gt;
 
-&lt;p&gt;2주 후에 계획된 제주도 여행에서도 관광 명소라던가, 맛집이라던가, 여행지에서의 멋진 숙소 같은 건 머릿 속에 들어오지도 않는다. 그저 운전할 일을 생각하며 설렌다. 해안 도로를 달리고, 그러다 배가 고파지면 맛집을 찾아다가 네비에 찍고 그대로 달린다. 그런 모습들이 떠올려지고 상상하게 된다. 참으로 이상한 일이 아닐 수 없다.&lt;/p&gt;
+&lt;p&gt;2주 후에 계획된 제주도 여행에서도 관광 명소라던가, 맛집이라던가, 여행지에서의 멋진 숙소 같은 건 머릿 속에 들어오지도 않는다. 그저 운전할 일을 생각하며 설렌다. 해안 도로를 달리고, 그러다 배가 고파지면 맛집을 찾아다가 네비에 찍고 그대로 달린다. 그런 것들을 상상하게 된다. 참으로 이상한 일이 아닐 수 없다.&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 May 2017 09:31:01 +0900</pubDate>
         <link>http://localhost:4000/daily/2017/05/18/drive.html</link>
