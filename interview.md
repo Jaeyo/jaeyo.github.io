@@ -2,7 +2,7 @@
 layout: page
 title: 자기소개서
 subtitle: 
-permalink: /ncsoft-self-introduction/
+permalink: /interview/
 ---
 
 > [기술 면접 준비 (공개용)](https://docs.google.com/document/d/1wF7cNM13ge4LgIxO9NRYEkR7IuEvXHoBDKJvkgXk1gc/edit)
