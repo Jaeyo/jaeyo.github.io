@@ -5,8 +5,33 @@ subtitle:
 permalink: /interview/
 ---
 
-
 > [기술 면접 준비 (공개용)](https://docs.google.com/document/d/1wF7cNM13ge4LgIxO9NRYEkR7IuEvXHoBDKJvkgXk1gc/edit)
+
+# 채용공고
+
+* 직무
+  * Service Platform Programming
+* 업무 내용
+  * 모바일 앱 모니터링 시스템을 개발합니다.
+  * 현재 개발 환경
+    * 사용 언어: JavaScript(node.js) + TypeScript (추후 변경될 수 있으므로 Java 등 타 서버 언어에 대한 지식이 있으면 좋습니다.)
+    * DBMS: MySQL 및 NoSQL (Redis, MongoDB 등)
+    * 프레임워크: express.js(서버), Angular(운영툴)
+    * 기타: 로그 및 통계 처리 프로젝트이므로 대용량 데이터에 대한 통계 처리와 차트 등의 보고서 UI 개발이 포함됩니다.
+* 경력 기간: 상기 업무에 대한 경력 4년 \~
+* 상세 자격
+  * 필요 역량
+    * OS, 자료구조 등 전산학 기본 지식
+    * C/C++/Java 언어 및 개발과정에 대한 기본적인 지식
+    * JavaScript 기반 웹 및 node.js + MySQL 서버 개발 능력
+    * Linux 서버에서의 서비스 운영 및 shell script 개발 능력
+  * 경력 8년 이상일 경우 추가 요구 역량
+    * 형상관리에서 배포 자동화까지 개발 프로세스에 대한 전반적인 지식 및 경험
+    * 부하를 고려한 DB 설계 능력
+  * 우대 사항
+    * iOS/Android 에서의 native 앱/게임 엔진(unity, unreal engine) 기반 개발에 대한 기초적인 지식 및 경험
+    * DB 이중화 등 failover 등 부하 분산을 고려한 라이브 서비스 구성에 대한 지식 및 경험
+    * AWS 등 Cloud 환경이나 Docker 와 같은 Container 환경을 사용해 본 경험
 
 # 정리해야 할 개념들
 
