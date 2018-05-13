@@ -32,7 +32,7 @@ React.js, Redux, Django
 AWS, Oracle, MySQL, Redis
 
 ## Project Experience
-### 통합보안관제솔루션(ESM) 미들웨어 (2013. 1. 1 ~ 2016. 6. 30)
+### 통합보안관리솔루션(ESM) 미들웨어 (2013. 1. 1 ~ 2016. 6. 30)
 
 - buzzwords: Java, Oracle, Linux
 
@@ -40,9 +40,9 @@ AWS, Oracle, MySQL, Redis
 
 또한 Linux 뿐만 아니라 Solaris, AIX, HP-UX 등도 지원하는 제품 요구사항으로 인해서 다양하게 발생하는 기능 요구사항 및 장애 처리, 예외 상황 대처에 대한 경험을 쌓을 수 있었습니다.
 
-### 통합보안관제솔루션(ESM) 로그 수집 Agent (2014. 9, 1 ~ 2016. 6. 30)
+### 통합보안관리솔루션(ESM) 로그 수집 Agent (2014. 9, 1 ~ 2016. 6. 30)
 
-- buzzwords: Scala, Jetty, Derby, JavaScript, React.js
+- buzzwords: Java, Jetty, Derby, JavaScript, Django, React.js
 
 기존에 사용하던 로그 수집 agent는 C언어 기반에 유연하지 못한 형태로 작성되어 있었습니다. 따라서 다양한 보안 제품 로그 연동 이슈에 원활히 대응하는 것이 어려웠습니다. 이에 매 보안 제품마다 새로 작성되는 로그 연동 로직을 agent 외부의 스크립트로 분리하는 형태의 새로운 agent 설계를 팀 내에 제안하였고 개발을 전적으로 담당했습니다. 이 agent로 인해 다양한 로그 수집 이슈에 유연하게 대응하고 연동시간을 최소화시키는 데에 기여할 수 있었습니다. 이후에 스크립트 작성이 익숙치 않은 엔지니어들을 위해 agent에 웹 UI를 붙이고 스크립트 자동 생성 기능을 지원하기도 했습니다. 현재도 성능 문제가 있는 일부 제품을 제외한 대부분의 보안 제품은 새로운 agent을 이용해 연동되고 있습니다.
 
