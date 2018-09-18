@@ -1,0 +1,4 @@
+#cloud-config
+runcmd:
+  - mkdir /run/mydir2
+  - [ wget, "http://slashdot.org", -O, /run/mydir2/index.html ]
