@@ -1,4 +1,4 @@
 #!/bin/bash
 
-mkdir /run/test
-echo "hellooo" >> /run/test/hello
+mkdir /tmp/test
+echo "hellooo" >> /tmp/test/hello
