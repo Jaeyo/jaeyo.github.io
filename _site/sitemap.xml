@@ -3,7 +3,22 @@
   
     
     <url>
-      <loc>http://localhost:4000/tech/aws/2018/01/30/aws-api-ip-based-access-control.html/</loc>
+      <loc>https://jaeyo.github.io/tech/2018/10/06/reselect.html/</loc>
+      
+        <lastmod>2018-10-06T20:44:00+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.7</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://jaeyo.github.io/tech/aws/2018/01/31/aws-api-ip-based-access-control.html/</loc>
       
         <lastmod>2018-01-31T02:19:00+09:00</lastmod>
       
@@ -18,7 +33,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/daily/2017/11/21/shame.html/</loc>
+      <loc>https://jaeyo.github.io/daily/2017/11/21/shame.html/</loc>
       
         <lastmod>2017-11-21T22:31:00+09:00</lastmod>
       
@@ -33,7 +48,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/tech/2017/10/08/how-to-develop-ridistory-frontend.html/</loc>
+      <loc>https://jaeyo.github.io/tech/2017/10/08/how-to-develop-ridistory-frontend.html/</loc>
       
         <lastmod>2017-10-08T23:57:00+09:00</lastmod>
       
@@ -48,22 +63,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/trip/2017/09/04/yeosu-trip.html/</loc>
-      
-        <lastmod>2017-09-05T05:39:01+09:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.7</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/daily/2017/07/08/life-with-rainbow-colors.html/</loc>
+      <loc>https://jaeyo.github.io/daily/2017/07/08/life-with-rainbow-colors.html/</loc>
       
         <lastmod>2017-07-08T15:21:00+09:00</lastmod>
       
@@ -78,7 +78,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/daily/2017/05/18/drive.html/</loc>
+      <loc>https://jaeyo.github.io/daily/2017/05/18/drive.html/</loc>
       
         <lastmod>2017-05-18T09:31:01+09:00</lastmod>
       
@@ -93,7 +93,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/tech/2017/04/28/mysql-multi-source-replication.html/</loc>
+      <loc>https://jaeyo.github.io/tech/2017/04/29/mysql-multi-source-replication.html/</loc>
       
         <lastmod>2017-04-29T02:51:00+09:00</lastmod>
       
@@ -108,7 +108,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/troubleshoot/tech/2017/04/25/too-many-open-files.html/</loc>
+      <loc>https://jaeyo.github.io/troubleshoot/tech/2017/04/26/too-many-open-files.html/</loc>
       
         <lastmod>2017-04-26T04:25:01+09:00</lastmod>
       
@@ -123,7 +123,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/troubleshoot/tech/2017/04/25/weird-requests.html/</loc>
+      <loc>https://jaeyo.github.io/troubleshoot/tech/2017/04/25/weird-requests.html/</loc>
       
         <lastmod>2017-04-25T21:00:01+09:00</lastmod>
       
@@ -138,7 +138,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/daily/2017/04/25/spaces.html/</loc>
+      <loc>https://jaeyo.github.io/daily/2017/04/25/spaces.html/</loc>
       
         <lastmod>2017-04-25T20:00:01+09:00</lastmod>
       
@@ -153,7 +153,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/daily/2016/08/25/job-interview.html/</loc>
+      <loc>https://jaeyo.github.io/daily/2016/08/25/job-interview.html/</loc>
       
         <lastmod>2016-08-25T23:40:55+09:00</lastmod>
       
@@ -171,9 +171,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/about/</loc>
+      <loc>https://jaeyo.github.io/about/</loc>
       
-        <lastmod>2018-01-30T17:21:11+09:00</lastmod>
+        <lastmod>2018-10-06T12:08:38+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -186,9 +186,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/categories/daily/</loc>
+      <loc>https://jaeyo.github.io/categories/daily/</loc>
       
-        <lastmod>2018-01-30T17:21:11+09:00</lastmod>
+        <lastmod>2018-10-06T12:08:38+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -203,9 +203,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/</loc>
+      <loc>https://jaeyo.github.io/</loc>
       
-        <lastmod>2018-01-30T17:21:11+09:00</lastmod>
+        <lastmod>2018-10-06T12:08:38+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -217,12 +217,27 @@
     
   
     
+    <url>
+      <loc>https://jaeyo.github.io/interview/</loc>
+      
+        <lastmod>2018-10-06T12:08:38+09:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
   
     
     <url>
-      <loc>http://localhost:4000/resume/</loc>
+      <loc>https://jaeyo.github.io/resume/</loc>
       
-        <lastmod>2018-01-30T17:21:11+09:00</lastmod>
+        <lastmod>2018-10-06T12:08:38+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -239,9 +254,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/categories/tech/</loc>
+      <loc>https://jaeyo.github.io/categories/tech/</loc>
       
-        <lastmod>2018-01-30T17:21:11+09:00</lastmod>
+        <lastmod>2018-10-06T12:08:38+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -254,9 +269,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/categories/troubleshoot/</loc>
+      <loc>https://jaeyo.github.io/categories/troubleshoot/</loc>
       
-        <lastmod>2018-01-30T17:21:11+09:00</lastmod>
+        <lastmod>2018-10-06T12:08:38+09:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

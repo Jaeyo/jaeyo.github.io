@@ -8,7 +8,7 @@
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 <meta name="keywords" content="">
-<link rel="canonical" href="http://localhost:4000/tech/2017/04/28/mysql-multi-source-replication.html">
+<link rel="canonical" href="https://jaeyo.github.io/tech/2017/04/29/mysql-multi-source-replication.html">
         
 
 
@@ -19,7 +19,7 @@
 <meta name="twitter:title" content="mariadb multi source replication" />
 <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 " />
-<meta name="twitter:image" content="http://localhost:4000" />
+<meta name="twitter:image" content="https://jaeyo.github.io" />
 
 <!-- Google plus -->
 <meta name="author" content="">
@@ -31,7 +31,7 @@
 <meta property="og:title" content="mariadb multi source replication">
 <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
-<meta property="og:url" content="http://localhost:4000/tech/2017/04/28/mysql-multi-source-replication.html">
+<meta property="og:url" content="https://jaeyo.github.io/tech/2017/04/29/mysql-multi-source-replication.html">
 <meta property="og:site_name" content="FlowerBud">
 
         <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -105,9 +105,9 @@ replicate-ignore-db<span class="o">=</span>mysql <span class="c"># mysql 데이�
 
 <p>만약 덤프 파일이 너무 커서 수정하기가 힘든 경우 아래와 같이 파일을 잘라서 수정한 후에 합치는 방법을 사용할 수 있다.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>head <span class="nt">-n</span> 30 dump.sql <span class="o">&gt;</span> new_dump.sql
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">head</span> <span class="nt">-n</span> 30 dump.sql <span class="o">&gt;</span> new_dump.sql
 vim new_dump.sql
-tail <span class="nt">-n</span> +30 dump.sql <span class="o">&gt;&gt;</span> new_dump.sql
+<span class="nb">tail</span> <span class="nt">-n</span> +30 dump.sql <span class="o">&gt;&gt;</span> new_dump.sql
 </code></pre></div></div>
 
 <p>slave가 될 데이터베이스에 덤프를 밀어넣는다.</p>
@@ -142,7 +142,7 @@ tail <span class="nt">-n</span> +30 dump.sql <span class="o">&gt;&gt;</span> new
     <div class="about__devider">*****</div>
     <div class="about__text">
         Written by <strong>  leejy </strong>
-        on <strong>28 April 2017</strong>
+        on <strong>29 April 2017</strong>
     </div>
 </div>
 
