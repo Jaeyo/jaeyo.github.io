@@ -4,11 +4,101 @@
     <title>FlowerBud</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 30 Jan 2018 17:21:11 +0900</pubDate>
-    <lastBuildDate>Tue, 30 Jan 2018 17:21:11 +0900</lastBuildDate>
-    <generator>Jekyll v3.6.2</generator>
+    <link>https://jaeyo.github.io/</link>
+    <atom:link href="https://jaeyo.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 06 Oct 2018 12:08:38 +0900</pubDate>
+    <lastBuildDate>Sat, 06 Oct 2018 12:08:38 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>reselect</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;reselect&quot;&gt;https://github.com/reactjs/reselect&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화&lt;/li&gt;
+  &lt;li&gt;selector 함수에서 반환되는 값을 캐싱하여 성능 향상&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;가령 아래와 같은 코드가 있다고 가정하면,&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mapStateToProps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ownProps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;contentIds&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;contentIds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;reselect를 붙여 아래와 같은 형태로 정리할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// selector&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getUserContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectUserContentIds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getUserContent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// input selector&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contentIds&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//component&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mapStateToProps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ownProps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;contentIds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectUserContentIds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이러한 형태에서 먼저 눈에 띄는 장점은 컴포넌트 단에서 redux store의 구조를 알 필요없이 selector 만 호출할 수 있다는 점이다.
+이외에도 reselect는 memoized selector 를 통해서 성능 향상을 꾀할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;여기서 주의할 점은, 만약 리스트 형태의 컴포넌트에서 selector를 사용할 경우 각 리스트 아이템마다 필요로 하는 데이터가 다르게 되기 떄문에 정상적으로 memoized 되지 않는다는 점이다. 이 경우에는 selector를 생성하는 로직을 함수로 한번 래핑하여 각 리스트 아이템들마다 다른 selector를 사용하도록 해야 한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// selector&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getUserContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;favoriteContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectTitleByContentId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;contentId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getUserContent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;titles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contentId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// list item component&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mapStateToProps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ownProps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectTitleByContentId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ownProps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contentId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;reselect의 또다른 특징으로는 composable 하다는 점이다.
+아래의 경우처럼 미리 만들어놓은 selector가 다른 selector의 input selector가 될 수 있어 selector들을 조합하는 것이 가능하다.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// selector&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getUserContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getEntities&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;entities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectUserContentIds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getUserContent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// input selector&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contentIds&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectUserContents&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectUserContentIds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getEntities&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userContentIds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;entities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userContentIds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contentId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;entities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contentId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//component&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mapStateToProps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ownProps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;selectUserContents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sat, 06 Oct 2018 20:44:00 +0900</pubDate>
+        <link>https://jaeyo.github.io/tech/2018/10/06/reselect.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/tech/2018/10/06/reselect.html</guid>
+        
+        
+        <category>tech</category>
+        
+      </item>
     
       <item>
         <title>AWS API, IP 기반으로 접근 제한하기</title>
@@ -74,8 +164,8 @@
 
 </description>
         <pubDate>Wed, 31 Jan 2018 02:19:00 +0900</pubDate>
-        <link>http://localhost:4000/tech/aws/2018/01/30/aws-api-ip-based-access-control.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tech/aws/2018/01/30/aws-api-ip-based-access-control.html</guid>
+        <link>https://jaeyo.github.io/tech/aws/2018/01/31/aws-api-ip-based-access-control.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/tech/aws/2018/01/31/aws-api-ip-based-access-control.html</guid>
         
         
         <category>tech</category>
@@ -94,8 +184,8 @@
 &lt;p&gt;신념 이라는 단어를 내뱉으면 어쩐지 고리타분한 냄새가 난다. 돈이 신념이 되버린 시대다. 내게 이득이 되도록 우리는 무수히도 부끄러운 순간들을 눈감아왔다. 신념 같은 것들은 국어사전 속에나 존재했고, 이득을 위해 어느 선까지 부끄러울 수 있는가를 저울질하는 정도의 차이만 있을 뿐이지 우리는 전부 부끄러움 앞에서 발가벗은 것처럼 무력하다.&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Nov 2017 22:31:00 +0900</pubDate>
-        <link>http://localhost:4000/daily/2017/11/21/shame.html</link>
-        <guid isPermaLink="true">http://localhost:4000/daily/2017/11/21/shame.html</guid>
+        <link>https://jaeyo.github.io/daily/2017/11/21/shame.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/daily/2017/11/21/shame.html</guid>
         
         
         <category>daily</category>
@@ -212,92 +302,11 @@
 
 </description>
         <pubDate>Sun, 08 Oct 2017 23:57:00 +0900</pubDate>
-        <link>http://localhost:4000/tech/2017/10/08/how-to-develop-ridistory-frontend.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tech/2017/10/08/how-to-develop-ridistory-frontend.html</guid>
+        <link>https://jaeyo.github.io/tech/2017/10/08/how-to-develop-ridistory-frontend.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/tech/2017/10/08/how-to-develop-ridistory-frontend.html</guid>
         
         
         <category>tech</category>
-        
-      </item>
-    
-      <item>
-        <title>여수 여행</title>
-        <description>&lt;p&gt;금요일 저녁, 아내와 반은 즉흥적으로 여수 여행을 결심했다. 남해바다를 보는 것은 아주 오랜만이라 왠지 설레는 기분이었다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/agMAeqVFokH_IuyQIhFGFQkDd6zvsXwTe1Tf4126wvFhgixWGhAp8ZJy5DX6Km3M2EVCE_EQyoQQD44W1zKGDU2riL5TBKcROlDrRTs_6sO9XkMPCcQ6t9oEnUYneJXGROpB9NrCmZcmU83WUzLKmiw0OFTZksaPjj0YO9_c8N7Ha9pdVs9lqQy6TtmT7KkrBzpmcucx6MElKImpeay6HxkN8BnlAwLcHnK73QCieOjxGVYBmlnu66KDtvEo11yp5To4b_CGFHYWT3rgdtVpeVLCXJG4IrJ9cszpCoJmt18tsxskQMlFcW8kFYU3nQBEbf9cFRphDCzNKFoajT8a_1AK3o9LihDMQ4JPLXZ3NT8Z2AEhc46lq5vlTmfOPY5KBMPbEy5WxkNLy-DCd386kZH-J9IFQfudSWNdrsaS_69-pi7Urqks734tet6PROySs9yPYdVzmfYiUj8U7yYNPsUaf3bDtxDGP0ODtSKaZKALeYShluHe6NLxUXUOFjfDG1XNFHtPU5kVXtindeLr9oGae--MloNoEUTR8yWnvZCre_53-nKNHFmPCL7pmJqqakAA6kMxzIDLH1lkZKbt5nmR67CKvvBFDXMXvuHYpfgtyhPu7ZdBOA=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;차에 기름이 별로 없었기 때문에 서울을 얼마 벗어나지 못해 휴게소에 들러야 했다. 다행히 1445원 이었나 하는, 비교적 저렴한 가격에 주유를 할 수 있었다. 5만원을 넣으니 기름 게이지가 풀로 올라가고 주행 가능 거리에는 900km가 넘게 떴다. 준비 끝.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/fUyeLPv7IlEL5rpKTYBfvGKzwAh9y6JEc-_I57XZfI-mHSOGuMfkr_TxeWy9WTAXqUa1t2Ll-nS9Nv_xlhLtmkjmIWmnMd0qER-uRX_IZxfTAsF3qayr8TMasMR-IIBUl-9py7DPJ55JcKz5QotCvfQIkGcSR4wOa6n7epAjx5vM73fErAjKxcc36cjJy05M5uUQXt_MXyCfy3R_bpIDapWT4ycl3qPMw8rRs_JhXF2iGqXPn3bv2ROwyeXI2NLRpA1ouXk_QwlxAN8oc5aBRuJDs2RrbFJGB1riYwT2fdXkS_gkb527Hse527r65sTIhTLVsOuPt-CDYX7_OwUnt92aol9hQeMt3Nv19Dw7z6mgMaK1htvfX0nDHeDJFSlGZGsHT_Szrl-xYKYZwyC4NgrbZo01WLOlP-zitaUsslV1lsPBPeQ-6D5aDH1d6k0N8swhG9KutK0jScCd4Nx5sQM8lEQxY1MRipUFkOLO_SonyPzIw9U-mH51J9-LbELEcXcO_StgL5Aq86Oa2VplYVi_eppGDk7kSafK-gVSQh5AlPfLOAMTTpPuyI5p0kgPW2RLuVWegprGaaE2ZeQ4U479TtRkqRkJLnzfRzgIRZ-3tv20MCoeEw=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;두 시간 정도를 달려 대전에 도착했다.
-출발한지 얼마나 됐다고 아내는 옆 자리에서 꾸벅꾸벅 졸고 있었다. 그러다가 옆 차선에 트럭이나 버스라도 지나가면 화들짝 놀라다가도 다시금 꾸벅꾸벅.
-회사에서 퇴근한 뒤에 밥만 먹고 바로 출발한지라 여수까지 한 방에 갈 수 있으리라는 생각은 하지 못했다. 대전에서 숙소를 잡고 1박을 했다.
-오랜만의 야간 장거리 운전은 피곤했다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/vhEq9jYJE69Mu68Nn4ZjTJzmpfnPT7EYsSg9kVCu0ZVK8kVGC5Ie-Qiv0hrzIQaGjewqblE0LJwEBQMCis7xqBz5LEtZaudlkzYCPcsv2DmtxjsHKIFlOMSoUm4hEfGISRJW4pqy-JydaO56J1C-leBMIaLT94u5lUlmL4JGcErpAt4RXN3bfL7yz3m-vmgTkImGHHpAFQ70PLf3f-8AZP7X_qb7nHm3aaNfpg-5aiZKGU8GKaQZipho4kd65ekKom7DRVz-CPioK6rUj1jEIsa7pv68HGpnJ8Ak1JDqRgT9sFVVzGW_PjRk7ggG0dcPQwBkLjtkxcL5crlFxAAwRdIgYS40y0d9_oU1GPXtVFsujT-D5TqxR9frM1fWOfcE_FOIzrZAaSEMK7UhsHjPrVF9O1PNnstcMixwervdrypg0vAmGP5g_sixPFqgsUmY5AOXJ6DPbf5uLtHf7nfHugbDwrQuAcsNnRHmFwupl3EGG26ZSKvHPA_ry02k50e8GSr_rahdTfAD0mFHt_U6nbY9OBWkZ-bP4YApuSYFIB9rMyHFdjXpGutjOVwvmJkKSoRRTyQlBwihf6c0WrK_txtKhMyUyHmFPw2HNCugfjSt8cG5AlvFNg=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;다음날 아침, 개운한 기분으로 숙소에서 나왔다. 하늘은 어느새 가을 하늘이었다. 주변에 시야를 가리는 높은 건물들이 없어 하늘이 더 예뻐 보였다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/sni0t5cvpKG3pg5lL9BBXoTdpRSJngcKjkw4KmpIPEsEw4chgJoCKG_jX0YCVzgl2aZUkFUeNAeDBV2D_nTnsTL1yvNRZtlSEWpovG4hBbmvz8gyZJaIUTryqCalk3Rhidtlr4WajFNfTqrRpD1bNkhXT8ZmnrUypQ-aOodXt67j7-0E9GxDN0NQX9IRqaMW75AcjkD8toB3TewIIC2UAndurTpfAzHy_jrc7qJcaRonBm3tjug4kZDMp_QIQ_EIf53Kh5cWueX6xian2x0rXuUHlsLFeDxAbi7DhKaaPdMdpCRTJkILSIdrwbaoNn3IDMdCfrc6vhD43heygbjNdnNfnJNGO74xJMdpCorPu0cWsXa-Rl1IyaLoq7Eqo2TuWoq4F7MlyreQrHUD_xH70zbCeFA07IpYpeKXfL9qdZvOSKVZZbqpJHr-pE8T2h9fFNTVgRhS6bM9aejpRT_wR6vPXvtIqO_v-k85AARdJbmBei41KcPWVEln2qmGi2zDYrsuaed6-zdMCYjOEsoKFgYi3Tw1RgL6HLSmP9hj851zRfkiCyhGVK_fokDqSn3pI5DIqZHI_VB5ED3VGDw08DI_kKejlyps46smx3ccgv4VZ3iTxP6NHg=w1078-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;대전을 나가기 전에 성심당이라는 빵집에 들려 요기를 채웠다. 맛은 그냥 저냥 그럭 저럭.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/KD5sjsepV6FYN8Y_EutVOCyu7S_OyZFGTuLbhmijklZdU0H9m8UWJhyRWjm6d7TfQEnRriPTf4-4VSVJYT1hf6LFsii9T5_eq_uowi3C-TQon-Y-z9Kaj1DgAw3yZXcyyVVx73n6mB4BDgaJ5WOibUoplg62zaCQNorrYDk8PD5JrQ3kig6N0fe0-SdlBOfAZ5qDghSPguABrCmaKizHRMsZxuToHJweMMNgRz7g2DmNpcnhd46yiq272SyiY7-9wUPlDiecVPwnh4x70UbN5Ja-I_tl3c-rOlWwTLKkP0e_OZ659YWf-0qkG5ywKsqycHBnVjZn7fdTcwzLIOugviCBegJKxdb6UPWuuGxKMwPJC6-v92jJS-77cHRQnwf0oY1xQfC2cW6fIYHeA3TKarEvTdJypPKz_sfzdXwO82kRWdLY0J7vP9jAu1xthFyR4u8GoXCsFQbvYHFMcPMmi5RgJeikfkDeV_xvfeeQ8DVK1242w-A5OU0GSk4EWTWvmZ4tOsxHdzR65iQtdbPXTTRUugC4fWoG-3lpJoYwfhJtxH1ViqeC5ofujv-5SUwwiBF8f6fV4ERrjqd7YVQJqoC4q1DDDuNKsoSZ5eRKQjLddEnY94NBqw=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;본격적으로 다시 여수로 달리기 시작했다. 하늘이 너무 예뻤는데 운전 때문에 제대로 감상하지 못한 것이 아쉬웠다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/WL81CSzj6DoQHQQfOnuRYV0wdFFnqlaGH7PnIJABD3QBJPa6e6IFhwXIbwHqAhxfaRI4mPO-4llv82pa0BFHoYqH1RUXcASg9MpwlR9eJWN2R8B5VaTbWHkS52_RfXCg40nlRW25L-sRmvEaqAhiFvgCtTf5i9QB3sxRFeaAzKO5Oth3eMLldoRkzlsn58DBfDmz7nu_QRptWgjJTr0eJz4nGFSbEis3rlJ1EsXAK_87DYkue8mUFR9IO6Kjmw0695p2ewgFnCA7HUZ4gqol7v7f9D29GHKGFlCHRdPk-JJS5IGvSq5ab3sjFY3sYxmMHElUhwM_X2ADHhvzWiM7Is_HEvUmB0uueWXNCSfv5B7tm12PX9HTJROmV0DxJDSWoplGoTvwSsEakCavA6-DGIJCFNlnKtw1weJD6RGTMeN9OW9LNI23aIeO7BBfn5msyQd-U4dLyewh3urVAWCktsBKRF3MhVyklOPfCpGLW5_Q7IPbcxgjEdP-2ljY-T4uynRhAKLFY5geof-NjaXrjDAfWtdv96QcfbaYAZ8fnML8mnTo6-jeZB4L98i-lqrKDbhl5oeCeFjcvQxKeKukM5yinzp79hz78DLDYF04KzlYS-t0QZDvnw=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;중간에 벌교에 들러 꼬막을 한 번 먹어보려고 했는데 인터넷에 평을 보니 추천하지 않는 다는 글들이 많았다. 계획을 바꿔 순천으로 향했다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/r_Pi2W8eIqpZTA4hteE__UNMnakLGWpGLX9XeA2pWVjl78jxHsU-9Ar1Ct2X2QIMB8HVBoz2wsaUBkIIwfNKTiUJ-DRtRXtFs0HB6cA7KHMZ_3CCkUWkZsxeD3aZhti936yMipil82BYhiERxaE2rLFO4fiaPW80UjXnDdFddAeXPkgEERDk5Sm37SVR6PfzhNPn8QoGX9mLaHcFSKpopzBn8NplPNU8sd4FeBJqd-FcR7YrGZzfv7l3niBD2JRxbrbbDaLk3PX704AbOGYWELFtUYh40ZKP8y1zGPzEqC-N1q92PHgaqvl62y-nR5xMbMX0wgKlybMUG5ZsoR4OQSC_12aTlGeMQytC-W7FodSsxOhQf9MBZQHJ8hJBrTaVYbgo0ojVT0T1YztXJ3WOW7RyNzqMwXsDUPcvPlW30Rx9iWmoV8EpV-tLuBivs3aDiMhmMmt393XgwEvyBpFZtH2T3EtgRr0wKPO01JNxwMe9qL9NbOf9lxgKhGIAUTmMMdy4OYVB-Ha6K82wFkBsGYjoRigkKd40B7RIjUPP4uE8KvtKmoXesrBn2bVbjBLeTjHre9Qa5uinBuR43iP-L2Mn6iBdxP_KCO7qGoCsuLX7pnk24TV1Iw=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;순천만 가든에서 꼬막 정식 2인분을 시켰다.
-전주에서 만큼은 아니지만 반찬 가지수를 보니 여기가 전라도가 맞긴 하구나 하는 실감이 든다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/vibOWyoBKKYdSTQ_Op3NA0UzEaY3a0oKngYEuoDQWHVtMXMT-KMPRfBKQSQexYltoUGMGh47oo9RwRug9qJXcPvQsaCCCLN7ySgwVuaFEtgg1jk3XYAj0iGeoSSkhfuBfeFUMlKt3ETrZj7ruXNDPosNIaKpCROQ_XG5hs1fuJdWKP3FAeNzSRbPTmUYDhrbjmLhMe-Zxwqv5xURVDZjtPv6kJeNzTBR9ep8uwnbQKweiDpQW8AwZQmjAHSF__Jb_nYESj_BnbND1r6woBMTtHxT53tUBauqmn5mSFT5UY4RKvNkuW8FY8ACOP4Xk0VKfb6mkKGQi9T_vo2hk5AZTEoRneHToUP8GwK6AyltLKxoeY9cIu__yqT6R8yTsBZvJm-xcECFAaMKHjqIOOvFY2Oiohag0YuNtW5Sg9XV0iPmKtx-Rc5cpJFy_OjdSJTrHoHDZIJIm0g2ZGb9sumN9Tz1i0rHjzUesAV5V8Jmiw0FWkoAomm0zKoUSOYEjoi0KtlgtCOZyCtD5eYF5anJfckUdTk-aF102H5SLGrnSuPRtxVMnLRpfHn2uCuVTPpKG8afsrDsVAz5k12EqL3VXEXlHJl_L9KKSQf17OI0yekassuYcONm6A=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;순천 드라마 세트장에 들렀다.
-60년대, 80년대 옛날 건물들이 그럴 듯 하게 재현되어 있었다. 하지만 그보다 재미있는 부분은 그 시절 교복을 대여해주는 부분이었다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/XFhNI4kAVLVwiyX0sOO3ilDEoVs9HYuNrYG51PXInPaGxjngZrt7Chhax2v_D1eV7ohypuiOuSAa0TVNQRRgv0mQ3V_Z7Cwz_3K8-iQwt0uHwetBEbKB8fAJUhE-b2k_rLWJqI59Z_Hy-HnR8OZlNP_KSNLGYhTvopj-SL_C3_LU_dCjro0NGtGo-iUqW3MiLLg_n0Eg4Kzd_MfQN_uSYLj1Ozzamaf4K-TleS-Pm25StFrAyeiNLd_T2O6puQ3evGIQGHyWT79nMfU6KOJjK9mfPNZ__ZMgVNQUermBY6iGHxEcBDkZ3VAdCaYWQUdh_pLVCzYY-2i5ykgHof0fOhyy9vxTqn4U9ZpwKfW3edUjTO_S4yiGEyt4r_23kyXKJ6BhLuJtSTO0PXx6LNPWhGSSiS9NeUcaxrQUVL6QSL5uD0PXyNCP8YbHdBunuhpqhm_nmA5d5cC-0CHwGvUSCbP3AOMTO5g7ZFn9jmpUSAa53LD6uK1Lgf3tqtKjT1_YvseM3zjxDU_PGiKu7jDyL90psINRnEfHjeRH6a7MDDHLw4eNOgyK6F3xghOdah7ojdFUjaIwkqJvq72m6UmRF0Sx8Qn7NbC6AE3SpSfS4mD7v8q1c2O2Ow=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;요금은 50분에 2천원 정도로 기억한다.
-엄마 아부지와 함께 왔으면 좋았겠다 라는 생각을 했다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/1QZoFug6bVPLdyyUDrNF__5CkAkoO_16X4-Xy4OkTlIfHOGCpU9x-j58OFseLtk5i---yUDs-ETpkyqTcVCkxILAeIQ87P1ykTK9gdgAalqoTAxzPAY_uRtz1GkMEiZxPgzUP8-gHmpVI8eQime4EFA4nREvqWCCMsTI-x4yyFng4gU_GRZt3htdJ7HaY0zYhc52J1xlrj5KnpjJZ7LYxtBnnkHTtsD8K5l_WWCmPyCZ358g-BaRaheUaNJnFLB_b8LjtgE32Mn5EgH4PXwLXuNVbb2drLn5J-YeVBYLVVULhik1YbxCT10RjmdToaqz9pcabyji4AGZalTXyU0yV9biM0jNo1NaElLRF_l0NWhW2fvkCkbjaGsYD-8GS-mW_Pgw3XI6tjQbwRQdWM5AMHx_Qg1aEsFBmDfeJfnW3PzvyPiC1_2XO1M5ZLr-Mwjx1Jjq3yuh94rsURJ-4a7Gyjz3FLh5lHRh09gTqYpNjhVHnb_54ufl6Au8Y1yZTXEZQJWyTCm8sxA2dJrc300UUHfweHDgv4Lk-lFEKKabDLQEWw5jEZABJygpJtogjwSFKiB7U0gdVg_LbceDF2s73W4dmgYv5zLLPXC8qbvkgV8XJM4uOo6a_g=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;드디어 여수에 들어섰다. 향일암을 가는 길에 방산포 해수욕장 방면으로 보이는 산이 너무 예뻐서 한 컷.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/VD0JJhB28iczA7vv9tnEXXTM8PpQWLRCsB0U_C8hrZKtbj0-36wbAFJ5I4TL0zRS1SD1DdWUTZyQyINIRZsJZr5Zo-JVb7wnoejlhjTWv-RNoKUkqELsIGgjpzjF3fQDiGCCmP62zrKI3WLTEYb_HU1UN3Udtt8vbfUiSQ7A8OUPfK1okv2plNx6z_o3WY99q50NxYp6MUpWge9ZIbGb5WvRLa_3e5i2V7YCXn7TY0IdSlFTBaSNp1WHVx_3UdyNpl7Nom1yEp9_5hwqpjDFdcwL8yyVBanZC3SYHAXcZQU-Ut2IJkBvQWA1F6-H-trPiLURlEKnfusvZM3xk1_kJBb85HdcfAKhcI8e5ZCSx9hCpz9EQC1168SVTXBaBeibP4xTlbiBBqDK-uvUrfcXsIJ_3C4gcOTvICndAuwhP6KttCYWtm6-sjdCp1qlDXG5keKj5ntnS9ur0XjPx8WZSgomWpvNs7AJuOHd-9vRdDc6aNCfbP2NqukotFgUunPSpSE1DMIpaZwjDg1oQeShgqrjiYUE7hMaxZuaVNtXcnXSH-Xqwi0Lylc1BzaHNeQ4-GHHFB4hO-go02VzRQNlvNygx4G7M3RKenCnvHe7r6MT2XwxFc66Ww=w1046-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;아침부터 이래저래 무리를 했더니 체력이 간당간당했다. 향일암을 오르기 전에 차에서 한시간 정도 누워서 빈둥거리니 금새 체력이 충전되었다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/FILEqZ1ZKSSoxOSIM2-UC4Ey1Iosq-0BU4ciQpYuGQ1Y7n8grNvb7zzIMxOHmtzGyVNFZuyROot2dPE3xG9q04sa0VO_GjgpoqsAvJ0t85A91m7Ud_HAWkbRqJH7XX1QhcxT6aA8xt0GKgIAbPGtbTcf6zb4VDZ-4oxElxC7437FTCp2BaNWFjB-b_YetKTZbUCTKCQ3hsMDbnNj6qetqx4RKcs2WdxzFcnp11h9InYkFwGWmhVDitvEFTmjQaNzN1IZRXUg3R-_A4xgE4_eHKeWMKb91uPeigunMybqNe2DI4llD5CaQvtW9NT8KJzvtwWdJJjJNGT1Kr8rbZ_y7obGVmrKTILIoOBYm0x2X_a3Bp93LMbJxHGDdCAdN0RIaRm9YACxy7ofCj_8U_OTZAhWHLdwHE_FegF0pBSL5ZWjB8NV8geGU7R4BbC6CYLjl8y9sHN71A66Z6_2zH1PkTQSS6d5tou7W-nDuihiDtj88F8TntwkIIl9qCVq_Jp_Jciccb_ESQHuBRxpUkGdW3ND3S_sJpLPc6tQuCA7zkyHXACvVQrDQQehAg2c0pewkj44ORKmNMPEtZG7zRvkM56QsvJSbKqnu64lEveAGhy5Br4zuqJSOg=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;향일암 입구.
-특이했던 것은, 산 여기 저기에 집채만한 돌이 적지 않은 수가 보였다. 
-향일암에 올라가는 길은 평지와 계단 두가지 길이 있는데 우리는 계단 길을 선택했다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/AG241MbfblTIgiwzrP95VZVBFndLnHuZNEbfotY5Os6fEoPD29FUUYXt2rcDTlXwj4yVVdnSQcMtPiSssPLktHmHLWfs3MT1xqRjt58GXgt_9e9HenU--RqoPHSDmYRX59cqcDjC50pL3tF-c9ugVYI_TNUjU1uSvqC6CnErFHSfEF-AgoJJ_oLGqCMNAPddOJFVJrowg1x_g2J2maqmjOlVq-HixOI2e4k6EybUvGaUXzLF0TJc-jj1zZg9nZIwKtzs-OhV4nF3tdt805SzeYUJas9WIuRhu20EJ2kTM0mRnfmU7BlzrmPjKTnj086ovHC2n1LfTLJt12-xjud7BcRuUuq_Ove8sN47m-WxJr4qJFvOunEmgVNOgLX_e3gxanKj_OR6M8nYIt4e2I4tBOSuECxV9ZkfKL2FiqF9mG3lNcvhP6VhmHrTYooLd9jFp4hjjuMmk3TYZ0wN-hXisRK2_WVzEbP_WMoy6FrHhixdTZMy4CEQVmujgieEpCcoVSYDX-b8k7W7UmYG56uJv8sA6hYBhXuIdvlDm8ONxvbRVA1Etf1zlelfKijEL38WIhFTF2ViEZfGWqtpSfpzvwxF3e9bAIFLiUNWWmnL5vJl_VzLLBAKFw=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;절 사방에 있는 조각물들, 바위들 위에 동전 들이 가득 가득 쌓여있었다. 누군가의 소원들을 담고 있을 동전들을 보면서 저걸 다 쓸어담으면 얼마 정도 될까 하는 불경스러운 생각을 잠시 해봤다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/uDPZfeYsa7WI1lS9YFz3q5cCHWrde5vtOOryNsKNld44bedzc0xM_ZpNESXywbpAiZJk219SFXJ3NGK8PJ4PK7rZWKDsIf3D-SAwqRKw6C99hbRZCDU90DBmWj1eM0IG74-fN1c5vuV3df6qF_UsKZUzhIhhNG8NysJJs6OuVrP8_90_vx3wW0vJ-vDfoIH8H3AA0zm4CY9Qr1AwNe700aIcT4qCk3EDLYeY2gWvJKmiLIfxo1taiMFMrUxRZcENtAycDNeMrGaelPDbkzOUigjphTdKd-sjPSB1IoNceTau9RRX1xwlIs23SkAoe4Tf1Z87VmxdibDc_rAMSa0-EcT_aRibKz-qq7U2xoR-jPmLs5EeFS3X_ZKo31ijrmbwJwnjGjZsC9PFGp2215YcTud7YmObx0ZvSZhTJhcqAYJEwq3gSvHiynrv_rP3Kh7QC7Sf7tZsoj61cXjiFxEKYJu4jPWWzatyQbiAJ3Ed8uXQ9LHYb8CuXajVeEcdNTMSyFxLeEwHlQCniQv-4f0UAQXijBKd07jLxnHM27kQ-WKrlI9w3lPYa_8FCEAgM6gM67rZ_MQmT6iMMQk9qPckMm_TxElmCKj-ykKVz_Pn-Cpa5xFoH4Z3-w=w1229-h922-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;날씨는 기가 막혔다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/9xssdsHZLHCAPIghI1o_LkJkbfMjA7bwqXsdYCcsT-2X41mVCeoVMFN83-owDS1rNIep-nlOEnMGXl7hE-cKiujYemqeKk7qI8UyLDKoXGLiHeufcXP5pwOgifvkQOmalsuAp6oc0BI5E8vgx1jagsVo4MsOSABFfnf6KVSExae1ZqnqOXGOHeDLFO80hO45U67RjocHTpKIzm7oFTU-mTMsduWIEd7Lj5bg57LrMmzHua-Tk25NEkM638Q6YPgYmp5C3OFRspGjLz3TQqWdBCvYbpS6EAT-T0ozG1AVT_QDG_UjSVxSexoQaorsDe4OkBuC9Mb984XfYgCFtu1x-99CDurrLrWmx4BaWJp0m1t6rn5rWSpkRYC4PIT6ZoV0Sb2rhVVrOZN9dAr7auUstSoQGVhS9Pf4hyA1utxRY2Ovp-vGZTSWDlhlqwP-wJJsXJy3HYnseuhPGM0vrHTycnvrbMV2rnMFay7SS6H0a_aJIe1fOcTr1PwOJ7Xi2FVAdyT-9Xy2q_Wl_oS-UeNABTO5DvlVN7W9frkS8KT12QZSmXkD4gm_gSD8t2bO7_yliMWc7b9Uqs7hWw25mW5S21Z-u9OJVhcTDaOuVIaM_M6pSZluhy5EzQ=w720-h960-no&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;좁은 바위 틈새를 몇 번이나 지나야 한다. 이런 길을 어떻게 찾아냈을까 싶다.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 05 Sep 2017 05:39:01 +0900</pubDate>
-        <link>http://localhost:4000/trip/2017/09/04/yeosu-trip.html</link>
-        <guid isPermaLink="true">http://localhost:4000/trip/2017/09/04/yeosu-trip.html</guid>
-        
-        
-        <category>trip</category>
         
       </item>
     
@@ -332,8 +341,8 @@
 &lt;p&gt;졸릴 눈을 비비며 오랜만에 주저리 주저리 떠들다보니 글이 두서가 없다. 하고 싶은 말은 삶을 가능한 무지개 색으로 칠하면서 살자는 것이다. 여러 분야에 아마추어로 부담없이 걸치며 오늘을 좀 더 다채롭게 만들자는 이야기다. 위대해지기 위해서 오늘을 희생하지 말고 바로 오늘 행복하자는 이야기다. 사실 이 이야기들은 내 자신에게 해주고 싶은 이야기 이기도 하다. 위대해지기 위해서 거리낌없이 오늘들을 희생했던 어린날의 나에게 몇년을 더 산 지금의 내가 해주고 싶은 충고같은 이야기이기도 하다.&lt;/p&gt;
 </description>
         <pubDate>Sat, 08 Jul 2017 15:21:00 +0900</pubDate>
-        <link>http://localhost:4000/daily/2017/07/08/life-with-rainbow-colors.html</link>
-        <guid isPermaLink="true">http://localhost:4000/daily/2017/07/08/life-with-rainbow-colors.html</guid>
+        <link>https://jaeyo.github.io/daily/2017/07/08/life-with-rainbow-colors.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/daily/2017/07/08/life-with-rainbow-colors.html</guid>
         
         
         <category>daily</category>
@@ -349,8 +358,8 @@
 &lt;p&gt;2주 후에 계획된 제주도 여행에서도 관광 명소라던가, 맛집이라던가, 여행지에서의 멋진 숙소 같은 건 머릿 속에 들어오지도 않는다. 그저 운전할 일을 생각하며 설렌다. 해안 도로를 달리고, 그러다 배가 고파지면 맛집을 찾아다가 네비에 찍고 그대로 달린다. 그런 것들을 상상하게 된다. 참으로 이상한 일이 아닐 수 없다.&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 May 2017 09:31:01 +0900</pubDate>
-        <link>http://localhost:4000/daily/2017/05/18/drive.html</link>
-        <guid isPermaLink="true">http://localhost:4000/daily/2017/05/18/drive.html</guid>
+        <link>https://jaeyo.github.io/daily/2017/05/18/drive.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/daily/2017/05/18/drive.html</guid>
         
         
         <category>daily</category>
@@ -388,9 +397,9 @@ replicate-ignore-db&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;mysql &lt;span 
 
 &lt;p&gt;만약 덤프 파일이 너무 커서 수정하기가 힘든 경우 아래와 같이 파일을 잘라서 수정한 후에 합치는 방법을 사용할 수 있다.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;head &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; 30 dump.sql &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; new_dump.sql
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;head&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; 30 dump.sql &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; new_dump.sql
 vim new_dump.sql
-tail &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; +30 dump.sql &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; new_dump.sql
+&lt;span class=&quot;nb&quot;&gt;tail&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; +30 dump.sql &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; new_dump.sql
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;slave가 될 데이터베이스에 덤프를 밀어넣는다.&lt;/p&gt;
@@ -420,8 +429,8 @@ tail &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; +30 dump.sql &lt;span clas
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 29 Apr 2017 02:51:00 +0900</pubDate>
-        <link>http://localhost:4000/tech/2017/04/28/mysql-multi-source-replication.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tech/2017/04/28/mysql-multi-source-replication.html</guid>
+        <link>https://jaeyo.github.io/tech/2017/04/29/mysql-multi-source-replication.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/tech/2017/04/29/mysql-multi-source-replication.html</guid>
         
         
         <category>tech</category>
@@ -447,8 +456,8 @@ tail &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; +30 dump.sql &lt;span clas
 &lt;p&gt;찬찬히 머리속에서 히스토리들을 뒤져보는데 한달전쯤 was를 변경했고 was가 변경되면서 리눅스 계정이 바꼈고 바뀐 리눅스 계정에 대해서 ulimit 값을 변경….을 안해줬구나. 아…&lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Apr 2017 04:25:01 +0900</pubDate>
-        <link>http://localhost:4000/troubleshoot/tech/2017/04/25/too-many-open-files.html</link>
-        <guid isPermaLink="true">http://localhost:4000/troubleshoot/tech/2017/04/25/too-many-open-files.html</guid>
+        <link>https://jaeyo.github.io/troubleshoot/tech/2017/04/26/too-many-open-files.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/troubleshoot/tech/2017/04/26/too-many-open-files.html</guid>
         
         
         <category>troubleshoot</category>
@@ -484,8 +493,8 @@ tail &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; +30 dump.sql &lt;span clas
 &lt;p&gt;조치는 간단했다. mlocate가 인덱싱을 하는 폴더들 중 s3fs 마운트 폴더를 예외로 넣은 후에 s3fs를 재기동해주었다. 메모리 사용량은 정상으로 돌아왔고 며칠이 지난 지금까지도 정상 범주를 벗어나지 않고 있다. network out 그래프 역시 정상의 범주로 돌아왔다.&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Apr 2017 21:00:01 +0900</pubDate>
-        <link>http://localhost:4000/troubleshoot/tech/2017/04/25/weird-requests.html</link>
-        <guid isPermaLink="true">http://localhost:4000/troubleshoot/tech/2017/04/25/weird-requests.html</guid>
+        <link>https://jaeyo.github.io/troubleshoot/tech/2017/04/25/weird-requests.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/troubleshoot/tech/2017/04/25/weird-requests.html</guid>
         
         
         <category>troubleshoot</category>
@@ -504,8 +513,8 @@ tail &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; +30 dump.sql &lt;span clas
 
 </description>
         <pubDate>Tue, 25 Apr 2017 20:00:01 +0900</pubDate>
-        <link>http://localhost:4000/daily/2017/04/25/spaces.html</link>
-        <guid isPermaLink="true">http://localhost:4000/daily/2017/04/25/spaces.html</guid>
+        <link>https://jaeyo.github.io/daily/2017/04/25/spaces.html</link>
+        <guid isPermaLink="true">https://jaeyo.github.io/daily/2017/04/25/spaces.html</guid>
         
         
         <category>daily</category>
