@@ -1,51 +1,35 @@
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kronik3r/daktilo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# NexT
 
-# Daktilo
-Daktilo is a [Jekyll](jekyllrb.com) theme with a minimal design inspired from typewriters.
+> 精于心，简于形
 
-# More info and Live preview
-[Click here](http://daktilo.github.io/) to see the theme in action.
+NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来的 Jekyll 主题。<!--commit: f951075d9b739d26b42472431995fa68d08796aa-->
 
-# Features
-- Fully responsive
-- [Disqus](https://disqus.com/) integration for comments.
-- Google Analytics integration.
-- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
-- Support for categories.
-- Font-Awesome Icons.
-- Optimized for SEO.
-- Coolest [404 page ever](http://electrik-frog.com/daktilo/404.html).
+<a href="http://simpleyyt.github.io/jekyll-theme-next/" target="_blank">在线预览 Preview</a> | <a href="http://simpleyyt.com" target="_blank">Yitao's Blog</a> | <a href="http://theme-next.simpleyyt.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
 
-# How to use it
-Start by cloning the repository, then check the `_config.yml` file and change it accordingly.
-Note that the `title` property is what will be displayed as logo.
+[![Join the chat at https://gitter.im/simpleyyt/jekyll-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jekyll-theme-next/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Finally execute `jekyll serve --watch` and head to [localhost:4000](http://127.0.0.1:4000) to see the result.
+![NexT Schemes](http://iissnan.com/nexus/next/next-schemes.jpg)
 
-# Using categories
-Categories are little bit tricky. Please make sure to do the following for each category:
 
-- Create a file within `categories` folder with the name of your category
-For example let's say that we have a category called `An Awesome Category` you will need to add an `an-awesome-category.html` file with this content:
+## 浏览器支持 Browser support
 
-``` html
----
-layout: category
-category: an-awesome-category
-permalink: /categories/an-awesome-category/
----
+![Browser support](http://iissnan.com/nexus/next/browser-support.png)
 
-```
 
-- Create an entry inside `_data/categories.yml`
+## 贡献 Contributing
 
-``` html
-- slug: an-awesome-category
-  name: An Awesome Category
-```
+欢迎提交问题与需求，修复代码。
 
-- Then you will see it in the footer in the `Explore` section.
 
-# License
+## 开发 Development
 
-The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)
+NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。
+
+NexT is built for easily use with elegant appearance. First things first, always keep things simple.
+
+
+## 捐赠
+
+支付宝捐赠链接还是要有的，万一真的有人捐呢。
+
+![支付宝扫码捐赠](http://7lryc0.com1.z0.glb.clouddn.com/a6x049034plyvjm1rvn4h28%20%281%29.png)

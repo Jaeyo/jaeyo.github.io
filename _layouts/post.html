@@ -1,12 +1,6 @@
 ---
-layout: default
+layout: layout
 ---
-{% include post/title.html %}
 
-<div class="content">
-    {{ content }}
-</div>
-
-{% include post/about.html %}
-
-{% include externals/disqus.html %}
+{% assign __ = site.data.languages[site.language] %}
+{% include post.html %}
