@@ -52,23 +52,6 @@ export default class Sidebar extends Component {
     )
     /* eslint-enable jsx-a11y/img-redundant-alt */
 
-    // return (
-    //   <div className="sidebar">
-    //     <div className="sidebar__inner">
-    //       <div className="sidebar__author">
-    //         {authorBlock}
-    //       </div>
-    //       <div>
-    //         <Menu data={menu} />
-    //         <Links data={author} />
-    //         <p className="sidebar__copyright">
-    //           {copyright}
-    //         </p>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
-
     return (
       <SidebarWrapper>
         <Inner>
