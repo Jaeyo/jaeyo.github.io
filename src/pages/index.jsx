@@ -4,11 +4,12 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
+import { getSiteMetadata } from '../utils/context-utils'
 
 
 class IndexRoute extends Component {
   render() {
-    const { title, subtitle } = this.props.data.site.siteMetadata
+    const { title, subtitle } = getSiteMetadata(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
 
     const items = posts.map(post => (

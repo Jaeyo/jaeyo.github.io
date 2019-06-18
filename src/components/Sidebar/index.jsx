@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import { Link } from 'gatsby'
 import Menu from '../Menu'
 import Links from '../Links'
+import { getSiteMetadata } from '../../utils/context-utils'
 import profilePic from '../../pages/photo.jpg'
 import './style.scss'
 
@@ -15,7 +16,7 @@ class Sidebar extends Component {
       subtitle,
       copyright,
       menu,
-    } = this.props.data.site.siteMetadata
+    } = getSiteMetadata(this.props)
     const isHomePage = get(location, 'pathname', '/') === '/'
 
     /* eslint-disable jsx-a11y/img-redundant-alt */
@@ -51,11 +52,15 @@ class Sidebar extends Component {
     return (
       <div className="sidebar">
         <div className="sidebar__inner">
-          <div className="sidebar__author">{authorBlock}</div>
+          <div className="sidebar__author">
+            {authorBlock}
+          </div>
           <div>
             <Menu data={menu} />
             <Links data={author} />
-            <p className="sidebar__copyright">{copyright}</p>
+            <p className="sidebar__copyright">
+              {copyright}
+            </p>
           </div>
         </div>
       </div>
