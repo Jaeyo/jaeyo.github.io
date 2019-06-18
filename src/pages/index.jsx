@@ -7,7 +7,7 @@ import Sidebar from '../components/Sidebar'
 import { getSiteMetadata } from '../utils/context-utils'
 
 
-class IndexRoute extends Component {
+export default class IndexRoute extends Component {
   render() {
     const { title, subtitle } = getSiteMetadata(this.props)
     const posts = this.props.data.allMarkdownRemark.edges
@@ -32,8 +32,6 @@ class IndexRoute extends Component {
     )
   }
 }
-
-export default IndexRoute
 
 export const pageQuery = graphql`
   query IndexQuery {
