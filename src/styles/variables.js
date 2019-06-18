@@ -13,8 +13,8 @@ export const colorGrayBg = lighten(0.79, colorBase)
 export const typographicFontFamily = '"Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif'
 
 export const typographicRootFontSize = 100
-export const typographicBaseFontSize = '16px'
-export const typographicSmallFontSize = '14px'
+export const typographicBaseFontSize = 16 // px
+export const typographicSmallFontSize = 14 // px
 export const typographicBaseLineHeight = 1.625
 export const typographicBaseFontColor = colorBase
 export const typographicLinkPFontColor = colorPrimary

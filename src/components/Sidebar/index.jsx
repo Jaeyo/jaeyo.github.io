@@ -68,7 +68,6 @@ export default class Sidebar extends Component {
         </Inner>
       </SidebarWrapper>
     )
-
   }
 }
 
@@ -141,7 +140,7 @@ const AuthorTitle = styled.h1`
 
 const AuthorTitleLink = styled(Link)`
   color: ${colorBase};
-  $:hover, $:focus {
+  &:hover, &:focus {
     color: ${colorBase};
   }
 `
@@ -154,5 +153,5 @@ const AuthorSubTitle = styled.p`
 
 const Copyright = styled.p`
   color: ${lighten(0.18, colorGray)};
-  font-size: ${typographicSmallFontSize};
+  font-size: ${typographicSmallFontSize}px;
 `
