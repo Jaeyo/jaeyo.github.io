@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import './style.scss'
 
-class Post extends React.Component {
+class Post extends Component {
   render() {
     const {
       title,
