@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import get from 'lodash/get'
 import { Link } from 'gatsby'
 import Menu from '../Menu'
@@ -6,7 +6,8 @@ import Links from '../Links'
 import profilePic from '../../pages/photo.jpg'
 import './style.scss'
 
-class Sidebar extends React.Component {
+
+class Sidebar extends Component {
   render() {
     const { location } = this.props
     const {

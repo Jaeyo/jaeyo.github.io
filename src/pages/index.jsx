@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
 
-class IndexRoute extends React.Component {
+
+class IndexRoute extends Component {
   render() {
     const items = []
     const { title, subtitle } = this.props.data.site.siteMetadata

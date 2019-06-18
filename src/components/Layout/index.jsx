@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import '../../assets/scss/init.scss'
 
-class Layout extends React.Component {
+
+class Layout extends Component {
   render() {
     const { children } = this.props
 
