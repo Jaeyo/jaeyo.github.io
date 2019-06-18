@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
+import { layoutWidth } from '../../styles/variables'
 import '../../assets/scss/init.scss'
 
 
-class Layout extends Component {
+export default class Layout extends Component {
   render() {
     const { children } = this.props
 
     return (
-      <div className="layout">
-        <Helmet defaultTitle="Blog by John Doe" />
+      <Wrapper>
+        <Helmet defaultTitle="Blog by Jaeyo" />
         {children}
-      </div>
+      </Wrapper>
     )
   }
 }
 
-export default Layout
+const Wrapper = styled.div`
+  lost-center: ${layoutWidth}
+`
