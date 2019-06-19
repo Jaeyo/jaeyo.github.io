@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Sidebar from '../Sidebar'
 import { typographicLeading, typographicBaseFontSize } from '../../styles/variables'
+import Content from '../common/content'
 
 
 export default class PageTemplateDetails extends Component {
@@ -11,18 +12,16 @@ export default class PageTemplateDetails extends Component {
     return (
       <div>
         <Sidebar {...this.props} />
-        <div className="content">
-          <div className="content__inner">
-            <PageWrapper>
-              <PageTitle>{page.frontmatter.title}</PageTitle>
-              <PageBody
-                className="page__body"
-                /* eslint-disable-next-line react/no-danger */
-                dangerouslySetInnerHTML={{ __html: page.html }}
-              />
-            </PageWrapper>
-          </div>
-        </div>
+        <Content>
+          <PageWrapper>
+            <PageTitle>{page.frontmatter.title}</PageTitle>
+            <PageBody
+              className="page__body"
+              /* eslint-disable-next-line react/no-danger */
+              dangerouslySetInnerHTML={{ __html: page.html }}
+            />
+          </PageWrapper>
+        </Content>
       </div>
     )
   }

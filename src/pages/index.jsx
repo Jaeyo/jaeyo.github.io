@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Post from '../components/Post'
 import Sidebar from '../components/Sidebar'
 import { getSiteMetadata } from '../utils/context-utils'
+import Content from '../components/common/content'
 
 
 export default class IndexRoute extends Component {
@@ -24,9 +25,9 @@ export default class IndexRoute extends Component {
             <meta name="description" content={subtitle} />
           </Helmet>
           <Sidebar {...this.props} />
-          <div className="content">
-            <div className="content__inner">{items}</div>
-          </div>
+          <Content>
+            {items}
+          </Content>
         </div>
       </Layout>
     )
