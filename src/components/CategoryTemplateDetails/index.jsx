@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Post from '../Post'
 import Content from '../common/content'
+import Page from '../common/page'
 
 
 export default class CategoryTemplateDetails extends Component {
@@ -12,10 +13,9 @@ export default class CategoryTemplateDetails extends Component {
 
     return (
       <Content>
-        <div className="page">
-          <h1 className="page__title">{category}</h1>
-          <div className="page__body">{items}</div>
-        </div>
+        <Page title={category}>
+          {items}
+        </Page>
       </Content>
     )
   }

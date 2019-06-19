@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Sidebar from '../components/Sidebar'
 import Layout from '../components/Layout'
 import Content from '../components/common/content'
+import Page from '../components/common/page'
 
 
 export default class NotFoundRoute extends Component {
@@ -12,14 +13,11 @@ export default class NotFoundRoute extends Component {
         <div>
           <Sidebar {...this.props} />
           <Content>
-            <div className="page">
-              <h1 className="page__title">NOT FOUND</h1>
-              <div className="page__body">
-                <p>
-                  You just hit a route that doesn&#39;t exist... the sadness.
-                </p>
-              </div>
-            </div>
+            <Page title="NOT FOUND">
+              <p>
+                You just hit a route that doesn&#39;t exist... the sadness.
+              </p>
+            </Page>
           </Content>
         </div>
       </Layout>
