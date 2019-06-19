@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import kebabCase from 'lodash/kebabCase'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
+import Content from '../components/common/content'
 
-class TagsRoute extends React.Component {
+export default class TagsRoute extends Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
     const tags = this.props.data.allMarkdownRemark.group
@@ -15,36 +16,32 @@ class TagsRoute extends React.Component {
         <div>
           <Helmet title={`All Tags - ${title}`} />
           <Sidebar {...this.props} />
-          <div className="content">
-            <div className="content__inner">
-              <div className="page">
-                <h1 className="page__title">Tags</h1>
-                <div className="page__body">
-                  <div className="tags">
-                    <ul className="tags__list">
-                      {tags.map(tag => (
-                        <li key={tag.fieldValue} className="tags__list-item">
-                          <Link
-                            to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                            className="tags__list-item-link"
-                          >
-                            {tag.fieldValue} ({tag.totalCount})
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+          <Content>
+            <div className="page">
+              <h1 className="page__title">Tags</h1>
+              <div className="page__body">
+                <div className="tags">
+                  <ul className="tags__list">
+                    {tags.map(tag => (
+                      <li key={tag.fieldValue} className="tags__list-item">
+                        <Link
+                          to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                          className="tags__list-item-link"
+                        >
+                          {tag.fieldValue} ({tag.totalCount})
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
+          </Content>
         </div>
       </Layout>
     )
   }
 }
-
-export default TagsRoute
 
 export const pageQuery = graphql`
   query TagsQuery {
