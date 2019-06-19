@@ -1,8 +1,11 @@
-import React from 'react'
-import './style.scss'
+import React, { Component } from 'react'
+import styled from 'styled-components'
+import { lighten } from 'polished'
 import '../../assets/fonts/fontello-771c82e0/css/fontello.css'
+import { typographicLeading, colorGrayBg, colorBase } from '../../styles/variables'
 
-class Links extends React.Component {
+
+export default class Links extends Component {
   render() {
     const author = this.props.data
     const links = {
@@ -15,9 +18,9 @@ class Links extends React.Component {
     }
 
     return (
-      <div className="links">
-        <ul className="links__list">
-          <li className="links__list-item">
+      <LinksWrapper>
+        <LinksList>
+          <LinksListItem>
             <a
               href={`https://www.github.com/${links.github}`}
               target="_blank"
@@ -25,23 +28,55 @@ class Links extends React.Component {
             >
               <i className="icon-github" />
             </a>
-          </li>
-          <li className="links__list-item">
+          </LinksListItem>
+          <LinksListItem>
             <a href={`mailto:${links.email}`}>
               <i className="icon-mail" />
             </a>
-          </li>
-        </ul>
-        <ul className="links__list">
-          <li className="links__list-item">
+          </LinksListItem>
+          <LinksListItem>
             <a href={links.rss}>
               <i className="icon-rss" />
             </a>
-          </li>
-        </ul>
-      </div>
+          </LinksListItem>
+        </LinksList>
+      </LinksWrapper>
     )
   }
 }
 
-export default Links
+
+const LinksWrapper = styled.div`
+  margin-bottom: ${1 * typographicLeading}px;
+`
+
+const LinksList = styled.ul`
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 7px;
+`
+
+const LinksListItem = styled.li`
+  padding: 0;
+  margin: 0 3px;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  border-radius: 3px;
+  text-align: center;
+  background: ${colorGrayBg};
+
+  & a {
+    border: 0;
+    & i {
+      font-size: 14px;
+      color: ${lighten(0.2, colorBase)};
+    }
+    &:hover, &:focus {
+      & i {
+        color: ${colorBase};
+      }
+    }
+  }
+`
