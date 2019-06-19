@@ -1,14 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Post from '../Post'
 
-class TagTemplateDetails extends React.Component {
+
+export default class TagTemplateDetails extends Component {
   render() {
-    const items = []
     const tagTitle = this.props.pageContext.tag
     const posts = this.props.data.allMarkdownRemark.edges
-    posts.forEach(post => {
-      items.push(<Post data={post} key={post.node.fields.slug} />)
-    })
+    const items = posts.map(post => <Post data={post} key={post.node.fields.slug} />)
 
     return (
       <div className="content">
@@ -26,5 +24,3 @@ class TagTemplateDetails extends React.Component {
     )
   }
 }
-
-export default TagTemplateDetails

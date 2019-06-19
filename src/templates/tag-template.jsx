@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
 import TagTemplateDetails from '../components/TagTemplateDetails'
 
-class TagTemplate extends React.Component {
+
+export default class TagTemplate extends Component {
   render() {
     const { title } = this.props.data.site.siteMetadata
     const { tag } = this.props.pageContext
@@ -21,8 +22,6 @@ class TagTemplate extends React.Component {
     )
   }
 }
-
-export default TagTemplate
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
