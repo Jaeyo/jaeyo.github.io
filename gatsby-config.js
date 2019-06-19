@@ -6,7 +6,7 @@ module.exports = {
     url: 'https://jaeyo.github.io',
     title: 'Blog by Jaeyo',
     subtitle:
-      '음악과 글, 그리고 개발을 좋아합니다.',
+      'loves writing, music, and developing',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
