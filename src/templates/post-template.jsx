@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostTemplateDetails from '../components/PostTemplateDetails'
 
-class PostTemplate extends React.Component {
+
+export default class PostTemplate extends Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
     const post = this.props.data.markdownRemark
@@ -25,8 +26,6 @@ class PostTemplate extends React.Component {
   }
 }
 
-export default PostTemplate
-
 export const pageQuery = graphql`
   query PostBySlug($slug: String!) {
     site {
@@ -36,7 +35,7 @@ export const pageQuery = graphql`
         copyright
         author {
           name
-          twitter
+          github
         }
         disqusShortname
         url
