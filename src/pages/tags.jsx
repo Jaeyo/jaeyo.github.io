@@ -5,6 +5,7 @@ import kebabCase from 'lodash/kebabCase'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
 import Content from '../components/common/content'
+import Page from '../components/common/page'
 
 export default class TagsRoute extends Component {
   render() {
@@ -17,25 +18,22 @@ export default class TagsRoute extends Component {
           <Helmet title={`All Tags - ${title}`} />
           <Sidebar {...this.props} />
           <Content>
-            <div className="page">
-              <h1 className="page__title">Tags</h1>
-              <div className="page__body">
-                <div className="tags">
-                  <ul className="tags__list">
-                    {tags.map(tag => (
-                      <li key={tag.fieldValue} className="tags__list-item">
-                        <Link
-                          to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                          className="tags__list-item-link"
-                        >
-                          {tag.fieldValue} ({tag.totalCount})
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            <Page title="Tags">
+              <div className="tags">
+                <ul className="tags__list">
+                  {tags.map(tag => (
+                    <li key={tag.fieldValue} className="tags__list-item">
+                      <Link
+                        to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                        className="tags__list-item-link"
+                      >
+                        {tag.fieldValue} ({tag.totalCount})
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </div>
+            </Page>
           </Content>
         </div>
       </Layout>

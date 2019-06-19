@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Post from '../Post'
 import Content from '../common/content'
+import Page from '../common/page'
 
 
 export default class TagTemplateDetails extends Component {
@@ -11,14 +12,9 @@ export default class TagTemplateDetails extends Component {
 
     return (
       <Content>
-        <div className="page">
-          <h1 className="page__title">
-            All Posts tagged as &quot;
-            {tagTitle}
-            &quot;
-          </h1>
-          <div className="page__body">{items}</div>
-        </div>
+        <Page title={`All Posts tagged as "${tagTitle}"`}>
+          {items}
+        </Page>
       </Content>
     )
   }
