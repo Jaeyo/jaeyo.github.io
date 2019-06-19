@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PageTemplateDetails from '../components/PageTemplateDetails'
 
-class PageTemplate extends React.Component {
+
+export default class PageTemplate extends Component {
   render() {
     const { title, subtitle } = this.props.data.site.siteMetadata
     const page = this.props.data.markdownRemark
@@ -24,8 +25,6 @@ class PageTemplate extends React.Component {
     )
   }
 }
-
-export default PageTemplate
 
 export const pageQuery = graphql`
   query PageBySlug($slug: String!) {
