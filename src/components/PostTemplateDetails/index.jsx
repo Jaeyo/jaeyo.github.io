@@ -117,21 +117,21 @@ const PostTitle = styled.h1`
 const PostBody = styled.div`
   & figure {
     margin-bottom: ${1 * typographicLeading}px;
-  }
 
-  & figure blockquote {
-    font-style: italic;
-    text-align: center;
-    margin-top: 0;
-    padding: ${1 * typographicLeading}px ${0 * typographicLeading}px;
-  }
+    blockquote {
+      font-style: italic;
+      text-align: center;
+      margin-top: 0;
+      padding: ${1 * typographicLeading}px ${0 * typographicLeading}px;
 
-  & figure blockquote p {
-    max-width: ${layoutPostSingleWidth}px;
-    font-size: ${typographicBaseFontSize * 1.6817}px;
-    margin-top: 0;
-    margin-bottom: ${1 * typographicLeading}px;
-    line-height: ${1.5 * typographicLeading}px;
+      p {
+        max-width: ${layoutPostSingleWidth}px;
+        font-size: ${typographicBaseFontSize * 1.6817}px;
+        margin-top: 0;
+        margin-bottom: ${1 * typographicLeading}px;
+        line-height: ${1.5 * typographicLeading}px;
+      }
+    }
   }
 
   & a {
