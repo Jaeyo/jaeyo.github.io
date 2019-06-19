@@ -1,14 +1,13 @@
 import { lighten } from 'polished'
 
 
-export const colorBase = '#222222'
-export const colorPrimary = '#5d93ff'
-export const colorSecondary = '#f7a046'
+export const colorBase = '#050505'
+export const colorPrimary = '#b91510'
+export const colorSecondary = '#0d488b'
 export const colorWhite = lighten(1, colorBase)
 export const colorGray = lighten(0.4, colorBase)
 export const colorGrayBorder = lighten(0.77, colorBase)
 export const colorGrayBg = lighten(0.79, colorBase)
-
 
 export const typographicFontFamily = '"Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif'
 

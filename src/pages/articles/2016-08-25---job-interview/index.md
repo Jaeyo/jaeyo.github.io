@@ -1,6 +1,6 @@
 ---
 title:  "이직 면접 이야기"
-date:   "2016-08-25T14:40:55:000Z"
+date:   "2016-08-25T14:40:55.000Z"
 layout: post
 draft: false
 path: "/posts/job-interview/"

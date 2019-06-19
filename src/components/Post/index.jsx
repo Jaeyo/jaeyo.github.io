@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import moment from 'moment'
 import styled from 'styled-components'
 import { typographicLeading, typographicBaseFontSize, colorBase, typographicSmallFontSize, colorSecondary, colorPrimary } from '../../styles/variables'
+import { lighten } from 'polished'
 
 export default class Post extends Component {
   render() {
@@ -90,7 +91,7 @@ const MetaCategoryLink = styled(Link)`
   font-weight: 500;
   text-transform: uppercase;
   &:hover, &:focus {
-    color: ${colorPrimary};
+    color: ${lighten(0.3, colorSecondary)};
   }
 `
 
@@ -98,7 +99,7 @@ const Readmore = styled(Link)`
   font-size: ${typographicBaseFontSize}px;
   color: ${colorPrimary};
   &:hover, &:focus {
-    color: ${colorPrimary};
+    color: ${lighten(0.3, colorPrimary)};
     border-bottom: 1px solid ${colorPrimary};
   }
 `

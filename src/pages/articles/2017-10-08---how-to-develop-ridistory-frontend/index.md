@@ -50,7 +50,7 @@ tags:
 
 개발팀 태스크보드에는 서비스 화면의 이름이 쓰인 태스크들이 무더기로 등장했습니다. 개발자들은 그 태스크들을 하나씩 가져와 기존에 Jinja2 템플릿으로 되어 있던 화면을 `React` 기반으로 옮기기 시작했습니다. 단순 포팅을 넘어서 화면의 각 구성요소를 적절하게 컴포넌트화하여 재사용성을 높이고, 각 화면들의 시나리오들을 `React` 라이프사이클에 적절하게 녹여내야 했습니다.
 
-![git commit graph](https://www.ridicorp.com/blog/img/2017-09-13/code_deleted_added.png){: data-action="zoom" }
+![git commit graph](https://www.ridicorp.com/blog/img/2017-09-13/code_deleted_added.png)
 <figcaption>어마어마한 양의 코드들이 삭제되고 또 추가되었습니다. </figcaption>
 
 <br>
@@ -89,7 +89,7 @@ tags:
 클라이언트에서는 이 pk를 이용해 가지고 있지 않은 pk들만 별도의 메타데이터 API에 요청하도록 하였습니다. 
 이렇게 받아온 메타데이터는 `Entity`에서 관리하면서 다른 화면에서 재사용할 수 있도록 했고요. 
 
-![Entity 설명 이미지](https://www.ridicorp.com/blog/img/2017-09-13/entity.png){: data-action="zoom" } 
+![Entity 설명 이미지](https://www.ridicorp.com/blog/img/2017-09-13/entity.png)
 <figcaption>Entity는 이렇게 동작합니다.</figcaption>
 
 이렇게 구조를 변경하고 나니 각 API의 응답 데이터 사이즈가 눈에 띄게 줄었고 결과적으로 좀 더 빠르게 화면을 그려줄 수 있게 되었습니다. 어쩌면 수십 ms 정도의 차이겠지만 티끌 모아 태산이니까요. 

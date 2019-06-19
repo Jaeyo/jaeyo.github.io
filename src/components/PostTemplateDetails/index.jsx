@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import moment from 'moment'
 import { lighten, darken } from 'polished'
 import Disqus from '../Disqus/Disqus'
-import { layoutPostSingleMaxWidth, typographicBaseFontSize, layoutPostSingleWidth, typographicLeading, colorGrayBg, colorBase, typographicBaseLineHeight, layoutBreakpointSm, layoutBreakpointMd } from '../../styles/variables'
+import { layoutPostSingleMaxWidth, typographicBaseFontSize, layoutPostSingleWidth, typographicLeading, colorGrayBg, colorBase, typographicBaseLineHeight, layoutBreakpointSm, layoutBreakpointMd, colorPrimary, colorSecondary } from '../../styles/variables'
 
 
 export default class PostTemplateDetails extends Component {
@@ -136,6 +136,7 @@ const PostBody = styled.div`
 
   & a {
     text-decoration: underline;
+    color: ${colorSecondary};
   }
 
   & .gatsby-highlight {

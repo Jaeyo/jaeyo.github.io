@@ -6,7 +6,7 @@ import { lighten } from 'polished'
 import Menu from '../Menu'
 import Links from '../Links'
 import { getSiteMetadata } from '../../utils/context-utils'
-import profilePic from '../../pages/photo.jpg'
+import profilePic from '../../pages/profile.png'
 import { layoutBreakpointSm, layoutBreakpointMd, typographicLeading, colorBase, colorGray, typographicSmallFontSize } from '../../styles/variables'
 
 
@@ -27,8 +27,8 @@ export default class Sidebar extends Component {
         <Link to="/">
           <AuthorPhoto
             src={profilePic}
-            width="75"
-            height="75"
+            width="100"
+            height="100"
             alt={author.name}
           />
         </Link>
@@ -132,10 +132,11 @@ const AuthorPhoto = styled.img`
 `
 
 const AuthorTitle = styled.h1`
+  display: inline-block;
   font-size: $typographic-base-font-size * 1.125;
   font-weight: 500;
   line-height: ${1.125 * typographicLeading}px;
-  margin: ${0.5 * typographicLeading}px 0 ${0.5 * typographicLeading}px;
+  margin: ${0.5 * typographicLeading}px 0 ${0.5 * typographicLeading}px ${1 * typographicLeading}px;
 `
 
 const AuthorTitleLink = styled(Link)`

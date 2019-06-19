@@ -1,6 +1,6 @@
 ---
 title:  "겹겹의 공간들"
-date:   "2017-04-25T11:00:01:000Z"
+date:   "2017-04-25T11:00:01.000Z"
 layout: post
 draft: false
 path: "/posts/spaces/"
