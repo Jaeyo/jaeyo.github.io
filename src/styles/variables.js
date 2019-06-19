@@ -23,8 +23,8 @@ export const typographicLinkSFontColor = colorSecondary
 export const typographicLeading =
     Math.round(16 * (typographicRootFontSize / 100) * typographicBaseLineHeight)
 
-export const layoutPostSingleMaxWidth = '945px'
-export const layoutPostSingleWidth = `${layoutPostSingleMaxWidth} - 305px`
+export const layoutPostSingleMaxWidth = '945' // px
+export const layoutPostSingleWidth = `${layoutPostSingleMaxWidth} - 305` // px
 
 export const layoutWidth = '1070px'
 export const layoutBreakpointSm = '685px'
