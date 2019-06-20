@@ -5,6 +5,7 @@ layout: post
 draft: false
 path: "/posts/job-interview/"
 category: "daily"
+description: ""
 tags:
   - "이직"
   - "면접"

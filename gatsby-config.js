@@ -4,6 +4,7 @@ const pxtorem = require('postcss-pxtorem')
 module.exports = {
   siteMetadata: {
     url: 'https://jaeyo.github.io',
+    siteUrl: 'https://jaeyo.github.io',
     title: 'Blog by Jaeyo',
     subtitle:
       'loves writing, music, and developing',

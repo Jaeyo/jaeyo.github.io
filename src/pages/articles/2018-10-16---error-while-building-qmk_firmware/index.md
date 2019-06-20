@@ -5,6 +5,7 @@ layout: post
 draft: false
 path: "/posts/error-while-binding-qmk-firmware/"
 category: "tech"
+description: ""
 tags:
 ---
 

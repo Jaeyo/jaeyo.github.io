@@ -5,6 +5,7 @@ layout: post
 draft: false
 path: "/posts/life-with-rainbow-colors/"
 category: "daily"
+description: ""
 tags:
 ---
 
