@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import moment from 'moment'
 import styled from 'styled-components'
-import { typographicLeading, typographicBaseFontSize, colorBase, typographicSmallFontSize, colorSecondary, colorPrimary } from '../../styles/variables'
 import { lighten } from 'polished'
+import { typographicLeading, typographicBaseFontSize, colorBase, typographicSmallFontSize, colorSecondary, colorPrimary } from '../../styles/variables'
 
 export default class Post extends Component {
   render() {
@@ -34,23 +34,20 @@ export default class Post extends Component {
           </TitleLink>
         </Title>
         <Description>{description}</Description>
-        <Readmore to={slug}>
-          Read
-        </Readmore>
       </PostWrapper>
     )
   }
 }
 
 const PostWrapper = styled.div`
-  margin-bottom: ${1.25 * typographicLeading}px;
+  margin-bottom: ${2.25 * typographicLeading}px;
   &:last-child {
     margin-bottom: ${0.5 * typographicLeading}px;
   }
 `
 
 const Title = styled.h2`
-  font-size: ${typographicBaseFontSize * 1.6875}px;
+  font-size: ${typographicBaseFontSize * 1.4875}px;
   line-height: ${1.5 * typographicLeading}px;
   margin-top: ${0 * typographicLeading}px;
   margin-bottom: ${0.5 * typographicLeading}px;
@@ -92,14 +89,5 @@ const MetaCategoryLink = styled(Link)`
   text-transform: uppercase;
   &:hover, &:focus {
     color: ${lighten(0.3, colorSecondary)};
-  }
-`
-
-const Readmore = styled(Link)`
-  font-size: ${typographicBaseFontSize}px;
-  color: ${colorPrimary};
-  &:hover, &:focus {
-    color: ${lighten(0.3, colorPrimary)};
-    border-bottom: 1px solid ${colorPrimary};
   }
 `

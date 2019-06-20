@@ -107,7 +107,7 @@ const PostTitle = styled.h1`
   margin-bottom: ${0 * typographicLeading}px;
 
   @media screen and (min-width: ${layoutBreakpointMd}) {
-    font-size: ${typographicBaseFontSize * 3}px;
+    font-size: ${typographicBaseFontSize * 2.2}px;
     line-height: ${2.25 * typographicLeading}px;
     margin-top: ${2.25 * typographicLeading}px;
     margin-bottom: ${1.5 * typographicLeading}px;
@@ -132,6 +132,10 @@ const PostBody = styled.div`
         line-height: ${1.5 * typographicLeading}px;
       }
     }
+  }
+
+  & pre {
+    font-size: ${0.8 * typographicBaseFontSize}px;
   }
 
   & a {
@@ -160,12 +164,12 @@ const PostBody = styled.div`
   }
 
   @media screen and (min-width: ${layoutBreakpointMd}) {
-    font-size: ${typographicBaseFontSize * 1.125}px;
+    font-size: ${typographicBaseFontSize * 1.025}px;
     line-height: ${1.125 * typographicLeading}px;
     margin-bottom: ${1.125 * typographicLeading}px;
 
     $ p {
-      font-size: ${typographicBaseFontSize * 1.125}px;
+      font-size: ${typographicBaseFontSize * 0.125}px;
       line-height: ${1.125 * typographicLeading}px;
       margin-bottom: ${1.125 * typographicLeading}px;
     }
