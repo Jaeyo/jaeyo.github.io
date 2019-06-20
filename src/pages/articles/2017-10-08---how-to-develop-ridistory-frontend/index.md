@@ -5,6 +5,7 @@ layout: post
 draft: false
 path: "/posts/how-to-develop-ridistory-frontend/"
 category: "tech"
+description: ""
 tags:
 ---
 
