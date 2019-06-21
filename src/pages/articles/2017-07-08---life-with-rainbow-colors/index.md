@@ -5,7 +5,7 @@ layout: post
 draft: false
 path: "/posts/life-with-rainbow-colors/"
 category: "daily"
-description: ""
+description: "아침부터 찌는 듯이 덥다가도 오후가 되니 거짓말처럼 폭우가 들이닥친다. 더운 공기가 사라진 것은 다행이지 싶지만 여전히 끈덕진걸 보니 여름은 여름인 모양이다. 사실 ..."
 tags:
 ---
 

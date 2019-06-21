@@ -5,8 +5,10 @@ layout: post
 draft: false
 path: "/posts/mariadb-multi-source-replication/"
 category: "tech"
-description: ""
+description: "slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다..."
 tags:
+  - "mariadb"
+  - "replication"
 ---
 ## multi source replication 절차
 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.

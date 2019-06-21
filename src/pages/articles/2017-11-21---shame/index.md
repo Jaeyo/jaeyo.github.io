@@ -5,7 +5,7 @@ layout: post
 draft: false
 path: "/posts/shame/"
 category: "daily"
-description: ""
+description: "그는 “지나간 세계” 라는 시를 쓰고 또 동명의 술집에서 형수라는 친구와 함께 산다. 대학생 무렵에는 운동권에 몸담았다. 운동권 학생들이 마음에 안들었던 한 교수는 역사 시험에서 시험지에 이름만 쓰면 점수를 주겠다고 했다..."
 tags:
 ---
 

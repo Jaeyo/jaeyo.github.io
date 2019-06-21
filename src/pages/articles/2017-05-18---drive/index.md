@@ -5,7 +5,7 @@ layout: post
 draft: false
 path: "/posts/drive/"
 category: "daily"
-description: ""
+description: "운전을 하고 싶다. 틈 날때마다 생각한다. 참 희안한 것이, 운전면허를 따기전까지는 운전을 하고 싶다는 생각을 단 한번도 해본 적이 없다. 오히려 최대한 늦게 따야겠다고 다짐까지 했을 정도니까. 고3 수능이 끝나고 친구들이 ..."
 tags:
 ---
 
