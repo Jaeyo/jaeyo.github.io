@@ -6,6 +6,12 @@ const slash = require('slash')
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
+  createPage({
+    path: '/awesome-articles',
+    component: slash(path.resolve('./src/components/AwesomeArticles/index.jsx')),
+    context: {},
+  })
+
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve('./src/templates/post-template.jsx')
     const pageTemplate = path.resolve('./src/templates/page-template.jsx')

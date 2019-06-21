@@ -15,6 +15,10 @@ module.exports = {
         label: 'Articles',
         path: '/',
       },
+      {
+        label: 'Awesome Articles',
+        path: '/awesome-articles',
+      },
     ],
     author: {
       name: 'Jaeyo',
