@@ -5,7 +5,7 @@ layout: post
 draft: false
 path: "/posts/how-to-develop-ridistory-frontend/"
 category: "tech"
-description: ""
+description: "본 포스팅은 회사 블로그에 올려놓았던 글을 옮겨놓은 것입니다. 몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 ..."
 tags:
 ---
 

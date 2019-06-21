@@ -5,8 +5,10 @@ layout: post
 draft: false
 path: "/posts/reselect/"
 category: "tech"
-description: ""
+description: "reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다. 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 ..."
 tags:
+  - "reselect"
+  - "redux"
 ---
 
 - [https://github.com/reactjs/reselect](reselect)
