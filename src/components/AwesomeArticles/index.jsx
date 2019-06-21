@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../Layout'
 import Sidebar from '../Sidebar'
 import Content from '../common/content'
+import AwesomeArticleContent from './awesome-article-content'
 
 
 export default class AwesomeArticle extends Component {
@@ -16,7 +17,7 @@ export default class AwesomeArticle extends Component {
           </Helmet>
           <Sidebar {...this.props} />
           <Content>
-            <div>hello, awesome article</div>
+            <AwesomeArticleContent />
           </Content>
         </div>
       </Layout>
