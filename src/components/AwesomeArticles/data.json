@@ -1,3 +1,11 @@
 {
-    "value": "this is value"
+    "articles": [
+        {
+            "id": 1,
+            "title": "blabla",
+            "link": "https://www.naver.com",
+            "description": "desc balbalb",
+            "tags": ["tag1", "tag2"]
+        }
+    ]
 }
