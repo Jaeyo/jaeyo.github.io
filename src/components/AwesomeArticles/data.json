@@ -5,7 +5,8 @@
             "title": "blabla",
             "link": "https://www.naver.com",
             "description": "desc balbalb",
-            "tags": ["tag1", "tag2"]
+            "tags": ["tag1", "tag2"],
+            "lang": "ko"
         }
     ]
 }
