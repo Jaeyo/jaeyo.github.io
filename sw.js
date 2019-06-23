@@ -55,7 +55,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "a93382ded68d19b27df88cf512969e76"
+    "revision": "bf5ac7adbca321300724847e4ace3f3a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
