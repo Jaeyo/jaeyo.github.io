@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export default class AwesomeArticle extends Component {
   render() {
-    const { id, title, link, description, tags } = this.props
+    const { id, title, link, description, tags, lang } = this.props
 
     return (
       <div>
@@ -13,6 +13,7 @@ export default class AwesomeArticle extends Component {
         <p>link: {link}</p>
         <p>description: {description}</p>
         <p>tags: {tags}</p>
+        <p>lang: {lang}</p>
       </div>
     )
   }
@@ -24,4 +25,5 @@ AwesomeArticle.propTypes = {
   link: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  lang: PropTypes.string.isRequired,
 }
