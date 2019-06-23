@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
+import ReactGA from 'react-ga'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import '../../assets/scss/init.scss'
 
 
 export default class Layout extends Component {
+  componentDidMount() {
+    ReactGA.initialize('UA-142557602-1')
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }
+
   render() {
     const { children } = this.props
 
