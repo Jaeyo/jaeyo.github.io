@@ -12,6 +12,12 @@ exports.createPages = ({ graphql, actions }) => {
     context: {},
   })
 
+  createPage({
+    path: '/resume',
+    component: slash(path.resolve('./src/components/Resume/index.jsx')),
+    context: {},
+  })
+
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve('./src/templates/post-template.jsx')
     const pageTemplate = path.resolve('./src/templates/page-template.jsx')
