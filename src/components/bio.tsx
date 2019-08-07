@@ -1,10 +1,3 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import React, { ComponentProps, forwardRef, Ref } from "react"
@@ -39,33 +32,22 @@ export const Bio = () => {
           }
         }
       }
-      site {
-        siteMetadata {
-          author
-          social {
-            twitter
-          }
-        }
-      }
     }
   `)
-
-  const { author, social } = data.site.siteMetadata
 
   return (
     <Content>
       <Avatar
         fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
+        alt="Jaeyo"
         imgStyle={{ borderRadius: "50%" }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        Loves writing, music, and developing.<br />
+        You can find me on 
+        {` `}<a href="https://github.com/Jaeyo">Github</a>,
+        {` `}<a href="https://twitter.com/lastiverse">Twitter</a>,
+        {` `}<a href="https://www.facebook.com/jaeyo.developer">Facebook</a>
       </p>
     </Content>
   )
