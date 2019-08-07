@@ -83,6 +83,7 @@
     "tsc": "tsc --noEmit",
     "lint": "tslint --project .",
     "gql-codegen": "graphql-codegen --config codegen.yml",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b ts"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b ts",
+    "deploy-only": "gh-pages -d public -b master"
   }
 }
