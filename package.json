@@ -53,6 +53,7 @@
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.14",
     "@types/typography": "^0.16.2",
+    "gh-pages": "^2.1.0",
     "graphql": "^14.2.1",
     "prettier": "^1.17.0",
     "tslint": "^5.16.0",
@@ -81,6 +82,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "tsc": "tsc --noEmit",
     "lint": "tslint --project .",
-    "gql-codegen": "graphql-codegen --config codegen.yml"
+    "gql-codegen": "graphql-codegen --config codegen.yml",
+    "deploy": "gh-pages -d public -b master -r https://github.com/jaeyo/jaeyo.github.io"
   }
 }
