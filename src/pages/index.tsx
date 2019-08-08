@@ -2,6 +2,7 @@ import { graphql, PageRendererProps, useStaticQuery } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { Bio } from "../components/bio"
+import Nav from "../components/nav"
 import { Layout } from "../components/layout"
 import { FadeLink } from "../components/link"
 import { SEO } from "../components/seo"
@@ -26,7 +27,10 @@ const BlogIndex = (props: Props) => {
           title
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC },
+        filter: { frontmatter: { template: { eq: "blog" }}}
+      ) {
         edges {
           node {
             excerpt
@@ -54,6 +58,7 @@ const BlogIndex = (props: Props) => {
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
       <Bio />
+      <Nav />
       {posts.map(({ node }: { node: MarkdownRemark }) => {
         const frontmatter = node!.frontmatter!
         const fields = node!.fields!

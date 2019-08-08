@@ -1,6 +1,7 @@
 ---
 title: "reselect"
 date: "2018-10-06T11:44:00.000Z"
+template: "blog"
 ---
 
 - [https://github.com/reactjs/reselect](reselect)
