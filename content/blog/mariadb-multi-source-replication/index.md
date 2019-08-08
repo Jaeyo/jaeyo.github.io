@@ -1,6 +1,7 @@
 ---
 title: "mariadb multi source replication"
 date: "2017-04-28T17:51:00.000Z"
+template: "blog"
 ---
 ## multi source replication 절차
 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.

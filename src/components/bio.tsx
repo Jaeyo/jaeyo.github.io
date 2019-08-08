@@ -6,7 +6,7 @@ import { rhythm } from "../utils/typography"
 
 const Content = styled.div`
   display: flex;
-  margin-bottom: ${rhythm(2.5)};
+  margin-bottom: ${rhythm(1 / 4)};
 `
 
 const GatsbyImage = forwardRef(

@@ -1,6 +1,7 @@
 ---
 title: "리디스토리 프론트엔드 개발기"
 date: "2017-10-08T14:57:00.000Z"
+template: "blog"
 ---
 
 본 포스팅은 [회사 블로그에 올려놓았던 글](https://www.ridicorp.com/blog/2017/09/13/how-to-develop-ridistory-front/)을 옮겨놓은 것입니다.

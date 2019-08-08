@@ -1,6 +1,7 @@
 ---
 title: "qmk_firmware 빌드 시에 chibios 관련 에러 발생"
 date: "2018-10-16T10:34:00.000Z"
+template: "blog"
 ---
 
 `qmk_firmware`는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다.

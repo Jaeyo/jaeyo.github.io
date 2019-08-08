@@ -36,8 +36,9 @@ const Content = styled.div`
 export const Layout = (props: Props) => {
   const { location, title, children } = props
   const rootPath = `/`
+  const diaryPath = `/diary`
 
-  const HeaderTitle = location.pathname === rootPath ? StyledH1 : StyledH3
+  const HeaderTitle = (location.pathname === rootPath || location.pathname === diaryPath) ? StyledH1 : StyledH3
 
   return (
     <Content>
