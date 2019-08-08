@@ -17,6 +17,10 @@ const Title = styled.h3`
   margin-bottom: ${rhythm(1 / 4)};
 `
 
+const ItemWrapper = styled.div`
+  margin: 60px 0;
+`
+
 type Props = PageRendererProps
 
 const BlogIndex = (props: Props) => {
@@ -67,7 +71,7 @@ const BlogIndex = (props: Props) => {
 
         const title = frontmatter.title || fields.slug
         return (
-          <div key={slug}>
+          <ItemWrapper key={slug}>
             <Title>
               <StyledLink to={slug}>{title}</StyledLink>
             </Title>
@@ -77,7 +81,7 @@ const BlogIndex = (props: Props) => {
                 __html: frontmatter.description || excerpt,
               }}
             />
-          </div>
+          </ItemWrapper>
         )
       })}
     </Layout>
