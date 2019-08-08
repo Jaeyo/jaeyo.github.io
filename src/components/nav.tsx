@@ -6,7 +6,7 @@ import { rhythm } from "../utils/typography"
 
 const Content = styled.div`
     text-align: center;
-    margin-bottom: ${rhythm(1.2)}
+    margin: ${rhythm(2)} 0 ${rhythm(1)} 0;
 `
 
 const NavLink = styled(FadeLink)`
