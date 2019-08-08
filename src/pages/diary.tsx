@@ -49,7 +49,7 @@ const Diary = (props: Props) => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO
-        title="All posts"
+        title="diaries"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
       <Bio />

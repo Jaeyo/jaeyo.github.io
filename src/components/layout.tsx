@@ -35,10 +35,13 @@ const Content = styled.div`
 
 export const Layout = (props: Props) => {
   const { location, title, children } = props
-  const rootPath = `/`
-  const diaryPath = `/diary`
+  const mainPaths = [
+    '/',
+    '/diary',
+    '/awesome-posts',
+  ]
 
-  const HeaderTitle = (location.pathname === rootPath || location.pathname === diaryPath) ? StyledH1 : StyledH3
+  const HeaderTitle = mainPaths.indexOf(location.pathname) > -1 ? StyledH1 : StyledH3
 
   return (
     <Content>
