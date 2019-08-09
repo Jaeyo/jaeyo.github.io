@@ -18,7 +18,7 @@ const StyledSpan = styled.span`
     padding: 2px 6px;
     max-height: 20px;
     overflow-y: hidden;
-    word-break: break-all;
+    word-break: keep-all;
 `
 
 interface Props {
@@ -34,7 +34,7 @@ const TagBox: FC<Props> = ({ name, onClick, closable }) => (
         onClick={() => { onClick!() }}
     >
         {name}
-        { closable === true ? ' ' + String.fromCharCode(215) : null}
+        {closable === true ? ' ' + String.fromCharCode(215) : null}
     </StyledSpan>
 )
 
