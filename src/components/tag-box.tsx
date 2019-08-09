@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 import styled from "styled-components"
-import { stringToColor } from "../utils/color"
+import { stringToColor, isDarkColor } from "../utils/color"
 
 
 interface StyledSpanProps {
@@ -18,7 +18,7 @@ const StyledSpan = styled.span`
     padding: 2px 6px;
     max-height: 20px;
     overflow-y: hidden;
-    word-break: keep-all;
+    white-space: nowrap;
 `
 
 interface Props {
@@ -27,16 +27,21 @@ interface Props {
     closable?: boolean
 }
 
-const TagBox: FC<Props> = ({ name, onClick, closable }) => (
-    <StyledSpan
-        color="#eeeeee"
-        bgColor={stringToColor(name)}
-        onClick={() => { onClick!() }}
-    >
-        {name}
-        {closable === true ? ' ' + String.fromCharCode(215) : null}
-    </StyledSpan>
-)
+const TagBox: FC<Props> = ({ name, onClick, closable }) => {
+    const bgColor = stringToColor(name)
+    const color = isDarkColor(bgColor) ? '#eeeeee' : '#222222'
+
+    return (
+        <StyledSpan
+            color={color}
+            bgColor={bgColor}
+            onClick={() => { onClick!() }}
+        >
+            {name}
+            {closable === true ? ' ' + String.fromCharCode(215) : null}
+        </StyledSpan>
+    )
+}
 
 TagBox.defaultProps = {
     onClick: () => {},
