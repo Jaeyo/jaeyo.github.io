@@ -82,7 +82,7 @@ export default class AwesomePosts extends PureComponent<Props, State> {
       .filter((tag) => this.state.selectedTags.indexOf(tag) === -1)
       // render
       .map((tag, i) => 
-        <TagLi key={i}>
+        <TagLi key={tag}>
           <TagBox name={tag} onClick={() => this.onSelectTag(tag)} />
         </TagLi>
       )
@@ -106,7 +106,7 @@ export default class AwesomePosts extends PureComponent<Props, State> {
       <Clearfix>
         <SelectedTagsWrapper>
           {selectedTags.map((tag, i) => (
-            <TagLi key={i}>
+            <TagLi key={tag}>
               <TagBox
                 name={tag}
                 onClick={() => this.onRemoveTag(tag)}
@@ -137,7 +137,7 @@ export default class AwesomePosts extends PureComponent<Props, State> {
           <div>
             {tags.map((tag, i) => (
               <TagBox
-                key={i}
+                key={url + tag}
                 name={tag}
                 onClick={() => this.onSelectTag(tag)}
               />

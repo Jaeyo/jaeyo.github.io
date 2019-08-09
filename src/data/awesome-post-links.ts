@@ -45,7 +45,7 @@ export const postLinks: PostLink[] = [
     {
         title: '사장이 되면 좋을 것 같아?',
         url: 'https://greypencil.tistory.com/62?category=742519',
-        tags: ['Etc'],
+        tags: ['Business'],
     },
     {
         title: '프로그래머 열정을 말하다.',
@@ -161,5 +161,155 @@ export const postLinks: PostLink[] = [
         title: '좋은 동료란... (1)',
         url: 'https://brunch.co.kr/@supims/503',
         tags: ['Self Improvement']
+    },
+    {
+        title: '좋은 동료란... (2)',
+        url: 'https://brunch.co.kr/@supims/507',
+        tags: ['Self Improvement']
+    },
+    {
+        title: '사람들 앞에만 서면 떨리는 이유',
+        url: 'https://blog.naver.com/delmadang/221486396759',
+        tags: ['Self Improvement']
+    },
+    {
+        title: '흔한 개발자가 두서 없이 쓰는 글 #1',
+        url: 'https://luckyyowu.tistory.com/393',
+        tags: ['Developer']
+    },
+    {
+        title: '나는 그동안 무엇으로 성장했을까?',
+        url: 'http://huns.me/development/2281',
+        tags: ['Developer']
+    },
+    {
+        title: '경력직 채용, 그 태도에 관하여',
+        url: 'https://ppss.kr/archives/141428',
+        tags: ['Etc']
+    },
+    {
+        title: '어두운 추상화의 위기 (The Looming Abstraction Crisis) 번역글',
+        url: 'https://blog.pigno.se/post/183565621043/%EC%96%B4%EB%91%90%EC%9A%B4-%EC%B6%94%EC%83%81%ED%99%94%EC%9D%98-%EC%9C%84%EA%B8%B0-the-looming-abstraction-crisis-%EB%B2%88%EC%97%AD%EA%B8%80',
+        tags: ['Computer Science']
+    },
+    {
+        title: '쿠버네티스 pod 구성 패턴',
+        url: 'https://arisu1000.tistory.com/27863',
+        tags: ['Kubernetes']
+    },
+    {
+        title: '신규 Web 서비스시 고려해 볼 사항',
+        url: 'http://kwonnam.pe.kr/wiki/web/%EC%8B%A0%EA%B7%9C%EC%84%9C%EB%B9%84%EC%8A%A4',
+        tags: ['Architecture']
+    },
+    {
+        title: '바이트 순서와 BOM이 이렇게 복잡해진 이유',
+        url: 'http://www.allofsoftware.net/2015/06/bom-11.html',
+        tags: ['Computer Science']
+    },
+    {
+        title: 'Tumblr에서는 MySQL로 어떻게 대용량 데이터를 관리하였을까?',
+        url: 'http://gywn.net/2012/05/how_to_shard_big_data_in_tumblr/',
+        tags: ['Database', 'Sharding']
+    },
+    {
+        title: '어쩌다 DDD 공부를 시작했다',
+        url: 'https://millenial-dev.tistory.com/11',
+        tags: ['DDD']
+    },
+    {
+        title: 'Go API에서 메모리 누수 예방하기',
+        url: 'https://mingrammer.com/translation-avoiding-memory-leak-in-golang-api/',
+        tags: ['Go']
+    },
+    {
+        title: '유한 상태 기계를 Django에 적용하여 상태 변경을 관리하기',
+        url: 'https://tech.peoplefund.co.kr/2019/03/26/managing-state-using-finite-state-machine.html',
+        tags: ['Finite State Machine']
+    },
+    {
+        title: 'Go My Way #2 - 데이터베이스, 로깅',
+        url: 'https://jaehue.github.io/post/go-my-way-2-database-and-logging/',
+        tags: ['Go']
+    },
+    {
+        title: '리눅스의 페이지 캐시와 버퍼 캐시',
+        url: 'https://brunch.co.kr/@alden/25',
+        tags: ['Linux', 'Computer Science']
+    },
+    {
+        title: '확장하기 쉬운 코드가 아니라 삭제하기 쉬운 코드를 작성하자',
+        url: 'https://harfangk.github.io/2016/10/30/write-code-that-is-easy-to-delete-not-easy-to-extend-ko.html?fbclid=IwAR2QqMQtI8ZBXB56RmahovnGBgNY-SHiw0lMoRfhGxJDfpkClOe9W30iYAc',
+        tags: ['Clean Code']
+    },
+    {
+        title: '후배 개발자에게 - 2019년',
+        url: 'https://brunch.co.kr/@javajigi/4',
+        tags: ['Developer']
+    },
+    {
+        title: '능력 있는 개발자는 어떻게 알아볼 수 있나?',
+        url: 'https://okky.kr/article/370719',
+        tags: ['Developer']
+    },
+    {
+        title: 'Armeria 오픈소스화 이야기',
+        url: 'https://engineering.linecorp.com/ko/blog/open-sourcing-armeria/',
+        tags: ['Open Source']
+    },
+    {
+        title: 'Kubernetes Ingress 개념 및 사용 방법, 온-프레미스 환경에서 Ingress 구축하기',
+        url: 'https://blog.naver.com/alice_k106/221502890249',
+        tags: ['Kubernetes']
+    },
+    {
+        title: 'Kubernetes Ingress 의 ClusterIP Bypass, Annotation, SSL/TLS 를 위한 인증서 적용',
+        url: 'https://blog.naver.com/alice_k106/221503924911',
+        tags: ['Kubernetes']
+    },
+    {
+        title: 'Edge Computing 의 의미와 필요성',
+        url: 'https://blog.naver.com/alice_k106/221300292775',
+        tags: ['Edge Computing']
+    },
+    {
+        title: 'IBM의 Docker 파일 시스템 성능 논문 리뷰',
+        url: 'https://blog.naver.com/alice_k106/220973165893',
+        tags: ['Docker', 'Performance']
+    },
+    {
+        title: 'Docker Container 와 Performance Interference 이야기',
+        url: 'https://blog.naver.com/alice_k106/221088381471',
+        tags: ['Docker', 'Performance']
+    },
+    {
+        title: '쿠버네티스 모니터링 : metrics-server (kubernetes monitoring : metrics-server)',
+        url: 'https://arisu1000.tistory.com/27856',
+        tags: ['Kubernetes']
+    },
+    {
+        title: '쿠버네티스를 이용해 테스팅 환경 구현해보기',
+        url: 'http://woowabros.github.io/experience/2018/03/13/k8s-test.html',
+        tags: ['Kubernetes']
+    },
+    {
+        title: '쿠버네티스 인그레스(kubernetes ingress)',
+        url: 'https://arisu1000.tistory.com/27840',
+        tags: ['Kubernetes']
+    },
+    {
+        title: 'You Are Not Google',
+        url: 'https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb',
+        tags: ['Etc']
+    },
+    {
+        title: 'Running VSCode in Docker',
+        url: 'https://binal.pub/2019/04/running-vscode-in-docker/',
+        tags: ['Docker', 'Etc']
+    },
+    {
+        title: '모니터링은 경보가 아니라 해석',
+        url: 'https://www.sauru.so/blog/monitoring-is-not-alert-but-analytics/',
+        tags: ['Monitoring']
     },
 ]
