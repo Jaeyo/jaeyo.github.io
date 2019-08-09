@@ -5,7 +5,7 @@ import { Layout } from "../components/layout"
 import { SEO } from "../components/seo"
 import { Bio } from "../components/bio"
 import Nav from "../components/nav"
-import { postLinks } from '../data/awesome-post-links'
+import { postLinks, PostLink } from '../data/awesome-post-links'
 import TagBox from "../components/tag-box"
 
 
@@ -13,8 +13,14 @@ const Wrapper = styled.div`
   margin: 30px 0;
 `
 
+const AllTagWrapper = styled.div`
+  text-align: center;
+  padding: 20px 0 20px 0;
+`
+
 const SelectedTagsWrapper = styled.div`
   text-align: center;
+  padding: 20px 0;
 `
 
 type Props = PageRendererProps
@@ -50,6 +56,29 @@ export default class AwesomePosts extends PureComponent<Props, State> {
     this.setState({ selectedTags })
   }
 
+  renderAllTags() {
+    const tagElements = postLinks
+      // extract tags
+      .map(postLink => postLink.tags)
+      // flatten
+      .reduce((acc: string[], tags: string[], index, arr) => {
+        acc = acc.concat(tags)
+        return acc
+      }, [])
+      // remove duplicate
+      .filter((tag, pos, self) => self.indexOf(tag) == pos)
+      // filter selected tags
+      .filter((tag) => this.state.selectedTags.indexOf(tag) === -1)
+      // render
+      .map(tag => <TagBox name={tag} onClick={() => this.onSelectTag(tag)} />)
+    
+    return (
+      <AllTagWrapper>
+        {tagElements}
+      </AllTagWrapper>
+    )
+  }
+
   renderSelectedTags() {
     const { selectedTags } = this.state
     
@@ -68,7 +97,8 @@ export default class AwesomePosts extends PureComponent<Props, State> {
 
   renderPostLinks() {
     const { selectedTags } = this.state
-    return Object.assign([], postLinks)
+
+    return Object.assign(new Array<PostLink>(), postLinks)
       .reverse()
       .filter((postLink) => 
         selectedTags.length === 0 ? 
@@ -92,6 +122,22 @@ export default class AwesomePosts extends PureComponent<Props, State> {
       ))
   }
 
+  renderWithData(data: any) {
+    return (
+      <Layout location={this.props.location} title={data.site.siteMetadata.title}>
+        <SEO
+          title="awesome posts"
+          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        />
+        <Bio />
+        <Nav />
+        {this.renderAllTags()}
+        {this.renderSelectedTags()}
+        {this.renderPostLinks()}   
+      </Layout>
+    )
+  }
+
   render() {
     return (
       <StaticQuery
@@ -104,18 +150,7 @@ export default class AwesomePosts extends PureComponent<Props, State> {
             }
           }
         `}
-        render={(data) => (
-          <Layout location={this.props.location} title={data.site.siteMetadata.title}>
-            <SEO
-              title="awesome posts"
-              keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-            />
-            <Bio />
-            <Nav />
-            {this.renderSelectedTags()}
-            {this.renderPostLinks()}   
-          </Layout>
-        )}
+        render={(data) => this.renderWithData(data)}
       />
     )
   }
