@@ -7,20 +7,31 @@ import { Bio } from "../components/bio"
 import Nav from "../components/nav"
 import { postLinks, PostLink } from '../data/awesome-post-links'
 import TagBox from "../components/tag-box"
+import Clearfix from "../components/clearfix"
 
 
 const Wrapper = styled.div`
+  display: block;
   margin: 30px 0;
 `
 
-const AllTagWrapper = styled.div`
-  text-align: center;
-  padding: 20px 0 20px 0;
+const AllTagWrapper = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
 `
 
-const SelectedTagsWrapper = styled.div`
-  text-align: center;
+const SelectedTagsWrapper = styled.ul`
+  list-style: none;
+  margin: 0;
   padding: 20px 0;
+`
+
+const TagLi = styled.li`
+  list-style: none;
+  float: left;
+  padding: 0;
+  margin: 0;
 `
 
 type Props = PageRendererProps
@@ -70,28 +81,41 @@ export default class AwesomePosts extends PureComponent<Props, State> {
       // filter selected tags
       .filter((tag) => this.state.selectedTags.indexOf(tag) === -1)
       // render
-      .map(tag => <TagBox name={tag} onClick={() => this.onSelectTag(tag)} />)
+      .map((tag, i) => 
+        <TagLi key={i}>
+          <TagBox name={tag} onClick={() => this.onSelectTag(tag)} />
+        </TagLi>
+      )
     
     return (
-      <AllTagWrapper>
-        {tagElements}
-      </AllTagWrapper>
+      <Clearfix>
+        <AllTagWrapper>
+          {tagElements}
+        </AllTagWrapper>
+      </Clearfix>
     )
   }
 
   renderSelectedTags() {
     const { selectedTags } = this.state
+    if (selectedTags.length === 0) {
+      return null
+    }
     
     return (
-      <SelectedTagsWrapper>
-        {selectedTags.map(tag => (
-          <TagBox
-            name={tag}
-            onClick={() => this.onRemoveTag(tag)}
-            closable={true}
-          />
-        ))}
-      </SelectedTagsWrapper>
+      <Clearfix>
+        <SelectedTagsWrapper>
+          {selectedTags.map((tag, i) => (
+            <TagLi key={i}>
+              <TagBox
+                name={tag}
+                onClick={() => this.onRemoveTag(tag)}
+                closable={true}
+              />
+            </TagLi>
+          ))}
+        </SelectedTagsWrapper>
+      </Clearfix>
     )
   }
 
@@ -111,8 +135,9 @@ export default class AwesomePosts extends PureComponent<Props, State> {
             <a href={url} target="_blank">{title}</a>
           </div>
           <div>
-            {tags.map((tag: string) => (
+            {tags.map((tag, i) => (
               <TagBox
+                key={i}
                 name={tag}
                 onClick={() => this.onSelectTag(tag)}
               />
