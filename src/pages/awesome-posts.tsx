@@ -68,7 +68,8 @@ export default class AwesomePosts extends PureComponent<Props, State> {
 
   renderPostLinks() {
     const { selectedTags } = this.state
-    return postLinks.reverse()
+    return Object.assign([], postLinks)
+      .reverse()
       .filter((postLink) => 
         selectedTags.length === 0 ? 
           true : 
