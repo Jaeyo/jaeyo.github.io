@@ -312,4 +312,12 @@ export const postLinks: PostLink[] = [
         url: 'https://www.sauru.so/blog/monitoring-is-not-alert-but-analytics/',
         tags: ['Monitoring']
     },
+
+
+
+    {
+        title: 'Uber의 Base Web 사용기',
+        url: 'https://choyongjoon.com/base-web/',
+        tags: ['React']
+    },
 ]
