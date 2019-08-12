@@ -6,6 +6,7 @@ import { SEO } from "../components/seo"
 import { Bio } from "../components/bio"
 import Nav from "../components/nav"
 import { intro, madeItBetter1, madeItBetter2 } from "../data/resume"
+import TechHistoryGanttChart from "../components/resume/tech-history-gantt-chart";
 
 
 type Props = PageRendererProps
@@ -39,6 +40,7 @@ const Resume = (props: Props) => {
       <h3>#2</h3>
       <p dangerouslySetInnerHTML={{ __html: marked(madeItBetter2) }} />
       <h2>okay for new things</h2>
+      <TechHistoryGanttChart />
     </Layout>
   )
 }
