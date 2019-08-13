@@ -23,7 +23,7 @@ interface Props {
 }
 
 export const SEO = (props: Props) => {
-  const lang = props.lang || "en"
+  const lang = props.lang || "ko"
   const meta = props.meta || []
   const keywords = props.keywords || []
   const description = props.description || ""

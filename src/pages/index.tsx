@@ -8,6 +8,7 @@ import { FadeLink } from "../components/link"
 import { SEO } from "../components/seo"
 import { MarkdownRemark } from "../graphql-types"
 import { rhythm } from "../utils/typography"
+import keywords from "../data/seo-keywords"
 
 const StyledLink = styled(FadeLink)`
   box-shadow: none;
@@ -59,7 +60,7 @@ const BlogIndex = (props: Props) => {
     <Layout location={props.location} title={siteTitle}>
       <SEO
         title="All posts"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        keywords={keywords}
       />
       <Bio />
       <Nav />

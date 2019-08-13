@@ -7,6 +7,7 @@ import { FadeLink } from "../components/link"
 import { SEO } from "../components/seo"
 import { Query, SitePageContext } from "../graphql-types"
 import { rhythm, styledScale } from "../utils/typography"
+import keywords from "../data/seo-keywords"
 
 interface Props extends PageRendererProps {
   pageContext: SitePageContext
@@ -46,6 +47,7 @@ const BlogPostTemplate = (props: Props) => {
       <SEO
         title={frontmatter.title!}
         description={frontmatter.description || excerpt}
+        keywords={keywords}
       />
       <h1>{post.frontmatter!.title}</h1>
       <Date>{frontmatter.date}</Date>
