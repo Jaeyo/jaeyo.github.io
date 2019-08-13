@@ -6,7 +6,7 @@ import { SEO } from "../components/seo"
 import { Bio } from "../components/bio"
 import Nav from "../components/nav"
 import { intro, madeItBetter1, madeItBetter2 } from "../data/resume"
-import TechHistoryGanttChart from "../components/resume/tech-history-gantt-chart";
+import TechHistoryGanttChart from "../components/resume/tech-history-gantt-chart"
 
 
 type Props = PageRendererProps
@@ -23,6 +23,10 @@ const Resume = (props: Props) => {
   `)
 
   const siteTitle = data.site.siteMetadata.title
+
+  if (true) {
+    return null
+  }
 
   return (
     <Layout location={props.location} title={siteTitle}>
