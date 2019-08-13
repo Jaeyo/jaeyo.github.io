@@ -325,4 +325,9 @@ export const postLinks: PostLink[] = [
         url: 'https://blog.remotemonster.com/1주일간의-리모트워크는-8277114a567c',
         tags: ['Remote Work']
     },
+    {
+        title: 'GitLab Team HandBook',
+        url: 'https://about.gitlab.com/handbook/',
+        tags: ['Company Culture', 'Remote Work']
+    },
 ]
