@@ -320,4 +320,9 @@ export const postLinks: PostLink[] = [
         url: 'https://choyongjoon.com/base-web/',
         tags: ['React']
     },
+    {
+        title: '1주일간의 리모트워크는',
+        url: 'https://blog.remotemonster.com/1주일간의-리모트워크는-8277114a567c',
+        tags: ['Remote Work']
+    },
 ]
