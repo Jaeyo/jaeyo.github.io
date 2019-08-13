@@ -7,6 +7,7 @@ import { Bio } from "../components/bio"
 import Nav from "../components/nav"
 import { intro, madeItBetter1, madeItBetter2 } from "../data/resume"
 import TechHistoryGanttChart from "../components/resume/tech-history-gantt-chart"
+import keywords from "../data/seo-keywords"
 
 
 type Props = PageRendererProps
@@ -32,7 +33,7 @@ const Resume = (props: Props) => {
     <Layout location={props.location} title={siteTitle}>
       <SEO
         title="resume"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        keywords={keywords}
       />
       <Bio />
       <Nav />

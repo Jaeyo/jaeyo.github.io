@@ -6,6 +6,7 @@ import { Bio } from "../components/bio"
 import { MarkdownRemark } from "../graphql-types"
 import Nav from "../components/nav"
 import styled from "styled-components"
+import keywords from "../data/seo-keywords"
 
 
 const Hr = styled.hr`
@@ -50,7 +51,7 @@ const Diary = (props: Props) => {
     <Layout location={props.location} title={siteTitle}>
       <SEO
         title="diaries"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        keywords={keywords}
       />
       <Bio />
       <Nav />

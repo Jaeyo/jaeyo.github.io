@@ -8,6 +8,7 @@ import Nav from "../components/nav"
 import { postLinks, PostLink } from '../data/awesome-post-links'
 import TagBox from "../components/tag-box"
 import Clearfix from "../components/clearfix"
+import keywords from "../data/seo-keywords"
 
 
 const Wrapper = styled.div`
@@ -152,7 +153,7 @@ export default class AwesomePosts extends PureComponent<Props, State> {
       <Layout location={this.props.location} title={data.site.siteMetadata.title}>
         <SEO
           title="awesome posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={keywords}
         />
         <Bio />
         <Nav />
