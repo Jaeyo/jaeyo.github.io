@@ -26,7 +26,7 @@ const Title = styled.h3`
 const DateHeaderWrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 25px;
+  height: 17px;
 `
 
 interface DateHeaderFieldProps { width: number }
@@ -38,8 +38,8 @@ const DateHeaderField = styled.div`
 
 const DateHeader = () => (
   <DateHeaderWrapper>
-    <DateHeaderField width={20} />
-    { range(13, 19 + 1).map(year => <DateHeaderField width={(100-20) / 7}>{'`' + year}</DateHeaderField>) }
+    <DateHeaderField width={17} />
+    { range(13, 19 + 1).map(year => <DateHeaderField key={year} width={(100-17) / 7}>{'`' + year}</DateHeaderField>) }
   </DateHeaderWrapper>
 )
 
@@ -68,18 +68,18 @@ const Companies = () => (
     <Title>Company</Title>
     <DateHeader />
     <RowWrapper>
-      <Field width={20} bgColor="none">Igloosec</Field>
-      <Field width={((100-20) / 28) * 15} bgColor={lighten('3958d8', 1)} />
+      <Field width={17} bgColor="none">Igloosec</Field>
+      <Field width={((100-17) / 28) * 15} bgColor={lighten('3958d8', 1)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">RIDI</Field>
-      <Field width={((100-20) / 28) * 15} bgColor="none" />
-      <Field width={((100-20) / 28) * 8} bgColor={lighten('3958d8', 20)} />
+      <Field width={17} bgColor="none">RIDI</Field>
+      <Field width={((100-17) / 28) * 15} bgColor="none" />
+      <Field width={((100-17) / 28) * 8} bgColor={lighten('3958d8', 20)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">SK C&C</Field>
-      <Field width={((100-20) / 28) * 23} bgColor="none" />
-      <Field width={((100-20) / 28) * 5} bgColor={lighten('3958d8', 35)} />
+      <Field width={17} bgColor="none">SK C&C</Field>
+      <Field width={((100-17) / 28) * 23} bgColor="none" />
+      <Field width={((100-17) / 28) * 5} bgColor={lighten('3958d8', 35)} />
     </RowWrapper>
   </Wrapper>
 )
@@ -89,39 +89,39 @@ const Language = () => (
     <Title>Language</Title>
     <DateHeader />
     <RowWrapper>
-      <Field width={20} bgColor="none">Java</Field>
-      <Field width={((100-20) / 28) * 15} bgColor={lighten('29b0c3', -20)} />
+      <Field width={17} bgColor="none">Java</Field>
+      <Field width={((100-17) / 28) * 15} bgColor={lighten('29b0c3', -20)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Javascript</Field>
-      <Field width={((100-20) / 28) * 28} bgColor={lighten('29b0c3', -5)} />
+      <Field width={17} bgColor="none">Javascript</Field>
+      <Field width={((100-17) / 28) * 28} bgColor={lighten('29b0c3', -5)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Scala</Field>
-      <Field width={((100-20) / 28) * 8} bgColor="none" />
-      <Field width={((100-20) / 28) * 3} bgColor={lighten('29b0c3', 5)} />
+      <Field width={17} bgColor="none">Scala</Field>
+      <Field width={((100-17) / 28) * 8} bgColor="none" />
+      <Field width={((100-17) / 28) * 3} bgColor={lighten('29b0c3', 5)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Go</Field>
-      <Field width={((100-20) / 28) * 12} bgColor="none" />
-      <Field width={((100-20) / 28) * 3} bgColor={lighten('29b0c3', 10)} />
-      <Field width={((100-20) / 28) * 8} bgColor="none" />
-      <Field width={((100-20) / 28) * 5} bgColor={lighten('29b0c3', 10)} />
+      <Field width={17} bgColor="none">Go</Field>
+      <Field width={((100-17) / 28) * 12} bgColor="none" />
+      <Field width={((100-17) / 28) * 3} bgColor={lighten('29b0c3', 10)} />
+      <Field width={((100-17) / 28) * 8} bgColor="none" />
+      <Field width={((100-17) / 28) * 5} bgColor={lighten('29b0c3', 10)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Python</Field>
-      <Field width={((100-20) / 28) * 15} bgColor="none" />
-      <Field width={((100-20) / 28) * 8} bgColor={lighten('29b0c3', 15)} />
+      <Field width={17} bgColor="none">Python</Field>
+      <Field width={((100-17) / 28) * 15} bgColor="none" />
+      <Field width={((100-17) / 28) * 8} bgColor={lighten('29b0c3', 15)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Kotlin</Field>
-      <Field width={((100-20) / 28) * 19} bgColor="none" />
-      <Field width={((100-20) / 28) * 1} bgColor={lighten('29b0c3', 20)} />
+      <Field width={17} bgColor="none">Kotlin</Field>
+      <Field width={((100-17) / 28) * 19} bgColor="none" />
+      <Field width={((100-17) / 28) * 1} bgColor={lighten('29b0c3', 20)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Typescript</Field>
-      <Field width={((100-20) / 28) * 25} bgColor="none" />
-      <Field width={((100-20) / 28) * 3} bgColor={lighten('29b0c3', 23)} />
+      <Field width={17} bgColor="none">Typescript</Field>
+      <Field width={((100-17) / 28) * 25} bgColor="none" />
+      <Field width={((100-17) / 28) * 3} bgColor={lighten('29b0c3', 23)} />
     </RowWrapper>
   </Wrapper>
 )
@@ -131,65 +131,65 @@ const FrameworkAndEtc = () => (
     <Title>Framework & Etc</Title>
     <DateHeader />
     <RowWrapper>
-      <Field width={20} bgColor="none">Oracle</Field>
-      <Field width={((100-20) / 28) * 15} bgColor={lighten('3fa211', -20)} />
+      <Field width={17} bgColor="none">Oracle</Field>
+      <Field width={((100-17) / 28) * 15} bgColor={lighten('3fa211', -20)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Jetty</Field>
-      <Field width={((100-20) / 28) * 11} bgColor="none" />
-      <Field width={((100-20) / 28) * 4} bgColor={lighten('3fa211', -10)} />
+      <Field width={17} bgColor="none">Jetty</Field>
+      <Field width={((100-17) / 28) * 11} bgColor="none" />
+      <Field width={((100-17) / 28) * 4} bgColor={lighten('3fa211', -10)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">MySQL</Field>
-      <Field width={((100-20) / 28) * 15} bgColor="none" />
-      <Field width={((100-20) / 28) * 13} bgColor={lighten('3fa211', -3)} />
+      <Field width={17} bgColor="none">MySQL</Field>
+      <Field width={((100-17) / 28) * 15} bgColor="none" />
+      <Field width={((100-17) / 28) * 13} bgColor={lighten('3fa211', -3)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Django</Field>
-      <Field width={((100-20) / 28) * 15} bgColor="none" />
-      <Field width={((100-20) / 28) * 8} bgColor={lighten('3fa211', 3)} />
+      <Field width={17} bgColor="none">Django</Field>
+      <Field width={((100-17) / 28) * 15} bgColor="none" />
+      <Field width={((100-17) / 28) * 8} bgColor={lighten('3fa211', 3)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">React.js</Field>
-      <Field width={((100-20) / 28) * 13} bgColor="none" />
-      <Field width={((100-20) / 28) * 15} bgColor={lighten('3fa211', 8)} />
+      <Field width={17} bgColor="none">React.js</Field>
+      <Field width={((100-17) / 28) * 13} bgColor="none" />
+      <Field width={((100-17) / 28) * 15} bgColor={lighten('3fa211', 8)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">AWS</Field>
-      <Field width={((100-20) / 28) * 15} bgColor="none" />
-      <Field width={((100-20) / 28) * 8} bgColor={lighten('3fa211', 12)} />
-      <Field width={((100-20) / 28) * 1} bgColor="none" />
-      <Field width={((100-20) / 28) * 4} bgColor={lighten('3fa211', 12)} />
+      <Field width={17} bgColor="none">AWS</Field>
+      <Field width={((100-17) / 28) * 15} bgColor="none" />
+      <Field width={((100-17) / 28) * 8} bgColor={lighten('3fa211', 12)} />
+      <Field width={((100-17) / 28) * 1} bgColor="none" />
+      <Field width={((100-17) / 28) * 4} bgColor={lighten('3fa211', 12)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Redis</Field>
-      <Field width={((100-20) / 28) * 15} bgColor="none" />
-      <Field width={((100-20) / 28) * 8} bgColor={lighten('3fa211', 18)} />
+      <Field width={17} bgColor="none">Redis</Field>
+      <Field width={((100-17) / 28) * 15} bgColor="none" />
+      <Field width={((100-17) / 28) * 8} bgColor={lighten('3fa211', 18)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Spring</Field>
-      <Field width={((100-20) / 28) * 19} bgColor="none" />
-      <Field width={((100-20) / 28) * 1} bgColor={lighten('3fa211', 22)} />
+      <Field width={17} bgColor="none">Spring</Field>
+      <Field width={((100-17) / 28) * 19} bgColor="none" />
+      <Field width={((100-17) / 28) * 1} bgColor={lighten('3fa211', 22)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Kafka</Field>
-      <Field width={((100-20) / 28) * 23} bgColor="none" />
-      <Field width={((100-20) / 28) * 5} bgColor={lighten('3fa211', 24)} />
+      <Field width={17} bgColor="none">Kafka</Field>
+      <Field width={((100-17) / 28) * 23} bgColor="none" />
+      <Field width={((100-17) / 28) * 5} bgColor={lighten('3fa211', 24)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">InfluxDB</Field>
-      <Field width={((100-20) / 28) * 23} bgColor="none" />
-      <Field width={((100-20) / 28) * 5} bgColor={lighten('3fa211', 28)} />
+      <Field width={17} bgColor="none">InfluxDB</Field>
+      <Field width={((100-17) / 28) * 23} bgColor="none" />
+      <Field width={((100-17) / 28) * 5} bgColor={lighten('3fa211', 28)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">IBMCloud</Field>
-      <Field width={((100-20) / 28) * 23} bgColor="none" />
-      <Field width={((100-20) / 28) * 5} bgColor={lighten('3fa211', 32)} />
+      <Field width={17} bgColor="none">IBMCloud</Field>
+      <Field width={((100-17) / 28) * 23} bgColor="none" />
+      <Field width={((100-17) / 28) * 5} bgColor={lighten('3fa211', 32)} />
     </RowWrapper>
     <RowWrapper>
-      <Field width={20} bgColor="none">Koa</Field>
-      <Field width={((100-20) / 28) * 23} bgColor="none" />
-      <Field width={((100-20) / 28) * 5} bgColor={lighten('3fa211', 36)} />
+      <Field width={17} bgColor="none">Koa</Field>
+      <Field width={((100-17) / 28) * 23} bgColor="none" />
+      <Field width={((100-17) / 28) * 5} bgColor={lighten('3fa211', 36)} />
     </RowWrapper>
   </Wrapper>
 )
