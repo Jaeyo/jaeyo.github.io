@@ -30,7 +30,12 @@ const PostNavigator = styled.ul`
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
+  padding: 15px 0;
+`
+
+const ListNavigator = styled.div`
+  text-align: center;
+  padding-bottom: 30px;
 `
 
 const BlogPostTemplate = (props: Props) => {
@@ -70,6 +75,9 @@ const BlogPostTemplate = (props: Props) => {
           )}
         </li>
       </PostNavigator>
+      <ListNavigator>
+        <FadeLink to="/" rel="list">go to list</FadeLink>
+      </ListNavigator>
     </Layout>
   )
 }
