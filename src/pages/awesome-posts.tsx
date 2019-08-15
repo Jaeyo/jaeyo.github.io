@@ -22,7 +22,7 @@ const AllTagWrapper = styled.ul`
   padding: 20px 0;
 `
 
-const SelectedTagsWrapper = styled.ul`
+const SelectedTagWrapper = styled.ul`
   list-style: none;
   margin: 0;
   padding: 20px 0;
@@ -38,7 +38,7 @@ const TagLi = styled.li`
 type Props = PageRendererProps
 
 interface State {
-  selectedTags: string[]
+  selectedTag: string | null
 }
 
 export default class AwesomePosts extends PureComponent<Props, State> {
@@ -46,26 +46,16 @@ export default class AwesomePosts extends PureComponent<Props, State> {
     super(props)
 
     this.state = {
-      selectedTags: [],
+      selectedTag: null,
     }
   }
 
   onSelectTag(tag: string) {
-    const selectedTags = Object.assign([], this.state.selectedTags)
-    if (selectedTags.indexOf(tag) > -1) {
-      return
-    }
-    selectedTags.push(tag)
-    this.setState({ selectedTags })
+    this.setState({ selectedTag: tag })
   }
 
   onRemoveTag(tag: string) {
-    const selectedTags = Object.assign([], this.state.selectedTags)
-    if (selectedTags.indexOf(tag) === -1) {
-      return
-    }
-    selectedTags.splice(selectedTags.indexOf(tag), 1)
-    this.setState({ selectedTags })
+    this.setState({ selectedTag: null })
   }
 
   renderAllTags() {
@@ -79,8 +69,6 @@ export default class AwesomePosts extends PureComponent<Props, State> {
       }, [])
       // remove duplicate
       .filter((tag, pos, self) => self.indexOf(tag) == pos)
-      // filter selected tags
-      .filter((tag) => this.state.selectedTags.indexOf(tag) === -1)
       // render
       .map((tag, i) => 
         <TagLi key={tag}>
@@ -98,37 +86,36 @@ export default class AwesomePosts extends PureComponent<Props, State> {
   }
 
   renderSelectedTags() {
-    const { selectedTags } = this.state
-    if (selectedTags.length === 0) {
+    const { selectedTag } = this.state
+    if (selectedTag == null) {
       return null
     }
     
     return (
       <Clearfix>
-        <SelectedTagsWrapper>
-          {selectedTags.map((tag, i) => (
-            <TagLi key={tag}>
-              <TagBox
-                name={tag}
-                onClick={() => this.onRemoveTag(tag)}
-                closable={true}
-              />
-            </TagLi>
-          ))}
-        </SelectedTagsWrapper>
+        <SelectedTagWrapper>
+          <TagLi>
+            <small>filtered: </small>
+            <TagBox
+              name={selectedTag}
+              onClick={() => this.onRemoveTag(selectedTag)}
+              closable={true}
+            />
+          </TagLi>
+        </SelectedTagWrapper>
       </Clearfix>
     )
   }
 
   renderPostLinks() {
-    const { selectedTags } = this.state
+    const { selectedTag } = this.state
 
     return Object.assign(new Array<PostLink>(), postLinks)
       .reverse()
       .filter((postLink) => 
-        selectedTags.length === 0 ? 
+        selectedTag == null ? 
           true : 
-          postLink.tags.filter(tag => selectedTags.indexOf(tag) > -1).length > 0
+          postLink.tags.filter(tag => selectedTag === tag).length > 0
       )
       .map(({ title, url, tags }) => (
         <Wrapper key={url}>
