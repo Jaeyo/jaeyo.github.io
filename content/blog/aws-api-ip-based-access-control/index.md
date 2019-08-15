@@ -2,6 +2,7 @@
 title: "AWS API, IP 기반으로 접근 제한하기"
 date: "2018-01-30T17:19:00.000Z"
 template: "blog"
+tags: ["tech", "aws"]
 ---
 
 EC2 상의 인스턴스나 로드밸런서에 특정 IP 대역만 접근 가능하도록 설정하고 싶다면 Security Group 혹은 ACL을 이용하면 된다. 하지만 그 외의 AWS에서 제공하는 API 들에 대해서 IP 기반으로 접근제한을 걸고 싶다면 Security Group, ACL 로는 불가능하다. 이 부분은 IAM의 Policy로 해결을 봐야 한다.

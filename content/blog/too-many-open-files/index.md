@@ -2,6 +2,7 @@
 title: "Too many open files"
 date: "2017-04-25T19:25:01.000Z"
 template: "blog"
+tags: ["tech", "trouble shooting"]
 description: 집에서 기타치면서 놀고 있었는데 외출했던 아내가 귀가중이라는 메시지를 받았다. 집 앞 지하척 역으로 마중나가려고 핸드폰을 챙겨서 나가려는데 슬랙 메시지가 뭐가 많이 와있다...
 ---
 
