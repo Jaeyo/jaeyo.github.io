@@ -85,7 +85,7 @@ export default class AwesomePosts extends PureComponent<Props, State> {
     )
   }
 
-  renderSelectedTags() {
+  renderSelectedTag() {
     const { selectedTag } = this.state
     if (selectedTag == null) {
       return null
@@ -145,7 +145,7 @@ export default class AwesomePosts extends PureComponent<Props, State> {
         <Bio />
         <Nav />
         {this.renderAllTags()}
-        {this.renderSelectedTags()}
+        {this.renderSelectedTag()}
         {this.renderPostLinks()}   
       </Layout>
     )
