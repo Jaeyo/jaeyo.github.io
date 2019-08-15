@@ -8,6 +8,7 @@ import { SEO } from "../components/seo"
 import { Query, SitePageContext } from "../graphql-types"
 import { rhythm, styledScale } from "../utils/typography"
 import keywords from "../data/seo-keywords"
+import TagBox from "../components/tag-box"
 
 interface Props extends PageRendererProps {
   pageContext: SitePageContext
@@ -55,6 +56,11 @@ const BlogPostTemplate = (props: Props) => {
         keywords={keywords}
       />
       <h1>{post.frontmatter!.title}</h1>
+      <p>
+        {frontmatter.tags!.map(tag =>
+          <TagBox key={tag} name={tag} />
+        )}
+      </p>
       <Date>{frontmatter.date}</Date>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <Divider />
@@ -100,6 +106,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

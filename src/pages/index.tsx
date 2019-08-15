@@ -9,6 +9,7 @@ import { SEO } from "../components/seo"
 import { MarkdownRemark } from "../graphql-types"
 import { rhythm } from "../utils/typography"
 import keywords from "../data/seo-keywords"
+import TagBox from "../components/tag-box"
 
 const StyledLink = styled(FadeLink)`
   box-shadow: none;
@@ -46,6 +47,7 @@ const BlogIndex = (props: Props) => {
               date(formatString: "MMMM DD, YYYY")
               title
               description
+              tags
             }
           }
         }
@@ -77,6 +79,11 @@ const BlogIndex = (props: Props) => {
               <StyledLink to={slug}>{title}</StyledLink>
             </Title>
             <small>{frontmatter.date}</small>
+            <p>
+              {frontmatter.tags!.map(tag =>
+                <TagBox key={tag} name={tag} />
+              )}
+            </p>
             <p
               dangerouslySetInnerHTML={{
                 __html: frontmatter.description || excerpt,
