@@ -9,6 +9,7 @@ import { Query, SitePageContext } from "../graphql-types"
 import { rhythm, styledScale } from "../utils/typography"
 import keywords from "../data/seo-keywords"
 import TagBox from "../components/tag-box"
+import { FacebookProvider, Comments } from "react-facebook"
 
 interface Props extends PageRendererProps {
   pageContext: SitePageContext
@@ -113,6 +114,9 @@ const BlogPostTemplate = (props: Props) => {
       <ListNavigator>
         <FadeLink to="/" rel="list">go to list</FadeLink>
       </ListNavigator>
+      <FacebookProvider appId="690667178023052">
+        <Comments href={`https://jaeyo.github.io/${post!.fields!.slug}`} />
+      </FacebookProvider>
     </Layout>
   )
 }
