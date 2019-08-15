@@ -1,4 +1,4 @@
-import { graphql, PageRendererProps, useStaticQuery, StaticQuery } from "gatsby"
+import { graphql, PageRendererProps, StaticQuery } from "gatsby"
 import React, { PureComponent } from "react"
 import styled from "styled-components"
 import { Bio } from "../components/bio"
@@ -10,7 +10,7 @@ import { MarkdownRemark } from "../graphql-types"
 import { rhythm } from "../utils/typography"
 import keywords from "../data/seo-keywords"
 import TagBox from "../components/tag-box"
-import Clearfix from "../components/clearfix";
+import Clearfix from "../components/clearfix"
 
 const StyledLink = styled(FadeLink)`
   box-shadow: none;
@@ -207,76 +207,3 @@ export default class BlogIndex extends PureComponent<Props, State> {
     )
   }
 }
-
-
-const BlogIndex1 = (props: Props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC },
-        filter: { frontmatter: { template: { eq: "blog" }}}
-      ) {
-        edges {
-          node {
-            excerpt
-            fields {
-              slug
-            }
-            frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              title
-              description
-              tags
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-
-  return (
-    <Layout location={props.location} title={siteTitle}>
-      <SEO
-        title="All posts"
-        keywords={keywords}
-      />
-      <Bio />
-      <Nav />
-      {posts.map(({ node }: { node: MarkdownRemark }) => {
-        const frontmatter = node!.frontmatter!
-        const fields = node!.fields!
-        const slug = fields.slug!
-        const excerpt = node!.excerpt!
-
-        const title = frontmatter.title || fields.slug
-        return (
-          <ItemWrapper key={slug}>
-            <Title>
-              <StyledLink to={slug}>{title}</StyledLink>
-            </Title>
-            <small>{frontmatter.date}</small>
-            <p>
-              {frontmatter.tags!.map(tag =>
-                <TagBox key={tag} name={tag} />
-              )}
-            </p>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: frontmatter.description || excerpt,
-              }}
-            />
-          </ItemWrapper>
-        )
-      })}
-    </Layout>
-  )
-}
-
