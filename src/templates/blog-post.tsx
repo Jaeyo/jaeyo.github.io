@@ -39,6 +39,10 @@ const ListNavigator = styled.div`
   padding-bottom: 30px;
 `
 
+const TagNavigator = styled.ul`
+  list-style: none;
+`
+
 const BlogPostTemplate = (props: Props) => {
   const data = props.data!
   const post = data.markdownRemark!
@@ -47,6 +51,12 @@ const BlogPostTemplate = (props: Props) => {
   const html = post.html!
   const siteTitle = data.site!.siteMetadata!.title!
   const { previous, next } = props.pageContext
+  const nodesWithSameTags = data.allMarkdownRemark!.edges!.filter(edge => (
+    edge!.node!.frontmatter!.tags!.find(
+      tag => frontmatter!.tags!.indexOf(tag) > -1
+    )
+    && post.fields!.slug !== edge!.node!.fields!.slug
+  )).map(edge => edge!.node!)
 
   return (
     <Layout location={props.location} title={siteTitle}>
@@ -56,6 +66,7 @@ const BlogPostTemplate = (props: Props) => {
         keywords={keywords}
       />
       <h1>{post.frontmatter!.title}</h1>
+      <div>{JSON.stringify(post.fields)}</div>
       <p>
         {frontmatter.tags!.map(tag =>
           <TagBox key={tag} name={tag} />
@@ -64,6 +75,25 @@ const BlogPostTemplate = (props: Props) => {
       <Date>{frontmatter.date}</Date>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <Divider />
+      {nodesWithSameTags.length === 0 ? null : 
+        <>
+          <TagNavigator>
+            <h4>posts</h4>
+            {nodesWithSameTags.map(node => (
+              <li>
+                <FadeLink to={node.fields!.slug!}>
+                  {node.frontmatter!.title}
+                </FadeLink>
+                {`  `}
+                {node.frontmatter!.tags!.map(tag => (
+                  <TagBox name={tag} />
+                ))}
+              </li>
+            ))}
+          </TagNavigator>
+          <Divider />
+        </>
+      }
       <Bio />
       <PostNavigator>
         <li>
@@ -98,10 +128,28 @@ export const pageQuery = graphql`
         author
       }
     }
+    allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "blog" }}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            tags
+          }
+        }
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
