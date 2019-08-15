@@ -66,7 +66,6 @@ const BlogPostTemplate = (props: Props) => {
         keywords={keywords}
       />
       <h1>{post.frontmatter!.title}</h1>
-      <div>{JSON.stringify(post.fields)}</div>
       <p>
         {frontmatter.tags!.map(tag =>
           <TagBox key={tag} name={tag} />
