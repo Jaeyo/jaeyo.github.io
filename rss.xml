@@ -1,4 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hello, there]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://jaeyo.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 15 Aug 2019 15:42:04 GMT</lastBuildDate><item><title><![CDATA[작명의 중요성]]></title><description><![CDATA[개발자들 사이에서 흔히들 하는 농으로 개발하는 시간보다 변수명을 짓는 데 더 시간을 쓴다고들 한다. 변수에 이름 붙이는 게 뭐 그리 어렵겠느냐만 사실 굉장히 어렵기도 하고 또 그만큼 중요하기도 하다. importance of naming…]]></description><link>https://jaeyo.github.io/naming-is-important/</link><guid isPermaLink="false">https://jaeyo.github.io/naming-is-important/</guid><pubDate>Fri, 16 Aug 2019 01:00:08 GMT</pubDate><content:encoded>&lt;p&gt;개발자들 사이에서 흔히들 하는 농으로 개발하는 시간보다 변수명을 짓는 데 더 시간을 쓴다고들 한다. 변수에 이름 붙이는 게 뭐 그리 어렵겠느냐만 사실 굉장히 어렵기도 하고 또 그만큼 중요하기도 하다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hello, there]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://jaeyo.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 16 Aug 2019 07:46:42 GMT</lastBuildDate><item><title><![CDATA[오픈소스 프로젝트에 코드 기여한 이야기]]></title><description><![CDATA[그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github…]]></description><link>https://jaeyo.github.io/contribute-code-into-telegraf/</link><guid isPermaLink="false">https://jaeyo.github.io/contribute-code-into-telegraf/</guid><pubDate>Fri, 16 Aug 2019 13:00:00 GMT</pubDate><content:encoded>&lt;p&gt;그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github이 없으면 나는 현재의 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 기존 소스코드를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.&lt;/p&gt;
+&lt;p&gt;내가 참여한 오픈소스는 &lt;a href=&quot;https://github.com/influxdata/telegraf&quot;&gt;Telegraf&lt;/a&gt; 였다. 뭐 이름이 생경하게 들릴 수는 있지만 그래도 나름 모니터링 쪽 동네에서는 방귀좀 뀌는 프로젝트다. 일반적으로 모니터링이라고 하면 서버 모니터링 (IaaS 레벨의 모니터링)과 애플리케이션 모니터링(APM) 정도를 많이 떠올릴 텐데, 이 Telegraf 는 서버 모니터링 쪽에서 활약하고 있는 메트릭 수집 에이전트다.&lt;/p&gt;
+&lt;p&gt;모니터링은 일반적으로 &lt;code class=&quot;language-text&quot;&gt;수집&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;저장&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;분석&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;시각화&lt;/code&gt; 정도의 플로우를 타게 된다. (중간에 순서가 조금 바뀌는 경우는 있다.) 여기서 Telegraf 는 &lt;code class=&quot;language-text&quot;&gt;수집&lt;/code&gt;단을 맡고 있다. Elastic stack 의 &lt;code class=&quot;language-text&quot;&gt;metricbeat&lt;/code&gt;와 포지셔닝이 비슷하다고 할 수 있을 것이다.&lt;/p&gt;
+&lt;p&gt;말 나온 김에 모니터링 영역에서 Elastic 스택과 TICK 스택을 비교해보자면, &lt;code class=&quot;language-text&quot;&gt;Beat&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;Logstash&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;Elastiverseticsearch&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;Kibana&lt;/code&gt; 의 플로우를 가지고 있는 Elastic 스택은 기본적으로 로그 모니터링에 근간을 두고 있다. 애초에 Elasticsearch 라는 솔루션이 풀 텍스트 인덱싱을 하는 Lucene 으로 만들어진 물건이니. 물론 요즘에는 로그와 메트릭 뿐만 아니라 APM 까지 만들어서 애플리케이션 레벨의 모니터링까지 영역을 넓히고 있긴 하다.&lt;/p&gt;
+&lt;p&gt;그에 반해, TICK 스택은 메트릭 기반의 모니터링이라고 볼 수 있다. 여기서 메트릭과 로그의 차이점이라고 하면, 로그는 단순히 문자열 형태의 메시지라면 메트릭은 수치값을 가지는 형태라고 볼 수 있을 것이다. 애초에 Telegraf 자체도 메트릭 수집에 특화되어 있고 데이터 저장소인 InfluxDB 도 시계열 데이터를 저장하는 데이터베이스로 만들어져 있다.&lt;/p&gt;
+&lt;p&gt;여기서 TICK 스택이라고 하면 &lt;code class=&quot;language-text&quot;&gt;Telegraf&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;InfluxDB&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Chronograf&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Kapacitor&lt;/code&gt; 로 이루어진 스택을 이야기하는데 그런 것 치고 시각화 영역을 Chronograf 로 쓰는 경우는 별로 없다. 사실 &lt;code class=&quot;language-text&quot;&gt;Chronograf&lt;/code&gt; 보다는 &lt;code class=&quot;language-text&quot;&gt;Grafana&lt;/code&gt; 가 시각화 도구로서 기능도 더 많고 기타 여러 데이터 소스와의 접합도 좋아서 &lt;code class=&quot;language-text&quot;&gt;TIG&lt;/code&gt; (&lt;code class=&quot;language-text&quot;&gt;Telegraf&lt;/code&gt; - &lt;code class=&quot;language-text&quot;&gt;InfluxDB&lt;/code&gt; - &lt;code class=&quot;language-text&quot;&gt;Grafana&lt;/code&gt;) 형태의 스택이 더 많이 쓰이는 것 같다. 근데 문제는 &lt;code class=&quot;language-text&quot;&gt;Grafana&lt;/code&gt; 쪽에서는 TICK 스택보다는 &lt;code class=&quot;language-text&quot;&gt;Prometheus&lt;/code&gt; 랑 더 친하고 요즘 container 기반 에코 시스템에서 Prometheus 가 더 잘 나간다는 사실이다. 그리고 둘 다 Go 언어로 만들어져 있다. 사실 요즘 container 기반의 에코 시스템 위의 툴들은 열에 여덟은 Go 언어를 사용하고 있는 것 같다. 이쪽 동네의 de facto 언어가 되어가는 느낌이다.&lt;/p&gt;
+&lt;p&gt;아무튼 각설하고, Telegraf 앞서 말했든 메트릭 수집 에이전트다. 하지만 Telegraf 를 설명하는 말에는 항상 수식어가 하나 더 붙는다. “플러그인 기반” 이 그것이다. Telegraf 는 다양한 플러그인을 통해서 다양한 종류의 메트릭들을 수집할 수 있다. 그리고 수집된 메트릭을 꼭 InfluxDB 에만 넣을 수 있는 것도 아니라 다른 Output Plugin 을 통해서 다른 종류의 데이터 저장소에 집어 넣는 것도 가능하다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.influxdata.com/wp-content/uploads/Telegraf-GREY-Diagram.png&quot; alt=&quot;Telegraf&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위의 그림은 Telegraf 공식 웹페이지에 있는 그림으로 TICK 스택의 아키텍처를 자세하게 보여준다. 여담으로 작년말에 확인해 봤을 때는 저 그림에 “200개 이상의 플러그인 지원” 관련된 문구가 써있었는데 실제로 확인해봤을 땐 198개 였다. 뭐 그냥 그려려니 했다. 아무튼 Telegraf 에서 지원하는 플러그인 리스트는 Telegraf Github 에 들어가면 README 에서 바로 확인할 수 있는데 오늘 날짜 master 브랜치 기준으로 아래와 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Input Plugins: activemq, aerospike, amqp&lt;em&gt;consumer, apache, aurora, aws cloudwatch, bcache, beanstalkd, bind, bond, burrow, cassandra, ceph, cgroup, chrony, cisco&lt;/em&gt;telemetry&lt;em&gt;gnmi, cisco&lt;/em&gt;telemetry&lt;em&gt;mdt, cloud&lt;/em&gt;pubsub, cloud&lt;em&gt;pubsub&lt;/em&gt;push, conntrack, consul, couchbase, couchdb, cpu, DC/OS, diskio, disk, disque, dmcache, dns query time, docker, docker&lt;em&gt;log, dovecot, ecs, elasticsearch, exec, fail2ban, fibaro, file, filestat, filecount, fireboard, fluentd, github, graylog, haproxy, hddtemp, httpjson, http&lt;/em&gt;listener, http&lt;em&gt;listener&lt;/em&gt;v2, http, http&lt;em&gt;response, icinga2, influxdb, influxdb&lt;/em&gt;listener, internal, interrupts, ipmi&lt;em&gt;sensor, ipset, iptables, ipvs, jenkins, jolokia2, jolokia, jti&lt;/em&gt;openconfig&lt;em&gt;telemetry, kafka&lt;/em&gt;consumer, kapacitor, kinesis, kernel, kernel&lt;em&gt;vmstat, kibana, kubernetes, kube&lt;/em&gt;inventory, leofs, linux&lt;em&gt;sysctl&lt;/em&gt;fs, logparser, lustre2, mailchimp, mcrouter, memcached, mem, mesos, minecraft, mongodb, mqtt&lt;em&gt;consumer, multifile, mysql, nats&lt;/em&gt;consumer, nats, neptune&lt;em&gt;apex, net, net&lt;/em&gt;response, netstat, nginx, nginx&lt;em&gt;plus&lt;/em&gt;api, nginx&lt;em&gt;plus, nginx&lt;/em&gt;upstream&lt;em&gt;check, nginx&lt;/em&gt;vts, nsq&lt;em&gt;consumer, nsq, nstat, ntpq, nvidia&lt;/em&gt;smi, openldap, opensmtpd, openweathermap, pf, pgbouncer, phpfpm, phusion passenger, ping, postfix, postgresql&lt;em&gt;extensible, postgresql, powerdns, powerdns&lt;/em&gt;recursor, processes, procstat, prometheus, puppetagent, rabbitmq, raindrops, redis, rethinkdb, riak, salesforce, sensors, smart, snmp&lt;em&gt;legacy, snmp, socket&lt;/em&gt;listener, solr, sql server, stackdriver, statsd, swap, syslog, sysstat, system, tail, temp, tcp&lt;em&gt;listener, teamspeak, tengine, tomcat, twemproxy, udp&lt;/em&gt;listener, unbound, uswgi, varnish, vsphere VMware vSphere, webhooks, filestack, github, mandrill, papertrail, particle, rollbar, win&lt;em&gt;perf&lt;/em&gt;counters, win&lt;em&gt;services, wireless, x509&lt;/em&gt;cert, zfs, zipkin, zookeeper&lt;/li&gt;
+&lt;li&gt;Parsers: InfluxDB Line Protocol, Collectd, CSV, Dropwizard, FormUrlencoded, Graphite, Grok, JSON, Logfmt, Nagios, Value, Wavefront&lt;/li&gt;
+&lt;li&gt;Serializers: InfluxDB Line Protocol, JSON, Graphite, ServiceNow, SplunkMetric, Carbon2, Wavefront&lt;/li&gt;
+&lt;li&gt;Processor Plugins: converter, date, enum, override, parser, pivot, printer, regex, rename, strings, topk, unpivot&lt;/li&gt;
+&lt;li&gt;Aggregator Plugins: basicstats, final, histogram, minmax, valuecounter&lt;/li&gt;
+&lt;li&gt;Output Plugins: influxdb, influxdb&lt;em&gt;v2, amon, amqp (rabbitmq), application&lt;/em&gt;insights, aws kinesis, aws cloudwatch, azure&lt;em&gt;monitor, cloud&lt;/em&gt;pubsub, cratedb, datadog, discard, elasticsearch, file, graphite, graylog, health, http, instrumental, kafka, librato, mqtt, nats, nsq, opentsdb, prometheus, riemann, riemann&lt;em&gt;legacy, socket&lt;/em&gt;writer, stackdriver, syslog, tcp, udp, wavefront&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Telegraf 에 대한 자세한 설명은 생략하기로 하고, 회사에서 업무의 일환으로 Telegraf 를 사용중에 있다. 이전까지는 운영중인 Linux 기반의 서버들에서 메트릭을 수집하기 위한 용도였는데 윈도우 서버도 추가적으로 지원해야 하는 요구사항이 발생되었다. Telegraf 는 윈도우 역시 지원하기 때문에 별 고민없이 설치하고 테스트를 하기 시작했다. 다만 리눅스와 윈도우는 메트릭을 수집하는 방법에 차이가 있어 리눅스 서버와는 다른 윈도우용 기본 설정 파일을 받아서 구성했다.&lt;/p&gt;
+&lt;p&gt;헌데 설정파일을 받아놓고 슥 한번 훑어보는데 이상한 부분이 눈에 띄었다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/88b387c383230d17a2eb660f470d3f0e/ce9b3/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.998008959681435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcSAAAXEgFnn9JSAAABZklEQVQoz31S2Y6DMBDrLxRKyxGOQkggW+gh9f8/bdbOLlU2rfZhBMo4HtuZXdu24pwTY4yoSklZllIUuRwOB19pmsrxeBTirLEyag1c5c/YY204fncErssiZhwlw0GSJG/ALMtED4MfTHwFwlopyfP8D5knrNBY1qtoECZBI1Y4QNmyrDJNkzRN452wNqUvwq6uZQX463yWKpwWKOSlse9lwlBFVXCR/Nab5RkW7peLz6Y/nSSj3Ygwh+UH+rdpFgcBDaOJXLwUauTxuN3EIh9FNREhYyhAOMHB/fmUvuukpLIPZJ7QIMPVWrmA8JNCTwjLBoOJcXiccr+XPfuRXU/YI+AHgnZBhiGA/ycMMojGwK4F/ozvpxf2hArNier04JVxRVhp9CgzMMS1sMy1ISbeiNceunmWkS8I+wRzHbYLG6FFLNzDDnjeKYrin8Vef/arhlraIzi05NdGj35oB4VdpDK0/Q24Lh38oSubagAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Duplicated Configuration&quot;
+        title=&quot;&quot;
+        src=&quot;/static/88b387c383230d17a2eb660f470d3f0e/b9e4f/1.png&quot;
+        srcset=&quot;/static/88b387c383230d17a2eb660f470d3f0e/cf440/1.png 148w,
+/static/88b387c383230d17a2eb660f470d3f0e/d2d38/1.png 295w,
+/static/88b387c383230d17a2eb660f470d3f0e/b9e4f/1.png 590w,
+/static/88b387c383230d17a2eb660f470d3f0e/f9b6a/1.png 885w,
+/static/88b387c383230d17a2eb660f470d3f0e/2d849/1.png 1180w,
+/static/88b387c383230d17a2eb660f470d3f0e/ce9b3/1.png 2009w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Network 관련된 메트릭을 수집하는 설정을 설정 파일 위쪽에서 한 번 본 것 같은데 아래에서 또 발견되었다. 보통 이런 경우는 “Telegraf 의 기본 설정 파일이 잘못 되었구나” 라고 여기기 보다는 “내가 뭘 잘못 했구나” 라고 생각하기 쉽다. 자연히 나도 붙여넣기하면서 실수 했겠거니 하면서 새롭게 윈도우용 설정 파일을 다시 받았다. 하지만 새로 받은 설정 파일에도 해당 섹션은 중복되어 있었다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bea71d803b581d2cc4ab35a0ab62436b/8e427/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 23.75886524822695%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAzElEQVQY05WP2W7CMBRE8///VaRWILGUBIgRi0mz4SAMFQkJPrUd1DceGGk8dx48d26gtSaOY4RYWxVe91JS1zXvwPjHEPzYz8sw8lzM54jVCrndUeY5ZZaRp6mf73bBK7ZN48NcaNAlCfl0ivgYsP38Qg6HyNGIYvZNNpl4puMxVRShwhBl1c2nxbL3toi2Jei6PtA17doWVR7RZ83v9UqlKszjwbsw7mQ33EpFsdlRyQNq39P50yHB6AvmfHmqxjR338Q8T7Ty7x3+ANCNfUt/DUM4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;guide&quot;
+        title=&quot;&quot;
+        src=&quot;/static/bea71d803b581d2cc4ab35a0ab62436b/b9e4f/2.png&quot;
+        srcset=&quot;/static/bea71d803b581d2cc4ab35a0ab62436b/cf440/2.png 148w,
+/static/bea71d803b581d2cc4ab35a0ab62436b/d2d38/2.png 295w,
+/static/bea71d803b581d2cc4ab35a0ab62436b/b9e4f/2.png 590w,
+/static/bea71d803b581d2cc4ab35a0ab62436b/f9b6a/2.png 885w,
+/static/bea71d803b581d2cc4ab35a0ab62436b/2d849/2.png 1180w,
+/static/bea71d803b581d2cc4ab35a0ab62436b/8e427/2.png 1692w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;그제서야 기본 설정 파일이 잘못되어 있는 걸 확인하고는 Telegraf 에 대한 사내 가이드 문서에 위와 같은 내용을 추가하였다. 그러고나서 문득 생각해보니, 이건 PR을 꽁으로 한 번 할 수 있는 기회가 아닌가 하는 생각이 들었다. 나는 곧바로 중복된 설정을 제거하는 내용의 PR을 만들어 올렸고, 명백한 설정 오류였기 때문에 별 문제없이 바로 merge가 되었다. 메인테이너로부터 “Thanks!” 라는 코멘트를 받았다.&lt;/p&gt;
+&lt;p&gt;사실 이 코멘트를 보고 기분이 좀 이상했다. 지금껏 밤낮 가리지 않고 열심히 코딩에 매진해오긴 했지만 내가 쓴 코드(사실은 간단한 설정 파일 수정이지만)로 인해 누군가에게 고맙다는 말을 들어본 적이 없었다. 물론 내가 쓴 코드로 회사가 돈을 벌긴 하지만 그렇다고 해서 회사가 내게 고맙다는 말을 해주진 않는다. 대신 월급을 준다. (이 경우엔 당연히 월급이 더 좋다.)&lt;/p&gt;
+&lt;p&gt;개인적으로 칭찬에 약한 타입이라 뭔가 Telegraf 프로젝트에 더 기여하고 싶다는 생각이 들었다.&lt;/p&gt;
+&lt;p&gt;사실 위에서도 이야기했듯이 이전에도 오픈소스에 대한 기여를 시도해본 적이 몇 번 있었다. 하지만 그 때는 확실히 접근법이 좋지 않았던 것 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;오픈소스에 기여를 해보고 싶은데…&lt;/li&gt;
+&lt;li&gt;기왕 하는거 좀 크고 유명한 데에 해보고 싶은데…&lt;/li&gt;
+&lt;li&gt;크고 유명한 오픈소스 프로젝트를 클론 받는다.&lt;/li&gt;
+&lt;li&gt;main 문을 찾아 시작점부터 따라가본다… 3분 후 포기한다.&lt;/li&gt;
+&lt;li&gt;공식 문서를 찾아 정독해본다… 30분 후 포기한다.&lt;/li&gt;
+&lt;li&gt;해당 프로젝트의 아주 초기 버전을 체크아웃해 다시 소스를 따라가본다… 5분 후 포기한다.&lt;/li&gt;
+&lt;li&gt;포기한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;위의 방법은 사실 지금보기에는 오픈소스 기여에 대한 아주 좋지 않은 접근법이라고 생각된다. 사실 기여를 할 오픈소스를 고를 때는 본인이 사용중인 것들 중에서 고르는 것이 제일 유리하다고 생각한다. 나한테는 Telegraf 가 그런 것 중 하나였고, 그 외에도 여러가지로 덤벼볼만한 요소들이 좀 있었다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;실제 사용중인 프로그램&lt;/li&gt;
+&lt;li&gt;익숙하게 사용하던 Go 언어로 구현됨&lt;/li&gt;
+&lt;li&gt;플러그인 기반이라 코드 파악과 수정이 쉬움&lt;/li&gt;
+&lt;li&gt;플로그인 별로 README 문서가 있어 파악에 용이&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이 중에서도 특히 3번이 굉장히 유효했다. 말 그대로 플러그인 기반이기 때문에 Telegraf 의 코어 부분을 손대지 않는 한 다른 코드는 볼 필요없이 내가 고치고 싶은 플러그인의 코드만 보면 됐고 대부분의 경우 플러그인은 하나 내지 두 개의 파일 안에 전부 담겨있다. 게다가 플러그인이 어떤 인터페이스를 가져야 하는지에 대한 부분도 문서에 상세히 설명되어 있으니 코드를 따라가기도 더 쉬웠다.&lt;/p&gt;
+&lt;p&gt;게다가 더 좋았던 건, Go 언어를 사용하면서 테스트를 어떻게 작성해야 할 지 고민할 때가 많은데, Telegraf 의 경우에는 테스트 파일들도 잘 구성되어 있어 테스트를 작성하는 요령을 익히기가 좋다는 것이다. (사실 테스트가 없으면 merge 가 안된다.)&lt;/p&gt;
+&lt;p&gt;그리고 추가적으로, 새로운 플러그인을 만든 사람의 경우에는 아래와 같이 Release Note에 이름을 박아준다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/45e5d1fd578936a3c91ab584ea70f2c5/7b6a0/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 101.99456029011786%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABcSAAAXEgFnn9JSAAACd0lEQVQ4y51UiXLqMAzk/3/vTcuDQC4gl3OR+yDeSgqhobRvOi8zGjtOvN7VSt7UTY0oS5F4F1jWGWnZoKwqibpu0LQt+r6/x4B+GND1I4rmhrLuUdU1xbynbTtstNaYoDG0DfyzC6UiTNOE2+12j0nev8Z40xSf/4080voG96cbRgRJDT9pUNQjrWj8zyMMeXNPgHk9Iau1jAvc/P314eU59CNWgEDTNLAdF4fDEZbtwnFOkrcF9LfxAGy7DkmSIssyARoo+T+xe2b6A2DX9TifLzidyOk0Q1mUBJ4/gtfy/IrrtaC4ysHXong5VExh1/hJ05SkujBNm2Q7VEa2pMDgNFi8ZuN4NLE3DrhcPBQE+JXlDHg/RSkFkzaeiCkDM9skSaDiWA5TkUIQhgiCUBR9Z9pmfQJL8v0AEQGHYYSIAAqSzrFILcsSFRUx/7sGfbi8ZhhFEUk0xW1maJNslsijaVqSBp7PlWBLJ31l+QTIsngTm8M5Y7acp7KsJKTNqnnOYNxq3CVrlpv1Ceys5/mSN84Tz5WKxQAG57VljOOEZOdSvy+Ai8sxAbGDBsn2aOO8ORLgkNLB4J7vC2BI5uSU05ccftZhh5hMSAl0oLm+S3npt28K+4nhstC7LqL3PYLDGdVFoaL3jJKfkxkpjZpKB0kM7XnS52tWzy7zC8/oZy+qYQVX7AwTxtHCn7d3bHcGApIbEPthpFuIFOjlZvjutlkAdazgBwVc1eESUMe4p8dlYRhHuFTk3N+/BySGKq7gpz1iKmw2gsNxHDGhpZtb5LH0H/L5BDiRa+P2L/r9AcNuh57n2y06iubtTUaiCk2H6X8AfgBE8AjmPm+ruwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;release-note&quot;
+        title=&quot;&quot;
+        src=&quot;/static/45e5d1fd578936a3c91ab584ea70f2c5/b9e4f/3.png&quot;
+        srcset=&quot;/static/45e5d1fd578936a3c91ab584ea70f2c5/cf440/3.png 148w,
+/static/45e5d1fd578936a3c91ab584ea70f2c5/d2d38/3.png 295w,
+/static/45e5d1fd578936a3c91ab584ea70f2c5/b9e4f/3.png 590w,
+/static/45e5d1fd578936a3c91ab584ea70f2c5/f9b6a/3.png 885w,
+/static/45e5d1fd578936a3c91ab584ea70f2c5/7b6a0/3.png 1103w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;아직 bugfix 성 밖에 기여를 못해서 여기에 이름을 올리지는 못했지만 조만간 올렸으면 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[작명의 중요성]]></title><description><![CDATA[개발자들 사이에서 흔히들 하는 농으로 개발하는 시간보다 변수명을 짓는 데 더 시간을 쓴다고들 한다. 변수에 이름 붙이는 게 뭐 그리 어렵겠느냐만 사실 굉장히 어렵기도 하고 또 그만큼 중요하기도 하다. importance of naming…]]></description><link>https://jaeyo.github.io/naming-is-important/</link><guid isPermaLink="false">https://jaeyo.github.io/naming-is-important/</guid><pubDate>Fri, 16 Aug 2019 01:00:08 GMT</pubDate><content:encoded>&lt;p&gt;개발자들 사이에서 흔히들 하는 농으로 개발하는 시간보다 변수명을 짓는 데 더 시간을 쓴다고들 한다. 변수에 이름 붙이는 게 뭐 그리 어렵겠느냐만 사실 굉장히 어렵기도 하고 또 그만큼 중요하기도 하다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://external-preview.redd.it/Vt3LLIlQT7R5a5FS4NV489JWvjcIzOx1Mb2ZTAe_hk0.png?auto=webp&amp;#x26;s=df14a4f3d3aa76c1ea3eea67efd5c1cb7daadbac&quot; alt=&quot;importance of naming variable&quot;&gt;&lt;/p&gt;
 &lt;p&gt;얼마전 회사 미팅에서 있었던 일이다. 내부적으로 만든 서비스 중에 Alert Manager 라는 서비스가 있었고, 해당 서비스에 이러이러한 기능을 붙이자는 의견이 나왔다. Alert Manager 에 있음직한 기능이었기 때문에 의견은 받아들여졌고, 그에 대한 논의가 지속되면서 추가하고자 하는 기능의 범위가 넓어졌다. 어느 선부터는 Alert Manager 에 있음직하지 못한, 더 넓은 개념의 기능이었기 때문에 이 기능을 Alert Manager 와 분리시켜서 별도의 서비스를 만들기로 합의했고 그 서비스에 대한 논의를 이어갔다. 하지만 서비스의 이름을 짓지 않은 상태에서 논의하다보니 편의상 새롭게 만들 서비스도 Alert Manager 로 지칭하기 시작했고 나를 포함한 다른 사람들은 혼란을 겪기 시작했다. 지금 논의되고 있는 기능이 원래의 Alert Manager 에 들어가야 하는 건지, 아니면 새롭게 만들 서비스에 들어갈 기능을 이야기하는 건지 헷갈리기 시작했다. 특히 처음부터 논의해 포함되어 있지 않던 사람들의 혼란은 더 컸다. 더이상의 혼란을 방지하기 위해 논의를 잠시 중단시키고 가제라도 이름을 짓고 시작하자고 제의했고, Admin Portal 이라는 이름이 선정되었다. 새로운 이름이 지어진 이후에야 혼란은 줄어들었다. 심지어는 Admin Portal 에 새로 들어감직한 기능들이 더 구체적으로 논의되기 시작했다. 다들 머리속에서 unidentified 상태의 서비스를 구체화시키기 보다는 Admin Portal 이라는 서비스를 구체화시키는 편이 더 쉬운 듯 했다. 문득 작명의 중요성에 대해 다시 한 번 생각해보게 되었다.&lt;/p&gt;
 &lt;p&gt;다른 것들과 구별되어야 하는 대상들에는 모두 이름이 붙어 있다. 자동차, 빌딩, 가로등, 거리, 그림, 마우스, 키보드 등등. 그리고 그 이름이라는 것은 그 대상에 대해 이러이러한 이름으로 부르기로 모두와 약속이 된 부분이기 때문에 다른 사람과 소통하기도 쉽다. 자동차라는 이름 없이 “바퀴가 달리고 도로를 달릴 수 있는 교통수단”이라고 부르면 소통 간에 오해의 소지가 생기기 쉽다. 누군가는 오토바이를 상상할지도 모르고, 누군가는 롤러스케이트, 누군가는 리어카를 상상할지도 모르는 일이다. 그것에 대해 “자동차”라고 이름을 붙이기 시작하는 순간 그러한 오해의 소지는 최소화된다. 모두가 같은 대상을 머리속에 그려놓고 이야기를 할 수 있다.&lt;/p&gt;
