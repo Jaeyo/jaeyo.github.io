@@ -23,4 +23,5 @@ declare module "react-facebook" {
   }
 
   export class Comments extends Component<CommentsProps> {}
+  export class CommentsCount extends Component<CommentsProps> {}
 }

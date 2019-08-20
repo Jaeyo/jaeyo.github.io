@@ -11,6 +11,7 @@ import { rhythm } from "../utils/typography"
 import keywords from "../data/seo-keywords"
 import TagBox from "../components/tag-box"
 import Clearfix from "../components/clearfix"
+import { CommentsCount, FacebookProvider } from "react-facebook"
 
 const StyledLink = styled(FadeLink)`
   box-shadow: none;
@@ -135,7 +136,12 @@ export default class BlogIndex extends PureComponent<Props, State> {
             <Title>
               <StyledLink to={slug}>{title}</StyledLink>
             </Title>
-            <small>{frontmatter.date}</small>
+            <small>
+              {frontmatter.date}
+              <FacebookProvider appId="690667178023052">
+                <CommentsCount href={`https://jaeyo.github.io/${slug}`} />
+              </FacebookProvider>
+            </small>
             <p>
               {frontmatter.tags!.map(tag =>
                 <TagBox key={tag} name={tag} />
