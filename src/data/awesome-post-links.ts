@@ -337,7 +337,7 @@ export const postLinks: PostLink[] = [
     },
     {
         title: '어려움 중독',
-        url: 'https://item4.github.io/2018-08-17/The-Difficult-Addiction/'
+        url: 'https://item4.github.io/2018-08-17/The-Difficult-Addiction/',
         tags: ['Developer', 'Self Improvement']
     },
 ]
