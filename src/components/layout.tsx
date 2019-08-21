@@ -31,6 +31,7 @@ const Content = styled.div`
   margin-right: auto;
   max-width: ${rhythm(24)};
   padding: ${`${rhythm(1.5)} ${rhythm(3 / 4)}`};
+  font-family: S-CoreDream-2ExtraLight;
 `
 
 export const Layout = (props: Props) => {
