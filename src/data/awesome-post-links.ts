@@ -340,4 +340,9 @@ export const postLinks: PostLink[] = [
         url: 'https://item4.github.io/2018-08-17/The-Difficult-Addiction/',
         tags: ['Developer', 'Self Improvement']
     },
+    {
+        title: 'Consistent Hashing 에 대한 기초',
+        url: 'https://charsyam.wordpress.com/2016/10/02/입-개발-consistent-hashing-에-대한-기초/',
+        tags: ['Consistent Hashing']
+    },
 ]
