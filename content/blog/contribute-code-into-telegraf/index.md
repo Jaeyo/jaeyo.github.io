@@ -1,6 +1,6 @@
 ---
 title: "오픈소스 프로젝트에 코드 기여한 이야기"
-date: "2019-08-16T13:00:00.000Z"
+date: "2019-08-22T19:00:00.000Z"
 template: "blog"
 tags: ["tech", "open source", "telegraf"]
 ---
