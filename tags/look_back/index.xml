@@ -6,7 +6,7 @@
     <description>Recent content in look_back on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 10 May 2020 23:27:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 15:53:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaeyo.github.io/tags/look_back/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>8년 간의 개발자 생활 회고 (2)</title>
       <link>http://jaeyo.github.io/look-back-on-8-years-2/</link>
-      <pubDate>Sun, 10 May 2020 23:27:00 +0000</pubDate>
+      <pubDate>Mon, 11 May 2020 15:53:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/look-back-on-8-years-2/</guid>
       <description>RIDI (2016. 6 ~ 2018. 3) 신입과 경력의 차이 두 번째 회사에서의 생활은 내게 굉장히 큰 변화였다. 일단 맥북을 쓰게 되었다. 그 전까지는 윈도우 환경에서 개발을 했고 맥북은 써본 일이 없었다. 그래서 일단 맥 사용법을 익히는 일부터 해야 했다. 뿐만 아니라 모든 것이 새로웠다. 첫 회사에서는 SVN 으로 소스 관리를 해왔기 때문에 Git 을 처음 사용해보게 되었고, 언어도 생경하기 짝이없는 PHP 와 Javascript 를 사용했다. 특히나 PHP 는 아예 처음이었기 때문에 문법과 Laravel 프레임워크, Doctrine ORM 사용법을 익히는 데에 일주일 정도의 시간을 사용했다.</description>
@@ -26,7 +26,8 @@
       <pubDate>Sun, 10 May 2020 23:23:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/look-back-on-8-years-1/</guid>
-      <description>Igloosec (2013. 1 ~ 2016. 6) 신입 개발자 처음 개발자로써 사회 생활을 시작한 것은 2013년 1월 이었다. 첫 회사는 이글루시큐리티였고 보안 솔루션들을 만들었다. 주력 솔루션은 통합보안관제솔루션(이하 ESM) 이었는데 운 좋게 이 캐시카우를 만드는 팀에 신입으로 입사를 하게 되었다. 사실 캐시카우인 만큼 레거시 코드도 많고 순수 개발 외 고객사 지원 업무도 많았지만, 그럼에도 불구하고 운이 좋다고 표현한 것은 주니어 엔지니어 시기에 그런 하드한 환경에서 쌓은 경험치들이 나중까지 도움이 많이 되었기 때문이다. 물론 좋은 선배들도 많이 만나게 되었다.</description>
+      <description>개발자의 길로 들어선 것이 어느덧 8년이다. 처음 직장 생활을 시작하던 20대 후반의 나와 지금의 내가 얼마나 달라졌는지는 사실 잘 모르겠다. 그래서 지난 8년 간의 기록을 여행기 쓰듯이 써보려고 한다. 다른 분들이 많이들 하시는 신년맞이 지난해 회고를 난 한 번도 한 적이 없으니, 8년치 회고를 한꺼번에 하는 셈이다.
+Igloosec (2013. 1 ~ 2016. 6) 신입 개발자 처음 개발자로써 사회 생활을 시작한 것은 2013년 1월 이었다. 첫 회사는 이글루시큐리티였고 보안 솔루션들을 만드는 회사였다.</description>
     </item>
     
   </channel>
