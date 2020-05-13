@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>telegraf on My New Hugo Site</title>
+    <link>http://example.org/tags/telegraf/</link>
+    <description>Recent content in telegraf on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2019 19:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/telegraf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>오픈소스 프로젝트에 코드 기여한 이야기</title>
+      <link>http://example.org/contribute-code-into-telegraf/</link>
+      <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/contribute-code-into-telegraf/</guid>
+      <description>그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github이 없으면 나는 현재의 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 기존 소스코드를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.</description>
+    </item>
+    
+  </channel>
+</rss>

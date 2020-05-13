@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/look-back-on-8-years-2/</loc>
+    <lastmod>2020-05-10T23:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/look_back/</loc>
+    <lastmod>2020-05-10T23:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-05-10T23:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2020-05-10T23:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-05-10T23:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/tech/</loc>
+    <lastmod>2020-05-10T23:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/look-back-on-8-years-1/</loc>
+    <lastmod>2020-05-10T23:23:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/open-source/</loc>
+    <lastmod>2019-08-22T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/telegraf/</loc>
+    <lastmod>2019-08-22T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/contribute-code-into-telegraf/</loc>
+    <lastmod>2019-08-22T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/daily/</loc>
+    <lastmod>2019-08-16T01:00:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/naming-is-important/</loc>
+    <lastmod>2019-08-16T01:00:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/move-to-another-place/</loc>
+    <lastmod>2019-08-15T01:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/git/</loc>
+    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/git-delete-branch-and-push/</loc>
+    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/trouble-shooting/</loc>
+    <lastmod>2019-08-13T01:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/bash-is-not-async/</loc>
+    <lastmod>2019-08-13T01:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/career/</loc>
+    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/better-than-yesterday/</loc>
+    <lastmod>2019-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/keyboard/</loc>
+    <lastmod>2018-10-16T10:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/error-while-building-qmk_firmware/</loc>
+    <lastmod>2018-10-16T10:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/reselect/</loc>
+    <lastmod>2018-10-06T11:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/aws/</loc>
+    <lastmod>2018-01-30T17:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/aws-api-ip-based-access-control/</loc>
+    <lastmod>2018-01-30T17:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/shame/</loc>
+    <lastmod>2017-11-21T13:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/snut-2006-3/</loc>
+    <lastmod>2017-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/snut-2006-2/</loc>
+    <lastmod>2017-10-24T01:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/snut-2006-1/</loc>
+    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/react/</loc>
+    <lastmod>2017-10-08T14:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/how-to-develop-ridistory-frontend/</loc>
+    <lastmod>2017-10-08T14:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/life-with-rainbow-colors/</loc>
+    <lastmod>2017-07-08T06:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/drive/</loc>
+    <lastmod>2017-05-18T00:31:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/mariadb/</loc>
+    <lastmod>2017-04-28T17:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/mariadb-multi-source-replication/</loc>
+    <lastmod>2017-04-28T17:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/too-many-open-files/</loc>
+    <lastmod>2017-04-25T19:25:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/weird-requests/</loc>
+    <lastmod>2017-04-25T12:00:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/spaces/</loc>
+    <lastmod>2017-04-25T11:00:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/job-interview/</loc>
+    <lastmod>2016-08-25T14:40:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+</urlset>

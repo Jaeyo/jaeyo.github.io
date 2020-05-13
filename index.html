@@ -1,50 +1,362 @@
-<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=008654519ce705ac7bc44303a9014606"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=008654519ce705ac7bc44303a9014606"/><meta name="generator" content="Gatsby 2.13.52"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=008654519ce705ac7bc44303a9014606"/><title data-react-helmet="true">All posts | Hello, there</title><meta data-react-helmet="true" content="A starter blog demonstrating what Gatsby can do." name="description"/><meta data-react-helmet="true" content="All posts" property="og:title"/><meta data-react-helmet="true" content="A starter blog demonstrating what Gatsby can do." property="og:description"/><meta data-react-helmet="true" content="website" property="og:type"/><meta data-react-helmet="true" content="summary" name="twitter:card"/><meta data-react-helmet="true" content="Jaeyo" name="twitter:creator"/><meta data-react-helmet="true" content="All posts" name="twitter:title"/><meta data-react-helmet="true" content="A starter blog demonstrating what Gatsby can do." name="twitter:description"/><meta data-react-helmet="true" content="SaaS, Multi Tenancy, Go, General, CockroachDB, Self Improvement, Architecture, Business, Career, Developer, Resume, Presentation, Clean Code, Trouble Shooting, Cache, Infra, Study, OOP, Etc, Computer Science, Kubernetes, Database, Sharding, DDD, Finite State Machine, Linux, Open Source, Edge Computing, Docker, Performance, Monitoring, React, Remote WorkCompany, Culture" name="keywords"/><style data-href="/styles.e4341d76e25e5efb0870.css">.tl-edges{max-width:100%;overflow-x:hidden}.tl-wrapper{width:100%;float:left;position:relative}.tl-wrapper+.tl-wrapper{margin-left:-100%;margin-right:0}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}</style><style data-styled="eXacqy isvXPz iGTiqf humgxq cAHKeS oTnog cekeYO gjeEPG eeNvjf dvwPLf keQxIA dRASvR dWbfxn pRKSu iqXwnf flNYcn huYqLM kuONS efuepB csRCYI hTrgAR kWAgzP eSKIxg iEkmSL lmZTGJ gZCour dCtHwY cVYaYg fTTapg dexGYY dUwxoW olKBH fYOlJB bJtViV cTtupw Trsjs CxWha" data-styled-version="4.3.2">
-/* sc-component-id: bio__Content-sc-137rv77-0 */
-.humgxq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:0.40625rem;}
-/* sc-component-id: bio__Avatar-sc-137rv77-1 */
-.cAHKeS{border-radius:100%;margin-bottom:0;margin-right:0.8125rem;min-width:50px;}
-/* sc-component-id: layout__StyledH1-z7e7u9-0 */
-.isvXPz{font-size:2.82843rem;line-height:3.25rem;margin-bottom:2.4375rem;margin-top:0;}
-/* sc-component-id: layout__StyledLink-z7e7u9-2 */
-.iGTiqf{box-shadow:none;color:inherit;-webkit-text-decoration:none;text-decoration:none;}
-/* sc-component-id: layout__Content-z7e7u9-3 */
-.eXacqy{margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;}
-/* sc-component-id: tag-box__StyledSpan-odnwx-0 */
-.keQxIA{background-color:#964236;color:#eeeeee;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.dRASvR{background-color:#874254;color:#eeeeee;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.dWbfxn{background-color:#b1e263;color:#222222;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.pRKSu{background-color:#fae8e8;color:#222222;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.iqXwnf{background-color:#19deae;color:#222222;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.flNYcn{background-color:#d28f01;color:#eeeeee;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.huYqLM{background-color:#6c234a;color:#eeeeee;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.kuONS{background-color:#7e077c;color:#eeeeee;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.efuepB{background-color:#e77306;color:#eeeeee;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.csRCYI{background-color:#fd7a01;color:#eeeeee;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.hTrgAR{background-color:#7fd975;color:#222222;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.kWAgzP{background-color:#f4f904;color:#222222;border-radius:2px;cursor:pointer;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.eSKIxg{background-color:#964236;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.iEkmSL{background-color:#874254;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.lmZTGJ{background-color:#b1e263;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.gZCour{background-color:#fae8e8;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.dCtHwY{background-color:#19deae;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.cVYaYg{background-color:#d28f01;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.fTTapg{background-color:#6c234a;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.dexGYY{background-color:#7e077c;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.dUwxoW{background-color:#e77306;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.olKBH{background-color:#fd7a01;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.fYOlJB{background-color:#7fd975;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.bJtViV{background-color:#f4f904;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}
-/* sc-component-id: nav__Content-sc-17e8osc-0 */
-.oTnog{text-align:center;margin:3.25rem 0 1.625rem 0;}
-/* sc-component-id: nav__NavLink-sc-17e8osc-1 */
-.cekeYO{font-size:14px;border-bottom:1px dashed #4078c0;margin:0 10px;-webkit-text-decoration:none;text-decoration:none;} .cekeYO:hover{-webkit-text-decoration:none;text-decoration:none;}
-/* sc-component-id: clearfix__Wrapper-myhynl-0 */
-.gjeEPG{zoom:1;} .gjeEPG:before,.gjeEPG:after{content:" ";display:table;} .gjeEPG:after{clear:both;}
-/* sc-component-id: pages__StyledLink-qvapnx-0 */
-.CxWha{box-shadow:none;}
-/* sc-component-id: pages__Title-qvapnx-1 */
-.Trsjs{margin-bottom:0.40625rem;}
-/* sc-component-id: pages__ItemWrapper-qvapnx-2 */
-.cTtupw{margin:60px 0;}
-/* sc-component-id: pages__AllTagWrapper-qvapnx-3 */
-.eeNvjf{list-style:none;margin:0;padding:20px 0;}
-/* sc-component-id: pages__TagLi-qvapnx-5 */
-.dvwPLf{list-style:none;float:left;padding:0;margin:0;}</style><link as="script" rel="preload" href="/component---src-pages-index-tsx-2674bf1bf947b090e55e.js"/><link as="script" rel="preload" href="/1-f4abb4e54165a294af6c.js"/><link as="script" rel="preload" href="/0-164bbb7a93e28545dff2.js"/><link as="script" rel="preload" href="/app-27df4a81f9cbef278589.js"/><link as="script" rel="preload" href="/styles-9c8bcdfc19d666047d5e.js"/><link as="script" rel="preload" href="/webpack-runtime-cfffcc1bbb007bcec06a.js"/><link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="tl-edges"><div class="tl-wrapper tl-wrapper--mount tl-wrapper-status--entered" style="z-index:1;opacity:1"><div class="layout__Content-z7e7u9-3 eXacqy"><header><h1 class="layout__StyledH1-z7e7u9-0 isvXPz"><a aria-current="page" class="layout__StyledLink-z7e7u9-2 iGTiqf" href="/">Hello, there</a></h1></header><main><div class="bio__Content-sc-137rv77-0 humgxq"><div class="bio__Avatar-sc-137rv77-1 cAHKeS gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAAAAUDAgQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAa3VmcD0CKiRoViD/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECAwQhERQi/9oACAEBAAEFAudWXpTRPL1HJ89pDHFKs//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABwQAAEEAwEAAAAAAAAAAAAAAAEAAhARISJBMv/aAAgBAQAGPwJVRrpjVuVbhkcXmGnpj//EAB0QAQEAAgEFAAAAAAAAAAAAAAEAESExQWGRofD/2gAIAQEAAT8h6Y4t0QcDwMjFg9gwOy8y+jDb2iLyOZW//9oADAMBAAIAAwAAABD0Pzz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAcEAEBAQEAAgMAAAAAAAAAAAABEQAxIYFBUXH/2gAIAQEAAT8QuKgjqoIAfinXp5OY0vbi5i+WQ9aOEsiDVr6yzZ0E2+UMaTCV+tV3f//Z" alt="Jaeyo" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/03d873445b03a721d7d6afb6095804e2/9b664/profile-pic.jpg 1x,
-/static/03d873445b03a721d7d6afb6095804e2/06a10/profile-pic.jpg 1.5x,
-/static/03d873445b03a721d7d6afb6095804e2/f1b5a/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/03d873445b03a721d7d6afb6095804e2/9b664/profile-pic.jpg 1x,
-/static/03d873445b03a721d7d6afb6095804e2/06a10/profile-pic.jpg 1.5x,
-/static/03d873445b03a721d7d6afb6095804e2/f1b5a/profile-pic.jpg 2x" src="/static/03d873445b03a721d7d6afb6095804e2/9b664/profile-pic.jpg" alt="Jaeyo" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Loves writing, music, and developing.<br/>You can find me on<!-- --> <a href="https://github.com/Jaeyo">Github</a>,<!-- --> <a href="https://twitter.com/lastiverse">Twitter</a>,<!-- --> <a href="https://www.facebook.com/jaeyo.developer">Facebook</a></p></div><div class="nav__Content-sc-17e8osc-0 oTnog"><a aria-current="page" class="nav__NavLink-sc-17e8osc-1 cekeYO" href="/">home</a><a class="nav__NavLink-sc-17e8osc-1 cekeYO" href="/diary">diary</a><a class="nav__NavLink-sc-17e8osc-1 cekeYO" href="/awesome-posts">awesome-posts</a></div><div class="clearfix__Wrapper-myhynl-0 gjeEPG"><ul class="pages__AllTagWrapper-qvapnx-3 eeNvjf"><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 keQxIA">tech</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 dRASvR">look_back</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dWbfxn">open source</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#222222" class="tag-box__StyledSpan-odnwx-0 pRKSu">telegraf</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#222222" class="tag-box__StyledSpan-odnwx-0 iqXwnf">daily</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 flNYcn">git</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 huYqLM">trouble shooting</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 kuONS">career</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 efuepB">keyboard</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 csRCYI">aws</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#222222" class="tag-box__StyledSpan-odnwx-0 hTrgAR">react</span></li><li class="pages__TagLi-qvapnx-5 dvwPLf"><span color="#222222" class="tag-box__StyledSpan-odnwx-0 kWAgzP">mariadb</span></li></ul></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/look-back-on-8-years-2/">8년 간의 개발자 생활 회고 (2)</a></h3><small>May 11, 2020<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//look-back-on-8-years-2/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 iEkmSL">look_back</span></p><p>RIDI (2016. 6 ~ 2018.…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/look-back-on-8-years-1/">8년 간의 개발자 생활 회고 (1)</a></h3><small>May 10, 2020<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//look-back-on-8-years-1/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 iEkmSL">look_back</span></p><p>개발자의 길로 들어선 것이 어느덧 8년이다. 처음 직장 생활을 시작하던 20대 후반의 나와 지금의 내가 얼마나 달라졌는지는 사실 잘 모르겠다. 그래서 지난…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/contribute-code-into-telegraf/">오픈소스 프로젝트에 코드 기여한 이야기</a></h3><small>August 22, 2019<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//contribute-code-into-telegraf/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 lmZTGJ">open source</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 gZCour">telegraf</span></p><p>그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/naming-is-important/">작명의 중요성</a></h3><small>August 16, 2019<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//naming-is-important/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>개발자들 사이에서 흔히들 하는 농으로 개발하는 시간보다 변수명을 짓는 데 더 시간을 쓴다고들 한다. 변수에 이름 붙이는 게 뭐 그리 어렵겠느냐만 사실 굉장히 어렵기도 하고 또 그만큼 중요하기도 하다. importance of naming…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/move-to-another-place/">새로운 곳으로 이사</a></h3><small>August 15, 2019<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//move-to-another-place/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>약 2년간의 관악구 생활을 마치고 용인으로 이사를 가기로 했다. 애초에 이 곳으로 이사를 오게 되었던 이유는...</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/git-delete-branch-and-push/">Git - branch 삭제 후 push</a></h3><small>August 14, 2019<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//git-delete-branch-and-push/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 cVYaYg">git</span></p><p>git에서 브랜치를 따서 작업을 하고 머지된 이후에는 자연스레 작업 브랜치는 날리게 된다. Github 의 풀 리퀘스트 같은 수단을 이용하게 되면 머지 이후에  버튼을 통해 쉽게 remote…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/bash-is-not-async/">오늘의 삽질 - 괜히 Bash 만 의심했다.</a></h3><small>August 13, 2019<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//bash-is-not-async/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 fTTapg">trouble shooting</span></p><p>회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다. 위의 스크립트에 따르면 아래의 로직을 타게 된다. curl 로 blabla…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/better-than-yesterday/">연봉과 연차의 무게</a></h3><small>August 13, 2019<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//better-than-yesterday/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 dexGYY">career</span></p><p>“이제는 단순 개발만 하고 기능구현만 하는 것이 아니라 그 이상을 해야 할 시기가 다가온다.” “사람들 관리가 될 수도 있고 어느 한 분야에 전문가가 되어야 할 수도 있고, 선택은 본인의 몫” (from https://taetaetae.github…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/error-while-building-qmk_firmware/">qmk_firmware 빌드 시에 chibios 관련 에러 발생</a></h3><small>October 16, 2018<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//error-while-building-qmk_firmware/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 dUwxoW">keyboard</span></p><p>는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다.
-documentation 및 자세한 정보는 https://qmk.fm…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/reselect/">reselect</a></h3><small>October 06, 2018<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//reselect/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span></p><p>https://github.com/reactjs/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다. 컴포넌트를 redux에 connect 시킬 때 store…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/aws-api-ip-based-access-control/">AWS API, IP 기반으로 접근 제한하기</a></h3><small>January 30, 2018<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//aws-api-ip-based-access-control/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 olKBH">aws</span></p><p>EC2 상의 인스턴스나 로드밸런서에 특정 IP 대역만 접근 가능하도록 설정하고 싶다면 Security Group 혹은 ACL을 이용하면 된다. 하지만 그 외의 AWS에서 제공하는 API 들에 대해서 IP 기반으로 접근제한을 걸고 싶다면 Security…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/shame/">조중균의 세계를 읽었다.</a></h3><small>November 21, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//shame/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>그는 “지나간 세계” 라는 시를 쓰고 또 동명의 술집에서 형수라는 친구와 함께 산다...</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/snut-2006-3/">2006년의 서울과학기술대학교 (3)</a></h3><small>November 09, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//snut-2006-3/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>종종 마음이 시끄러우면 나는 학교를 찾는다. 내비에 공릉동을 찍으면 집에서 대략 한 시간 정도의 거리가 나온다. 쉽게 올만한 거리는 아니다. 그럼에도 ...</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/snut-2006-2/">2006년의 서울과학기술대학교 (2)</a></h3><small>October 24, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//snut-2006-2/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>새 학기가 시작되면 자주 보이는 모습이 있었다. 바로 교내 잔디밭에서 자장면을 시켜먹는 모습이었다. 정문 근처 잔디밭, 붕어방 근처 잔디밭, 제…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/snut-2006-1/">2006년의 서울과학기술대학교 (1)</a></h3><small>October 24, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//snut-2006-1/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>오랜만에 모교인 서울과학기술대학교에 들렀다. 한밤 중이라 어두워 제대로 보이진 않았지만 못 보던 건물들이 꽤 들어서있었다. 심지어는 아직 공사 중인 곳도 있어서 포크레인이 부지 한가운데 덩그러니 서있었다. 1…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/how-to-develop-ridistory-frontend/">리디스토리 프론트엔드 개발기</a></h3><small>October 08, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//how-to-develop-ridistory-frontend/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 fYOlJB">react</span></p><p>본 포스팅은 회사 블로그에 올려놓았던 글을 옮겨놓은 것입니다. 몬타나 존스 라는 만화영화가 있었습니다. 199…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/life-with-rainbow-colors/">삶은 무지개 색이어야 한다.</a></h3><small>July 08, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//life-with-rainbow-colors/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>아침부터 찌는 듯이 덥다가도 오후가 되니 거짓말처럼 폭우가 들이닥친다. 더운 공기가 사라진 것은 다행이지 싶지만 여전히 끈덕진걸 보니 여름은 여름인 모양이다...</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/drive/">운전을 하고 싶다</a></h3><small>May 18, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//drive/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>운전을 하고 싶다. 틈 날때마다 생각한다. 참 희안한 것이, 운전면허를 따기전까지는 운전을 하고 싶다는 생각을 단 한번도 해본 적이 없다. 오히려 최대한 늦게 따야겠다고 다짐까지 했을 정도니까. 고…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/mariadb-multi-source-replication/">mariadb multi source replication</a></h3><small>April 28, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//mariadb-multi-source-replication/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 bJtViV">mariadb</span></p><p>multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다. master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다 mysqldump 를 이용해서 master…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/too-many-open-files/">Too many open files</a></h3><small>April 25, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//too-many-open-files/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 fTTapg">trouble shooting</span></p><p>집에서 기타치면서 놀고 있었는데 외출했던 아내가 귀가중이라는 메시지를 받았다. 집 앞 지하척 역으로 마중나가려고 핸드폰을 챙겨서 나가려는데 슬랙 메시지가 뭐가 많이 와있다...</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/weird-requests/">아닌 밤중에 리퀘스트가 튄다?</a></h3><small>April 25, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//weird-requests/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 fTTapg">trouble shooting</span></p><p>신규 서비스를 오픈하면서 서버 모니터링을 위해 aws cloudwatch를 사용하게 되었다. 원래는 cloudwatch와 newrelic 을 모두 선택지에 올려놓고 마지막까지 고민을 했다. newrelic…</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/spaces/">겹겹의 공간들</a></h3><small>April 25, 2017<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//spaces/"></span></div></small><p><span color="#222222" class="tag-box__StyledSpan-odnwx-0 dCtHwY">daily</span></p><p>일상에서 우리가 기억이라고 부르는 것도 공간화한 기억이다. 프루스프가 "읽어버신 시간을 찾아서"에서 끊임없이 유년의 마을과 길과 집과 방들을 소환하는 까닭도...</p></div><div class="pages__ItemWrapper-qvapnx-2 cTtupw"><h3 class="pages__Title-qvapnx-1 Trsjs"><a class="pages__StyledLink-qvapnx-0 CxWha" href="/job-interview/">이직 면접 이야기</a></h3><small>August 25, 2016<div><span class="fb-comments-count" data-href="https://jaeyo.github.io//job-interview/"></span></div></small><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 dexGYY">career</span></p><p>직장인이 이직 면접을 준비하면서 받는 스트레스가 이혼을 할 때 받는 스트레스와 비슷하다는 이야기를 들은 적이 있다. 글쎄, 내 경우에 비추어보면 조금 과장되다 싶게 느껴지는 이야기긴 하지만...</p></div></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div></div></div><script>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.70.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title></title>
+
+
+
+<link rel="stylesheet" href="/css/style.css"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="canonical" href="http://example.org/">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <nav id="nav-main" class="nav">
+      <div id="nav-name" class="nav-left">
+        <a id="nav-anchor" class="nav-item" href="http://example.org/">
+          <h1 id="nav-heading" class="title is-4">My New Hugo Site</h1>
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav id="nav-items" class="nav-item level is-mobile"></nav>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+
+      
+    </nav>
+
+  </div>
+  <script src="/js/navicon-shift.js"></script>
+</section>
+<section class="section">
+  <div class="container">
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
   
+  | <a class="subtitle is-6" href="/tags/look_back/">#look_back</a>
   
-  if(true) {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  }
-  if (typeof ga === "function") {
-    ga('create', 'UA-142557602-1', 'auto', {});
-      
-      
-      
-      
-      
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";window.webpackCompilationHash="54a5648d2e1ebf85bf0b";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-27df4a81f9cbef278589.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-af79efd293d66c79e6fb.js"],"component---src-templates-blog-post-tsx":["/component---src-templates-blog-post-tsx-2a401e148df7d0beafff.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-b18e9ccfff383c4eca9c.js"],"component---src-pages-awesome-posts-tsx":["/component---src-pages-awesome-posts-tsx-5d411f7537bf0cbabe47.js"],"component---src-pages-diary-tsx":["/component---src-pages-diary-tsx-d3e7ed9d5bf870389161.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-2674bf1bf947b090e55e.js"],"component---src-pages-resume-tsx":["/component---src-pages-resume-tsx-3849b7d8b6bc349b6eb5.js"]};/*]]>*/</script><script src="/webpack-runtime-cfffcc1bbb007bcec06a.js" async=""></script><script src="/styles-9c8bcdfc19d666047d5e.js" async=""></script><script src="/app-27df4a81f9cbef278589.js" async=""></script><script src="/0-164bbb7a93e28545dff2.js" async=""></script><script src="/1-f4abb4e54165a294af6c.js" async=""></script><script src="/component---src-pages-index-tsx-2674bf1bf947b090e55e.js" async=""></script></body></html>
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">May 10, 2020</h2>
+      <h1 class="title"><a href="http://example.org/look-back-on-8-years-2/">8년 간의 개발자 생활 회고 (2)</a></h1>
+      <div class="content">
+        RIDI (2016. 6 ~ 2018. 3) 신입과 경력의 차이 두 번째 회사에서의 생활은 내게 굉장히 큰 변화였다. 일단 맥북을 쓰게 되었다. 그 전까지는 윈도우 환경에서 개발을 했고 맥북은 써본 일이 없었다. 그래서 일단 맥 사용법을 익히는 일부터 해야 했다. 뿐만 아니라 모든 것이 새로웠다. 첫 회사에서는 SVN 으로 소스 관리를 해왔기 때문에 Git 을 처음 사용해보게 되었고, 언어도 생경하기 짝이없는 PHP 와 Javascript 를 사용했다. 특히나 PHP 는 아예 처음이었기 때문에 문법과 Laravel 프레임워크, Doctrine ORM 사용법을 익히는 데에 일주일 정도의 시간을 사용했다.
+        
+        <a class="button is-link" href="http://example.org/look-back-on-8-years-2/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/look_back/">#look_back</a>
+  
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">May 10, 2020</h2>
+      <h1 class="title"><a href="http://example.org/look-back-on-8-years-1/">8년 간의 개발자 생활 회고 (1)</a></h1>
+      <div class="content">
+        Igloosec (2013. 1 ~ 2016. 6) 신입 개발자 처음 개발자로써 사회 생활을 시작한 것은 2013년 1월 이었다. 첫 회사는 이글루시큐리티였고 보안 솔루션들을 만들었다. 주력 솔루션은 통합보안관제솔루션(이하 ESM) 이었는데 운 좋게 이 캐시카우를 만드는 팀에 신입으로 입사를 하게 되었다. 사실 캐시카우인 만큼 레거시 코드도 많고 순수 개발 외 고객사 지원 업무도 많았지만, 그럼에도 불구하고 운이 좋다고 표현한 것은 주니어 엔지니어 시기에 그런 하드한 환경에서 쌓은 경험치들이 나중까지 도움이 많이 되었기 때문이다. 물론 좋은 선배들도 많이 만나게 되었다.
+        
+        <a class="button is-link" href="http://example.org/look-back-on-8-years-1/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/open-source/">#open source</a>
+  
+  | <a class="subtitle is-6" href="/tags/telegraf/">#telegraf</a>
+  
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">August 22, 2019</h2>
+      <h1 class="title"><a href="http://example.org/contribute-code-into-telegraf/">오픈소스 프로젝트에 코드 기여한 이야기</a></h1>
+      <div class="content">
+        그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github이 없으면 나는 현재의 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 기존 소스코드를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.
+        
+        <a class="button is-link" href="http://example.org/contribute-code-into-telegraf/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/daily/">#daily</a>
+
+
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">August 16, 2019</h2>
+      <h1 class="title"><a href="http://example.org/naming-is-important/">작명의 중요성</a></h1>
+      <div class="content">
+        개발자들 사이에서 흔히들 하는 농으로 개발하는 시간보다 변수명을 짓는 데 더 시간을 쓴다고들 한다. 변수에 이름 붙이는 게 뭐 그리 어렵겠느냐만 사실 굉장히 어렵기도 하고 또 그만큼 중요하기도 하다.
+얼마전 회사 미팅에서 있었던 일이다. 내부적으로 만든 서비스 중에 Alert Manager 라는 서비스가 있었고, 해당 서비스에 이러이러한 기능을 붙이자는 의견이 나왔다. Alert Manager 에 있음직한 기능이었기 때문에 의견은 받아들여졌고, 그에 대한 논의가 지속되면서 추가하고자 하는 기능의 범위가 넓어졌다. 어느 선부터는 Alert Manager 에 있음직하지 못한, 더 넓은 개념의 기능이었기 때문에 이 기능을 Alert Manager 와 분리시켜서 별도의 서비스를 만들기로 합의했고 그 서비스에 대한 논의를 이어갔다.
+        
+        <a class="button is-link" href="http://example.org/naming-is-important/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/daily/">#daily</a>
+
+
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">August 15, 2019</h2>
+      <h1 class="title"><a href="http://example.org/move-to-another-place/">새로운 곳으로 이사</a></h1>
+      <div class="content">
+        약 2년간의 관악구 생활을 마치고 용인으로 이사를 가기로 했다.
+애초에 이 곳으로 이사를 오게 되었던 이유는,
+ 아무래도 서울 안의 인프라가 더 많으니까 처가가 가까우니까  였는데, 중간에 차를 사고 나니 이런 것들이 크게 의미가 없어져버렸다. 주말이나 휴일에 항상 차를 타고 다니게 되면서 서울 안쪽 보다는 바깥쪽으로 매번 나돌았고, 사람들이 그득그득한 시내보다는 고즈넉하고 여유로운 풍경들을 즐기기 시작했다. 거기다 아무래도 차가 있으니 처가에서 좀 멀어진다고 해도 방문하기에 크게 무리가 없기도 하고.
+        
+        <a class="button is-link" href="http://example.org/move-to-another-place/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/git/">#git</a>
+  
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">August 14, 2019</h2>
+      <h1 class="title"><a href="http://example.org/git-delete-branch-and-push/">Git - branch 삭제 후 push</a></h1>
+      <div class="content">
+        git에서 브랜치를 따서 작업을 하고 머지된 이후에는 자연스레 작업 브랜치는 날리게 된다. Github 의 풀 리퀘스트 같은 수단을 이용하게 되면 머지 이후에 Delete Branch 버튼을 통해 쉽게 remote 상의 브랜치를 제거할 수 있으나 로컬에서 바로 머지한 경우에는 로컬의 브랜치와 remote 의 브랜치를 모두 제거해주어야 한다. 헌데 로컬 브랜치 제거는 괜찮은데 remote 브랜치 제거 명령어를 항상 까먹는다.
+명령어는 아래와 같다.
+git branch -D branch-name # local branch 제거 git push origin :branch-name # remote branch 제거 remote 브랜치 제거 명령어를 매번 까먹어서 매번 찾아서 하다가 이걸 그냥 alias 를 걸어놔야 되겠다고 생각했다.
+        
+        <a class="button is-link" href="http://example.org/git-delete-branch-and-push/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/trouble-shooting/">#trouble shooting</a>
+  
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">August 13, 2019</h2>
+      <h1 class="title"><a href="http://example.org/bash-is-not-async/">오늘의 삽질 - 괜히 Bash 만 의심했다.</a></h1>
+      <div class="content">
+        회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
+install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &#34;...&#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
+ curl 로 blabla.
+        
+        <a class="button is-link" href="http://example.org/bash-is-not-async/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/career/">#career</a>
+  
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">August 13, 2019</h2>
+      <h1 class="title"><a href="http://example.org/better-than-yesterday/">연봉과 연차의 무게</a></h1>
+      <div class="content">
+        &ldquo;이제는 단순 개발만 하고 기능구현만 하는 것이 아니라 그 이상을 해야 할 시기가 다가온다.&rdquo;
+&ldquo;사람들 관리가 될 수도 있고 어느 한 분야에 전문가가 되어야 할 수도 있고, 선택은 본인의 몫&rdquo;
+ (from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
+회사생활을 시작하고나서 이런 생각을 꽤 오랫동안 해왔던 것 같다. 처음은 아마도 개발자 생활을 막 시작했을 신입 무렵이었던 것 같다. 회사에서 내게 요구하는 역량은 나는 한참 못미쳐있었고, 나름 그래도 대학시절 코드 좀 쓴다고 자부했던 내 자존감은 앓는 이처럼 흔들흔들거리고 있었다.
+        
+        <a class="button is-link" href="http://example.org/better-than-yesterday/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/keyboard/">#keyboard</a>
+  
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">October 16, 2018</h2>
+      <h1 class="title"><a href="http://example.org/error-while-building-qmk_firmware/">qmk_firmware 빌드 시에 chibios 관련 에러 발생</a></h1>
+      <div class="content">
+        qmk_firmware는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다. documentation 및 자세한 정보는 https://qmk.fm/ 에서 확인할 수 있다. 처음 이 소스를 clone 받아서 빌드를 하기 위해서 documentation을 보면 아래와 같이 가이드를 해준다.
+$ make &lt;my_keyboard&gt;:&lt;my_keymap&gt; 하지만 그대로 따라치면 아래와 같은 에러를 볼 수 있다.
+$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory tmk_core/chibios.
+        
+        <a class="button is-link" href="http://example.org/error-while-building-qmk_firmware/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">October 6, 2018</h2>
+      <h1 class="title"><a href="http://example.org/reselect/">reselect</a></h1>
+      <div class="content">
+        https://github.com/reactjs/reselect  reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
+ 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상  가령 아래와 같은 코드가 있다고 가정하면,
+const mapStateToProps = (state, ownProps) =&gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
+// selector const getUserContent = state =&gt; state.
+        
+        <a class="button is-link" href="http://example.org/reselect/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button" href="/page/2/">
+            Older
+            <span class="icon is-small is-marginless">
+              <svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <polyline points="14 6 20 12 14 18"/>
+    
+  </svg>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+    
+  </div>
+</section>
+
+
+
+</body>
+</html>

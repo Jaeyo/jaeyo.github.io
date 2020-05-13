@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My New Hugo Site</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2020 23:27:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>look_back</title>
+      <link>http://example.org/tags/look_back/</link>
+      <pubDate>Sun, 10 May 2020 23:27:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/look_back/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech</title>
+      <link>http://example.org/tags/tech/</link>
+      <pubDate>Sun, 10 May 2020 23:27:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open source</title>
+      <link>http://example.org/tags/open-source/</link>
+      <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>telegraf</title>
+      <link>http://example.org/tags/telegraf/</link>
+      <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/telegraf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>daily</title>
+      <link>http://example.org/tags/daily/</link>
+      <pubDate>Fri, 16 Aug 2019 01:00:08 +0000</pubDate>
+      
+      <guid>http://example.org/tags/daily/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>http://example.org/tags/git/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trouble shooting</title>
+      <link>http://example.org/tags/trouble-shooting/</link>
+      <pubDate>Tue, 13 Aug 2019 01:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/trouble-shooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>career</title>
+      <link>http://example.org/tags/career/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keyboard</title>
+      <link>http://example.org/tags/keyboard/</link>
+      <pubDate>Tue, 16 Oct 2018 10:34:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>http://example.org/tags/aws/</link>
+      <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>http://example.org/tags/react/</link>
+      <pubDate>Sun, 08 Oct 2017 14:57:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mariadb</title>
+      <link>http://example.org/tags/mariadb/</link>
+      <pubDate>Fri, 28 Apr 2017 17:51:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,129 +1,101 @@
-<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.625 -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}h1{margin-left:0;margin-right:0;margin-top:2.4375rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.21875rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h2{margin-left:0;margin-right:0;margin-top:1.625rem;padding-bottom:calc(0.40625rem - 1px);padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.40625rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;border-bottom:1px solid hsla(0,0%,0%,0.07);}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;color:hsla(0,0%,0%,0.53);font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}ul{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.625rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:0.85rem;line-height:1.625rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;font-size:1rem;line-height:1.625rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:calc(0.8125rem - 1px);padding-right:0;padding-top:0;margin-bottom:0.8125rem;border-left:4px solid hsla(0,0%,0%,0.13);color:hsla(0,0%,0%,0.53);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(0.8125rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:0.8125rem;}b{font-weight:600;}strong{font-weight:600;}dt{font-weight:600;}th{font-weight:600;}li{margin-bottom:calc(0.8125rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}li > ul{margin-left:1.625rem;margin-bottom:calc(0.8125rem / 2);margin-top:calc(0.8125rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(0.8125rem / 2);}code{font-size:0.85rem;line-height:1.625rem;}kbd{font-size:0.85rem;line-height:1.625rem;}samp{font-size:0.85rem;line-height:1.625rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.08333rem;padding-right:1.08333rem;padding-top:0.8125rem;padding-bottom:calc(0.8125rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}h3,h4,h5,h6{margin-bottom:0.8125rem;margin-top:1.625rem;}ol,ul{margin-left:2.03125rem;}li>ol,li>ul{margin-left:2.03125rem;}a{color:#4078c0;text-decoration:none;}a:hover,a:active{text-decoration:underline;}</style><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=008654519ce705ac7bc44303a9014606"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=008654519ce705ac7bc44303a9014606"/><meta name="generator" content="Gatsby 2.13.52"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=008654519ce705ac7bc44303a9014606"/><title data-react-helmet="true">오픈소스 프로젝트에 코드 기여한 이야기 | Hello, there</title><meta data-react-helmet="true" content="그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github…" name="description"/><meta data-react-helmet="true" content="오픈소스 프로젝트에 코드 기여한 이야기" property="og:title"/><meta data-react-helmet="true" content="그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github…" property="og:description"/><meta data-react-helmet="true" content="website" property="og:type"/><meta data-react-helmet="true" content="summary" name="twitter:card"/><meta data-react-helmet="true" content="Jaeyo" name="twitter:creator"/><meta data-react-helmet="true" content="오픈소스 프로젝트에 코드 기여한 이야기" name="twitter:title"/><meta data-react-helmet="true" content="그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github…" name="twitter:description"/><meta data-react-helmet="true" content="SaaS, Multi Tenancy, Go, General, CockroachDB, Self Improvement, Architecture, Business, Career, Developer, Resume, Presentation, Clean Code, Trouble Shooting, Cache, Infra, Study, OOP, Etc, Computer Science, Kubernetes, Database, Sharding, DDD, Finite State Machine, Linux, Open Source, Edge Computing, Docker, Performance, Monitoring, React, Remote WorkCompany, Culture" name="keywords"/><style data-href="/styles.e4341d76e25e5efb0870.css">.tl-edges{max-width:100%;overflow-x:hidden}.tl-wrapper{width:100%;float:left;position:relative}.tl-wrapper+.tl-wrapper{margin-left:-100%;margin-right:0}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}</style><style data-styled="eXacqy fUdvHp iGTiqf eSKIxg lmZTGJ gZCour iEkmSL cVYaYg fTTapg dexGYY dUwxoW olKBH fYOlJB bJtViV eETzHY oKrzS gPKqhR humgxq cAHKeS fOzzqE dMhyVf" data-styled-version="4.3.2">
-/* sc-component-id: bio__Content-sc-137rv77-0 */
-.humgxq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:0.40625rem;}
-/* sc-component-id: bio__Avatar-sc-137rv77-1 */
-.cAHKeS{border-radius:100%;margin-bottom:0;margin-right:0.8125rem;min-width:50px;}
-/* sc-component-id: layout__StyledH3-z7e7u9-1 */
-.fUdvHp{font-family:Montserrat,sans-serif;margin-top:0;}
-/* sc-component-id: layout__StyledLink-z7e7u9-2 */
-.iGTiqf{box-shadow:none;color:inherit;-webkit-text-decoration:none;text-decoration:none;}
-/* sc-component-id: layout__Content-z7e7u9-3 */
-.eXacqy{margin-left:auto;margin-right:auto;max-width:39rem;padding:2.4375rem 1.21875rem;}
-/* sc-component-id: tag-box__StyledSpan-odnwx-0 */
-.eSKIxg{background-color:#964236;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.lmZTGJ{background-color:#b1e263;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.gZCour{background-color:#fae8e8;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.iEkmSL{background-color:#874254;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.cVYaYg{background-color:#d28f01;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.fTTapg{background-color:#6c234a;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.dexGYY{background-color:#7e077c;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.dUwxoW{background-color:#e77306;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.olKBH{background-color:#fd7a01;color:#eeeeee;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.fYOlJB{background-color:#7fd975;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}.bJtViV{background-color:#f4f904;color:#222222;border-radius:2px;cursor:default;font-size:11px;margin:0 2px;padding:2px 6px;max-height:20px;overflow-y:hidden;white-space:nowrap;}
-/* sc-component-id: blog-post__Date-sc-1jbsnju-0 */
-.eETzHY{display:block;font-size:0.87055rem;line-height:1.625rem;margin-bottom:1.625rem;margin-top:-0.40625rem;}
-/* sc-component-id: blog-post__Divider-sc-1jbsnju-1 */
-.oKrzS{margin:3.25rem 0;}
-/* sc-component-id: blog-post__PostNavigator-sc-1jbsnju-2 */
-.fOzzqE{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:15px 0;}
-/* sc-component-id: blog-post__ListNavigator-sc-1jbsnju-3 */
-.dMhyVf{text-align:center;padding-bottom:30px;}
-/* sc-component-id: blog-post__TagNavigator-sc-1jbsnju-4 */
-.gPKqhR{list-style:none;}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-tsx-2a401e148df7d0beafff.js"/><link as="script" rel="preload" href="/1-f4abb4e54165a294af6c.js"/><link as="script" rel="preload" href="/0-164bbb7a93e28545dff2.js"/><link as="script" rel="preload" href="/app-27df4a81f9cbef278589.js"/><link as="script" rel="preload" href="/styles-9c8bcdfc19d666047d5e.js"/><link as="script" rel="preload" href="/webpack-runtime-cfffcc1bbb007bcec06a.js"/><link as="fetch" rel="preload" href="/page-data/contribute-code-into-telegraf/page-data.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="tl-edges"><div class="tl-wrapper tl-wrapper--mount tl-wrapper-status--entered" style="z-index:1;opacity:1"><div class="layout__Content-z7e7u9-3 eXacqy"><header><h3 class="layout__StyledH3-z7e7u9-1 fUdvHp"><a class="layout__StyledLink-z7e7u9-2 iGTiqf" href="/">Hello, there</a></h3></header><main><h1>오픈소스 프로젝트에 코드 기여한 이야기</h1><p><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 lmZTGJ">open source</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 gZCour">telegraf</span></p><p class="blog-post__Date-sc-1jbsnju-0 eETzHY">August 22, 2019</p><div><p>그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github이 없으면 나는 현재의 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 기존 소스코드를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.</p>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>오픈소스 프로젝트에 코드 기여한 이야기 | My New Hugo Site</title>
+
+
+
+<link rel="stylesheet" href="/css/style.css"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="canonical" href="http://example.org/contribute-code-into-telegraf/">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <nav id="nav-main" class="nav">
+      <div id="nav-name" class="nav-left">
+        <a id="nav-anchor" class="nav-item" href="http://example.org/">
+          <h1 id="nav-heading" class="title is-4">My New Hugo Site</h1>
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav id="nav-items" class="nav-item level is-mobile"></nav>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+
+      
+    </nav>
+
+  </div>
+  <script src="/js/navicon-shift.js"></script>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/open-source/">#open source</a>
+  
+  | <a class="subtitle is-6" href="/tags/telegraf/">#telegraf</a>
+  
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">August 22, 2019</h2>
+    <h1 class="title">오픈소스 프로젝트에 코드 기여한 이야기</h1>
+    
+    <div class="content">
+      <p>그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github이 없으면 나는 현재의 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 기존 소스코드를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.</p>
 <p>내가 참여한 오픈소스는 <a href="https://github.com/influxdata/telegraf">Telegraf</a> 였다. 뭐 이름이 생경하게 들릴 수는 있지만 그래도 나름 모니터링 쪽 동네에서는 방귀좀 뀌는 프로젝트다. 일반적으로 모니터링이라고 하면 서버 모니터링 (IaaS 레벨의 모니터링)과 애플리케이션 모니터링(APM) 정도를 많이 떠올릴 텐데, 이 Telegraf 는 서버 모니터링 쪽에서 활약하고 있는 메트릭 수집 에이전트다.</p>
-<p>모니터링은 일반적으로 <code class="language-text">수집</code> -> <code class="language-text">저장</code> -> <code class="language-text">분석</code> -> <code class="language-text">시각화</code> 정도의 플로우를 타게 된다. (중간에 순서가 조금 바뀌는 경우는 있다.) 여기서 Telegraf 는 <code class="language-text">수집</code>단을 맡고 있다. Elastic stack 의 <code class="language-text">metricbeat</code>와 포지셔닝이 비슷하다고 할 수 있을 것이다.</p>
-<p>말 나온 김에 모니터링 영역에서 Elastic 스택과 TICK 스택을 비교해보자면, <code class="language-text">Beat</code> -> <code class="language-text">Logstash</code> -> <code class="language-text">Elastiverseticsearch</code> -> <code class="language-text">Kibana</code> 의 플로우를 가지고 있는 Elastic 스택은 기본적으로 로그 모니터링에 근간을 두고 있다. 애초에 Elasticsearch 라는 솔루션이 풀 텍스트 인덱싱을 하는 Lucene 으로 만들어진 물건이니. 물론 요즘에는 로그와 메트릭 뿐만 아니라 APM 까지 만들어서 애플리케이션 레벨의 모니터링까지 영역을 넓히고 있긴 하다.</p>
+<p>모니터링은 일반적으로 <code>수집</code> -&gt; <code>저장</code> -&gt; <code>분석</code> -&gt; <code>시각화</code> 정도의 플로우를 타게 된다. (중간에 순서가 조금 바뀌는 경우는 있다.) 여기서 Telegraf 는 <code>수집</code>단을 맡고 있다. Elastic stack 의 <code>metricbeat</code>와 포지셔닝이 비슷하다고 할 수 있을 것이다.</p>
+<p>말 나온 김에 모니터링 영역에서 Elastic 스택과 TICK 스택을 비교해보자면, <code>Beat</code> -&gt; <code>Logstash</code> -&gt; <code>Elastiverseticsearch</code> -&gt; <code>Kibana</code> 의 플로우를 가지고 있는 Elastic 스택은 기본적으로 로그 모니터링에 근간을 두고 있다. 애초에 Elasticsearch 라는 솔루션이 풀 텍스트 인덱싱을 하는 Lucene 으로 만들어진 물건이니. 물론 요즘에는 로그와 메트릭 뿐만 아니라 APM 까지 만들어서 애플리케이션 레벨의 모니터링까지 영역을 넓히고 있긴 하다.</p>
 <p>그에 반해, TICK 스택은 메트릭 기반의 모니터링이라고 볼 수 있다. 여기서 메트릭과 로그의 차이점이라고 하면, 로그는 단순히 문자열 형태의 메시지라면 메트릭은 수치값을 가지는 형태라고 볼 수 있을 것이다. 애초에 Telegraf 자체도 메트릭 수집에 특화되어 있고 데이터 저장소인 InfluxDB 도 시계열 데이터를 저장하는 데이터베이스로 만들어져 있다.</p>
-<p>여기서 TICK 스택이라고 하면 <code class="language-text">Telegraf</code>, <code class="language-text">InfluxDB</code>, <code class="language-text">Chronograf</code>, <code class="language-text">Kapacitor</code> 로 이루어진 스택을 이야기하는데 그런 것 치고 시각화 영역을 Chronograf 로 쓰는 경우는 별로 없다. 사실 <code class="language-text">Chronograf</code> 보다는 <code class="language-text">Grafana</code> 가 시각화 도구로서 기능도 더 많고 기타 여러 데이터 소스와의 접합도 좋아서 <code class="language-text">TIG</code> (<code class="language-text">Telegraf</code> - <code class="language-text">InfluxDB</code> - <code class="language-text">Grafana</code>) 형태의 스택이 더 많이 쓰이는 것 같다. 근데 문제는 <code class="language-text">Grafana</code> 쪽에서는 TICK 스택보다는 <code class="language-text">Prometheus</code> 랑 더 친하고 요즘 container 기반 에코 시스템에서 Prometheus 가 더 잘 나간다는 사실이다. 그리고 둘 다 Go 언어로 만들어져 있다. 사실 요즘 container 기반의 에코 시스템 위의 툴들은 열에 여덟은 Go 언어를 사용하고 있는 것 같다. 이쪽 동네의 de facto 언어가 되어가는 느낌이다.</p>
-<p>아무튼 각설하고, Telegraf 앞서 말했든 메트릭 수집 에이전트다. 하지만 Telegraf 를 설명하는 말에는 항상 수식어가 하나 더 붙는다. “플러그인 기반” 이 그것이다. Telegraf 는 다양한 플러그인을 통해서 다양한 종류의 메트릭들을 수집할 수 있다. 그리고 수집된 메트릭을 꼭 InfluxDB 에만 넣을 수 있는 것도 아니라 다른 Output Plugin 을 통해서 다른 종류의 데이터 저장소에 집어 넣는 것도 가능하다.</p>
+<p>여기서 TICK 스택이라고 하면 <code>Telegraf</code>, <code>InfluxDB</code>, <code>Chronograf</code>, <code>Kapacitor</code> 로 이루어진 스택을 이야기하는데 그런 것 치고 시각화 영역을 Chronograf 로 쓰는 경우는 별로 없다. 사실 <code>Chronograf</code> 보다는 <code>Grafana</code> 가 시각화 도구로서 기능도 더 많고 기타 여러 데이터 소스와의 접합도 좋아서 <code>TIG</code> (<code>Telegraf</code> - <code>InfluxDB</code> - <code>Grafana</code>) 형태의 스택이 더 많이 쓰이는 것 같다. 근데 문제는 <code>Grafana</code> 쪽에서는 TICK 스택보다는 <code>Prometheus</code> 랑 더 친하고 요즘 container 기반 에코 시스템에서 Prometheus 가 더 잘 나간다는 사실이다. 그리고 둘 다 Go 언어로 만들어져 있다. 사실 요즘 container 기반의 에코 시스템 위의 툴들은 열에 여덟은 Go 언어를 사용하고 있는 것 같다. 이쪽 동네의 de facto 언어가 되어가는 느낌이다.</p>
+<p>아무튼 각설하고, Telegraf 앞서 말했든 메트릭 수집 에이전트다. 하지만 Telegraf 를 설명하는 말에는 항상 수식어가 하나 더 붙는다. &ldquo;플러그인 기반&rdquo; 이 그것이다. Telegraf 는 다양한 플러그인을 통해서 다양한 종류의 메트릭들을 수집할 수 있다. 그리고 수집된 메트릭을 꼭 InfluxDB 에만 넣을 수 있는 것도 아니라 다른 Output Plugin 을 통해서 다른 종류의 데이터 저장소에 집어 넣는 것도 가능하다.</p>
 <p><img src="https://www.influxdata.com/wp-content/uploads/Telegraf-GREY-Diagram.png" alt="Telegraf"></p>
-<p>위의 그림은 Telegraf 공식 웹페이지에 있는 그림으로 TICK 스택의 아키텍처를 자세하게 보여준다. 여담으로 작년말에 확인해 봤을 때는 저 그림에 “200개 이상의 플러그인 지원” 관련된 문구가 써있었는데 실제로 확인해봤을 땐 198개 였다. 뭐 그냥 그려려니 했다. 아무튼 Telegraf 에서 지원하는 플러그인 리스트는 Telegraf Github 에 들어가면 README 에서 바로 확인할 수 있는데 오늘 날짜 master 브랜치 기준으로 아래와 같다.</p>
+<p>위의 그림은 Telegraf 공식 웹페이지에 있는 그림으로 TICK 스택의 아키텍처를 자세하게 보여준다. 여담으로 작년말에 확인해 봤을 때는 저 그림에 &ldquo;200개 이상의 플러그인 지원&rdquo; 관련된 문구가 써있었는데 실제로 확인해봤을 땐 198개 였다. 뭐 그냥 그려려니 했다. 아무튼 Telegraf 에서 지원하는 플러그인 리스트는 Telegraf Github 에 들어가면 README 에서 바로 확인할 수 있는데 오늘 날짜 master 브랜치 기준으로 아래와 같다.</p>
 <ul>
-<li>Input Plugins: activemq, aerospike, amqp<em>consumer, apache, aurora, aws cloudwatch, bcache, beanstalkd, bind, bond, burrow, cassandra, ceph, cgroup, chrony, cisco</em>telemetry<em>gnmi, cisco</em>telemetry<em>mdt, cloud</em>pubsub, cloud<em>pubsub</em>push, conntrack, consul, couchbase, couchdb, cpu, DC/OS, diskio, disk, disque, dmcache, dns query time, docker, docker<em>log, dovecot, ecs, elasticsearch, exec, fail2ban, fibaro, file, filestat, filecount, fireboard, fluentd, github, graylog, haproxy, hddtemp, httpjson, http</em>listener, http<em>listener</em>v2, http, http<em>response, icinga2, influxdb, influxdb</em>listener, internal, interrupts, ipmi<em>sensor, ipset, iptables, ipvs, jenkins, jolokia2, jolokia, jti</em>openconfig<em>telemetry, kafka</em>consumer, kapacitor, kinesis, kernel, kernel<em>vmstat, kibana, kubernetes, kube</em>inventory, leofs, linux<em>sysctl</em>fs, logparser, lustre2, mailchimp, mcrouter, memcached, mem, mesos, minecraft, mongodb, mqtt<em>consumer, multifile, mysql, nats</em>consumer, nats, neptune<em>apex, net, net</em>response, netstat, nginx, nginx<em>plus</em>api, nginx<em>plus, nginx</em>upstream<em>check, nginx</em>vts, nsq<em>consumer, nsq, nstat, ntpq, nvidia</em>smi, openldap, opensmtpd, openweathermap, pf, pgbouncer, phpfpm, phusion passenger, ping, postfix, postgresql<em>extensible, postgresql, powerdns, powerdns</em>recursor, processes, procstat, prometheus, puppetagent, rabbitmq, raindrops, redis, rethinkdb, riak, salesforce, sensors, smart, snmp<em>legacy, snmp, socket</em>listener, solr, sql server, stackdriver, statsd, swap, syslog, sysstat, system, tail, temp, tcp<em>listener, teamspeak, tengine, tomcat, twemproxy, udp</em>listener, unbound, uswgi, varnish, vsphere VMware vSphere, webhooks, filestack, github, mandrill, papertrail, particle, rollbar, win<em>perf</em>counters, win<em>services, wireless, x509</em>cert, zfs, zipkin, zookeeper</li>
+<li>Input Plugins: activemq, aerospike, amqp_consumer, apache, aurora, aws cloudwatch, bcache, beanstalkd, bind, bond, burrow, cassandra, ceph, cgroup, chrony, cisco_telemetry_gnmi, cisco_telemetry_mdt, cloud_pubsub, cloud_pubsub_push, conntrack, consul, couchbase, couchdb, cpu, DC/OS, diskio, disk, disque, dmcache, dns query time, docker, docker_log, dovecot, ecs, elasticsearch, exec, fail2ban, fibaro, file, filestat, filecount, fireboard, fluentd, github, graylog, haproxy, hddtemp, httpjson, http_listener, http_listener_v2, http, http_response, icinga2, influxdb, influxdb_listener, internal, interrupts, ipmi_sensor, ipset, iptables, ipvs, jenkins, jolokia2, jolokia, jti_openconfig_telemetry, kafka_consumer, kapacitor, kinesis, kernel, kernel_vmstat, kibana, kubernetes, kube_inventory, leofs, linux_sysctl_fs, logparser, lustre2, mailchimp, mcrouter, memcached, mem, mesos, minecraft, mongodb, mqtt_consumer, multifile, mysql, nats_consumer, nats, neptune_apex, net, net_response, netstat, nginx, nginx_plus_api, nginx_plus, nginx_upstream_check, nginx_vts, nsq_consumer, nsq, nstat, ntpq, nvidia_smi, openldap, opensmtpd, openweathermap, pf, pgbouncer, phpfpm, phusion passenger, ping, postfix, postgresql_extensible, postgresql, powerdns, powerdns_recursor, processes, procstat, prometheus, puppetagent, rabbitmq, raindrops, redis, rethinkdb, riak, salesforce, sensors, smart, snmp_legacy, snmp, socket_listener, solr, sql server, stackdriver, statsd, swap, syslog, sysstat, system, tail, temp, tcp_listener, teamspeak, tengine, tomcat, twemproxy, udp_listener, unbound, uswgi, varnish, vsphere VMware vSphere, webhooks, filestack, github, mandrill, papertrail, particle, rollbar, win_perf_counters, win_services, wireless, x509_cert, zfs, zipkin, zookeeper</li>
 <li>Parsers: InfluxDB Line Protocol, Collectd, CSV, Dropwizard, FormUrlencoded, Graphite, Grok, JSON, Logfmt, Nagios, Value, Wavefront</li>
 <li>Serializers: InfluxDB Line Protocol, JSON, Graphite, ServiceNow, SplunkMetric, Carbon2, Wavefront</li>
 <li>Processor Plugins: converter, date, enum, override, parser, pivot, printer, regex, rename, strings, topk, unpivot</li>
 <li>Aggregator Plugins: basicstats, final, histogram, minmax, valuecounter</li>
-<li>Output Plugins: influxdb, influxdb<em>v2, amon, amqp (rabbitmq), application</em>insights, aws kinesis, aws cloudwatch, azure<em>monitor, cloud</em>pubsub, cratedb, datadog, discard, elasticsearch, file, graphite, graylog, health, http, instrumental, kafka, librato, mqtt, nats, nsq, opentsdb, prometheus, riemann, riemann<em>legacy, socket</em>writer, stackdriver, syslog, tcp, udp, wavefront</li>
+<li>Output Plugins: influxdb, influxdb_v2, amon, amqp (rabbitmq), application_insights, aws kinesis, aws cloudwatch, azure_monitor, cloud_pubsub, cratedb, datadog, discard, elasticsearch, file, graphite, graylog, health, http, instrumental, kafka, librato, mqtt, nats, nsq, opentsdb, prometheus, riemann, riemann_legacy, socket_writer, stackdriver, syslog, tcp, udp, wavefront</li>
 </ul>
 <hr>
 <p>Telegraf 에 대한 자세한 설명은 생략하기로 하고, 회사에서 업무의 일환으로 Telegraf 를 사용중에 있다. 이전까지는 운영중인 Linux 기반의 서버들에서 메트릭을 수집하기 위한 용도였는데 윈도우 서버도 추가적으로 지원해야 하는 요구사항이 발생되었다. Telegraf 는 윈도우 역시 지원하기 때문에 별 고민없이 설치하고 테스트를 하기 시작했다. 다만 리눅스와 윈도우는 메트릭을 수집하는 방법에 차이가 있어 리눅스 서버와는 다른 윈도우용 기본 설정 파일을 받아서 구성했다.</p>
 <p>헌데 설정파일을 받아놓고 슥 한번 훑어보는데 이상한 부분이 눈에 띄었다.</p>
-<p>
-  <a
-    class="gatsby-resp-image-link"
-    href="/static/88b387c383230d17a2eb660f470d3f0e/ce9b3/1.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
-    <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 55.998008959681435%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcSAAAXEgFnn9JSAAABZklEQVQoz31S2Y6DMBDrLxRKyxGOQkggW+gh9f8/bdbOLlU2rfZhBMo4HtuZXdu24pwTY4yoSklZllIUuRwOB19pmsrxeBTirLEyag1c5c/YY204fncErssiZhwlw0GSJG/ALMtED4MfTHwFwlopyfP8D5knrNBY1qtoECZBI1Y4QNmyrDJNkzRN452wNqUvwq6uZQX463yWKpwWKOSlse9lwlBFVXCR/Nab5RkW7peLz6Y/nSSj3Ygwh+UH+rdpFgcBDaOJXLwUauTxuN3EIh9FNREhYyhAOMHB/fmUvuukpLIPZJ7QIMPVWrmA8JNCTwjLBoOJcXiccr+XPfuRXU/YI+AHgnZBhiGA/ycMMojGwK4F/ozvpxf2hArNier04JVxRVhp9CgzMMS1sMy1ISbeiNceunmWkS8I+wRzHbYLG6FFLNzDDnjeKYrin8Vef/arhlraIzi05NdGj35oB4VdpDK0/Q24Lh38oSubagAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
-        class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
-        alt="Duplicated Configuration"
-        title=""
-        src="/static/88b387c383230d17a2eb660f470d3f0e/b9e4f/1.png"
-        srcset="/static/88b387c383230d17a2eb660f470d3f0e/cf440/1.png 148w,
-/static/88b387c383230d17a2eb660f470d3f0e/d2d38/1.png 295w,
-/static/88b387c383230d17a2eb660f470d3f0e/b9e4f/1.png 590w,
-/static/88b387c383230d17a2eb660f470d3f0e/f9b6a/1.png 885w,
-/static/88b387c383230d17a2eb660f470d3f0e/2d849/1.png 1180w,
-/static/88b387c383230d17a2eb660f470d3f0e/ce9b3/1.png 2009w"
-        sizes="(max-width: 590px) 100vw, 590px"
-      />
-    </span>
-  </span>
-  
-  </a>
-    </p>
-<p>Network 관련된 메트릭을 수집하는 설정을 설정 파일 위쪽에서 한 번 본 것 같은데 아래에서 또 발견되었다. 보통 이런 경우는 “Telegraf 의 기본 설정 파일이 잘못 되었구나” 라고 여기기 보다는 “내가 뭘 잘못 했구나” 라고 생각하기 쉽다. 자연히 나도 붙여넣기하면서 실수 했겠거니 하면서 새롭게 윈도우용 설정 파일을 다시 받았다. 하지만 새로 받은 설정 파일에도 해당 섹션은 중복되어 있었다.</p>
-<p>
-  <a
-    class="gatsby-resp-image-link"
-    href="/static/bea71d803b581d2cc4ab35a0ab62436b/8e427/2.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
-    <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 23.75886524822695%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAzElEQVQY05WP2W7CMBRE8///VaRWILGUBIgRi0mz4SAMFQkJPrUd1DceGGk8dx48d26gtSaOY4RYWxVe91JS1zXvwPjHEPzYz8sw8lzM54jVCrndUeY5ZZaRp6mf73bBK7ZN48NcaNAlCfl0ivgYsP38Qg6HyNGIYvZNNpl4puMxVRShwhBl1c2nxbL3toi2Jei6PtA17doWVR7RZ83v9UqlKszjwbsw7mQ33EpFsdlRyQNq39P50yHB6AvmfHmqxjR338Q8T7Ty7x3+ANCNfUt/DUM4AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-    >
-      <img
-        class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
-        alt="guide"
-        title=""
-        src="/static/bea71d803b581d2cc4ab35a0ab62436b/b9e4f/2.png"
-        srcset="/static/bea71d803b581d2cc4ab35a0ab62436b/cf440/2.png 148w,
-/static/bea71d803b581d2cc4ab35a0ab62436b/d2d38/2.png 295w,
-/static/bea71d803b581d2cc4ab35a0ab62436b/b9e4f/2.png 590w,
-/static/bea71d803b581d2cc4ab35a0ab62436b/f9b6a/2.png 885w,
-/static/bea71d803b581d2cc4ab35a0ab62436b/2d849/2.png 1180w,
-/static/bea71d803b581d2cc4ab35a0ab62436b/8e427/2.png 1692w"
-        sizes="(max-width: 590px) 100vw, 590px"
-      />
-    </span>
-  </span>
-  
-  </a>
-    </p>
-<p>그제서야 기본 설정 파일이 잘못되어 있는 걸 확인하고는 Telegraf 에 대한 사내 가이드 문서에 위와 같은 내용을 추가하였다. 그러고나서 문득 생각해보니, 이건 PR을 꽁으로 한 번 할 수 있는 기회가 아닌가 하는 생각이 들었다. 나는 곧바로 중복된 설정을 제거하는 내용의 PR을 만들어 올렸고, 명백한 설정 오류였기 때문에 별 문제없이 바로 merge가 되었다. 메인테이너로부터 “Thanks!” 라는 코멘트를 받았다.</p>
+<p><img src="/contribute-code-into-telegraf/1.png" alt="Duplicated Configuration"></p>
+<p>Network 관련된 메트릭을 수집하는 설정을 설정 파일 위쪽에서 한 번 본 것 같은데 아래에서 또 발견되었다. 보통 이런 경우는 &ldquo;Telegraf 의 기본 설정 파일이 잘못 되었구나&rdquo; 라고 여기기 보다는 &ldquo;내가 뭘 잘못 했구나&rdquo; 라고 생각하기 쉽다. 자연히 나도 붙여넣기하면서 실수 했겠거니 하면서 새롭게 윈도우용 설정 파일을 다시 받았다. 하지만 새로 받은 설정 파일에도 해당 섹션은 중복되어 있었다.</p>
+<p><img src="/contribute-code-into-telegraf/2.png" alt="guide"></p>
+<p>그제서야 기본 설정 파일이 잘못되어 있는 걸 확인하고는 Telegraf 에 대한 사내 가이드 문서에 위와 같은 내용을 추가하였다. 그러고나서 문득 생각해보니, 이건 PR을 꽁으로 한 번 할 수 있는 기회가 아닌가 하는 생각이 들었다. 나는 곧바로 중복된 설정을 제거하는 내용의 PR을 만들어 올렸고, 명백한 설정 오류였기 때문에 별 문제없이 바로 merge가 되었다. 메인테이너로부터 &ldquo;Thanks!&rdquo; 라는 코멘트를 받았다.</p>
 <p>사실 이 코멘트를 보고 기분이 좀 이상했다. 지금껏 밤낮 가리지 않고 열심히 코딩에 매진해오긴 했지만 내가 쓴 코드(사실은 간단한 설정 파일 수정이지만)로 인해 누군가에게 고맙다는 말을 들어본 적이 없었다. 물론 내가 쓴 코드로 회사가 돈을 벌긴 하지만 그렇다고 해서 회사가 내게 고맙다는 말을 해주진 않는다. 대신 월급을 준다. (이 경우엔 당연히 월급이 더 좋다.)</p>
 <p>개인적으로 칭찬에 약한 타입이라 뭔가 Telegraf 프로젝트에 더 기여하고 싶다는 생각이 들었다.</p>
 <p>사실 위에서도 이야기했듯이 이전에도 오픈소스에 대한 기여를 시도해본 적이 몇 번 있었다. 하지만 그 때는 확실히 접근법이 좋지 않았던 것 같다.</p>
 <ol>
-<li>오픈소스에 기여를 해보고 싶은데…</li>
-<li>기왕 하는거 좀 크고 유명한 데에 해보고 싶은데…</li>
+<li>오픈소스에 기여를 해보고 싶은데&hellip;</li>
+<li>기왕 하는거 좀 크고 유명한 데에 해보고 싶은데&hellip;</li>
 <li>크고 유명한 오픈소스 프로젝트를 클론 받는다.</li>
-<li>main 문을 찾아 시작점부터 따라가본다… 3분 후 포기한다.</li>
-<li>공식 문서를 찾아 정독해본다… 30분 후 포기한다.</li>
-<li>해당 프로젝트의 아주 초기 버전을 체크아웃해 다시 소스를 따라가본다… 5분 후 포기한다.</li>
+<li>main 문을 찾아 시작점부터 따라가본다&hellip;. 3분 후 포기한다.</li>
+<li>공식 문서를 찾아 정독해본다&hellip;. 30분 후 포기한다.</li>
+<li>해당 프로젝트의 아주 초기 버전을 체크아웃해 다시 소스를 따라가본다&hellip;. 5분 후 포기한다.</li>
 <li>포기한다.</li>
 </ol>
 <p>위의 방법은 사실 지금보기에는 오픈소스 기여에 대한 아주 좋지 않은 접근법이라고 생각된다. 사실 기여를 할 오픈소스를 고를 때는 본인이 사용중인 것들 중에서 고르는 것이 제일 유리하다고 생각한다. 나한테는 Telegraf 가 그런 것 중 하나였고, 그 외에도 여러가지로 덤벼볼만한 요소들이 좀 있었다.</p>
@@ -136,97 +108,32 @@
 <p>이 중에서도 특히 3번이 굉장히 유효했다. 말 그대로 플러그인 기반이기 때문에 Telegraf 의 코어 부분을 손대지 않는 한 다른 코드는 볼 필요없이 내가 고치고 싶은 플러그인의 코드만 보면 됐고 대부분의 경우 플러그인은 하나 내지 두 개의 파일 안에 전부 담겨있다. 게다가 플러그인이 어떤 인터페이스를 가져야 하는지에 대한 부분도 문서에 상세히 설명되어 있으니 코드를 따라가기도 더 쉬웠다.</p>
 <p>게다가 더 좋았던 건, Go 언어를 사용하면서 테스트를 어떻게 작성해야 할 지 고민할 때가 많은데, Telegraf 의 경우에는 테스트 파일들도 잘 구성되어 있어 테스트를 작성하는 요령을 익히기가 좋다는 것이다. (사실 테스트가 없으면 merge 가 안된다.)</p>
 <p>그리고 추가적으로, 새로운 플러그인을 만든 사람의 경우에는 아래와 같이 Release Note에 이름을 박아준다.</p>
-<p>
-  <a
-    class="gatsby-resp-image-link"
-    href="/static/45e5d1fd578936a3c91ab584ea70f2c5/7b6a0/3.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
-  >
-    <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 101.99456029011786%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABcSAAAXEgFnn9JSAAACd0lEQVQ4y51UiXLqMAzk/3/vTcuDQC4gl3OR+yDeSgqhobRvOi8zGjtOvN7VSt7UTY0oS5F4F1jWGWnZoKwqibpu0LQt+r6/x4B+GND1I4rmhrLuUdU1xbynbTtstNaYoDG0DfyzC6UiTNOE2+12j0nev8Z40xSf/4080voG96cbRgRJDT9pUNQjrWj8zyMMeXNPgHk9Iau1jAvc/P314eU59CNWgEDTNLAdF4fDEZbtwnFOkrcF9LfxAGy7DkmSIssyARoo+T+xe2b6A2DX9TifLzidyOk0Q1mUBJ4/gtfy/IrrtaC4ysHXong5VExh1/hJ05SkujBNm2Q7VEa2pMDgNFi8ZuN4NLE3DrhcPBQE+JXlDHg/RSkFkzaeiCkDM9skSaDiWA5TkUIQhgiCUBR9Z9pmfQJL8v0AEQGHYYSIAAqSzrFILcsSFRUx/7sGfbi8ZhhFEUk0xW1maJNslsijaVqSBp7PlWBLJ31l+QTIsngTm8M5Y7acp7KsJKTNqnnOYNxq3CVrlpv1Ceys5/mSN84Tz5WKxQAG57VljOOEZOdSvy+Ai8sxAbGDBsn2aOO8ORLgkNLB4J7vC2BI5uSU05ccftZhh5hMSAl0oLm+S3npt28K+4nhstC7LqL3PYLDGdVFoaL3jJKfkxkpjZpKB0kM7XnS52tWzy7zC8/oZy+qYQVX7AwTxtHCn7d3bHcGApIbEPthpFuIFOjlZvjutlkAdazgBwVc1eESUMe4p8dlYRhHuFTk3N+/BySGKq7gpz1iKmw2gsNxHDGhpZtb5LH0H/L5BDiRa+P2L/r9AcNuh57n2y06iubtTUaiCk2H6X8AfgBE8AjmPm+ruwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
-        class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
-        alt="release-note"
-        title=""
-        src="/static/45e5d1fd578936a3c91ab584ea70f2c5/b9e4f/3.png"
-        srcset="/static/45e5d1fd578936a3c91ab584ea70f2c5/cf440/3.png 148w,
-/static/45e5d1fd578936a3c91ab584ea70f2c5/d2d38/3.png 295w,
-/static/45e5d1fd578936a3c91ab584ea70f2c5/b9e4f/3.png 590w,
-/static/45e5d1fd578936a3c91ab584ea70f2c5/f9b6a/3.png 885w,
-/static/45e5d1fd578936a3c91ab584ea70f2c5/7b6a0/3.png 1103w"
-        sizes="(max-width: 590px) 100vw, 590px"
-      />
-    </span>
-  </span>
-  
-  </a>
-    </p>
+<p><img src="/contribute-code-into-telegraf/3.png" alt="release-note"></p>
 <p>아직 bugfix 성 밖에 기여를 못해서 여기에 이름을 올리지는 못했지만 조만간 올렸으면 한다.</p>
 <hr>
 <blockquote>
 <p>2019-09-04 추가,</p>
-<p>
-  <a
-    class="gatsby-resp-image-link"
-    href="/static/ee140c59e279757c4ed5813e9418053b/04e89/4.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-  
-  <span
-    class="gatsby-resp-image-wrapper"
-    style="position: relative; display: block;  max-width: 370px; margin-left: auto; margin-right: auto;"
-  >
-    <span
-      class="gatsby-resp-image-background-image"
-      style="padding-bottom: 22.43243243243243%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAAmklEQVQY032O2w6CMBBE+f//I97KtaVUoiVaKEZij0DkQUOcZHb2YXN2ota2nERKVWmyrCBNMqRSPMeREMJfz1pzVdQ5h0hSmuaMkiWJEOja8H22rV/YAlyXuw+YG4wvsNZSG4PWZsrpkaqwV4uUFUUhKaWi93674Tweg0dfBvbK4/oBMzWsP14ApcJMD/K85HAUxPEO57pN4BtyYDQOgxmV4QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-    >
-      <img
-        class="gatsby-resp-image-image"
-        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
-        alt="made-it"
-        title=""
-        src="/static/ee140c59e279757c4ed5813e9418053b/04e89/4.png"
-        srcset="/static/ee140c59e279757c4ed5813e9418053b/cf440/4.png 148w,
-/static/ee140c59e279757c4ed5813e9418053b/d2d38/4.png 295w,
-/static/ee140c59e279757c4ed5813e9418053b/04e89/4.png 370w"
-        sizes="(max-width: 370px) 100vw, 370px"
-      />
-    </span>
-  </span>
-  
-  </a>
-    </p>
+<p><img src="/contribute-code-into-telegraf/4.png" alt="made-it"></p>
 <p>됐다.</p>
-</blockquote></div><hr class="blog-post__Divider-sc-1jbsnju-1 oKrzS"/><ul class="blog-post__TagNavigator-sc-1jbsnju-4 gPKqhR"><h4>posts</h4><li><a href="/look-back-on-8-years-2/">8년 간의 개발자 생활 회고 (2)</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 iEkmSL">look_back</span></li><li><a href="/look-back-on-8-years-1/">8년 간의 개발자 생활 회고 (1)</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 iEkmSL">look_back</span></li><li><a href="/git-delete-branch-and-push/">Git - branch 삭제 후 push</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 cVYaYg">git</span></li><li><a href="/bash-is-not-async/">오늘의 삽질 - 괜히 Bash 만 의심했다.</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 fTTapg">trouble shooting</span></li><li><a href="/better-than-yesterday/">연봉과 연차의 무게</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 dexGYY">career</span></li><li><a href="/error-while-building-qmk_firmware/">qmk_firmware 빌드 시에 chibios 관련 에러 발생</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 dUwxoW">keyboard</span></li><li><a href="/reselect/">reselect</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span></li><li><a href="/aws-api-ip-based-access-control/">AWS API, IP 기반으로 접근 제한하기</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 olKBH">aws</span></li><li><a href="/how-to-develop-ridistory-frontend/">리디스토리 프론트엔드 개발기</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 fYOlJB">react</span></li><li><a href="/mariadb-multi-source-replication/">mariadb multi source replication</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#222222" class="tag-box__StyledSpan-odnwx-0 bJtViV">mariadb</span></li><li><a href="/too-many-open-files/">Too many open files</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 fTTapg">trouble shooting</span></li><li><a href="/weird-requests/">아닌 밤중에 리퀘스트가 튄다?</a>  <span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 eSKIxg">tech</span><span color="#eeeeee" class="tag-box__StyledSpan-odnwx-0 fTTapg">trouble shooting</span></li></ul><hr class="blog-post__Divider-sc-1jbsnju-1 oKrzS"/><div class="bio__Content-sc-137rv77-0 humgxq"><div class="bio__Avatar-sc-137rv77-1 cAHKeS gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAAAAUDAgQG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAa3VmcD0CKiRoViD/8QAHBAAAgICAwAAAAAAAAAAAAAAAAECAwQhERQi/9oACAEBAAEFAudWXpTRPL1HJ89pDHFKs//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABwQAAEEAwEAAAAAAAAAAAAAAAEAAhARISJBMv/aAAgBAQAGPwJVRrpjVuVbhkcXmGnpj//EAB0QAQEAAgEFAAAAAAAAAAAAAAEAESExQWGRofD/2gAIAQEAAT8h6Y4t0QcDwMjFg9gwOy8y+jDb2iLyOZW//9oADAMBAAIAAwAAABD0Pzz/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAcEAEBAQEAAgMAAAAAAAAAAAABEQAxIYFBUXH/2gAIAQEAAT8QuKgjqoIAfinXp5OY0vbi5i+WQ9aOEsiDVr6yzZ0E2+UMaTCV+tV3f//Z" alt="Jaeyo" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/03d873445b03a721d7d6afb6095804e2/9b664/profile-pic.jpg 1x,
-/static/03d873445b03a721d7d6afb6095804e2/06a10/profile-pic.jpg 1.5x,
-/static/03d873445b03a721d7d6afb6095804e2/f1b5a/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/03d873445b03a721d7d6afb6095804e2/9b664/profile-pic.jpg 1x,
-/static/03d873445b03a721d7d6afb6095804e2/06a10/profile-pic.jpg 1.5x,
-/static/03d873445b03a721d7d6afb6095804e2/f1b5a/profile-pic.jpg 2x" src="/static/03d873445b03a721d7d6afb6095804e2/9b664/profile-pic.jpg" alt="Jaeyo" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Loves writing, music, and developing.<br/>You can find me on<!-- --> <a href="https://github.com/Jaeyo">Github</a>,<!-- --> <a href="https://twitter.com/lastiverse">Twitter</a>,<!-- --> <a href="https://www.facebook.com/jaeyo.developer">Facebook</a></p></div><ul class="blog-post__PostNavigator-sc-1jbsnju-2 fOzzqE"><li><a rel="prev" href="/naming-is-important/">← <!-- -->작명의 중요성</a></li><li><a rel="next" href="/look-back-on-8-years-1/">8년 간의 개발자 생활 회고 (1)<!-- --> →</a></li></ul><div class="blog-post__ListNavigator-sc-1jbsnju-3 dMhyVf"><a rel="list" href="/">go to list</a></div><div><div class="fb-comments" data-href="https://jaeyo.github.io//contribute-code-into-telegraf/"></div></div></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div></div></div><script>
-  
-  
-  if(true) {
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  }
-  if (typeof ga === "function") {
-    ga('create', 'UA-142557602-1', 'auto', {});
+</blockquote>
+
       
-      
-      
-      
-      
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/contribute-code-into-telegraf/";window.webpackCompilationHash="54a5648d2e1ebf85bf0b";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-27df4a81f9cbef278589.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-af79efd293d66c79e6fb.js"],"component---src-templates-blog-post-tsx":["/component---src-templates-blog-post-tsx-2a401e148df7d0beafff.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-b18e9ccfff383c4eca9c.js"],"component---src-pages-awesome-posts-tsx":["/component---src-pages-awesome-posts-tsx-5d411f7537bf0cbabe47.js"],"component---src-pages-diary-tsx":["/component---src-pages-diary-tsx-d3e7ed9d5bf870389161.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-2674bf1bf947b090e55e.js"],"component---src-pages-resume-tsx":["/component---src-pages-resume-tsx-3849b7d8b6bc349b6eb5.js"]};/*]]>*/</script><script src="/webpack-runtime-cfffcc1bbb007bcec06a.js" async=""></script><script src="/styles-9c8bcdfc19d666047d5e.js" async=""></script><script src="/app-27df4a81f9cbef278589.js" async=""></script><script src="/0-164bbb7a93e28545dff2.js" async=""></script><script src="/1-f4abb4e54165a294af6c.js" async=""></script><script src="/component---src-templates-blog-post-tsx-2a401e148df7d0beafff.js" async=""></script></body></html>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+    
+  </div>
+</section>
+
+
+
+</body>
+</html>
+
