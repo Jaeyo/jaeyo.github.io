@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on My New Hugo Site</title>
+    <link>http://example.org/tags/tech/</link>
+    <description>Recent content in tech on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2020 23:27:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>8년 간의 개발자 생활 회고 (2)</title>
+      <link>http://example.org/look-back-on-8-years-2/</link>
+      <pubDate>Sun, 10 May 2020 23:27:00 +0000</pubDate>
+      
+      <guid>http://example.org/look-back-on-8-years-2/</guid>
+      <description>RIDI (2016. 6 ~ 2018. 3) 신입과 경력의 차이 두 번째 회사에서의 생활은 내게 굉장히 큰 변화였다. 일단 맥북을 쓰게 되었다. 그 전까지는 윈도우 환경에서 개발을 했고 맥북은 써본 일이 없었다. 그래서 일단 맥 사용법을 익히는 일부터 해야 했다. 뿐만 아니라 모든 것이 새로웠다. 첫 회사에서는 SVN 으로 소스 관리를 해왔기 때문에 Git 을 처음 사용해보게 되었고, 언어도 생경하기 짝이없는 PHP 와 Javascript 를 사용했다. 특히나 PHP 는 아예 처음이었기 때문에 문법과 Laravel 프레임워크, Doctrine ORM 사용법을 익히는 데에 일주일 정도의 시간을 사용했다.</description>
+    </item>
+    
+    <item>
+      <title>8년 간의 개발자 생활 회고 (1)</title>
+      <link>http://example.org/look-back-on-8-years-1/</link>
+      <pubDate>Sun, 10 May 2020 23:23:00 +0000</pubDate>
+      
+      <guid>http://example.org/look-back-on-8-years-1/</guid>
+      <description>Igloosec (2013. 1 ~ 2016. 6) 신입 개발자 처음 개발자로써 사회 생활을 시작한 것은 2013년 1월 이었다. 첫 회사는 이글루시큐리티였고 보안 솔루션들을 만들었다. 주력 솔루션은 통합보안관제솔루션(이하 ESM) 이었는데 운 좋게 이 캐시카우를 만드는 팀에 신입으로 입사를 하게 되었다. 사실 캐시카우인 만큼 레거시 코드도 많고 순수 개발 외 고객사 지원 업무도 많았지만, 그럼에도 불구하고 운이 좋다고 표현한 것은 주니어 엔지니어 시기에 그런 하드한 환경에서 쌓은 경험치들이 나중까지 도움이 많이 되었기 때문이다. 물론 좋은 선배들도 많이 만나게 되었다.</description>
+    </item>
+    
+    <item>
+      <title>오픈소스 프로젝트에 코드 기여한 이야기</title>
+      <link>http://example.org/contribute-code-into-telegraf/</link>
+      <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/contribute-code-into-telegraf/</guid>
+      <description>그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔던 것 같다. 아닌게 아니라 당장 Github이 없으면 나는 현재의 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 기존 소스코드를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.</description>
+    </item>
+    
+    <item>
+      <title>Git - branch 삭제 후 push</title>
+      <link>http://example.org/git-delete-branch-and-push/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/git-delete-branch-and-push/</guid>
+      <description>git에서 브랜치를 따서 작업을 하고 머지된 이후에는 자연스레 작업 브랜치는 날리게 된다. Github 의 풀 리퀘스트 같은 수단을 이용하게 되면 머지 이후에 Delete Branch 버튼을 통해 쉽게 remote 상의 브랜치를 제거할 수 있으나 로컬에서 바로 머지한 경우에는 로컬의 브랜치와 remote 의 브랜치를 모두 제거해주어야 한다. 헌데 로컬 브랜치 제거는 괜찮은데 remote 브랜치 제거 명령어를 항상 까먹는다.
+명령어는 아래와 같다.
+git branch -D branch-name # local branch 제거 git push origin :branch-name # remote branch 제거 remote 브랜치 제거 명령어를 매번 까먹어서 매번 찾아서 하다가 이걸 그냥 alias 를 걸어놔야 되겠다고 생각했다.</description>
+    </item>
+    
+    <item>
+      <title>오늘의 삽질 - 괜히 Bash 만 의심했다.</title>
+      <link>http://example.org/bash-is-not-async/</link>
+      <pubDate>Tue, 13 Aug 2019 01:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/bash-is-not-async/</guid>
+      <description>회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
+install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
+ curl 로 blabla.</description>
+    </item>
+    
+    <item>
+      <title>연봉과 연차의 무게</title>
+      <link>http://example.org/better-than-yesterday/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/better-than-yesterday/</guid>
+      <description>&amp;ldquo;이제는 단순 개발만 하고 기능구현만 하는 것이 아니라 그 이상을 해야 할 시기가 다가온다.&amp;rdquo;
+&amp;ldquo;사람들 관리가 될 수도 있고 어느 한 분야에 전문가가 되어야 할 수도 있고, 선택은 본인의 몫&amp;rdquo;
+ (from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
+회사생활을 시작하고나서 이런 생각을 꽤 오랫동안 해왔던 것 같다. 처음은 아마도 개발자 생활을 막 시작했을 신입 무렵이었던 것 같다. 회사에서 내게 요구하는 역량은 나는 한참 못미쳐있었고, 나름 그래도 대학시절 코드 좀 쓴다고 자부했던 내 자존감은 앓는 이처럼 흔들흔들거리고 있었다.</description>
+    </item>
+    
+    <item>
+      <title>qmk_firmware 빌드 시에 chibios 관련 에러 발생</title>
+      <link>http://example.org/error-while-building-qmk_firmware/</link>
+      <pubDate>Tue, 16 Oct 2018 10:34:00 +0000</pubDate>
+      
+      <guid>http://example.org/error-while-building-qmk_firmware/</guid>
+      <description>qmk_firmware는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다. documentation 및 자세한 정보는 https://qmk.fm/ 에서 확인할 수 있다. 처음 이 소스를 clone 받아서 빌드를 하기 위해서 documentation을 보면 아래와 같이 가이드를 해준다.
+$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; 하지만 그대로 따라치면 아래와 같은 에러를 볼 수 있다.
+$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory tmk_core/chibios.</description>
+    </item>
+    
+    <item>
+      <title>reselect</title>
+      <link>http://example.org/reselect/</link>
+      <pubDate>Sat, 06 Oct 2018 11:44:00 +0000</pubDate>
+      
+      <guid>http://example.org/reselect/</guid>
+      <description>https://github.com/reactjs/reselect  reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
+ 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상  가령 아래와 같은 코드가 있다고 가정하면,
+const mapStateToProps = (state, ownProps) =&amp;gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
+// selector const getUserContent = state =&amp;gt; state.</description>
+    </item>
+    
+    <item>
+      <title>AWS API, IP 기반으로 접근 제한하기</title>
+      <link>http://example.org/aws-api-ip-based-access-control/</link>
+      <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
+      
+      <guid>http://example.org/aws-api-ip-based-access-control/</guid>
+      <description>EC2 상의 인스턴스나 로드밸런서에 특정 IP 대역만 접근 가능하도록 설정하고 싶다면 Security Group 혹은 ACL을 이용하면 된다. 하지만 그 외의 AWS에서 제공하는 API 들에 대해서 IP 기반으로 접근제한을 걸고 싶다면 Security Group, ACL 로는 불가능하다. 이 부분은 IAM의 Policy로 해결을 봐야 한다.
+예를 들어, AWS System Manager의 Parameter Store에 접근해서 데이터를 읽어오는 API를 IP 기반으로 제한하고 싶다고 가정하자. 그럼 일단 Parameter Store에 대한 기본 Policy 부터 확인해보자. “AWS IAM -&amp;gt; 정책” 로 들어가서 찾아볼 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>리디스토리 프론트엔드 개발기</title>
+      <link>http://example.org/how-to-develop-ridistory-frontend/</link>
+      <pubDate>Sun, 08 Oct 2017 14:57:00 +0000</pubDate>
+      
+      <guid>http://example.org/how-to-develop-ridistory-frontend/</guid>
+      <description>본 포스팅은 회사 블로그에 올려놓았던 글을 옮겨놓은 것입니다.
+ 몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 제로경으로 대표되는 악의 무리와 부딪힙니다. 제로경은 니트로 박사라는 부하가 만들어준 로봇을 타고 주인공의 앞길을 막고, 쫓고 쫓기는 아슬아슬한 활극 끝에 결국 정의의 편인 주인공이 승리하곤 합니다. 여기서 제로경과 니트로 박사가 주고받는 대화가 일품입니다.
+ 제로경: 니트로 박사, 사정을 설명해보실까? 니트로 박사: 지금이라도 시간과 예산을 조금만 더 주신다면… 제로경: 변명은 죄악이란 걸 모르나!</description>
+    </item>
+    
+    <item>
+      <title>mariadb multi source replication</title>
+      <link>http://example.org/mariadb-multi-source-replication/</link>
+      <pubDate>Fri, 28 Apr 2017 17:51:00 +0000</pubDate>
+      
+      <guid>http://example.org/mariadb-multi-source-replication/</guid>
+      <description>multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.
+# /etc/mysql/maridb.conf.d/50-server.cnf [mysqld] server_id=19823759 # master와 겹치지 않게 replicate-ignore-db=mysql # mysql 데이터베이스는 복제하지 않음 master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다
+grant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’; mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.
+mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &amp;gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다.</description>
+    </item>
+    
+    <item>
+      <title>Too many open files</title>
+      <link>http://example.org/too-many-open-files/</link>
+      <pubDate>Tue, 25 Apr 2017 19:25:01 +0000</pubDate>
+      
+      <guid>http://example.org/too-many-open-files/</guid>
+      <description>집에서 기타치면서 놀고 있었는데 외출했던 아내가 귀가중이라는 메시지를 받았다. 집 앞 지하척 역으로 마중나가려고 핸드폰을 챙겨서 나가려는데 슬랙 메시지가 뭐가 많이 와있다. 평소 팀에서 커뮤니케이션을 슬랙으로 하기 때문에 별 생각없이 슬랙 메시지들을 확인해보고 있는데 서버쪽에 장애가 날 때 메시지가 오는 채널에 몇개의 메시지가 와있다. 순간 심장이 덜컹하며 확인해보니 몇가지 종류의 에러메시지가 꽤 여러번 발생한 형태다.
+첫번째 에러는 too many open files 두번째 에러는 unable to find server blabla
+두번째 에러로그는 심지어 디비서버를 못찾는다는 에러메시지!</description>
+    </item>
+    
+    <item>
+      <title>아닌 밤중에 리퀘스트가 튄다?</title>
+      <link>http://example.org/weird-requests/</link>
+      <pubDate>Tue, 25 Apr 2017 12:00:01 +0000</pubDate>
+      
+      <guid>http://example.org/weird-requests/</guid>
+      <description>신규 서비스를 오픈하면서 서버 모니터링을 위해 aws cloudwatch를 사용하게 되었다. 원래는 cloudwatch와 newrelic 을 모두 선택지에 올려놓고 마지막까지 고민을 했다. newrelic 쪽이 기능도 많고 레퍼런스도 확실했지만 일부 서버에서 agent의 설치가 안되는 문제가 있었다. 사실 agent 설치 안되는 문제야 조금 더 시간을 들여서 파보면 해결할 수 있는 문제였겠지만 당장에 서비스 오픈을 코앞에 둔 상황에서 시간적인 여유가 부족했고, cloudwatch도 우리가 필요한 기능을 대부분 제공하고 있었기 때문에 cloudwatch로 가기로 했다.
+cpu, 메모리, 디스크 사용량 등의 지표를 대시보드로 구성해놓고 며칠 모니터링하고 있으려니까 좀 이상한 현상이 눈에 띄었다.</description>
+    </item>
+    
+  </channel>
+</rss>

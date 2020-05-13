@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mariadb on My New Hugo Site</title>
+    <link>http://example.org/tags/mariadb/</link>
+    <description>Recent content in mariadb on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Apr 2017 17:51:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mariadb multi source replication</title>
+      <link>http://example.org/mariadb-multi-source-replication/</link>
+      <pubDate>Fri, 28 Apr 2017 17:51:00 +0000</pubDate>
+      
+      <guid>http://example.org/mariadb-multi-source-replication/</guid>
+      <description>multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.
+# /etc/mysql/maridb.conf.d/50-server.cnf [mysqld] server_id=19823759 # master와 겹치지 않게 replicate-ignore-db=mysql # mysql 데이터베이스는 복제하지 않음 master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다
+grant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’; mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.
+mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &amp;gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다.</description>
+    </item>
+    
+  </channel>
+</rss>

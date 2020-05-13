@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>career on My New Hugo Site</title>
+    <link>http://example.org/tags/career/</link>
+    <description>Recent content in career on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>연봉과 연차의 무게</title>
+      <link>http://example.org/better-than-yesterday/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/better-than-yesterday/</guid>
+      <description>&amp;ldquo;이제는 단순 개발만 하고 기능구현만 하는 것이 아니라 그 이상을 해야 할 시기가 다가온다.&amp;rdquo;
+&amp;ldquo;사람들 관리가 될 수도 있고 어느 한 분야에 전문가가 되어야 할 수도 있고, 선택은 본인의 몫&amp;rdquo;
+ (from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
+회사생활을 시작하고나서 이런 생각을 꽤 오랫동안 해왔던 것 같다. 처음은 아마도 개발자 생활을 막 시작했을 신입 무렵이었던 것 같다. 회사에서 내게 요구하는 역량은 나는 한참 못미쳐있었고, 나름 그래도 대학시절 코드 좀 쓴다고 자부했던 내 자존감은 앓는 이처럼 흔들흔들거리고 있었다.</description>
+    </item>
+    
+    <item>
+      <title>이직 면접 이야기</title>
+      <link>http://example.org/job-interview/</link>
+      <pubDate>Thu, 25 Aug 2016 14:40:55 +0000</pubDate>
+      
+      <guid>http://example.org/job-interview/</guid>
+      <description>직장인이 이직 면접을 준비하면서 받는 스트레스가 이혼을 할 때 받는 스트레스와 비슷하다는 이야기를 들은 적이 있다. 글쎄, 내 경우에 비추어보면 조금 과장되다 싶게 느껴지는 이야기긴 하지만, 그만치 감당해야 할 부담이 상당하다는 점에서는 공감을 하게 된다. 면접이 거듭될 때마다 자존감이 손바닥 위 모래처럼 사그러들고, 나는 지금까지 뭐하고 살아왔나 하는 인생 전반에 대한 후회를 하게 되는 것이, 이거 오래 준비하다간 내 명에 못살지 싶었다. 회사 입장에서는 심플하게 충원하려는 자리에 맞지 않아서 퇴짜를 놓았다지만 지원자는 난 역시 이 정도밖에 안되는 인간인가 하는 자괴감을 느끼게 되는 것이다.</description>
+    </item>
+    
+  </channel>
+</rss>
