@@ -6,10 +6,20 @@
     <description>Recent content in look_back on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 11 May 2020 15:53:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 23:20:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaeyo.github.io/tags/look_back/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>8년 간의 개발자 생활 회고 (3)</title>
+      <link>http://jaeyo.github.io/look-back-on-8-years-3/</link>
+      <pubDate>Sat, 16 May 2020 23:20:00 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/look-back-on-8-years-3/</guid>
+      <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3)   SK C&amp;amp;C (2018. 7 ~ ) 새로운 시작 첫 입사날 내게 비친 풍경은 자리가 군데군데 비어있는 사무실이었다. 나중에 알고보니 여름휴가 시즌이라 길게 자리를 비우신 분들이 많았고, 내가 소속된 파트의 파트리더도 휴가중이었다. 그래서 처음 몇 일은 노트북을 지급받고 회사 시스템과 분위기를 익히는 데 썼다.
+휴가를 떠났던 파트리더님이 돌아와 현재 우리 파트에 대한 설명을 들었다.</description>
+    </item>
     
     <item>
       <title>8년 간의 개발자 생활 회고 (2)</title>
@@ -27,7 +37,7 @@
       
       <guid>http://jaeyo.github.io/look-back-on-8-years-1/</guid>
       <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3)   개발자의 길로 들어선 것이 어느덧 8년이다. 처음 직장 생활을 시작하던 20대 후반의 나와 지금의 내가 얼마나 달라졌는지는 사실 잘 모르겠다. 그래서 지난 8년 간의 기록을 여행기 쓰듯이 써보려고 한다. 다른 분들이 많이들 하시는 신년맞이 지난해 회고를 난 한 번도 한 적이 없으니, 8년치 회고를 한꺼번에 하는 셈이다.
-Igloosec (2013.</description>
+ Igloosec (2013.</description>
     </item>
     
   </channel>

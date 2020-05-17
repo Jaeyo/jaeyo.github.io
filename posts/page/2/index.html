@@ -101,6 +101,32 @@
 
 
 
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">October 6, 2018</h2>
+      <h1 class="title"><a href="http://jaeyo.github.io/reselect/">reselect</a></h1>
+      <div class="content">
+        https://github.com/reactjs/reselect  reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
+ 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상  가령 아래와 같은 코드가 있다고 가정하면,
+const mapStateToProps = (state, ownProps) =&gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
+// selector const getUserContent = state =&gt; state.
+        
+        <a class="button is-link" href="http://jaeyo.github.io/reselect/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
   
   | <a class="subtitle is-6" href="/tags/aws/">#aws</a>
   
@@ -314,35 +340,6 @@ grant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123�
 mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다.
         
         <a class="button is-link" href="http://jaeyo.github.io/mariadb-multi-source-replication/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/tech/">#tech</a>
-
-
-
-  
-  | <a class="subtitle is-6" href="/tags/trouble-shooting/">#trouble shooting</a>
-  
-
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">April 25, 2017</h2>
-      <h1 class="title"><a href="http://jaeyo.github.io/too-many-open-files/">Too many open files</a></h1>
-      <div class="content">
-        집에서 기타치면서 놀고 있었는데 외출했던 아내가 귀가중이라는 메시지를 받았다. 집 앞 지하척 역으로 마중나가려고 핸드폰을 챙겨서 나가려는데 슬랙 메시지가 뭐가 많이 와있다. 평소 팀에서 커뮤니케이션을 슬랙으로 하기 때문에 별 생각없이 슬랙 메시지들을 확인해보고 있는데 서버쪽에 장애가 날 때 메시지가 오는 채널에 몇개의 메시지가 와있다. 순간 심장이 덜컹하며 확인해보니 몇가지 종류의 에러메시지가 꽤 여러번 발생한 형태다.
-첫번째 에러는 too many open files 두번째 에러는 unable to find server blabla
-두번째 에러로그는 심지어 디비서버를 못찾는다는 에러메시지!
-        
-        <a class="button is-link" href="http://jaeyo.github.io/too-many-open-files/" style="height:28px">
           Read more
         </a>
         
