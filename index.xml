@@ -6,10 +6,19 @@
     <description>Recent content on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 16 May 2020 23:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2020 16:25:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaeyo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>내 나이</title>
+      <link>http://jaeyo.github.io/age/</link>
+      <pubDate>Sun, 27 Sep 2020 16:25:00 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/age/</guid>
+      <description>흔히들 &amp;ldquo;쌍팔년도&amp;quot;를 1988년을 칭하는 표현으로 알고 있는 경우가 많다. 하지만 이는 사실과 다르다. &amp;ldquo;쌍팔년도&amp;quot;는 사실 단기 4288년, 즉 서기 1955년을 이르는 말이다. 이는 서로 다른 기년법에서 비롯되는 오해인 셈이다. 흔히 우리가 사용하고 있는 서기는 예수가 탄생했을 것을 추정한 해를 기원으로 하고, 단기는 단군이 고조선을 개국했다고 전해지는 해를 기원으로 하는 기년법이다. 이렇듯 우리가 자연스럽게 헤아리던 년도가 실은 특정 시점이 일어난 시기를 기점으로 세어지기 시작한 것이라는 사실을 생각하다보니 나이라는 것도 이러한 셈법의 연장선 상에 있는 것이 아닌가 하는 생각을 하게 된다.</description>
+    </item>
     
     <item>
       <title>20세기 문화 이미지</title>
