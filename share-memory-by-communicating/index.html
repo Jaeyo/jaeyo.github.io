@@ -138,7 +138,7 @@
 <p>이렇게 되는 이유는, <code>counter</code> 라는 공유 자원을 각각의 스레드에서 동시에 접근하게 되기 때문이다. 듀얼 코어 이상의 머신에서는 <code>counter</code> 를 증가시키는 코드가 동시에 여러 스레드에서 실행되는 케이스가 발생하고, 이 때문에 <code>counter</code> 의 값이 오롯이 100 이 안되는 것이다.</p>
 <p>멀티스레드 프로그래밍을 하면서 가장 많이 하게 되는 실수 중 하나다. 각 스레드들간 공유하고 있는 자원을 적절하게 핸들링하지 못하게 되는 케이스다. 이런 문제를 해결하는 가장 간단한 방법은 Lock 을 이용하는 것이다. 공유자원에 접근하기 전에 먼저 lock 을 걸고 자원 사용이 끝나면 다시 unlock 을 호출하는 것이다. Go 언어에서도 Mutex 라는 구조체를 통해 이러한 lock 을 이용한 접근을 지원하고 있기는 하다.</p>
 <p>사실 이러한 방법은 Go 언어에서 지양해야 하는 접근 중 하나이다. 위의 문장에서도 <code>Do not communicate by sharing memory</code> 라고 이야기하고 있다. 본 예제 코드에서는 <code>counter</code> 라는 메모리 상의 자원을 스레드들간에 공유한 것이기 때문이다.</p>
-<p>이제 <code>channel</code> 을 이용해서 이 코드를 어떻게 변경할 수 있는지 살펴보자.</p>
+<p>이제 <code>channel</code> 을 이용해서 다시 짜보자.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
   <span style="color:#a6e22e">ch</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">int</span>)
   <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">receiver</span>(<span style="color:#a6e22e">ch</span>)
@@ -147,12 +147,9 @@
 
 <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">receiver</span>(<span style="color:#a6e22e">ch</span> <span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">int</span>) {
   <span style="color:#a6e22e">counter</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
-  <span style="color:#66d9ef">for</span> {
-    <span style="color:#66d9ef">select</span> {
-    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ch</span>:
-      <span style="color:#a6e22e">counter</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">value</span>
-      <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">counter</span>)
-    }
+  <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">ch</span> {
+    <span style="color:#a6e22e">counter</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">value</span>
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">counter</span>)
   }
 }
 
