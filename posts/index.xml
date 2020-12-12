@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 09 Oct 2020 17:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Dec 2020 02:57:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaeyo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>실시간 Alert Engine 개선기 (1)</title>
+      <link>http://jaeyo.github.io/improving-alert-engine-1/</link>
+      <pubDate>Sat, 12 Dec 2020 02:57:00 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/improving-alert-engine-1/</guid>
+      <description>요즘 회사에서 재미있게 진행하고 있는 업무가 있다. 이 글의 제목처럼 실시간 Alert Engine 을 개선하는 일인데, 말이 개선이지 아예 갈아엎는 수준으로 진행하고 있다. 애초에 개발 언어부터 갈아엎었다. 볼륨이 작은 작업이 아니기에 대략 내년 초 정도로 데드라인을 잡고 진행하고 있는데, 흥미로운 부분도 많고 기록으로 남겨둘 만한 내용도 있을 것 같아 블로그에 기록을 남긴다.
+먼저 레거시 Alert Engine 에 대해 짧게 정리하자면, Kafka 를 통해 실시간으로 유입되는 메트릭들을 대상으로 alert 를 발생시키는 기능을 한다.</description>
+    </item>
     
     <item>
       <title>Share Memory By Communicating</title>
@@ -17,7 +27,7 @@
       <pubDate>Fri, 09 Oct 2020 17:10:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/share-memory-by-communicating/</guid>
-      <description>Go 언어는 동시성 프로그래밍에 매우 특화된 언어다. 이러한 특징은 Go 언어가 탄생하게 된 유래에서도 관련이 있다. 지금은 매우 당연하게 사용되고 있는 듀얼 코어 프로세서가 상용으로 세상에 나온지는 사실 생각보다 그리 오래되지 않았다. 2005 년에서 2006 년 사이에 인텔에서 상용 듀얼 코어 프로세서를 출시했다. 그리고 바로 2007년, Google 에서는 이러한 멀티 코어의 이점을 언어에서 native 레벨로 챙길 수 있는 언어로 Go 언어를 개발하기 시작하였다.
+      <description>Go 언어는 동시성 프로그래밍에 매우 특화된 언어다. 이러한 특징은 Go 언어가 탄생하게 된 유래에서도 관련이 있다. 지금은 매우 당연하게 사용되고 있는 멀티 코어 프로세서가 상용으로 세상에 나온지는 사실 생각보다 그리 오래되지 않았다. 2005 년에서 2006 년 사이에 인텔에서 상용 듀얼 코어 프로세서를 출시했다. 그리고 바로 2007년, Google 에서는 이러한 멀티 코어의 이점을 언어에서 native 레벨로 챙길 수 있는 언어로 Go 언어를 개발하기 시작하였다.
 실제로 Go 언어로 멀티스레딩 코드를 만들어보면 이를 체감할 수 있다.</description>
     </item>
     

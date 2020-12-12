@@ -114,10 +114,34 @@
 
         
       </div>
+      <h2 class="subtitle is-6 date">December 12, 2020</h2>
+      <h1 class="title"><a href="http://jaeyo.github.io/improving-alert-engine-1/">실시간 Alert Engine 개선기 (1)</a></h1>
+      <div class="content">
+        요즘 회사에서 재미있게 진행하고 있는 업무가 있다. 이 글의 제목처럼 실시간 Alert Engine 을 개선하는 일인데, 말이 개선이지 아예 갈아엎는 수준으로 진행하고 있다. 애초에 개발 언어부터 갈아엎었다. 볼륨이 작은 작업이 아니기에 대략 내년 초 정도로 데드라인을 잡고 진행하고 있는데, 흥미로운 부분도 많고 기록으로 남겨둘 만한 내용도 있을 것 같아 블로그에 기록을 남긴다.
+먼저 레거시 Alert Engine 에 대해 짧게 정리하자면, Kafka 를 통해 실시간으로 유입되는 메트릭들을 대상으로 alert 를 발생시키는 기능을 한다.
+        
+        <a class="button is-link" href="http://jaeyo.github.io/improving-alert-engine-1/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+
+        
+      </div>
       <h2 class="subtitle is-6 date">October 9, 2020</h2>
       <h1 class="title"><a href="http://jaeyo.github.io/share-memory-by-communicating/">Share Memory By Communicating</a></h1>
       <div class="content">
-        Go 언어는 동시성 프로그래밍에 매우 특화된 언어다. 이러한 특징은 Go 언어가 탄생하게 된 유래에서도 관련이 있다. 지금은 매우 당연하게 사용되고 있는 듀얼 코어 프로세서가 상용으로 세상에 나온지는 사실 생각보다 그리 오래되지 않았다. 2005 년에서 2006 년 사이에 인텔에서 상용 듀얼 코어 프로세서를 출시했다. 그리고 바로 2007년, Google 에서는 이러한 멀티 코어의 이점을 언어에서 native 레벨로 챙길 수 있는 언어로 Go 언어를 개발하기 시작하였다.
+        Go 언어는 동시성 프로그래밍에 매우 특화된 언어다. 이러한 특징은 Go 언어가 탄생하게 된 유래에서도 관련이 있다. 지금은 매우 당연하게 사용되고 있는 멀티 코어 프로세서가 상용으로 세상에 나온지는 사실 생각보다 그리 오래되지 않았다. 2005 년에서 2006 년 사이에 인텔에서 상용 듀얼 코어 프로세서를 출시했다. 그리고 바로 2007년, Google 에서는 이러한 멀티 코어의 이점을 언어에서 native 레벨로 챙길 수 있는 언어로 Go 언어를 개발하기 시작하였다.
 실제로 Go 언어로 멀티스레딩 코드를 만들어보면 이를 체감할 수 있다.
         
         <a class="button is-link" href="http://jaeyo.github.io/share-memory-by-communicating/" style="height:28px">
@@ -350,32 +374,6 @@ $ make &lt;my_keyboard&gt;:&lt;my_keymap&gt; 하지만 그대로 따라치면 �
 $ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory tmk_core/chibios.
         
         <a class="button is-link" href="http://jaeyo.github.io/error-while-building-qmk_firmware/" style="height:28px">
-          Read more
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/tech/">#tech</a>
-
-
-
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">October 6, 2018</h2>
-      <h1 class="title"><a href="http://jaeyo.github.io/reselect/">reselect</a></h1>
-      <div class="content">
-        https://github.com/reactjs/reselect  reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
- 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상  가령 아래와 같은 코드가 있다고 가정하면,
-const mapStateToProps = (state, ownProps) =&gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
-// selector const getUserContent = state =&gt; state.
-        
-        <a class="button is-link" href="http://jaeyo.github.io/reselect/" style="height:28px">
           Read more
         </a>
         
