@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sat, 12 Dec 2020 02:57:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Feb 2021 07:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jaeyo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>tech</title>
       <link>http://jaeyo.github.io/tags/tech/</link>
-      <pubDate>Sat, 12 Dec 2020 02:57:00 +0000</pubDate>
+      <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trouble shooting</title>
+      <link>http://jaeyo.github.io/tags/trouble-shooting/</link>
+      <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/tags/trouble-shooting/</guid>
       <description></description>
     </item>
     
@@ -62,15 +71,6 @@
       <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>trouble shooting</title>
-      <link>http://jaeyo.github.io/tags/trouble-shooting/</link>
-      <pubDate>Tue, 13 Aug 2019 01:00:00 +0000</pubDate>
-      
-      <guid>http://jaeyo.github.io/tags/trouble-shooting/</guid>
       <description></description>
     </item>
     
