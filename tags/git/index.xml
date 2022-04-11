@@ -6,11 +6,7 @@
     <description>Recent content in git on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://jaeyo.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git - branch 삭제 후 push</title>
       <link>http://jaeyo.github.io/git-delete-branch-and-push/</link>

@@ -6,10 +6,15 @@
     <description>Recent content in daily on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 27 Sep 2020 16:25:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://jaeyo.github.io/tags/daily/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 30 Jun 2021 10:41:00 +0900</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/daily/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>생일</title>
+      <link>http://jaeyo.github.io/birthday/</link>
+      <pubDate>Wed, 30 Jun 2021 10:41:00 +0900</pubDate>
+      
+      <guid>http://jaeyo.github.io/birthday/</guid>
+      <description>유난히 마음이 시끄러운 날이 있다. 바로 오늘 같은 날이다. 버겁기 그지없는 회사일에 파묻혀서 허우적 대기를 한참, 문득 시계를 보니 어느새 자정이다. 아무도 없는 사무실의 불을 끄고 터벅거리며 나온다. 채 끝내지 못한 회사일이 앵앵 거리는 모기 소리마냥 머리 속을 헤맨다. 관자놀이를 슬쩍 문질러보았으나 영 신통치않다. 선릉역 사거리에서 운 좋게 빈 택시와 조우한다. 도착지를 전하는 내 목소리에 얼마간의 피로함이 묻은 탓일까, 택시기사님은 별 다른 말없이 악셀을 밟는다. 말라 비틀어진 무말랭이 같은 모양새를 하고는 뒷좌석에 몸을 푹 파묻는다.</description>
+    </item>
     
     <item>
       <title>내 나이</title>
