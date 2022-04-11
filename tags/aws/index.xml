@@ -6,11 +6,7 @@
     <description>Recent content in aws on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 30 Jan 2018 17:19:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://jaeyo.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 30 Jan 2018 17:19:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS API, IP 기반으로 접근 제한하기</title>
       <link>http://jaeyo.github.io/aws-api-ip-based-access-control/</link>

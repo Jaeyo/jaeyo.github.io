@@ -6,10 +6,15 @@
     <description>Recent content in Posts on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 05 Feb 2021 07:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://jaeyo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 30 Jun 2021 10:41:00 +0900</lastBuildDate><atom:link href="http://jaeyo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>생일</title>
+      <link>http://jaeyo.github.io/birthday/</link>
+      <pubDate>Wed, 30 Jun 2021 10:41:00 +0900</pubDate>
+      
+      <guid>http://jaeyo.github.io/birthday/</guid>
+      <description>유난히 마음이 시끄러운 날이 있다. 바로 오늘 같은 날이다. 버겁기 그지없는 회사일에 파묻혀서 허우적 대기를 한참, 문득 시계를 보니 어느새 자정이다. 아무도 없는 사무실의 불을 끄고 터벅거리며 나온다. 채 끝내지 못한 회사일이 앵앵 거리는 모기 소리마냥 머리 속을 헤맨다. 관자놀이를 슬쩍 문질러보았으나 영 신통치않다. 선릉역 사거리에서 운 좋게 빈 택시와 조우한다. 도착지를 전하는 내 목소리에 얼마간의 피로함이 묻은 탓일까, 택시기사님은 별 다른 말없이 악셀을 밟는다. 말라 비틀어진 무말랭이 같은 모양새를 하고는 뒷좌석에 몸을 푹 파묻는다.</description>
+    </item>
     
     <item>
       <title>MySQL 이 데이터를 안준다</title>
@@ -140,8 +145,7 @@ git branch -D branch-name # local branch 제거 git push origin :branch-name # r
       
       <guid>http://jaeyo.github.io/bash-is-not-async/</guid>
       <description>회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
-install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
- curl 로 blabla.</description>
+install_blabla() { 	dest=$(mktemp /tmp/blabla_XXXX.deb) 	curl -fsSL http://blabla.com/blabla.deb -o $dest 	dpkg -i $dest 	rm -f $dest }  install_conf() { 	curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf 	sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf }  start_blabla() { 	systemctl start blabla }  do_install() { 	install_blabla 	install_conf 	start_blabla }  do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.</description>
     </item>
     
     <item>
@@ -175,8 +179,7 @@ $ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/co
       <guid>http://jaeyo.github.io/reselect/</guid>
       <description>https://github.com/reactjs/reselect  reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
  컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상  가령 아래와 같은 코드가 있다고 가정하면,
-const mapStateToProps = (state, ownProps) =&amp;gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
-// selector const getUserContent = state =&amp;gt; state.</description>
+const mapStateToProps = (state, ownProps) =&amp;gt; { 	const { contentIds } = state.userContent; 	return { 	contentIds, 	}; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.</description>
     </item>
     
     <item>

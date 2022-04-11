@@ -1,233 +1,144 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>http://jaeyo.github.io/</loc>
-    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jaeyo.github.io/mysql-convert-tz-timezone/</loc>
-    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jaeyo.github.io/posts/</loc>
-    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jaeyo.github.io/tags/</loc>
-    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jaeyo.github.io/tags/tech/</loc>
-    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jaeyo.github.io/tags/trouble-shooting/</loc>
-    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jaeyo.github.io/improving-alert-engine-1/</loc>
-    <lastmod>2020-12-12T02:57:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jaeyo.github.io/share-memory-by-communicating/</loc>
-    <lastmod>2020-10-09T17:10:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>http://jaeyo.github.io/tags/daily/</loc>
-    <lastmod>2020-09-27T16:25:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-06-30T10:41:00+09:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/</loc>
+    <lastmod>2021-06-30T10:41:00+09:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/posts/</loc>
+    <lastmod>2021-06-30T10:41:00+09:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/tags/</loc>
+    <lastmod>2021-06-30T10:41:00+09:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/birthday/</loc>
+    <lastmod>2021-06-30T10:41:00+09:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/mysql-convert-tz-timezone/</loc>
+    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/tags/tech/</loc>
+    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/tags/trouble-shooting/</loc>
+    <lastmod>2021-02-05T07:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/improving-alert-engine-1/</loc>
+    <lastmod>2020-12-12T02:57:00+00:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/share-memory-by-communicating/</loc>
+    <lastmod>2020-10-09T17:10:00+00:00</lastmod>
+  </url><url>
     <loc>http://jaeyo.github.io/age/</loc>
     <lastmod>2020-09-27T16:25:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/culture-image-of-20-century/</loc>
     <lastmod>2020-05-16T23:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/look-back-on-8-years-3/</loc>
     <lastmod>2020-05-16T23:20:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/look_back/</loc>
     <lastmod>2020-05-16T23:20:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/look-back-on-8-years-2/</loc>
     <lastmod>2020-05-11T15:53:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/look-back-on-8-years-1/</loc>
     <lastmod>2020-05-10T23:23:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/open-source/</loc>
     <lastmod>2019-08-22T19:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/telegraf/</loc>
     <lastmod>2019-08-22T19:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/contribute-code-into-telegraf/</loc>
     <lastmod>2019-08-22T19:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/naming-is-important/</loc>
     <lastmod>2019-08-16T01:00:08+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/move-to-another-place/</loc>
     <lastmod>2019-08-15T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/git/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/git-delete-branch-and-push/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/bash-is-not-async/</loc>
     <lastmod>2019-08-13T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/career/</loc>
     <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/better-than-yesterday/</loc>
     <lastmod>2019-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/keyboard/</loc>
     <lastmod>2018-10-16T10:34:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/error-while-building-qmk_firmware/</loc>
     <lastmod>2018-10-16T10:34:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/reselect/</loc>
     <lastmod>2018-10-06T11:44:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/aws/</loc>
     <lastmod>2018-01-30T17:19:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/aws-api-ip-based-access-control/</loc>
     <lastmod>2018-01-30T17:19:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/shame/</loc>
     <lastmod>2017-11-21T13:31:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/snut-2006-3/</loc>
     <lastmod>2017-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/snut-2006-2/</loc>
     <lastmod>2017-10-24T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/snut-2006-1/</loc>
     <lastmod>2017-10-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/react/</loc>
     <lastmod>2017-10-08T14:57:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/how-to-develop-ridistory-frontend/</loc>
     <lastmod>2017-10-08T14:57:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/life-with-rainbow-colors/</loc>
     <lastmod>2017-07-08T06:21:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/drive/</loc>
     <lastmod>2017-05-18T00:31:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/tags/mariadb/</loc>
     <lastmod>2017-04-28T17:51:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/mariadb-multi-source-replication/</loc>
     <lastmod>2017-04-28T17:51:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/too-many-open-files/</loc>
     <lastmod>2017-04-25T19:25:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/weird-requests/</loc>
     <lastmod>2017-04-25T12:00:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/spaces/</loc>
     <lastmod>2017-04-25T11:00:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/job-interview/</loc>
     <lastmod>2016-08-25T14:40:55+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://jaeyo.github.io/categories/</loc>
   </url>
-  
 </urlset>
