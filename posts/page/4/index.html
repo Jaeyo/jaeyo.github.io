@@ -118,6 +118,35 @@
         
       </div>
       <h2 class="subtitle is-6 date">April 25, 2017</h2>
+      <h1 class="title"><a href="http://jaeyo.github.io/too-many-open-files/">Too many open files</a></h1>
+      <div class="content">
+        집에서 기타치면서 놀고 있었는데 외출했던 아내가 귀가중이라는 메시지를 받았다. 집 앞 지하척 역으로 마중나가려고 핸드폰을 챙겨서 나가려는데 슬랙 메시지가 뭐가 많이 와있다. 평소 팀에서 커뮤니케이션을 슬랙으로 하기 때문에 별 생각없이 슬랙 메시지들을 확인해보고 있는데 서버쪽에 장애가 날 때 메시지가 오는 채널에 몇개의 메시지가 와있다. 순간 심장이 덜컹하며 확인해보니 몇가지 종류의 에러메시지가 꽤 여러번 발생한 형태다.
+첫번째 에러는 too many open files 두번째 에러는 unable to find server blabla
+두번째 에러로그는 심지어 디비서버를 못찾는다는 에러메시지!
+        
+        <a class="button is-link" href="http://jaeyo.github.io/too-many-open-files/" style="height:28px">
+          Read more
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
+        
+        
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/trouble-shooting/">#trouble shooting</a>
+  
+
+
+        
+      </div>
+      <h2 class="subtitle is-6 date">April 25, 2017</h2>
       <h1 class="title"><a href="http://jaeyo.github.io/weird-requests/">아닌 밤중에 리퀘스트가 튄다?</a></h1>
       <div class="content">
         신규 서비스를 오픈하면서 서버 모니터링을 위해 aws cloudwatch를 사용하게 되었다. 원래는 cloudwatch와 newrelic 을 모두 선택지에 올려놓고 마지막까지 고민을 했다. newrelic 쪽이 기능도 많고 레퍼런스도 확실했지만 일부 서버에서 agent의 설치가 안되는 문제가 있었다. 사실 agent 설치 안되는 문제야 조금 더 시간을 들여서 파보면 해결할 수 있는 문제였겠지만 당장에 서비스 오픈을 코앞에 둔 상황에서 시간적인 여유가 부족했고, cloudwatch도 우리가 필요한 기능을 대부분 제공하고 있었기 때문에 cloudwatch로 가기로 했다.
