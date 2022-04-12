@@ -6,7 +6,16 @@
     <description>Recent content in tech on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Fri, 05 Feb 2021 07:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Feb 2022 00:31:01 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust 사용 소감</title>
+      <link>http://jaeyo.github.io/thoughts-about-rust/</link>
+      <pubDate>Tue, 08 Feb 2022 00:31:01 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/thoughts-about-rust/</guid>
+      <description>몇 년 전엔가, Rust 를 배워볼까 생각을 해본 적이 있었다. Java 를 메인으로 쓰던 때였다. 그 즈음에 Go 언어를 새로이 배워 이것저것 만들어보곤 했는데, Java 를 사용하면서 느꼈던 아쉬움들이 많은 부분 해소가 되어 Go 언어에 꽤 깊이 빠져있었다. 그와 동시에 매번 Go 언어와 붙어서 비교가 되곤 하는 Rust 에 대한 호기심이 들었다. GC 도 없다고 하니 좀 더 퍼포먼스 크리티컬한 걸 짤 때 더 효과적이지 않을까 하는 기대를 가지고 있었다.</description>
+    </item>
+    
     <item>
       <title>MySQL 이 데이터를 안준다</title>
       <link>http://jaeyo.github.io/mysql-convert-tz-timezone/</link>

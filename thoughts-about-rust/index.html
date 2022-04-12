@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>아이에게는 부모가 세상의 전부다 | Hello, There</title>
+<title>Rust 사용 소감 | Hello, There</title>
 
 
 
@@ -15,7 +15,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="canonical" href="http://jaeyo.github.io/parents-are-everything-to-a-child/">
+<link rel="canonical" href="http://jaeyo.github.io/thoughts-about-rust/">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 </head>
@@ -104,20 +104,20 @@
     <div class="subtitle tags is-6 is-pulled-right">
       
       
-<a class="subtitle is-6" href="/tags/daily/">#daily</a>
+<a class="subtitle is-6" href="/tags/tech/">#tech</a>
 
 
 
 
       
     </div>
-    <h2 class="subtitle is-6">December 8, 2021</h2>
-    <h1 class="title">아이에게는 부모가 세상의 전부다</h1>
+    <h2 class="subtitle is-6">February 8, 2022</h2>
+    <h1 class="title">Rust 사용 소감</h1>
     
     <div class="content">
-      <p>&ldquo;아이에게는 부모가 세상의 전부&rdquo; 라는 말이 요즘 종종 머리에 맴돈다. 아이가 와서는 팔을 잡아당기며 놀아달라고 할 때 라던가 원하는 바를 얻지 못해 큰 소리로 울 때. 내가 조금 피곤하다거나 귀찮다는 이유로 아이에게 소홀히 대하지는 않았나 하는 반성을 하기도 한다. 아이는 음식도 부모가 주는 것만 먹을 수 있고, 놀이도 부모가 마련해 준 울타리 안에서만 놀 수 있다. 새로운 세상을 발견하고, 새로운 친구를 만나는 일 모두가 부모를 통해서만이 가능하다. 내가 더 부지런하면 아이는 새롭고 즐거운 경험들을 더 할 수 있는 셈이다. 내 생에 누군가에게 이렇게나 영향을 크게 끼치는 사람이 되본 적이 있던가.</p>
-<p>사실 결혼 전에는 아이를 가지는 일에 회의적이기도 했다. 그때나 지금이나 내 인생에 큰 영향을 끼치는 일에는 직접 고민을 충분히 하고 결정을 내려야 한다고 생각하고 있고, 아이를 가지는 것이 좋을지에 대한 확신을 아직 가지지 못했던 시기였다. 사실 부모가 되면서 치뤄내야 하는 책임과 희생들에 자신이 없기도 했다. 아기를 좋아하긴 했지만 부모가 되는 일을 내가 정말 잘 해낼 수 있을까 하는 의구심도 들었다. 하지만 지금, 여전히 내가 잘 해내고 있는지는 잘 모르겠지만, 그래도 아이를 가진 것은 역시 잘한 일이라는 생각이 든다. 어찌됐건 인생은 아름답고 소중한 것이고, 그러한 인생의 씨앗을 아이에게 선물하고 그것을 잘 꽃피울 수 있게 옆에서 보살펴 주는 일은 내게도 크게 의미있고 즐거운 경험이다.</p>
-<p>종종 학창 시절을 생각한다. 친구들과 함께 시내를 쏘다니며 이런 저런 새로운 경험들을 하고, 처음으로 이성 친구를 만나 문자를 주고 받고, 또 새로운 학교에 진학하면서 새로운 친구들을 사귀고. 모두가 십대의 빛나는 그 시기에만 쌓을 수 있는 소중한 경험들이다. 내 아이에게도 그러한 시기가 올 것이다. 뭘 해도 즐거운 그 시기를 더 즐거이 보낼 수 있도록 내가 도울 수 있는 부분이 많았으면 좋겠다는 생각이 든다.</p>
+      <p>몇 년 전엔가, Rust 를 배워볼까 생각을 해본 적이 있었다. Java 를 메인으로 쓰던 때였다. 그 즈음에 Go 언어를 새로이 배워 이것저것 만들어보곤 했는데, Java 를 사용하면서 느꼈던 아쉬움들이 많은 부분 해소가 되어 Go 언어에 꽤 깊이 빠져있었다. 그와 동시에 매번 Go 언어와 붙어서 비교가 되곤 하는 Rust 에 대한 호기심이 들었다. GC 도 없다고 하니 좀 더 퍼포먼스 크리티컬한 걸 짤 때 더 효과적이지 않을까 하는 기대를 가지고 있었다.</p>
+<p>하지만 딱히 이렇다할 기회가 없었는데 요즘 Rust 를 써볼 수 있는 기회를 가지게 되었다. 하지만 제대로 처음 접해본 Rust 에 대한 나의 현재 감상은 영 실망이다. 처음 학습을 진행하던 초반에는 그래도 꽤 재미있기도 했다. syntax sugar 도 많아서 &ldquo;이거 잘만 익숙해지면 꽤 재미있는 코드들을 만들어낼 수 있겠구나&rdquo; 싶었다. Go 언어에 차용해보고 싶은 부분들도 여럿 보였다. trait 이라던가, scala 에서 가져온듯 한 match 기능도 마음에 들었다. 하지만 여러 장점들을 쭉 나열해놓는다고 해도 다 덮지 못할 만큼 단점도 크게 느껴졌다.</p>
+<p>일단 너무 복잡했다. 아직 언어가 완벽히 손에 익은 단계가 아니라서 더 그렇겠지만, 익숙해진다 한들 이걸 정말 편하게 쓸 수 있을까 하는 의구심이 들었다. 특히 소유자 개념이 그런데, 이 때문에 순수 비즈니스 로직 외적으로 고민해야 하는 부분들이 너무 많았다. 거기다가 컴파일 속도 마저 느려도 너무 느렸다. Rust 로 만들어진 모듈을 간단히 수정만 하면 되는 일인데 꽤나 오랜 시간을 여기다가 쏟아 붓고 있다. 앞으로 Rust 를 도입할 수 있는 기회가 온다 하더라도 쉽사리 손을 뻗을 수 있을 것 같지 않다.</p>
 <hr>
 
       
@@ -126,15 +126,15 @@
 <h3>Similar articles:</h3>
 <ul>
 	
-	<li><a href="/birthday/">생일</a></li>
+	<li><a href="/mysql-convert-tz-timezone/">MySQL 이 데이터를 안준다</a></li>
 	
-	<li><a href="/age/">내 나이</a></li>
+	<li><a href="/improving-alert-engine-1/">실시간 Alert Engine 개선기 (1)</a></li>
 	
-	<li><a href="/culture-image-of-20-century/">20세기 문화 이미지</a></li>
+	<li><a href="/share-memory-by-communicating/">Share Memory By Communicating</a></li>
 	
-	<li><a href="/naming-is-important/">작명의 중요성</a></li>
+	<li><a href="/look-back-on-8-years-3/">8년 간의 개발자 생활 회고 (3)</a></li>
 	
-	<li><a href="/move-to-another-place/">새로운 곳으로 이사</a></li>
+	<li><a href="/look-back-on-8-years-2/">8년 간의 개발자 생활 회고 (2)</a></li>
 	
 </ul>
 </div>
