@@ -17,6 +17,17 @@
     </item>
     
     <item>
+      <title>Golang 간단한 최적화 과정 기록</title>
+      <link>http://jaeyo.github.io/golang-optimization/</link>
+      <pubDate>Thu, 08 Jul 2021 14:40:55 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/golang-optimization/</guid>
+      <description>어젯밤에 golang 으로 작성한 모듈의 최적화를 진행했는데 생각보다 유의미한 결과를 얻었다. 그 내용을 기록으로남겨놓는다.
+  slice 선언시에 cap 파라미터를 통해 slice 내부 배열의 초기 사이즈를 지정해줄 수 있다. slice 의 사이즈를 미리 알 수 있는 상황에서는 이를 통해 배열의 재할당을 최소화할 수 있다. 전체 코드를 뒤져 cap 파라미터를 추가할 수 있는 곳들에 전부 추가해주었다. 하지만 프로파일링 결과 눈에 뛸 만큼의 성능 변화는 없었다.
+  OOP 하던 습관이 남아서 그런지 그냥 함수로 선언할 수 있는 로직도 구조체로 선언한 로직들이 몇개 있었다.</description>
+    </item>
+    
+    <item>
       <title>MySQL 이 데이터를 안준다</title>
       <link>http://jaeyo.github.io/mysql-convert-tz-timezone/</link>
       <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
