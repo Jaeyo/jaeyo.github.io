@@ -257,6 +257,15 @@ const mapStateToProps = (state, ownProps) =&amp;gt; { 	const { contentIds } = st
     </item>
     
     <item>
+      <title>새로운 서비스를 만들어 봤습니다.</title>
+      <link>http://jaeyo.github.io/making-new-service/</link>
+      <pubDate>Fri, 01 Dec 2017 14:40:55 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/making-new-service/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>조중균의 세계를 읽었다.</title>
       <link>http://jaeyo.github.io/shame/</link>
       <pubDate>Tue, 21 Nov 2017 13:31:00 +0000</pubDate>
