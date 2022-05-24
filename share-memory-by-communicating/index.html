@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.95.0" />
+  <meta name="generator" content="Hugo 0.86.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -145,43 +145,43 @@
 <p><code>Do not communicate by sharing memory; instead, share memory by communicating</code></p>
 <p>언뜻보면 금방 이해가 안가는 문장이다. 하지만 이해하고 나면 Go 언어에서 동시성 문제를 얼마나 중요하게 다뤘는지에 대해 알 수 있다.</p>
 <p>간단한 샘플 코드를 짜보자.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="font-weight:bold">var</span> counter = 0
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> main() {
-</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">for</span> i := 0; i &lt; 100; i++ {
-</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">go</span> increaseCounter()
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  fmt.Println(counter)
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> increaseCounter() {
-</span></span><span style="display:flex;"><span>  counter += 1
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>간단한 내용의 코드다. <code>counter</code> 변수를 증가시키는 로직을 수행하는 <code>increaseConter</code> 라는 함수가 있고 메인 스레드에서는 이 함수를 각각 별도의 스레드로 100번 실행시킨 후에 <code>counter</code> 변수의 값을 실행한다. 직관적으로는 당연히 <code>counter</code> 의 값이 100이 될 것 같지만 사실 그렇지 않다. 내 맥북을 기준으로 결과값은 80 후반대에서 90 초반대의 값이 출력된다. 하지만 만약 이 코드를 싱글코어 머신에서 실행하면 값은 의도한 대로 100이 나올 것이다.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-go" data-lang="go"><span style="font-weight:bold">var</span> counter = 0
+
+<span style="font-weight:bold">func</span> main() {
+  <span style="font-weight:bold">for</span> i := 0; i &lt; 100; i++ {
+    <span style="font-weight:bold">go</span> increaseCounter()
+  }
+  fmt.Println(counter)
+}
+
+<span style="font-weight:bold">func</span> increaseCounter() {
+  counter += 1
+}
+</code></pre></div><p>간단한 내용의 코드다. <code>counter</code> 변수를 증가시키는 로직을 수행하는 <code>increaseConter</code> 라는 함수가 있고 메인 스레드에서는 이 함수를 각각 별도의 스레드로 100번 실행시킨 후에 <code>counter</code> 변수의 값을 실행한다. 직관적으로는 당연히 <code>counter</code> 의 값이 100이 될 것 같지만 사실 그렇지 않다. 내 맥북을 기준으로 결과값은 80 후반대에서 90 초반대의 값이 출력된다. 하지만 만약 이 코드를 싱글코어 머신에서 실행하면 값은 의도한 대로 100이 나올 것이다.</p>
 <p>이렇게 되는 이유는, <code>counter</code> 라는 공유 자원을 각각의 스레드에서 동시에 접근하게 되기 때문이다. 듀얼 코어 이상의 머신에서는 <code>counter</code> 를 증가시키는 코드가 동시에 여러 스레드에서 실행되는 케이스가 발생하고, 이 때문에 <code>counter</code> 의 값이 오롯이 100 이 안되는 것이다.</p>
 <p>멀티스레드 프로그래밍을 하면서 가장 많이 하게 되는 실수 중 하나다. 각 스레드들간 공유하고 있는 자원을 적절하게 핸들링하지 못하게 되는 케이스다. 이런 문제를 해결하는 가장 간단한 방법은 Lock 을 이용하는 것이다. 공유자원에 접근하기 전에 먼저 lock 을 걸고 자원 사용이 끝나면 다시 unlock 을 호출하는 것이다. Go 언어에서도 Mutex 라는 구조체를 통해 이러한 lock 을 이용한 접근을 지원하고 있기는 하다.</p>
 <p>사실 이러한 방법은 Go 언어에서 지양해야 하는 접근 중 하나이다. 위의 문장에서도 <code>Do not communicate by sharing memory</code> 라고 이야기하고 있다. 본 예제 코드에서는 <code>counter</code> 라는 메모리 상의 자원을 스레드들간에 공유한 것이기 때문이다.</p>
 <p>이제 <code>channel</code> 을 이용해서 다시 짜보자.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="font-weight:bold">func</span> main() {
-</span></span><span style="display:flex;"><span>  ch := make(<span style="font-weight:bold">chan</span> <span style="">int</span>)
-</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">go</span> receiver(ch)
-</span></span><span style="display:flex;"><span>  sender(ch)
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> receiver(ch <span style="font-weight:bold">chan</span> <span style="">int</span>) {
-</span></span><span style="display:flex;"><span>  counter := 0
-</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">for</span> value := <span style="font-weight:bold">range</span> ch {
-</span></span><span style="display:flex;"><span>    counter += value
-</span></span><span style="display:flex;"><span>    fmt.Println(counter)
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> sender(ch <span style="font-weight:bold">chan</span> <span style="">int</span>) {
-</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">for</span> i := 0; i &lt; 100; i++ {
-</span></span><span style="display:flex;"><span>    ch &lt;- 1
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>이 코드는 두 개의 스레드에서 실행된다. 하나는 <code>receiver</code> 함수를 실행시키면서 <code>channel</code> 을 통해 들어오는 데이터를 계속해서 받아서 <code>counter</code> 지역변수에 계속 더하고 있고, 다른 하나는 메인 스레드로 실행되면서 <code>sender</code> 함수를 실행시켜 1이라는 데이터를 계속해서 <code>channel</code> 을 통해서 보내고 있다.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-go" data-lang="go"><span style="font-weight:bold">func</span> main() {
+  ch := make(<span style="font-weight:bold">chan</span> <span style="">int</span>)
+  <span style="font-weight:bold">go</span> receiver(ch)
+  sender(ch)
+}
+
+<span style="font-weight:bold">func</span> receiver(ch <span style="font-weight:bold">chan</span> <span style="">int</span>) {
+  counter := 0
+  <span style="font-weight:bold">for</span> value := <span style="font-weight:bold">range</span> ch {
+    counter += value
+    fmt.Println(counter)
+  }
+}
+
+<span style="font-weight:bold">func</span> sender(ch <span style="font-weight:bold">chan</span> <span style="">int</span>) {
+  <span style="font-weight:bold">for</span> i := 0; i &lt; 100; i++ {
+    ch &lt;- 1
+  }
+}
+</code></pre></div><p>이 코드는 두 개의 스레드에서 실행된다. 하나는 <code>receiver</code> 함수를 실행시키면서 <code>channel</code> 을 통해 들어오는 데이터를 계속해서 받아서 <code>counter</code> 지역변수에 계속 더하고 있고, 다른 하나는 메인 스레드로 실행되면서 <code>sender</code> 함수를 실행시켜 1이라는 데이터를 계속해서 <code>channel</code> 을 통해서 보내고 있다.</p>
 <p>이 코드에서 각 스레드들은 오직 <code>channel</code> 만을 공유하도록 했다. 앞의 코드처럼 별도의 공유자원을 가지지 않도록 말이다. 이렇게 되면 별도의 lock 을 이용한 접근이 필요없게 된다. <code>channel</code> 을 통해 communicating 함으로써 데이터를 공유하도록 한 셈이다.</p>
 <p>멀티스레드 프로그래밍는 사실 생각보다 까다롭고 신경써야 하는 부분들이 많다. 제일 문제가 많이 발생하는 경우들이 이러한 공유자원을 잘못 핸들링해서 생기는 경우다. 공유 자원 문제를 방지하려고 lock 를 사용하면 코드는 복잡해지고 가독성을 잃으면서 다시 다른 문제를 유발하기 십상이다. 또한 매번 lock 을 걸고 빼고 하면서 성능 문제가 생기기도 쉽다.</p>
 <p>이러한 문제를 애초부터 방지하기 위해 Go 언어에서는 goroutine 생성과 channel 이라는 타입을 빌트인으로 넣어가면서 까지 동시성 프로그래밍에서의 베스트 프랙티스를 가이드해주고 있는 셈이다.</p>

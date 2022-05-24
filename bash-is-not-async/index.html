@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.95.0" />
+  <meta name="generator" content="Hugo 0.86.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,7 +21,7 @@
       "articleSection" : "posts",
       "name" : "오늘의 삽질 - 괜히 Bash 만 의심했다.",
       "headline" : "오늘의 삽질 - 괜히 Bash 만 의심했다.",
-      "description" : "회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.\ninstall_blabla() { \tdest=$(mktemp \/tmp\/blabla_XXXX.deb) \tcurl -fsSL http:\/\/blabla.com\/blabla.deb -o $dest \tdpkg -i $dest \trm -f $dest }  install_conf() { \tcurl -fsSL http:\/\/blabla.com\/blabla.conf -o \/etc\/blabla\/blabla.conf \tsed -i -e \u0026#34;...\u0026#34; \/etc\/blabla\/blabla.conf }  start_blabla() { \tsystemctl start blabla }  do_install() { \tinstall_blabla \tinstall_conf \tstart_blabla }  do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.",
+      "description" : "회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.\ninstall_blabla() { dest=$(mktemp \/tmp\/blabla_XXXX.deb) curl -fsSL http:\/\/blabla.com\/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http:\/\/blabla.com\/blabla.conf -o \/etc\/blabla\/blabla.conf sed -i -e \u0026#34;...\u0026#34; \/etc\/blabla\/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.\n curl 로 blabla.",
       "inLanguage" : "en-US",
       "author" : "Jaeyong",
       "creator" : "Jaeyong",
@@ -39,9 +39,11 @@
   <meta property="og:title" content="오늘의 삽질 - 괜히 Bash 만 의심했다." />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
-install_blabla() { 	dest=$(mktemp /tmp/blabla_XXXX.deb) 	curl -fsSL http://blabla.com/blabla.deb -o $dest 	dpkg -i $dest 	rm -f $dest }  install_conf() { 	curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf 	sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf }  start_blabla() { 	systemctl start blabla }  do_install() { 	install_blabla 	install_conf 	start_blabla }  do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다." />
+install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
+ curl 로 blabla." />
   <meta name="description" content="회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
-install_blabla() { 	dest=$(mktemp /tmp/blabla_XXXX.deb) 	curl -fsSL http://blabla.com/blabla.deb -o $dest 	dpkg -i $dest 	rm -f $dest }  install_conf() { 	curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf 	sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf }  start_blabla() { 	systemctl start blabla }  do_install() { 	install_blabla 	install_conf 	start_blabla }  do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다." />
+install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
+ curl 로 blabla." />
   <meta property="og:locale" content="ko-KR" />
 
   
@@ -139,30 +141,30 @@ install_blabla() { 	dest=$(mktemp /tmp/blabla_XXXX.deb) 	curl -fsSL http://blabl
         <div class="post-content markdown-body">
           
           <p>회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>install_blabla() {
-</span></span><span style="display:flex;"><span>	dest=<span style="font-weight:bold">$(</span>mktemp /tmp/blabla_XXXX.deb<span style="font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>	curl -fsSL http://blabla.com/blabla.deb -o $dest
-</span></span><span style="display:flex;"><span>	dpkg -i $dest
-</span></span><span style="display:flex;"><span>	rm -f $dest
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>install_conf() {
-</span></span><span style="display:flex;"><span>	curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf
-</span></span><span style="display:flex;"><span>	sed -i -e <span style="font-style:italic">&#34;...&#34;</span> /etc/blabla/blabla.conf
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>start_blabla() {
-</span></span><span style="display:flex;"><span>	systemctl start blabla
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>do_install() {
-</span></span><span style="display:flex;"><span>	install_blabla
-</span></span><span style="display:flex;"><span>	install_conf
-</span></span><span style="display:flex;"><span>	start_blabla
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>do_install
-</span></span></code></pre></div><p>위의 스크립트에 따르면 아래의 로직을 타게 된다.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">install_blabla() {
+	dest=<span style="font-weight:bold">$(</span>mktemp /tmp/blabla_XXXX.deb<span style="font-weight:bold">)</span>
+	curl -fsSL http://blabla.com/blabla.deb -o $dest
+	dpkg -i $dest
+	rm -f $dest
+}
+
+install_conf() {
+	curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf
+	sed -i -e <span style="font-style:italic">&#34;...&#34;</span> /etc/blabla/blabla.conf
+}
+
+start_blabla() {
+	systemctl start blabla
+}
+
+do_install() {
+	install_blabla
+	install_conf
+	start_blabla
+}
+
+do_install
+</code></pre></div><p>위의 스크립트에 따르면 아래의 로직을 타게 된다.</p>
 <ol>
 <li>curl 로 blabla.deb 다운로드</li>
 <li>dpkg 로 blabla.deb 설치</li>

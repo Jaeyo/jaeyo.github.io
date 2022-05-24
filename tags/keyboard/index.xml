@@ -15,7 +15,7 @@
       <guid>http://jaeyo.github.io/error-while-building-qmk_firmware/</guid>
       <description>qmk_firmware는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다. documentation 및 자세한 정보는 https://qmk.fm/ 에서 확인할 수 있다. 처음 이 소스를 clone 받아서 빌드를 하기 위해서 documentation을 보면 아래와 같이 가이드를 해준다.
 $ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; 하지만 그대로 따라치면 아래와 같은 에러를 볼 수 있다.
-$ make ergodo_infinity:default  tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.</description>
+$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory tmk_core/chibios.</description>
     </item>
     
   </channel>
