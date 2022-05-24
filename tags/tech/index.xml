@@ -107,7 +107,8 @@ git branch -D branch-name # local branch 제거 git push origin :branch-name # r
       
       <guid>http://jaeyo.github.io/bash-is-not-async/</guid>
       <description>회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
-install_blabla() { 	dest=$(mktemp /tmp/blabla_XXXX.deb) 	curl -fsSL http://blabla.com/blabla.deb -o $dest 	dpkg -i $dest 	rm -f $dest }  install_conf() { 	curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf 	sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf }  start_blabla() { 	systemctl start blabla }  do_install() { 	install_blabla 	install_conf 	start_blabla }  do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.</description>
+install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
+ curl 로 blabla.</description>
     </item>
     
     <item>
@@ -131,7 +132,7 @@ install_blabla() { 	dest=$(mktemp /tmp/blabla_XXXX.deb) 	curl -fsSL http://blabl
       <guid>http://jaeyo.github.io/error-while-building-qmk_firmware/</guid>
       <description>qmk_firmware는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다. documentation 및 자세한 정보는 https://qmk.fm/ 에서 확인할 수 있다. 처음 이 소스를 clone 받아서 빌드를 하기 위해서 documentation을 보면 아래와 같이 가이드를 해준다.
 $ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; 하지만 그대로 따라치면 아래와 같은 에러를 볼 수 있다.
-$ make ergodo_infinity:default  tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.</description>
+$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory tmk_core/chibios.</description>
     </item>
     
     <item>
@@ -142,7 +143,8 @@ $ make ergodo_infinity:default  tmk_core/chibios.mk:38: lib/chibios-contrib/os/c
       <guid>http://jaeyo.github.io/reselect/</guid>
       <description>https://github.com/reactjs/reselect  reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
  컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상  가령 아래와 같은 코드가 있다고 가정하면,
-const mapStateToProps = (state, ownProps) =&amp;gt; { 	const { contentIds } = state.userContent; 	return { 	contentIds, 	}; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.</description>
+const mapStateToProps = (state, ownProps) =&amp;gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
+// selector const getUserContent = state =&amp;gt; state.</description>
     </item>
     
     <item>
@@ -171,7 +173,9 @@ const mapStateToProps = (state, ownProps) =&amp;gt; { 	const { contentIds } = st
       
       <guid>http://jaeyo.github.io/how-to-develop-ridistory-frontend/</guid>
       <description>본 포스팅은 회사 블로그에 올려놓았던 글을 옮겨놓은 것입니다.
- 몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 제로경으로 대표되는 악의 무리와 부딪힙니다. 제로경은 니트로 박사라는 부하가 만들어준 로봇을 타고 주인공의 앞길을 막고, 쫓고 쫓기는 아슬아슬한 활극 끝에 결국 정의의 편인 주인공이 승리하곤 합니다. 여기서 제로경과 니트로 박사가 주고받는 대화가 일품입니다.
+
+ 
+몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 제로경으로 대표되는 악의 무리와 부딪힙니다. 제로경은 니트로 박사라는 부하가 만들어준 로봇을 타고 주인공의 앞길을 막고, 쫓고 쫓기는 아슬아슬한 활극 끝에 결국 정의의 편인 주인공이 승리하곤 합니다. 여기서 제로경과 니트로 박사가 주고받는 대화가 일품입니다.
  제로경: 니트로 박사, 사정을 설명해보실까? 니트로 박사: 지금이라도 시간과 예산을 조금만 더 주신다면… 제로경: 변명은 죄악이란 걸 모르나!</description>
     </item>
     
