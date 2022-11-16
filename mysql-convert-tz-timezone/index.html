@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.86.0" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -158,16 +158,16 @@
 <p>한참을 이런 저런 시도를 해봤으나 이상한 점은 보이지 않았다. IDE 에 문제의 쿼리를 띄워놓고 자세히 살펴보기 시작했다.</p>
 <p>해당 쿼리가 참조하는 테이블의 컬럼에는 <code>start_time</code>, <code>end_time</code>, <code>timezone</code> 등의 컬럼이 있었다. <code>start_time</code>, <code>end_time</code> 에는 <code>hhMM</code> 포맷의 시간 데이터가 저장되어 있었다. 쿼리는 해당 <code>timezone</code> 을 기준으로 현재 시간이 <code>start_time</code> 과 <code>end_time</code> 사이에 속하는 행들을 조회하는 쿼리였다.</p>
 <p>현재 시간을 <code>timezone</code> 기준으로 변경하는 부분은 아래와 같았다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-sql" data-lang="sql">... CONVERT_TZ(NOW(), <span style="font-style:italic">&#39;GMT&#39;</span>, timezone), ...
-</code></pre></div><p>일단 <code>CONVERT_TZ</code> 함수 자체가 생소했기 때문에 MySQL 공식 문서를 통해 정의를 확인해보았다.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>... CONVERT_TZ(NOW(), <span style="font-style:italic">&#39;GMT&#39;</span>, timezone), ...
+</span></span></code></pre></div><p>일단 <code>CONVERT_TZ</code> 함수 자체가 생소했기 때문에 MySQL 공식 문서를 통해 정의를 확인해보았다.</p>
 <blockquote>
 <p><a href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_convert-tz"><code>CONVERT_TZ(*dt*,*from_tz*,*to_tz*)</code></a></p>
 <p><a href="https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_convert-tz"><code>CONVERT_TZ()</code></a> converts a datetime value <em>dt</em> from the time zone given by <em>from_tz</em> to the time zone given by <em>to_tz</em> and returns the resulting value.</p>
 </blockquote>
 <p>즉, <code>dt</code> 의 timezone 이 <code>from_tz</code> 라고 가정하고 이를 <code>to_tz</code> 기준으로 변경하는 함수인 것이다. 해당 함수의 사용법에는 딱히 문제가 없어보였다. 하지만 문득 든 생각이, <code>NOW()</code> 에서 반환하는 값이 <code>GMT</code> 가 아니라면 쿼리가 정상적으로 반환해야 할 행들을 반환하지 못할 수도 있다는 생각이 들었다.</p>
 <p>다시 MySQL 문서를 찾아보니 <code>NOW()</code> 함수는 세션의 timezone 설정에 영향을 받는다고 적혀있었다. 백엔드에서 쿼리 중에 난데없이 세션의 timezone 을 변경할 일은 없다. 하지만 데이터베이스로 연결하는 초기 시점에 연결 문자열에서 세션의 timezone 을 설정할 수 있다. 해당 연결문자열을 찾아보니 아니나 다를까 timezone 이 Asia/Seoul 로 설정되어 있었다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">parseTime=true&amp;charset=utf8&amp;loc=Local&amp;time_zone=%27Asia%2FSeoul%27
-</code></pre></div><p><strong>잡았다 요놈</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>parseTime=true&amp;charset=utf8&amp;loc=Local&amp;time_zone=%27Asia%2FSeoul%27
+</span></span></code></pre></div><p><strong>잡았다 요놈</strong></p>
 <p>연결문자열에서 timezone 설정을 날리고 코드를 다시 돌려보니 역시 정상적으로 2건의 데이터를 조회하는 것을 확인할 수 있었다.</p>
 <hr>
 
