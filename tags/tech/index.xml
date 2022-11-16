@@ -23,8 +23,8 @@
       
       <guid>http://jaeyo.github.io/golang-optimization/</guid>
       <description>어젯밤에 golang 으로 작성한 모듈의 최적화를 진행했는데 생각보다 유의미한 결과를 얻었다. 그 내용을 기록으로 남겨놓는다.
-  slice 선언시에 cap 파라미터를 통해 slice 내부 배열의 초기 사이즈를 지정해줄 수 있다. slice 의 사이즈를 미리 알 수 있는 상황에서는 이를 통해 배열의 재할당을 최소화할 수 있다. 전체 코드를 뒤져 cap 파라미터를 추가할 수 있는 곳들에 전부 추가해주었다. 하지만 프로파일링 결과 눈에 뛸 만큼의 성능 변화는 없었다.
-  OOP 하던 습관이 남아서 그런지 그냥 함수로 선언할 수 있는 로직도 구조체로 선언한 로직들이 몇개 있었다.</description>
+slice 선언시에 cap 파라미터를 통해 slice 내부 배열의 초기 사이즈를 지정해줄 수 있다. slice 의 사이즈를 미리 알 수 있는 상황에서는 이를 통해 배열의 재할당을 최소화할 수 있다. 전체 코드를 뒤져 cap 파라미터를 추가할 수 있는 곳들에 전부 추가해주었다. 하지만 프로파일링 결과 눈에 뛸 만큼의 성능 변화는 없었다.
+OOP 하던 습관이 남아서 그런지 그냥 함수로 선언할 수 있는 로직도 구조체로 선언한 로직들이 몇개 있었다.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <pubDate>Sat, 16 May 2020 23:20:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/look-back-on-8-years-3/</guid>
-      <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3)   SK C&amp;amp;C (2018. 7 ~ ) 새로운 시작 첫 입사날 내게 비친 풍경은 자리가 군데군데 비어있는 사무실이었다. 나중에 알고보니 여름휴가 시즌이라 길게 자리를 비우신 분들이 많았고, 내가 소속된 파트의 파트리더도 휴가중이었다. 그래서 처음 몇 일은 노트북을 지급받고 회사 시스템과 분위기를 익히는 데 썼다.
+      <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3) SK C&amp;amp;C (2018. 7 ~ ) 새로운 시작 첫 입사날 내게 비친 풍경은 자리가 군데군데 비어있는 사무실이었다. 나중에 알고보니 여름휴가 시즌이라 길게 자리를 비우신 분들이 많았고, 내가 소속된 파트의 파트리더도 휴가중이었다. 그래서 처음 몇 일은 노트북을 지급받고 회사 시스템과 분위기를 익히는 데 썼다.
 휴가를 떠났던 파트리더님이 돌아와 현재 우리 파트에 대한 설명을 들었다.</description>
     </item>
     
@@ -67,7 +67,7 @@
       <pubDate>Mon, 11 May 2020 15:53:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/look-back-on-8-years-2/</guid>
-      <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3)   RIDI (2016. 6 ~ 2018. 3) 신입과 경력의 차이 두 번째 회사에서의 생활은 내게 굉장히 큰 변화였다. 일단 맥북을 쓰게 되었다. 그 전까지는 윈도우 환경에서 개발을 했고 맥북은 써본 일이 없었다. 그래서 일단 맥 사용법을 익히는 일부터 해야 했다. 뿐만 아니라 모든 것이 새로웠다. 첫 회사에서는 SVN 으로 소스 관리를 해왔기 때문에 Git 을 처음 사용해보게 되었고, 언어도 생경하기 짝이없는 PHP 와 Javascript 를 사용했다.</description>
+      <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3) RIDI (2016. 6 ~ 2018. 3) 신입과 경력의 차이 두 번째 회사에서의 생활은 내게 굉장히 큰 변화였다. 일단 맥북을 쓰게 되었다. 그 전까지는 윈도우 환경에서 개발을 했고 맥북은 써본 일이 없었다. 그래서 일단 맥 사용법을 익히는 일부터 해야 했다. 뿐만 아니라 모든 것이 새로웠다. 첫 회사에서는 SVN 으로 소스 관리를 해왔기 때문에 Git 을 처음 사용해보게 되었고, 언어도 생경하기 짝이없는 PHP 와 Javascript 를 사용했다.</description>
     </item>
     
     <item>
@@ -76,8 +76,8 @@
       <pubDate>Sun, 10 May 2020 23:23:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/look-back-on-8-years-1/</guid>
-      <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3)   개발자의 길로 들어선 것이 어느덧 8년이다. 처음 직장 생활을 시작하던 20대 후반의 나와 지금의 내가 얼마나 달라졌는지는 사실 잘 모르겠다. 그래서 지난 8년 간의 기록을 여행기 쓰듯이 써보려고 한다. 다른 분들이 많이들 하시는 신년맞이 지난해 회고를 난 한 번도 한 적이 없으니, 8년치 회고를 한꺼번에 하는 셈이다.
- Igloosec (2013.</description>
+      <description>8년 간의 개발자 생활 회고 (1) 8년 간의 개발자 생활 회고 (2) 8년 간의 개발자 생활 회고 (3) 개발자의 길로 들어선 것이 어느덧 8년이다. 처음 직장 생활을 시작하던 20대 후반의 나와 지금의 내가 얼마나 달라졌는지는 사실 잘 모르겠다. 그래서 지난 8년 간의 기록을 여행기 쓰듯이 써보려고 한다. 다른 분들이 많이들 하시는 신년맞이 지난해 회고를 난 한 번도 한 적이 없으니, 8년치 회고를 한꺼번에 하는 셈이다.
+Igloosec (2013. 1 ~ 2016.</description>
     </item>
     
     <item>
@@ -108,7 +108,7 @@ git branch -D branch-name # local branch 제거 git push origin :branch-name # r
       <guid>http://jaeyo.github.io/bash-is-not-async/</guid>
       <description>회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
 install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
- curl 로 blabla.</description>
+curl 로 blabla.</description>
     </item>
     
     <item>
@@ -119,8 +119,8 @@ install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.
       <guid>http://jaeyo.github.io/better-than-yesterday/</guid>
       <description>&amp;ldquo;이제는 단순 개발만 하고 기능구현만 하는 것이 아니라 그 이상을 해야 할 시기가 다가온다.&amp;rdquo;
 &amp;ldquo;사람들 관리가 될 수도 있고 어느 한 분야에 전문가가 되어야 할 수도 있고, 선택은 본인의 몫&amp;rdquo;
- (from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
- 직장 생활을 시작한 이래로 꽤 오랫동안 해오던 생각들이다. 개발자에게 가장 기본이 되는 일은 &amp;ldquo;의도대로 동작하는 코드를 작성&amp;quot;하는 일이다. 하지만 어느 순간에는 그 이상의 플러스 알파를 해낼 수 있어야 한다.
+(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
+직장 생활을 시작한 이래로 꽤 오랫동안 해오던 생각들이다. 개발자에게 가장 기본이 되는 일은 &amp;ldquo;의도대로 동작하는 코드를 작성&amp;quot;하는 일이다. 하지만 어느 순간에는 그 이상의 플러스 알파를 해낼 수 있어야 한다.
 이러한 생각을 처음 했던 것은 개발자로써 직장 생활을 막 시작했을 무렵이었다.</description>
     </item>
     
@@ -141,8 +141,8 @@ $ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/co
       <pubDate>Sat, 06 Oct 2018 11:44:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/reselect/</guid>
-      <description>https://github.com/reactjs/reselect  reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
- 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상  가령 아래와 같은 코드가 있다고 가정하면,
+      <description>https://github.com/reactjs/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
+컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상 가령 아래와 같은 코드가 있다고 가정하면,
 const mapStateToProps = (state, ownProps) =&amp;gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
 // selector const getUserContent = state =&amp;gt; state.</description>
     </item>
@@ -173,10 +173,8 @@ const mapStateToProps = (state, ownProps) =&amp;gt; { const { contentIds } = sta
       
       <guid>http://jaeyo.github.io/how-to-develop-ridistory-frontend/</guid>
       <description>본 포스팅은 회사 블로그에 올려놓았던 글을 옮겨놓은 것입니다.
-
- 
 몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 제로경으로 대표되는 악의 무리와 부딪힙니다. 제로경은 니트로 박사라는 부하가 만들어준 로봇을 타고 주인공의 앞길을 막고, 쫓고 쫓기는 아슬아슬한 활극 끝에 결국 정의의 편인 주인공이 승리하곤 합니다. 여기서 제로경과 니트로 박사가 주고받는 대화가 일품입니다.
- 제로경: 니트로 박사, 사정을 설명해보실까? 니트로 박사: 지금이라도 시간과 예산을 조금만 더 주신다면… 제로경: 변명은 죄악이란 걸 모르나!</description>
+제로경: 니트로 박사, 사정을 설명해보실까? 니트로 박사: 지금이라도 시간과 예산을 조금만 더 주신다면… 제로경: 변명은 죄악이란 걸 모르나!</description>
     </item>
     
     <item>

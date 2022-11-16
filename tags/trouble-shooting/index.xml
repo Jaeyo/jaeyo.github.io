@@ -29,7 +29,7 @@
       <guid>http://jaeyo.github.io/bash-is-not-async/</guid>
       <description>회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.
 install_blabla() { dest=$(mktemp /tmp/blabla_XXXX.deb) curl -fsSL http://blabla.com/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf sed -i -e &amp;#34;...&amp;#34; /etc/blabla/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.
- curl 로 blabla.</description>
+curl 로 blabla.</description>
     </item>
     
     <item>

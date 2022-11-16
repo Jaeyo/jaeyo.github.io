@@ -6,7 +6,17 @@
     <description>Recent content in daily on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 11 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/daily/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 14:55:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/daily/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>나의 기계식 키보드 연대기</title>
+      <link>http://jaeyo.github.io/chronicle-of-mechanical-keyboard/</link>
+      <pubDate>Wed, 16 Nov 2022 14:55:00 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/chronicle-of-mechanical-keyboard/</guid>
+      <description>근래 주력 키보드를 교체하면서 내가 그동안 써온 기계식 키보드의 수를 세보니 어느새 N대가 넘어간다. 기간도 대략 10여 년 정도가 되었는데 그동안 여러 키보드를 바꿔가며 써오다보니 기계식 키보드가 어느새 취미가 되어버린 듯 하다. 그동안 써오던 키보드들도 떠올릴 겸 기억을 되살려 회고를 해보기로 했다.
+기계식 키보드란 물건을 접한 건 일산의 어느 PC방 에서였다. 시간이 어중간하게 붕 떠버린 탓에 들어간 PC 방은 당시로는 상당히 최신식이었다. 게임 로그인을 하려 무심코 키보드 위에 손을 얹어 타이핑을 하는 데 손 끝에서 느껴지는 감각이 뭔가 신선했다.</description>
+    </item>
+    
     <item>
       <title>감자칩과 인터넷 밈</title>
       <link>http://jaeyo.github.io/catching-context/</link>
@@ -14,7 +24,7 @@
       
       <guid>http://jaeyo.github.io/catching-context/</guid>
       <description>신문에서 감자칩과 인터넷 밈 이라는 글을 보다가 생각해볼 만한 부분을 발견하여 일부를 발췌해본다.
-  &amp;hellip; 적어도 현 시점까지의 인터넷은 빠르고 짧은 정보를 선호한다. 디바이스도, 플랫폼도, 매체도, 이용자도 그렇다. &amp;lsquo;빠르고 짧다&amp;rsquo;는 표현은 어쩌면 동어반복인데, 인터넷 세상에서 어떤 정보가 빨리 전파되려면 짧아야 하기 때문이다.
+&amp;hellip; 적어도 현 시점까지의 인터넷은 빠르고 짧은 정보를 선호한다. 디바이스도, 플랫폼도, 매체도, 이용자도 그렇다. &amp;lsquo;빠르고 짧다&amp;rsquo;는 표현은 어쩌면 동어반복인데, 인터넷 세상에서 어떤 정보가 빨리 전파되려면 짧아야 하기 때문이다.
 한데 지식은 대개 짧지 않다. 지식이란 정보들이 논리에 따라 연결되어 있는 구조물이다. 깊은 지식일수록 규모가 크고 구조가 복잡하다. 따라서 문맥이 중요하다. 책 한 권을 문장 단위로 분리해서 마구 흐뜨러뜨린 뒤 순서 없이 읽는다면, 그 책의 모든 글자를 다 본다 해도 제대로 이해하는 내용은 아주 적을 게다.</description>
     </item>
     
@@ -57,7 +67,7 @@
       
       <guid>http://jaeyo.github.io/meeting-good-people-at-good-place/</guid>
       <description>누군가의 페이스북에서 본 글이 감명깊어 갈무리 겸 남겨놓는다.
- 좋은 학교, 좋은 회사에 가라고 이야기하는 이유는 좋을 구루를 만나기 위해서 입니다. 좋은 곳에 좋은 구루가 있으니까요. Quantum Leap 은 물리학, 회사의 성장에만 존재하는 것이 아닙니다. 사람에게도 존재합니다. Quantum Leap 을 만들기 위해서는 지속적으로 노력하는 것도 중요하지만, 생각을 많이 하고 사람을 많이 만나는 것도 중요합니다. 저도 계속 소모되는 곳에 있어서 지치지만 시간이 되면 구루라고 생각하는 사람을 만나려고 노력합니다. 그런 사람을 만나면 대충 10분만 만나도 1년을 살 수 있습니다.</description>
+좋은 학교, 좋은 회사에 가라고 이야기하는 이유는 좋을 구루를 만나기 위해서 입니다. 좋은 곳에 좋은 구루가 있으니까요. Quantum Leap 은 물리학, 회사의 성장에만 존재하는 것이 아닙니다. 사람에게도 존재합니다. Quantum Leap 을 만들기 위해서는 지속적으로 노력하는 것도 중요하지만, 생각을 많이 하고 사람을 많이 만나는 것도 중요합니다. 저도 계속 소모되는 곳에 있어서 지치지만 시간이 되면 구루라고 생각하는 사람을 만나려고 노력합니다. 그런 사람을 만나면 대충 10분만 만나도 1년을 살 수 있습니다.</description>
     </item>
     
     <item>
@@ -115,7 +125,8 @@
       <guid>http://jaeyo.github.io/move-to-another-place/</guid>
       <description>약 2년간의 관악구 생활을 마치고 용인으로 이사를 가기로 했다.
 애초에 이 곳으로 이사를 오게 되었던 이유는,
- 아무래도 서울 안의 인프라가 더 많으니까 처가가 가까우니까  였는데, 중간에 차를 사고 나니 이런 것들이 크게 의미가 없어져버렸다. 주말이나 휴일에 항상 차를 타고 다니게 되면서 서울 안쪽 보다는 바깥쪽으로 매번 나돌았고, 사람들이 그득그득한 시내보다는 고즈넉하고 여유로운 풍경들을 즐기기 시작했다. 거기다 아무래도 차가 있으니 처가에서 좀 멀어진다고 해도 방문하기에 크게 무리가 없기도 하고.</description>
+아무래도 서울 안의 인프라가 더 많으니까 처가가 가까우니까 였는데, 중간에 차를 사고 나니 이런 것들이 크게 의미가 없어져버렸다. 주말이나 휴일에 항상 차를 타고 다니게 되면서 서울 안쪽 보다는 바깥쪽으로 매번 나돌았고, 사람들이 그득그득한 시내보다는 고즈넉하고 여유로운 풍경들을 즐기기 시작했다. 거기다 아무래도 차가 있으니 처가에서 좀 멀어진다고 해도 방문하기에 크게 무리가 없기도 하고.
+다음 이사지로 용인을 고른 것은 아무래도 직장의 영향이 컸다.</description>
     </item>
     
     <item>
@@ -181,7 +192,7 @@
       
       <guid>http://jaeyo.github.io/spaces/</guid>
       <description>일상에서 우리가 기억이라고 부르는 것도 공간화한 기억이다. 프루스프가 &amp;ldquo;읽어버신 시간을 찾아서&amp;quot;에서 끊임없이 유년의 마을과 길과 집과 방들을 소환하는 까닭도, 추억이란 게 벌집 같은 공간 속에 특정의 시간들을 압축-공간화하고 있기 때문이다. 바슐라르가 &amp;ldquo;공감의 시학&amp;quot;에서 한 말처럼 &amp;ldquo;기억을 생생하게 하는 것은 시간이 아니라 공간이다. 우리들이 오랜 머무름에 의해 구체화된 지속의 아름다운 화석들을 발견하는 것은, 공간에 의해서, 공간 가운데서인 것이다&amp;rdquo;
- 그러고보니, 추억이라는 것들을 하나둘씩 들여다보면 시간과 사람들, 그때 했던 생각이나 가졌던 감정들, 표정과 분위기같은 것들은 희끄무레하니 기억이 잘 나지 않는 반면에 공간만큼은 선명하게 기억이 난다.</description>
+그러고보니, 추억이라는 것들을 하나둘씩 들여다보면 시간과 사람들, 그때 했던 생각이나 가졌던 감정들, 표정과 분위기같은 것들은 희끄무레하니 기억이 잘 나지 않는 반면에 공간만큼은 선명하게 기억이 난다.</description>
     </item>
     
   </channel>

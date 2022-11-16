@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.86.0" />
+  <meta name="generator" content="Hugo 0.101.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -143,28 +143,28 @@ $ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/co
           <p><code>qmk_firmware</code>는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다.
 documentation 및 자세한 정보는 <a href="https://qmk.fm/">https://qmk.fm/</a> 에서 확인할 수 있다.
 처음 이 소스를 clone 받아서 빌드를 하기 위해서 documentation을 보면 아래와 같이 가이드를 해준다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">$ make &lt;my_keyboard&gt;:&lt;my_keymap&gt;
-</code></pre></div><p>하지만 그대로 따라치면 아래와 같은 에러를 볼 수 있다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">$ make ergodo_infinity:default
-
-tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory
-tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory
-tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory
-tmk_core/chibios.mk:78: lib/chibios-contrib/os/hal/boards/PJRC_TEENSY_3_1/board.mk: No such file or directory
-tmk_core/chibios.mk:79: lib/chibios/os/hal/osal/rt/osal.mk: No such file or directory
-tmk_core/chibios.mk:81: lib/chibios/os/rt/rt.mk: No such file or directory
-tmk_core/chibios.mk:87: lib/chibios/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk: No such file or directory
-tmk_core/chibios.mk:89: lib/chibios/os/hal/lib/streams/streams.mk: No such file or directory
-quantum/visualizer/visualizer.mk:77: lib/ugfx/gfx.mk: No such file or directory
-make[1]: *** No rule to make target `lib/ugfx/gfx.mk&#39;.  Stop.
-make: *** [ergodox_infinity:default] Error 1
-</code></pre></div><p>이는 submodule이 적절히 업데이트 되지 않아 발생하는 문제다.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ make &lt;my_keyboard&gt;:&lt;my_keymap&gt;
+</span></span></code></pre></div><p>하지만 그대로 따라치면 아래와 같은 에러를 볼 수 있다.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ make ergodo_infinity:default
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:78: lib/chibios-contrib/os/hal/boards/PJRC_TEENSY_3_1/board.mk: No such file or directory
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:79: lib/chibios/os/hal/osal/rt/osal.mk: No such file or directory
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:81: lib/chibios/os/rt/rt.mk: No such file or directory
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:87: lib/chibios/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk: No such file or directory
+</span></span><span style="display:flex;"><span>tmk_core/chibios.mk:89: lib/chibios/os/hal/lib/streams/streams.mk: No such file or directory
+</span></span><span style="display:flex;"><span>quantum/visualizer/visualizer.mk:77: lib/ugfx/gfx.mk: No such file or directory
+</span></span><span style="display:flex;"><span>make[1]: *** No rule to make target `lib/ugfx/gfx.mk&#39;.  Stop.
+</span></span><span style="display:flex;"><span>make: *** [ergodox_infinity:default] Error 1
+</span></span></code></pre></div><p>이는 submodule이 적절히 업데이트 되지 않아 발생하는 문제다.
 따라서 아래의 명령어로 submodule을 업데이트 시켜주면 정상적으로 다시 빌드를 할 수 있다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">$ make git-submodule
-</code></pre></div><p>혹은 아래의 두 명령어도 같은 역할을 한다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">$ git submodule sync --recursive
-$ git submodule update --init --recursive --progress
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ make git-submodule
+</span></span></code></pre></div><p>혹은 아래의 두 명령어도 같은 역할을 한다.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-v" data-lang="v"><span style="display:flex;"><span><span style="">$</span> git submodule sync --recursive
+</span></span><span style="display:flex;"><span><span style="">$</span> git submodule update --init --recursive --progress
+</span></span></code></pre></div>
         </div>
 
         <div class="row middle-xs">
