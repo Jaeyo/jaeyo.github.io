@@ -6,7 +6,18 @@
     <description>Recent content on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Wed, 16 Nov 2022 14:55:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>영화 &lt;슬램덩크&gt; 관람기</title>
+      <link>http://jaeyo.github.io/slam-dunk/</link>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/slam-dunk/</guid>
+      <description>슬램덩크 영화를 보고 왔다. 이전부터 보고 싶다는 생각을 하고 있었는데 더 미루면 상영관에서 내려갈 것 같아서 급히 동탄 메가박스까지 가서 보고 왔다.
+사실 어떤 커다란 감동이 있으리라고 기대는 하지 못했다. 원작인 만화를 보긴 했지만 그 시절 읽었던 수 많은 만화 중 하나였을 뿐이었다. 재미있긴 했지만 그 이상의 기억은 남아있지 않았다. 사실 스토리도 잘 기억이 나질 않는다.
+하지만 기대 이상으로 잘 만들어진 영화라는 생각이 들었다. 단지 만화를 영화로 옮긴 것에서 그치지 않고 메인 스토리를 가지고 새로운 이야기를 그려냈다.</description>
+    </item>
+    
     <item>
       <title>나의 기계식 키보드 연대기</title>
       <link>http://jaeyo.github.io/chronicle-of-mechanical-keyboard/</link>
@@ -423,7 +434,7 @@ cpu, 메모리, 디스크 사용량 등의 지표를 대시보드로 구성해�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://jaeyo.github.io/about/</guid>
-      <description>저는, Software Engineer 를 업으로 삼고 있습니다. 단순한 밥벌이 이상으로 코딩을 좋아합니다. 새로운 기술을 배우는 것을 좋아합니다. 여러 뉴스레터를 구독하며 관심가는 기술에 대해 그때그때 찾아보곤 합니다. 종종 새로운 언어를 배우는 것도 즐겨합니다. 프론트엔드 기술에도 다소 연이 닿아 한동안 만지긴 했지만 기본적으로 메인 포지션은 서버 개발자 입니다. 경기도 용인에 거주 중이며 낚시를 좋아합니다. 최근에는, Go, Java 언어를 주로 다루고 있습니다. 관리형 Kubernetes 상품을 만드는 일을 하고 있습니다. 클라우드 내 리소스의 라이프사이클을 관리하는 상품을 만드는 일을 하고 있습니다.</description>
+      <description>저는, Software Engineer 를 업으로 삼고 있습니다. 단순히 생계를 이어나가기 위한 직업 이상으로 코드를 작성하고 시스템을 구성하는 일을 좋아합니다. 새로운 기술을 배우는 것을 좋아합니다. 여러 뉴스 레터를 구독하며, 관심 있는 기술에 대한 최신 정보를 지속적으로 챙겨봅니다. 프론트엔드 기술에도 다소 연이 닿아 한동안 만지긴 했지만 기본적으로 메인 포지션은 서버 개발 입니다. 경기도 용인에 거주 중이며 기계식 키보드를 좋아합니다. 최근에는, Go, Java 언어를 주로 다루고 있습니다. 관리형 Kubernetes 상품을 만드는 일을 하고 있습니다.</description>
     </item>
     
   </channel>
