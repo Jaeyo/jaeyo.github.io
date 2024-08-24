@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 07 Nov 2023 01:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Aug 2024 17:31:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&lt;자아 연출의 사회학&gt; 독서 후기</title>
+      <link>http://jaeyo.github.io/the-presentation-of-self-in-everyday-life/</link>
+      <pubDate>Sat, 24 Aug 2024 17:31:00 +0000</pubDate>
+      
+      <guid>http://jaeyo.github.io/the-presentation-of-self-in-everyday-life/</guid>
+      <description>사회 초년생 시절, 10년도 넘게 흐른 지금도 유난히 기억에 남는 장면이 하나 있다. 평소처럼 업무를 하던 중 갑자기 귀에 들려오는 고성에 파티션 너머로 고개를 들어 두리번거렸다. 상황을 보니 당시 옆 라인에 있던 다른 개발팀 팀장이 핸드폰을 붙잡고 화를 내고 있었다. 내용을 들어보니 영업팀과의 통화로 추정되었는데, 영엄팀의 욕심 혹은 실수로 인해 개발팀이 불필요한 업무를 떠맡게 된 상황이었다.
+그 장면이 유독 기억에 남는 이유는, 그 팀장의 불만 표현의 강도가 다소 과하다는 인상을 받았기 때문이다.</description>
+    </item>
+    
     <item>
       <title>시작하는 개발자들을 위한 기술 여행 가이드</title>
       <link>http://jaeyo.github.io/tech-travel-guide/</link>
