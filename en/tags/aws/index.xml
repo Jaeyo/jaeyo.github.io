@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Hello, There</title>
+    <link>http://jaeyo.github.io/en/tags/aws/</link>
+    <description>Recent content in aws on Hello, There</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 30 Jan 2018 17:19:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS APIs, Restricting Access Based on IP</title>
+      <link>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</link>
+      <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</guid>
+      <description>If you want to restrict access to instances or load balancers on EC2 to specific IP bands, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs.&#xA;For example, let&amp;rsquo;s say you want to restrict APIs that access the Parameter Store in AWS System Manager and read data based on IP.</description>
+    </item>
+  </channel>
+</rss>

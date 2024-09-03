@@ -6,17 +6,14 @@
     <description>Recent content in react on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 08 Oct 2017 14:57:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Oct 2017 14:57:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>리디스토리 프론트엔드 개발기</title>
       <link>http://jaeyo.github.io/how-to-develop-ridistory-frontend/</link>
       <pubDate>Sun, 08 Oct 2017 14:57:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/how-to-develop-ridistory-frontend/</guid>
-      <description>본 포스팅은 회사 블로그에 올려놓았던 글을 옮겨놓은 것입니다.
-몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 제로경으로 대표되는 악의 무리와 부딪힙니다. 제로경은 니트로 박사라는 부하가 만들어준 로봇을 타고 주인공의 앞길을 막고, 쫓고 쫓기는 아슬아슬한 활극 끝에 결국 정의의 편인 주인공이 승리하곤 합니다. 여기서 제로경과 니트로 박사가 주고받는 대화가 일품입니다.
-제로경: 니트로 박사, 사정을 설명해보실까? 니트로 박사: 지금이라도 시간과 예산을 조금만 더 주신다면… 제로경: 변명은 죄악이란 걸 모르나!</description>
+      <description>본 포스팅은 회사 블로그에 올려놓았던 글을 옮겨놓은 것입니다.&#xA;몬타나 존스 라는 만화영화가 있었습니다. 1990년대 중반쯤에 방영되었던 것으로 기억이 나네요. 에피소드마다 의인화된 사자와 호랑이가 유적지를 탐험하다 제로경으로 대표되는 악의 무리와 부딪힙니다. 제로경은 니트로 박사라는 부하가 만들어준 로봇을 타고 주인공의 앞길을 막고, 쫓고 쫓기는 아슬아슬한 활극 끝에 결국 정의의 편인 주인공이 승리하곤 합니다. 여기서 제로경과 니트로 박사가 주고받는 대화가 일품입니다.&#xA;제로경: 니트로 박사, 사정을 설명해보실까? 니트로 박사: 지금이라도 시간과 예산을 조금만 더 주신다면… 제로경: 변명은 죄악이란 걸 모르나!</description>
     </item>
-    
   </channel>
 </rss>
