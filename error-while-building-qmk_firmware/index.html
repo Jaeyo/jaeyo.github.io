@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.111.3">
+  <meta name="generator" content="Hugo 0.121.1">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Jaeyong" />
   <meta property="og:url" content="http://jaeyo.github.io/error-while-building-qmk_firmware/" />
   <link rel="canonical" href="http://jaeyo.github.io/error-while-building-qmk_firmware/" /><link rel="alternate" type="application/atom+xml" href="http://jaeyo.github.io/index.xml" title="Hello, There">
+
+  
+  <link rel="alternate" hreflang="en" href="http://jaeyo.github.io/en/error-while-building-qmk_firmware/" />
+  
+  <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/error-while-building-qmk_firmware/" />
 
   <script type="application/ld+json">
   {
@@ -137,7 +142,7 @@ li {
   
 </div>
 <div class="row end-xs">
-   
+  
 </div>
 <div class="header-line"></div>
 
@@ -188,8 +193,8 @@ documentation 및 자세한 정보는 <a href="https://qmk.fm/">https://qmk.fm/<
 따라서 아래의 명령어로 submodule을 업데이트 시켜주면 정상적으로 다시 빌드를 할 수 있다.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ make git-submodule
 </span></span></code></pre></div><p>혹은 아래의 두 명령어도 같은 역할을 한다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-v" data-lang="v"><span style="display:flex;"><span><span style="">$</span> git submodule sync --recursive
-</span></span><span style="display:flex;"><span><span style="">$</span> git submodule update --init --recursive --progress
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ git submodule sync --recursive
+</span></span><span style="display:flex;"><span>$ git submodule update --init --recursive --progress
 </span></span></code></pre></div>
         </div>
 

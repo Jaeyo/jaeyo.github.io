@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keyboard on Hello, There</title>
+    <link>http://jaeyo.github.io/en/tags/keyboard/</link>
+    <description>Recent content in keyboard on Hello, There</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 16 Oct 2018 10:34:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chibios error on building qmk_firmware</title>
+      <link>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</link>
+      <pubDate>Tue, 16 Oct 2018 10:34:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</guid>
+      <description>qmk_firmware is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware are planck, ergodox, etc. Documentation and more information can be found at https://qmk.fm/. To clone and build this source for the first time, the documentation will guide you as follows.&#xA;$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; However, if you follow along, you&amp;rsquo;ll see the error below.&#xA;$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.</description>
+    </item>
+  </channel>
+</rss>

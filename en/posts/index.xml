@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hello, There</title>
+    <link>http://jaeyo.github.io/en/posts/</link>
+    <description>Recent content in Posts on Hello, There</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The age of Stop-loss</title>
+      <link>http://jaeyo.github.io/en/cut-off/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/cut-off/</guid>
+      <description>Some keywords are born and come into vogue as a reflection of the times. Sometime in the 2000s, I remember the &amp;ldquo;well-being&amp;rdquo; era. The phrase &amp;ldquo;green light&amp;rdquo; came into vogue in the context of social changes that made it more comfortable to discuss gender and sexuality issues in the public sphere. In the era of tightening livelihoods, we saw the rise of &amp;ldquo;Hell-Joseon&amp;rdquo; and the rise of new words for new kinds of lifestyles, such as &amp;ldquo;YOLO&amp;rdquo;, which is a word for a new kind of lifestyle that cannot withstand &amp;ldquo;Hell-Joseon&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Potato Chips and Internet Memes</title>
+      <link>http://jaeyo.github.io/en/catching-context/</link>
+      <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/catching-context/</guid>
+      <description>I came across the article Potato Chips and Internet Memes in the newspaper and found it thought-provoking, so here&amp;rsquo;s an excerpt.&#xA;&amp;hellip; The Internet, at least up to this point, favors fast and short information. The devices, the platforms, the mediums, the users. The phrase &amp;ldquo;fast and short&amp;rdquo; is a bit of a homophone, because in the internet world, information needs to be short to travel quickly.&#xA;However, knowledge is usually not short.</description>
+    </item>
+    <item>
+      <title>A retrospective of my 8th month in NAVER CLOUD</title>
+      <link>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</link>
+      <pubDate>Thu, 21 Apr 2022 10:40:55 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</guid>
+      <description>I moved to my current company, NAVER CLOUD, at the end of August last year. When I was in school, I graduated straight through without transfering schools, but since I started working, I&amp;rsquo;ve been changing jobs quite often.&#xA;I&amp;rsquo;ve been through this many changes, each time to a different company and a different position, and it makes me think that changing jobs is like traveling. It&amp;rsquo;s a journey of leaving familiar neighborhoods and people and meeting new cultures in new places.</description>
+    </item>
+    <item>
+      <title>I met an old man who was lost.</title>
+      <link>http://jaeyo.github.io/en/met-a-lost-old-man/</link>
+      <pubDate>Fri, 18 Feb 2022 00:31:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/met-a-lost-old-man/</guid>
+      <description>A few days ago, I was waiting for a friend at a convenience store in my apartment. An elderly man walked in and suddenly said,&#xA;&amp;ldquo;Where is building 109?&amp;rdquo;&#xA;At first, I had to repeat myself a few times due to his inaccurate pronunciation. I soon realized that he was referring to building 109 in the apartment, so I turned on the map app and showed him the location. But after a while, he remained silent and asked again, &amp;ldquo;Where is building 109?</description>
+    </item>
+    <item>
+      <title>Thoughts about Rust</title>
+      <link>http://jaeyo.github.io/en/thoughts-about-rust/</link>
+      <pubDate>Tue, 08 Feb 2022 00:31:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/thoughts-about-rust/</guid>
+      <description>A few years ago, I had thought about learning Rust. I used to use Java as my main language, and around that time, I learned the Go language and used to build things, and I was quite deep in the Go language because it solved many of the regrets I had while using Java. At the same time, I was curious about Rust, which was always compared to Go. Since it doesn&amp;rsquo;t have GC, I thought it would be more effective for building more performance-critical things.</description>
+    </item>
+    <item>
+      <title>Parents are the world to a child</title>
+      <link>http://jaeyo.github.io/en/parents-are-everything-to-a-child/</link>
+      <pubDate>Wed, 08 Dec 2021 16:25:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/parents-are-everything-to-a-child/</guid>
+      <description>The phrase &amp;ldquo;Parents are the world to a child&amp;rdquo; often runs through my head these days. When my child comes to me and pulls my arm to play, or cries loudly when she doesn&amp;rsquo;t get what she wants. I wonder if I&amp;rsquo;ve been neglecting my child because I&amp;rsquo;m a little tired or annoyed. A child can only eat what parent give them, and they can only play within the boundaries parent provide.</description>
+    </item>
+    <item>
+      <title>Simple golang optimization experience</title>
+      <link>http://jaeyo.github.io/en/golang-optimization/</link>
+      <pubDate>Thu, 08 Jul 2021 14:40:55 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/golang-optimization/</guid>
+      <description>Last night, I optimized a module I wrote in golang and got more significant results than I expected, so I&amp;rsquo;m documenting them here.&#xA;When declaring a slice, We can specify the initial size of the array inside the slice via the cap parameter. In situations where the size of the slice is known in advance, this can minimize array reallocation. I went through the entire code and added the cap parameter wherever I could.</description>
+    </item>
+    <item>
+      <title>Birthday</title>
+      <link>http://jaeyo.github.io/en/birthday/</link>
+      <pubDate>Wed, 30 Jun 2021 10:41:00 +0900</pubDate>
+      <guid>http://jaeyo.github.io/en/birthday/</guid>
+      <description>There are days when the mind is unusually noisy. It&amp;rsquo;s a day like today. I&amp;rsquo;ve been drowning in a sea of work, waiting for something to happen, and then I look at the clock and realize it&amp;rsquo;s midnight. I turn off the lights in my deserted office and stumble out. Unfinished tasks buzz in my head like the sound of mosquitoes. I rub my temples, but it doesn&amp;rsquo;t help. At the intersection of Seolleung Station, I am lucky to find an empty taxi.</description>
+    </item>
+    <item>
+      <title>Meeting good people in good places</title>
+      <link>http://jaeyo.github.io/en/meeting-good-people-at-good-place/</link>
+      <pubDate>Fri, 25 Jun 2021 12:00:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/meeting-good-people-at-good-place/</guid>
+      <description>I saw this on someone&amp;rsquo;s Facebook and it resonated with me.&#xA;The reason everyone tells you to go to a good school, a good company, is to get a good guru. Quantum Leap is not just about physics, it&amp;rsquo;s not just about the growth of the company. It&amp;rsquo;s about people. To make Quantum Leap, it&amp;rsquo;s important to keep working hard, but it&amp;rsquo;s also important to think a lot and meet a lot of people.</description>
+    </item>
+    <item>
+      <title>How I value myself</title>
+      <link>http://jaeyo.github.io/en/the-value-that-i-value/</link>
+      <pubDate>Thu, 25 Mar 2021 13:31:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/the-value-that-i-value/</guid>
+      <description>I watched a YouTube video called &amp;ldquo;희열의 순간&amp;rdquo;. It was a video with Ryu Si-min, and there were some interesting things in it. The part that stuck with me the most was &amp;ldquo;I shouldn&amp;rsquo;t care about what labels others put on me, but what meaning I give to my life is what matters.&amp;rdquo; It&amp;rsquo;s so obvious, but it&amp;rsquo;s something we often forget. It&amp;rsquo;s easy to compare ourselves to others, to line up our salaries, and to stick our necks out as if our company&amp;rsquo;s name value is our value.</description>
+    </item>
+    <item>
+      <title>MySQL won&#39;t give me the data</title>
+      <link>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</link>
+      <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</guid>
+      <description>One of our team members reached out to me for help: a bug in the code she&amp;rsquo;s working on and she&amp;rsquo;s not sure what&amp;rsquo;s causing it.&#xA;Here&amp;rsquo;s what happened&#xA;There is a query that is running periodically to fetch data, and the logs are recording how many times it fetches data, but it keeps returning zero data as a result of the query.&#xA;Strangely, when I run that query directly through the database tool, I get two data hits.</description>
+    </item>
+    <item>
+      <title>Cultural Images of the 20th Century</title>
+      <link>http://jaeyo.github.io/en/culture-image-of-20-century/</link>
+      <pubDate>Sat, 16 May 2020 23:30:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/culture-image-of-20-century/</guid>
+      <description>Recently, I&amp;rsquo;ve been reading a book called “Cultural Images of the 20th Century”. I picked it up for 2,000 won at a used bookstore I happened to stop by. The book was written by the now deceased writer Lee Sung-wook, and the preface calls him a “cultural engineer”. The essays in this book are an extension of that title. Most of the articles were written in the late 90s and published in 2004, and they are mostly interesting descriptions of the life, culture, and society of the time from the author&amp;rsquo;s point of view.</description>
+    </item>
+    <item>
+      <title>Stories of code contributions to open source projects</title>
+      <link>http://jaeyo.github.io/en/contribute-code-into-telegraf/</link>
+      <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/contribute-code-into-telegraf/</guid>
+      <description>Throughout my career as a developer, I&amp;rsquo;ve relied heavily on open source - I wouldn&amp;rsquo;t be half as productive without Github - but despite this, I&amp;rsquo;m ashamed to say that I only contributed to open source for the first time last year. I&amp;rsquo;ve had the idea of contributing for a long time, but it&amp;rsquo;s safe to say that the whole process of choosing a project to contribute to, understanding the codebase, finding the source of a bug, communicating with the maintainers, and so on, was too daunting to take the plunge.</description>
+    </item>
+    <item>
+      <title>The importance of naming</title>
+      <link>http://jaeyo.github.io/en/naming-is-important/</link>
+      <pubDate>Fri, 16 Aug 2019 01:00:08 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/naming-is-important/</guid>
+      <description>It&amp;rsquo;s a common saying among developers that they spend more time naming variables than they do developing. Naming variables isn&amp;rsquo;t that hard, but it&amp;rsquo;s actually quite difficult and important.&#xA;It happened the other day at a company meeting. We had an internal service called Alert Manager, and the idea of adding feature to that service came up. The idea was accepted, and as the discussion continued, the scope of the features we wanted to add broadened.</description>
+    </item>
+    <item>
+      <title>Moving to a new place</title>
+      <link>http://jaeyo.github.io/en/move-to-another-place/</link>
+      <pubDate>Thu, 15 Aug 2019 01:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/move-to-another-place/</guid>
+      <description>After living in Gwanak-gu for about two years, I decided to move to Yongin.&#xA;The reason I moved here in the first place,&#xA;because there is more infrastructure in Seoul Because my sister-in-law is close However, once I bought a car, none of this mattered much. Since I was always traveling by car on weekends and holidays, I started to go outside of Seoul more often than inside, and I started to enjoy the quiet and relaxing scenery rather than the crowded city.</description>
+    </item>
+    <item>
+      <title>The Weight of Salary and Years of Experience</title>
+      <link>http://jaeyo.github.io/en/better-than-yesterday/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/better-than-yesterday/</guid>
+      <description>&amp;ldquo;There comes a point where you have to do more than just develop and implement features.&amp;rdquo;&#xA;&amp;ldquo;You can be a people manager or you can be an expert in one area or the other, the choice is yours.&amp;rdquo;&#xA;(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)&#xA;These are thoughts I&amp;rsquo;ve had for quite some time, since I started working. As a developer, your primary job is to &amp;ldquo;write code that works as intended&amp;rdquo;. But at some point, you need to be able to do more than that, you need to be able to do plus alpha.</description>
+    </item>
+    <item>
+      <title>chibios error on building qmk_firmware</title>
+      <link>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</link>
+      <pubDate>Tue, 16 Oct 2018 10:34:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</guid>
+      <description>qmk_firmware is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware are planck, ergodox, etc. Documentation and more information can be found at https://qmk.fm/. To clone and build this source for the first time, the documentation will guide you as follows.&#xA;$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; However, if you follow along, you&amp;rsquo;ll see the error below.&#xA;$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.</description>
+    </item>
+    <item>
+      <title>AWS APIs, Restricting Access Based on IP</title>
+      <link>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</link>
+      <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</guid>
+      <description>If you want to restrict access to instances or load balancers on EC2 to specific IP bands, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs.&#xA;For example, let&amp;rsquo;s say you want to restrict APIs that access the Parameter Store in AWS System Manager and read data based on IP.</description>
+    </item>
+  </channel>
+</rss>
