@@ -6,14 +6,18 @@
     <description>Recent content in trouble shooting on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 05 Feb 2021 07:00:00 +0000</lastBuildDate>
-    <atom:link href="http://jaeyo.github.io/en/tags/trouble-shooting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 07:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/trouble-shooting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL won&#39;t give me the data</title>
       <link>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</link>
       <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</guid>
-      <description>One of our team members reached out to me for help: a bug in the code she&amp;rsquo;s working on and she&amp;rsquo;s not sure what&amp;rsquo;s causing it.&#xA;Here&amp;rsquo;s what happened&#xA;There is a query that is running periodically to fetch data, and the logs are recording how many times it fetches data, but it keeps returning zero data as a result of the query.&#xA;Strangely, when I run that query directly through the database tool, I get two data hits.</description>
+      <description>One of our team members reached out to me for help: a bug in the code she&amp;rsquo;s working on and she&amp;rsquo;s not sure what&amp;rsquo;s causing it.
+Here&amp;rsquo;s what happened
+There is a query that is running periodically to fetch data, and the logs are recording how many times it fetches data, but it keeps returning zero data as a result of the query.
+Strangely, when I run that query directly through the database tool, I get two data hits.</description>
     </item>
+    
   </channel>
 </rss>

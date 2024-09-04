@@ -6,14 +6,15 @@
     <description>Recent content in telegraf on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 22 Aug 2019 19:00:00 +0000</lastBuildDate>
-    <atom:link href="http://jaeyo.github.io/en/tags/telegraf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Aug 2019 19:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/telegraf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stories of code contributions to open source projects</title>
       <link>http://jaeyo.github.io/en/contribute-code-into-telegraf/</link>
       <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/contribute-code-into-telegraf/</guid>
       <description>Throughout my career as a developer, I&amp;rsquo;ve relied heavily on open source - I wouldn&amp;rsquo;t be half as productive without Github - but despite this, I&amp;rsquo;m ashamed to say that I only contributed to open source for the first time last year. I&amp;rsquo;ve had the idea of contributing for a long time, but it&amp;rsquo;s safe to say that the whole process of choosing a project to contribute to, understanding the codebase, finding the source of a bug, communicating with the maintainers, and so on, was too daunting to take the plunge.</description>
     </item>
+    
   </channel>
 </rss>
