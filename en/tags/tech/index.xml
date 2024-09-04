@@ -6,56 +6,79 @@
     <description>Recent content in tech on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 08 Feb 2022 00:31:01 +0000</lastBuildDate>
-    <atom:link href="http://jaeyo.github.io/en/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Feb 2022 00:31:01 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thoughts about Rust</title>
       <link>http://jaeyo.github.io/en/thoughts-about-rust/</link>
       <pubDate>Tue, 08 Feb 2022 00:31:01 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/thoughts-about-rust/</guid>
       <description>A few years ago, I had thought about learning Rust. I used to use Java as my main language, and around that time, I learned the Go language and used to build things, and I was quite deep in the Go language because it solved many of the regrets I had while using Java. At the same time, I was curious about Rust, which was always compared to Go. Since it doesn&amp;rsquo;t have GC, I thought it would be more effective for building more performance-critical things.</description>
     </item>
+    
     <item>
       <title>Simple golang optimization experience</title>
       <link>http://jaeyo.github.io/en/golang-optimization/</link>
       <pubDate>Thu, 08 Jul 2021 14:40:55 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/golang-optimization/</guid>
-      <description>Last night, I optimized a module I wrote in golang and got more significant results than I expected, so I&amp;rsquo;m documenting them here.&#xA;When declaring a slice, We can specify the initial size of the array inside the slice via the cap parameter. In situations where the size of the slice is known in advance, this can minimize array reallocation. I went through the entire code and added the cap parameter wherever I could.</description>
+      <description>Last night, I optimized a module I wrote in golang and got more significant results than I expected, so I&amp;rsquo;m documenting them here.
+When declaring a slice, We can specify the initial size of the array inside the slice via the cap parameter. In situations where the size of the slice is known in advance, this can minimize array reallocation. I went through the entire code and added the cap parameter wherever I could.</description>
     </item>
+    
     <item>
       <title>MySQL won&#39;t give me the data</title>
       <link>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</link>
       <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</guid>
-      <description>One of our team members reached out to me for help: a bug in the code she&amp;rsquo;s working on and she&amp;rsquo;s not sure what&amp;rsquo;s causing it.&#xA;Here&amp;rsquo;s what happened&#xA;There is a query that is running periodically to fetch data, and the logs are recording how many times it fetches data, but it keeps returning zero data as a result of the query.&#xA;Strangely, when I run that query directly through the database tool, I get two data hits.</description>
+      <description>One of our team members reached out to me for help: a bug in the code she&amp;rsquo;s working on and she&amp;rsquo;s not sure what&amp;rsquo;s causing it.
+Here&amp;rsquo;s what happened
+There is a query that is running periodically to fetch data, and the logs are recording how many times it fetches data, but it keeps returning zero data as a result of the query.
+Strangely, when I run that query directly through the database tool, I get two data hits.</description>
     </item>
+    
     <item>
       <title>Stories of code contributions to open source projects</title>
       <link>http://jaeyo.github.io/en/contribute-code-into-telegraf/</link>
       <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/contribute-code-into-telegraf/</guid>
       <description>Throughout my career as a developer, I&amp;rsquo;ve relied heavily on open source - I wouldn&amp;rsquo;t be half as productive without Github - but despite this, I&amp;rsquo;m ashamed to say that I only contributed to open source for the first time last year. I&amp;rsquo;ve had the idea of contributing for a long time, but it&amp;rsquo;s safe to say that the whole process of choosing a project to contribute to, understanding the codebase, finding the source of a bug, communicating with the maintainers, and so on, was too daunting to take the plunge.</description>
     </item>
+    
     <item>
-      <title>The Weight of Salary and Years of Experience</title>
+      <title>The weight of salary and years of experience</title>
       <link>http://jaeyo.github.io/en/better-than-yesterday/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/better-than-yesterday/</guid>
-      <description>&amp;ldquo;There comes a point where you have to do more than just develop and implement features.&amp;rdquo;&#xA;&amp;ldquo;You can be a people manager or you can be an expert in one area or the other, the choice is yours.&amp;rdquo;&#xA;(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)&#xA;These are thoughts I&amp;rsquo;ve had for quite some time, since I started working. As a developer, your primary job is to &amp;ldquo;write code that works as intended&amp;rdquo;. But at some point, you need to be able to do more than that, you need to be able to do plus alpha.</description>
+      <description>&amp;ldquo;There comes a point where you have to do more than just develop and implement features.&amp;rdquo;
+&amp;ldquo;You can be a people manager or you can be an expert in one area or the other, the choice is yours.&amp;rdquo;
+(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
+These are thoughts I&amp;rsquo;ve had for quite some time, since I started working. As a developer, your primary job is to &amp;ldquo;write code that works as intended&amp;rdquo;. But at some point, you need to be able to do more than that, you need to be able to do plus alpha.</description>
     </item>
+    
     <item>
       <title>chibios error on building qmk_firmware</title>
       <link>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</link>
       <pubDate>Tue, 16 Oct 2018 10:34:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</guid>
-      <description>qmk_firmware is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware are planck, ergodox, etc. Documentation and more information can be found at https://qmk.fm/. To clone and build this source for the first time, the documentation will guide you as follows.&#xA;$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; However, if you follow along, you&amp;rsquo;ll see the error below.&#xA;$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.</description>
+      <description>qmk_firmware is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware are planck, ergodox, etc. Documentation and more information can be found at https://qmk.fm/. To clone and build this source for the first time, the documentation will guide you as follows.
+$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; However, if you follow along, you&amp;rsquo;ll see the error below.
+$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.</description>
     </item>
+    
     <item>
-      <title>AWS APIs, Restricting Access Based on IP</title>
+      <title>AWS APIs, restricting access based on ip</title>
       <link>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</link>
       <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</guid>
-      <description>If you want to restrict access to instances or load balancers on EC2 to specific IP bands, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs.&#xA;For example, let&amp;rsquo;s say you want to restrict APIs that access the Parameter Store in AWS System Manager and read data based on IP.</description>
+      <description>If you want to restrict access to instances or load balancers on EC2 to specific IP bands, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs.
+For example, let&amp;rsquo;s say you want to restrict APIs that access the Parameter Store in AWS System Manager and read data based on IP.</description>
     </item>
+    
   </channel>
 </rss>

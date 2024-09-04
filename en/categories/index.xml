@@ -5,7 +5,6 @@
     <link>http://jaeyo.github.io/en/categories/</link>
     <description>Recent content in Categories on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <atom:link href="http://jaeyo.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="http://jaeyo.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

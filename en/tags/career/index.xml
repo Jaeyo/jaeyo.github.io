@@ -6,21 +6,28 @@
     <description>Recent content in career on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 21 Apr 2022 10:40:55 +0000</lastBuildDate>
-    <atom:link href="http://jaeyo.github.io/en/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Apr 2022 10:40:55 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A retrospective of my 8th month in NAVER CLOUD</title>
       <link>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</link>
       <pubDate>Thu, 21 Apr 2022 10:40:55 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</guid>
-      <description>I moved to my current company, NAVER CLOUD, at the end of August last year. When I was in school, I graduated straight through without transfering schools, but since I started working, I&amp;rsquo;ve been changing jobs quite often.&#xA;I&amp;rsquo;ve been through this many changes, each time to a different company and a different position, and it makes me think that changing jobs is like traveling. It&amp;rsquo;s a journey of leaving familiar neighborhoods and people and meeting new cultures in new places.</description>
+      <description>I moved to my current company, NAVER CLOUD, at the end of August last year. When I was in school, I graduated straight through without transfering schools, but since I started working, I&amp;rsquo;ve been changing jobs quite often.
+I&amp;rsquo;ve been through this many changes, each time to a different company and a different position, and it makes me think that changing jobs is like traveling. It&amp;rsquo;s a journey of leaving familiar neighborhoods and people and meeting new cultures in new places.</description>
     </item>
+    
     <item>
-      <title>The Weight of Salary and Years of Experience</title>
+      <title>The weight of salary and years of experience</title>
       <link>http://jaeyo.github.io/en/better-than-yesterday/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/en/better-than-yesterday/</guid>
-      <description>&amp;ldquo;There comes a point where you have to do more than just develop and implement features.&amp;rdquo;&#xA;&amp;ldquo;You can be a people manager or you can be an expert in one area or the other, the choice is yours.&amp;rdquo;&#xA;(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)&#xA;These are thoughts I&amp;rsquo;ve had for quite some time, since I started working. As a developer, your primary job is to &amp;ldquo;write code that works as intended&amp;rdquo;. But at some point, you need to be able to do more than that, you need to be able to do plus alpha.</description>
+      <description>&amp;ldquo;There comes a point where you have to do more than just develop and implement features.&amp;rdquo;
+&amp;ldquo;You can be a people manager or you can be an expert in one area or the other, the choice is yours.&amp;rdquo;
+(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
+These are thoughts I&amp;rsquo;ve had for quite some time, since I started working. As a developer, your primary job is to &amp;ldquo;write code that works as intended&amp;rdquo;. But at some point, you need to be able to do more than that, you need to be able to do plus alpha.</description>
     </item>
+    
   </channel>
 </rss>

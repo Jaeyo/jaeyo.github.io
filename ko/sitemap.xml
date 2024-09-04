@@ -4,17 +4,27 @@
   <url>
     <loc>http://jaeyo.github.io/the-presentation-of-self-in-everyday-life/</loc>
     <lastmod>2024-08-24T17:31:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://jaeyo.github.io/en/the-presentation-of-self-in-everyday-life/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://jaeyo.github.io/the-presentation-of-self-in-everyday-life/"
+                />
   </url><url>
     <loc>http://jaeyo.github.io/tags/daily/</loc>
     <lastmod>2024-08-24T17:31:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/daily/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/daily/"
                 />
   </url><url>
@@ -22,12 +32,12 @@
     <lastmod>2024-08-24T17:31:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/"
                 />
   </url><url>
@@ -35,12 +45,12 @@
     <lastmod>2024-08-24T17:31:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/posts/"
                 />
   </url><url>
@@ -48,12 +58,12 @@
     <lastmod>2024-08-24T17:31:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/"
                 />
   </url><url>
@@ -61,12 +71,12 @@
     <lastmod>2023-11-07T01:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/tech/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/tech/"
                 />
   </url><url>
@@ -75,6 +85,16 @@
   </url><url>
     <loc>http://jaeyo.github.io/slam-dunk/</loc>
     <lastmod>2023-02-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://jaeyo.github.io/en/slam-dunk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://jaeyo.github.io/slam-dunk/"
+                />
   </url><url>
     <loc>http://jaeyo.github.io/chronicle-of-mechanical-keyboard/</loc>
     <lastmod>2022-11-16T14:55:00+00:00</lastmod>
@@ -83,12 +103,12 @@
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/cut-off/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/cut-off/"
                 />
   </url><url>
@@ -96,12 +116,12 @@
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/catching-context/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/catching-context/"
                 />
   </url><url>
@@ -109,12 +129,12 @@
     <lastmod>2022-04-21T10:40:55+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/career/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/career/"
                 />
   </url><url>
@@ -122,12 +142,12 @@
     <lastmod>2022-04-21T10:40:55+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/8th-month-after-joining-naver-cloud/"
                 />
   </url><url>
@@ -138,12 +158,12 @@
     <lastmod>2022-02-18T00:31:01+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/met-a-lost-old-man/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/met-a-lost-old-man/"
                 />
   </url><url>
@@ -151,12 +171,12 @@
     <lastmod>2022-02-08T00:31:01+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/thoughts-about-rust/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/thoughts-about-rust/"
                 />
   </url><url>
@@ -164,12 +184,12 @@
     <lastmod>2021-12-08T16:25:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/parents-are-everything-to-a-child/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/parents-are-everything-to-a-child/"
                 />
   </url><url>
@@ -177,12 +197,12 @@
     <lastmod>2021-07-08T14:40:55+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/golang-optimization/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/golang-optimization/"
                 />
   </url><url>
@@ -190,12 +210,12 @@
     <lastmod>2021-06-30T10:41:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/birthday/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/birthday/"
                 />
   </url><url>
@@ -203,12 +223,12 @@
     <lastmod>2021-06-25T12:00:01+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/meeting-good-people-at-good-place/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/meeting-good-people-at-good-place/"
                 />
   </url><url>
@@ -216,12 +236,12 @@
     <lastmod>2021-03-25T13:31:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/the-value-that-i-value/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/the-value-that-i-value/"
                 />
   </url><url>
@@ -229,12 +249,12 @@
     <lastmod>2021-02-05T07:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/mysql-convert-tz-timezone/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/mysql-convert-tz-timezone/"
                 />
   </url><url>
@@ -242,12 +262,12 @@
     <lastmod>2021-02-05T07:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/trouble-shooting/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/trouble-shooting/"
                 />
   </url><url>
@@ -264,12 +284,12 @@
     <lastmod>2020-05-16T23:30:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/culture-image-of-20-century/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/culture-image-of-20-century/"
                 />
   </url><url>
@@ -286,12 +306,12 @@
     <lastmod>2019-08-22T19:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/open-source/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/open-source/"
                 />
   </url><url>
@@ -299,12 +319,12 @@
     <lastmod>2019-08-22T19:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/telegraf/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/telegraf/"
                 />
   </url><url>
@@ -315,12 +335,12 @@
     <lastmod>2019-08-16T01:00:08+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/naming-is-important/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/naming-is-important/"
                 />
   </url><url>
@@ -328,12 +348,12 @@
     <lastmod>2019-08-15T01:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/move-to-another-place/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/move-to-another-place/"
                 />
   </url><url>
@@ -350,12 +370,12 @@
     <lastmod>2019-08-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/better-than-yesterday/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/better-than-yesterday/"
                 />
   </url><url>
@@ -363,12 +383,12 @@
     <lastmod>2018-10-16T10:34:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/keyboard/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/keyboard/"
                 />
   </url><url>
@@ -376,12 +396,12 @@
     <lastmod>2018-10-16T10:34:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/error-while-building-qmk_firmware/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/error-while-building-qmk_firmware/"
                 />
   </url><url>
@@ -392,12 +412,12 @@
     <lastmod>2018-01-30T17:19:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/tags/aws/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/tags/aws/"
                 />
   </url><url>
@@ -405,12 +425,12 @@
     <lastmod>2018-01-30T17:19:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/aws-api-ip-based-access-control/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/aws-api-ip-based-access-control/"
                 />
   </url><url>
@@ -464,12 +484,12 @@
     <loc>http://jaeyo.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://jaeyo.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ko-KR"
+                hreflang="ko"
                 href="http://jaeyo.github.io/categories/"
                 />
   </url>

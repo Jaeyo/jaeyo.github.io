@@ -6,14 +6,16 @@
     <description>Recent content in aws on Hello, There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 30 Jan 2018 17:19:00 +0000</lastBuildDate>
-    <atom:link href="http://jaeyo.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2018 17:19:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS API, IP 기반으로 접근 제한하기</title>
       <link>http://jaeyo.github.io/aws-api-ip-based-access-control/</link>
       <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
+      
       <guid>http://jaeyo.github.io/aws-api-ip-based-access-control/</guid>
-      <description>EC2 상의 인스턴스나 로드밸런서에 특정 IP 대역만 접근 가능하도록 설정하고 싶다면 Security Group 혹은 ACL을 이용하면 된다. 하지만 그 외의 AWS에서 제공하는 API 들에 대해서 IP 기반으로 접근제한을 걸고 싶다면 Security Group, ACL 로는 불가능하다. 이 부분은 IAM의 Policy로 해결을 봐야 한다.&#xA;예를 들어, AWS System Manager의 Parameter Store에 접근해서 데이터를 읽어오는 API를 IP 기반으로 제한하고 싶다고 가정하자. 그럼 일단 Parameter Store에 대한 기본 Policy 부터 확인해보자. “AWS IAM -&amp;gt; 정책” 로 들어가서 찾아볼 수 있다.</description>
+      <description>EC2 상의 인스턴스나 로드밸런서에 특정 IP 대역만 접근 가능하도록 설정하고 싶다면 Security Group 혹은 ACL을 이용하면 된다. 하지만 그 외의 AWS에서 제공하는 API 들에 대해서 IP 기반으로 접근제한을 걸고 싶다면 Security Group, ACL 로는 불가능하다. 이 부분은 IAM의 Policy로 해결을 봐야 한다.
+예를 들어, AWS System Manager의 Parameter Store에 접근해서 데이터를 읽어오는 API를 IP 기반으로 제한하고 싶다고 가정하자. 그럼 일단 Parameter Store에 대한 기본 Policy 부터 확인해보자. “AWS IAM -&amp;gt; 정책” 로 들어가서 찾아볼 수 있다.</description>
     </item>
+    
   </channel>
 </rss>
