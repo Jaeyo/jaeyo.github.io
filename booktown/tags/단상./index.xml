@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> 단상. on 책마을</title>
+    <link>https://jaeyo.github.io/booktown/tags/%EB%8B%A8%EC%83%81./</link>
+    <description>Recent content in  단상. on 책마을</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <atom:link href="https://jaeyo.github.io/booktown/tags/%EB%8B%A8%EC%83%81./index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
