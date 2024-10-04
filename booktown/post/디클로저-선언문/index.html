@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.121.1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="https://booktown.github.io/post/%EB%94%94%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%84%A0%EC%96%B8%EB%AC%B8/" />
+  <link rel="canonical" href="https://booktown.github.io/post/%EB%94%94%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%84%A0%EC%96%B8%EB%AC%B8/" /><link rel="alternate" type="application/atom+xml" href="https://booktown.github.io/index.xml" title="책마을">
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "https:\/\/booktown.github.io\/"
+      },
+      "articleSection" : "post",
+      "name" : "디클로저 선언문",
+      "headline" : "디클로저 선언문",
+      "description" : "디클로저 선언문 일병 정영목 06-15 03:04 | HIT : 143\n== 들어가기 ==\n전부터 쓰고 싶었던 글입니다. 얼개 글로 올리겠습니다.\n== 짚고가기 ==\nEnclosure: 울타리 치기. 공유된 어떤 사물 또는 개념을 사유화 하는 일. Declosure: 울타기 걷기. 그 반대. == 디클로저 운동을 선언하며 ==\n공유와 사유. 이들은 분명, 서로 상반되는 가치를 지향하긴 하지만, 한편으로는 서로가 서로에 의해 존재하는 상보적인 관계이기도 합니다. 그래서 이들은 마치 음과 양처럼, 둘 중 어느 하나가 다른 하나를 배제하고 오직 자신만을 극대화 하려고 할 땐, 자기 자신의 존재 가치마저 부정당하는 결과를 초래하곤 하죠.",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2007",
+      "datePublished": "2007-06-15 00:00:00 \u002b0900 KST",
+      "dateModified" : "2007-06-15 00:00:00 \u002b0900 KST",
+      "url" : "https:\/\/booktown.github.io\/post\/%EB%94%94%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%84%A0%EC%96%B8%EB%AC%B8\/",
+      "keywords" : [  ]
+  }
+</script>
+<title>디클로저 선언문</title>
+  <meta property="og:title" content="디클로저 선언문" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="디클로저 선언문 일병 정영목 06-15 03:04 | HIT : 143
+== 들어가기 ==
+전부터 쓰고 싶었던 글입니다. 얼개 글로 올리겠습니다.
+== 짚고가기 ==
+Enclosure: 울타리 치기. 공유된 어떤 사물 또는 개념을 사유화 하는 일. Declosure: 울타기 걷기. 그 반대. == 디클로저 운동을 선언하며 ==
+공유와 사유. 이들은 분명, 서로 상반되는 가치를 지향하긴 하지만, 한편으로는 서로가 서로에 의해 존재하는 상보적인 관계이기도 합니다. 그래서 이들은 마치 음과 양처럼, 둘 중 어느 하나가 다른 하나를 배제하고 오직 자신만을 극대화 하려고 할 땐, 자기 자신의 존재 가치마저 부정당하는 결과를 초래하곤 하죠." />
+  <meta name="description" content="디클로저 선언문 일병 정영목 06-15 03:04 | HIT : 143
+== 들어가기 ==
+전부터 쓰고 싶었던 글입니다. 얼개 글로 올리겠습니다.
+== 짚고가기 ==
+Enclosure: 울타리 치기. 공유된 어떤 사물 또는 개념을 사유화 하는 일. Declosure: 울타기 걷기. 그 반대. == 디클로저 운동을 선언하며 ==
+공유와 사유. 이들은 분명, 서로 상반되는 가치를 지향하긴 하지만, 한편으로는 서로가 서로에 의해 존재하는 상보적인 관계이기도 합니다. 그래서 이들은 마치 음과 양처럼, 둘 중 어느 하나가 다른 하나를 배제하고 오직 자신만을 극대화 하려고 할 땐, 자기 자신의 존재 가치마저 부정당하는 결과를 초래하곤 하죠." />
+  <meta property="og:locale" content="ko-kr" /><meta property="og:image" content="" />
+  
+
+  
+    <style>body{font-family:bree serif,sans-serif;-webkit-font-smoothing:antialiased;margin:0 20px}article{max-width:800px;margin-left:auto;margin-right:auto}a{color:#000;text-decoration:none}a:hover{font-weight:600;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:0;padding:0 1em;color:#57606a;border-left:.25em solid #d0d7de}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:#f6f8fa;border-radius:6px}.markdown-body pre>code{padding:0;font-size:100%;background-color:inherit;border:0}.Chinese .markdown-body{line-height:200%}.site-date-catalog{font-size:2rem}.header-title{font-size:2rem;font-weight:700;margin-top:32px;font-family:bungee shade,sans-serif}.header-title a{text-decoration:none}.header-subtitle{color:#666}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:#482936;border-style:solid none none none}.lang-switch{font-weight:600}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:#000 2px solid;border-radius:5px}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:12px}.post-header{margin-bottom:50px}.post-title{font-size:2rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:#000 2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.related-content{border-width:3px;border-style:solid;border-color:#000;padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){.header-title,.header-subtitle,.header-items{text-align:center}.posts-line{font-size:16px}.markdown-body{font-size:16px}.post-title{font-size:2rem}.post-content p{letter-spacing:.05em}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
+  
+  
+    <style>.container,.container-fluid{margin-right:auto;margin-left:auto}.container-fluid{padding-right:2rem;padding-left:2rem}.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-.5rem;margin-left:-.5rem}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-xs{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-xs-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-xs-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-xs-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-xs-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-xs{-ms-flex-pack:distribute;justify-content:space-around}.between-xs{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-xs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}@media only screen and (min-width:48em){.container{width:49rem}.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-sm{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-sm-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-sm-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-sm-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-sm-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-sm{-ms-flex-pack:distribute;justify-content:space-around}.between-sm{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-sm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:64em){.container{width:65rem}.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-offset-0,.col-md-offset-1,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-md{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-md-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-md-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-md-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-md-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-md{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-md{-ms-flex-pack:distribute;justify-content:space-around}.between-md{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-md{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:75em){.container{width:76rem}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-lg{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-lg-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-lg-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-lg-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-lg-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-lg{-ms-flex-pack:distribute;justify-content:space-around}.between-lg{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-lg{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}</style>
+  
+
+  
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="책마을">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+  
+  
+
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33TNK89CXR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-33TNK89CXR');
+</script>
+<style>
+@font-face {
+    font-family: 'BookkMyungjo-Lt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+div {
+  font-family: 'BookkMyungjo-Lt';
+  line-height: 1.4;
+}
+h1 {
+  margin-top: 50px;
+}
+h2 {
+  margin-top: 45px;
+}
+h3 {
+  margin-top: 40px;
+}
+li {
+  line-height: 1.8;
+  margin: 5px 5px;
+}
+</style>
+
+</head>
+
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          
+<header>
+  <div class="header-title">
+    <a href="/"
+      >booktown</a
+    >
+  </div>
+  <div class="header-subtitle"></div>
+</header>
+<div class="row end-md center-xs header-items">
+  
+</div>
+<div class="row end-xs">
+   
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">디클로저 선언문</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2007-06-15 00:00:00 KST">
+                15 Jun 2007
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>디클로저 선언문
+일병 정영목 06-15 03:04 | HIT : 143</p>
+<p>== 들어가기 ==</p>
+<p>전부터 쓰고 싶었던 글입니다. 얼개 글로 올리겠습니다.</p>
+<p>== 짚고가기 ==</p>
+<ul>
+<li>Enclosure: 울타리 치기. 공유된 어떤 사물 또는 개념을 사유화 하는 일.</li>
+<li>Declosure: 울타기 걷기. 그 반대.</li>
+</ul>
+<p>== 디클로저 운동을 선언하며 ==</p>
+<p>공유와 사유. 이들은 분명, 서로 상반되는 가치를 지향하긴 하지만, 한편으로는 서로가 서로에 의해 존재하는 상보적인 관계이기도 합니다. 그래서 이들은 마치 음과 양처럼, 둘 중 어느 하나가 다른 하나를 배제하고 오직 자신만을 극대화 하려고 할 땐, 자기 자신의 존재 가치마저 부정당하는 결과를 초래하곤 하죠. 그 예로, 공유를 만고불변의 가치인양 숭배했더니 공유의 탈을 쓴 사유가 득세했더라는 저 추운 지방 사람들의 이야기와, 반대로, 사유만을 추구했더니 사회와 자연을 무자비하게 파괴하는 폭주 괴물이 등장했더라는 저 바다 건너 사람들의 이야기, 다들 아시지요?</p>
+<p>그렇죠. 필요한 건 균형입니다. 이 세상을 온전히 살아가려면, 적당히 공유하고 적당히 사유하는 게 아무래도 온당한 일이겠죠. 허나, 그 정도는 갓 태어난 젖먹이 아이들도 다 아는 사실일테니, 이 자리에선 조화니, 통합이니 하는 구호는 되도록 쓰지 않도록 하겠습니다. 지루하지 않습니까? 그런 이야기는.</p>
+<p>그래도 딱 한 번만 더 들어주세요. 전, 단 한 가지, 사유화 일변도의 세상은 가능하지도 않고, 존재하지도 않는다는 점. 공유를 추구하는 행위는 결코 이상론이 아니며, 우리는 이미 많은 것을 공유하고 있었다는 걸, 여러분께 새삼스레 강조하고자 합니다.</p>
+<p>== 프로슈밍 ==</p>
+<p>근래 들어, 크게 회자되고 있는 용어 중 하나가 바로 &lsquo;프로슈밍&rsquo;입니다. &lsquo;생산(Producting)&lsquo;과 &lsquo;소비(Consuming)&lsquo;의 합성어라고 할 수 있는데, 주로 &lsquo;화폐 경제&rsquo;가 집어 내지 못하는 일련의 경제 행위를 일컫는 말로 쓰입니다. 뭐, &lsquo;가내 수공업&rsquo;을 떠올리시면 일단 이해는 쉽습니다만, 그렇다고 이를, 단순히, 지나간 시대의 잘못된 방식으로 결론 짓지는 마십시오. 이게 좀 색다른 의미를 지니고 있습니다.</p>
+<p>쉬운 예로, &lsquo;아이 양육&rsquo;을 들 수 있겠네요. 일단, 아이 양육은 화폐 경제로 손쉽게 파악할 수 있는 영역은 아니겠지요? 아이를 화폐 가치로 환산해서 양육하지는 않으니까요. 물론, 보육원이나 유치원 등 제도화된 기관을 통해 대략적인 그림을 그릴 수야 있겠지만, 본래의 기능 전부를 경제 수치로 표현한다는 건 불가능에 가깝습니다. 문제는, 눈에 보이지 않는다고 그 가치가 간과되는 경향이 있다는 사실입니다. 이로 인해 우리는 실로 많은 것을 놓치고 있습니다.</p>
+<p>생각해봅시다. 만약 &lsquo;아이 양육이라는 프로슈밍&rsquo;이 없다면 기업 활동은 어떻게 될까요? 제도화된 교육만으로 기업은 그들이 필요한 인력을 충당할 수 있을까요? 인간이 걷는 법, 말하는 법, 글쓰는 법, 그리고 가장 중요한, 사회 활동을 하는 법 등등 모두를 기업이 직접 담당해서 교육해야 한다면? 그렇죠. 말도 안되는 소리죠. 학교도 마찬가지입니다. 각 가정에서 사랑이라는 프로슈밍을 하지 않는다면, 학생의 심리적 안정을 바탕으로 하는 학교 교육 시스템 그 자체가 무너질 겁니다. 이는 국가, 군대, 정당, 시민단체 등 인간사 모든 조직에 해당됩니다.</p>
+<p>이를 엘빈 토플러는 &lsquo;공짜 점심&rsquo;이라는 용어로 표현하는데요. 한 마디로 말해, 그들은 각 가정에 일정한 빚을 지고 있단 뜻입니다. 그리고 그들은 &lsquo;별로 갚지 않아도 되는&rsquo; 그 빚을 토대로 자신들의 시스템을 유지합니다. 자, 그렇다면 생각해 봅시다. 우리는 과연, 그들에게 &lsquo;공짜 점심&rsquo;을 제공한 각 가정의 경제적 가치를 산출해낼 수 있을까요? 그들의 프로슈밍으로 인한 성과를 GDP에 반영할 수 있겠습니까? 불가능합니다. 이의 있으신 분?</p>
+<p>그럼에도 불구하고, &lsquo;그들은&rsquo; 그들의 성과를 모두 자신의 것인양 어깨를 으쓱거립니다. 물론, 그들의 성과는 가정으로 다시금 분배될 겁니다. 개인도 한 인간으로서 살아갈 수 있는 기반을 마련하게 될 것이구요. 중요한 건, 이 모든 일련의 과정 속에서 &lsquo;공유&rsquo;라는 중대한 행위 없이는 다른 행위 자체가 불가능하다는 사실입니다. 가정의 양육 행위를 사유화 한다고 생각해 봅시다. 이제, 인간 사회는 엄청난 부담을 지게 됩니다. 극단적인 예로, 양육권이 소수의 거대 조직에게 집중되는 경우를 상정해 볼 수 있는데, 그렇게 되면, 그들이 그들&rsquo;의&rsquo; 인간을 임대해주는 대가로 적지 않은 대가를 받아 챙기는 상황이 벌어질 수 있습니다. 허무맹랑한 얘기 같습니까? 저게 바로 소위 &lsquo;극우적 가치를 지향하는 이들&rsquo;이 마음 속으로 동경해 마지 않는 전체주의 국가의 실제 모습입니다. 이 세상 모든 것을 사유화 하여 자신의 손에 쥐고 흔들려는 근래 인류의 모습이기도 하구요.</p>
+<p>그런데, 불행인지 다행인지, 뭔가 변화의 징조가 곳곳에서 나타나고 있습니다.</p>
+<p>== 새로운 전선 ==</p>
+<p>제러미 리프킨은 &lsquo;소유의 종말&rsquo;에서 말하길, 물질적인 무언가를 &lsquo;소유&rsquo;한다는 것은 확확 바뀌는 이 세상에서 그저 부담만 되므로, 사람들은 필요한 때만 잠깐 빌려쓰는 형태로 자신들의 프로세스를 재구성해 나갈 것이라고 했습니다. 그 대신 비물질적인 것, 예를 들어, 지적 저작권 같은 것이 새로운 시대의 부의 원천이라고 지적했죠. 그렇습니다. 이제 전장은 눈에 보이는 곳에서 눈에 보이지 않는 곳으로 옮겨간 것입니다.</p>
+<p>일단, 생명 기술 쪽에서는 사유가 일차적인 승리를 거둔 것으로 보입니다. 이미 수많은 유전자 풀이 몇몇 소수 기업에게 그 소유권이 넘어갔으며, 그로 인한 앞으로의 변화는 감히 상상할 수도 없을 정도입니다. 반면, 정보 기술 쪽에서는 공유의 대반격이 격렬하게 진행되고 있는데요. 네, 오픈 소스. 다들 한 번씩 들어보셨을 겁니다. 상황은 꽤 놀라워서 양질의 소프트웨어가 공유라는 형태로 탄생하는 기이한 장면을 목격하실 수 있습니다. 사실, 그곳은 워낙 난전이라 어떤 결론이 날지는 좀 더 상황을 지켜봐야 할 듯 합니다만, 고무적인 성과를 거두고 있다는 사실만큼은 분명합니다.</p>
+<p>자, 이제 가장 중요한 전선을 소개해 드리죠. 다만, 아직은 조용한 편입니다. 삼국지로 따지면 형주랄까. 바로 책의 세계. 드디어 디클로저 단의 정체를 들어낼 때가 왔습니다.</p>
+<p>== 책의 종말을 꿈꾸다 ==</p>
+<p>책이 그 뒤떨어진 시대성에도 불구하고 살아남는 이유를 한 마디로 말하면,</p>
+<p>&quot; 지식이 거기에 있다.&quot;</p>
+<p>라고 요약할 수 있는데. 그렇다면, 그 이유는? 바로, 책이야말로 지식인이 자신의 지식을 사유화 하기 딱 좋은 매체이기 때문입니다. 기억하세요. 지식인은 기본적으로 공유를 원하지 않습니다. 자신의 것을 꼭꼭 숨겨야 해요. 그러나 지식이란 게 타인이 그 내용을 알아야 비로소 가치를 지니기 때문에 지식인은 자신의 지식을 어느 정도 공개할 수 밖에 없습니다. 지식의 패러독스죠. 그렇다면, 공개가 불가피 하다면, 복사만큼은 무슨 일이 있어도 막아야 합니다. 물리적 한계를 둬서라도요. e북이 성공을 거두지 못하고 있는 이유도 바로 이겁니다. 전자 매체는 복사로부터 결코 자유롭지 않거든요. 그건, 지식인으로서는 정말 두려운 일입니다.</p>
+<p>저자들의 이런 상황과 독자들의 관성이 맞물려 일단 책은 그 생명을 유지하고 있습니다만, 뚜렷한 하향세는 어쩔 수 없습니다. 그 하향세를 더 이상 견딜 수 없을 때, 비로소 지식인들은 어떤 특단의 조치를 내리게 될 겁니다. 그러나 그들보다 한 발 앞서, 지식의 울타리를 걷어내는 작업을 시작하려는 이들이 있습니다. 바로, 이 선언문과 함께 활동을 시작할 디클로저 단입니다. 디클로저 단은 많은 면에서 &lsquo;카피레프트(Copyleft)&rsquo; 정신을 계승하고 있지만, 좀 더 적극적인 성향을 띕니다. 카피레프트가 울타리를 치지 않는 행위를 말한다면, 디클로저는 울타리를 걷는 행위랄까요. 그냥, 좀 더 적절한 용어를 사용하는 것이라고만 생각해주시면 감사하겠습니다.</p>
+<p>누군가가 사유화한 지식을 다시금 공유화 하는 것. 이는 저작권법에 대한 전면적인 부정을 의미하는 것이 아닙니다. 그들이 어쩔 수 없이 공개한 정보를 재해석 하는 행위 그 자체가 그들의 지식을 광고하는 것이기 때문이죠 - 이건 지식이니까 가능한 겁니다. 모든 것을 완전히 보고 배끼는 것이 아닌, 일종의 스크랩 형태로 공유화 하면, 법적으로도 아무런 하자가 없습니다 - 사실 아슬아슬한 줄타기입니다. 문제는 그렇게 모은 정보가 과연 유용하냐라는 건데, 답은 예스입니다.</p>
+<p>스크랩된 정보는 일종의 토양입니다. 거기에 디클로저 단의 독자적인 글을 키우고, 이를 하이퍼텍스트 형태로 엮는다면, 뭔가 이상한 형체가 등장하게 됩니다. 위키피디아 형식의 딴지일보 정도로 생각하면 어떨까요? 양질의 시론이 재빠르게 올라오고, 그 배후에 막대한 양의 정보가 연결되어 있는, 머랄까 도서관+언론의 역할. 이제 책은 지식 단위로서의 가치를 잃고, 대신 그 자리에, 다수의 사람들이 함께 가꾸는 라이브러리 개념이 들어서게 됩니다.</p>
+<p>수익 모델? 기존 언론사들처럼 광고도 괜찮습니다. 아니면, 싱크 탱크처럼 기부금과 후원금을 받아도 되구요. 무슨 방법을 쓰던, 일단, 사람이 북적대는 커뮤니티는 무엇을 해도 성공 가능성이 높다는 점을 기억하십시오. 설령, 직접적인 이익이 적더라도, 그 &lsquo;책&rsquo;은 음으로 양으로 본 직업에 적지 않은 도움을 주게 될 겁니다. 사람들에게 영향력이 있다는 것이 그토록 무서운 것입니다.</p>
+<p>전 디지인사이드가 어떤 방식으로 운영되고 있는지는 잘 모릅니다만, 만약, 그들이 그들의 디지털카메라에 대한 지식을 책으로 냈다면 어떻게 됐을까요? 뻔하죠. 지루하게 끝났겠죠. 또 하나, 만약 강풀이 자신의 만화를 처음부터 책으로 냈다면 어떻게 됐을까요? 허허. 과연 지금처럼 성공했겠습니까? 또 하나, 만약 도올 김용옥이 TV에서 강의하지 않고 그저 책만 쓰고 대학 강단에만 섰더라면 어떻게 됐을까요? 글쎄요. 공부를 그저 많이 했다는 사실만으로는 그만한 영향력을 확보할 수 없었을 겁니다.</p>
+<p>== 마치며 ==</p>
+<p>이와 같은 의미에서 제 얼개명은 &lsquo;디클로저&rsquo;입니다. 책마을이 위키위키 시스템이 아니라, 의도하는 모든 것을 보여드릴 수는 없겠지만, 사유화된 지식을 공유화 하는 사례를 하나 둘 쌓아가는 것만으로도 어느 정도 성공을 거둘 수 있지 않을까 조심스레 예측해 봅니다. 길었습니다. 읽어주셔서 감사합니다.</p>
+<p>== 나들이 갑니다 ==</p>
+<p>다음 주 이맘때까지 못옵니다. 나가서 밀린 와우나 좀 즐기고 와야겠습니다.</p>
+<p>병장 김지민
+마지막이 압권인데요.. 염장압권&hellip;</p>
+<p>농담이고요. 앞으로 정말 기대하겠습니다.
+멋져요 영목님! 간지난다 06-15</p>
+<p>상병 김현진
+좋은 글 잘 읽었습니다.</p>
+<p>아. 그런데 책에 대한 부분에서, &lsquo;지식을 공개하기를 원하지 않는다&rsquo;는 주장은 조금 무리가 있지 않을까요? 오히려 적극적으로 공개하되 &lsquo;자기 이름을 빼먹지 않는 것&rsquo;이 더 유리하잖아요. 지식의 창조에 대한 명성과 금전적 이익을 기반으로 다시 책을 쓸 수 있을 테니까요. 책 써서 먹고 사는 사람들은 유전자를 발견한 사람들하고는 다릅니다. 유전자의 사유화를 의도하는 자들은 인간의 목줄을 쥐고 돈을 뜯을 수 있지만, 책 써서 먹고 사는 사람들은 일단 인세만 잘 받으면 되니까요(&hellip;)</p>
+<p>그나저나, 그렇다면 역사적으로 책 팔아 근근이 먹고 살던 글쟁이들은 이제 어디서 밥줄을 찾아야 할까요&hellip; 06-16</p>
+<p>병장 김청하
+쳇. 대체 왜 이제 온 겁니까. 06-17</p>
+<p>병장 박수영
+흐흐 잘 읽었어요. 청하씨는 어서 밖으로 나가시죠. 저도 언젠가 따라가게(&hellip;). 저는 지민씨가 나가고 나서도 무려 100일을 더 마늘을 먹어야 사람이 되는데.. 06-18</p>
+<p>일병 정영목
+김지민// 아아.. 다시 왔습니다.</p>
+<p>김현진 님// 약간 말장난 같지만, 공개와 공유는 서로 다르다고 생각합니다. M$는 Windows를 &lsquo;공개&rsquo;해서 많은 사람들이 그것에 의존하도록 만들고 그럼으로써 돈을 벌지 않습니까? 이걸 &lsquo;공유&rsquo;라고는 할 수 없겠죠. 소스와 저작권은 사유화 된 상태니까요. 뭐, 말씀하신, &lsquo;자기 이름을 빼먹지 않는 것&rsquo;과 같은 맥락이네요.</p>
+<p>그리고, 저도, 안그래도 배고픈 글쟁이들이 지식을 좀 사유화 한다고 해서 뭐가 그리 문제가 될까 하는 생각이 들기도 합니다만, (아주 상투적으로 말해서) 이건 기회입니다. 글쟁이는 책보다 더 나은 매체로 자신의 지식을 전파할 수 있는 가능성을 맞이한 겁니다. 뭐랄까요. 이 시대에 시르크 뒤 솔레이유라는 회사가 서커스를 다시 부흥시킬 줄은 그 누가 알았겠습니까 - 물론 프랑스에 한정된 얘기입니다만. 블루오션에서 말하는 &lsquo;전략적 이동&rsquo;을 행하는 한, 기본적으로 &lsquo;사양 산업&rsquo;이란 없다고 생각해요.</p>
+<p>김청하 님// 저도, 제가, 지금, 그것도 이곳에, 있을라고는 생각 못했어요.</p>
+<p>박수영 님// 아직 많이 남으셨네요(하하). 06-21</p>
+<p>상병 김현진
+그럼에도, 책과 같은 지식의 경우 공개와 공유의 차이는 출판을 하느냐, 출판 전에 정보를 다 까발리느냐의 차이밖에 없지 않을까요. 어차피 내용 전체를 내보여야 하는 거니까요. 미리니름된 반전영화의 가치는 원래의 절반 이하입니다.</p>
+<p>그러니까 제가 하고 싶은 말은 인세로 먹고 사는 사람들은 좀 봐주면 안되냐는&hellip;.
+(&hellip;) 06-22</p>
+<p>일병 정영목
+무단 전제 및 발췌가 가능하고, 저작자 명시가 선택적이라면 공유라고 할 수 있겠네요. 단, 발췌한 글을 상업적으로 이용해선 안된다는 전제를 붙이고요. 컴퓨터 쪽에선 오픈 소스가 이미 그렇게 하고 있지요.</p>
+<p>저도 사실은 책이 좀 오래 살았으면 좋겠습니다. (땀) 06-23</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
+
+        <div class="site-footer">
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  
+
+<script>
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>
