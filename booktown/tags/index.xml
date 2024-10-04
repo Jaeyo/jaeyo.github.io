@@ -240,13 +240,6 @@
       <description></description>
     </item>
     <item>
-      <title>[독서후기]</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EB%8F%85%EC%84%9C%ED%9B%84%EA%B8%B0/</link>
-      <pubDate>Tue, 16 Jun 2009 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EB%8F%85%EC%84%9C%ED%9B%84%EA%B8%B0/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>심현주</title>
       <link>https://jaeyo.github.io/booktown/tags/%EC%8B%AC%ED%98%84%EC%A3%BC/</link>
       <pubDate>Tue, 16 Jun 2009 00:00:00 +0900</pubDate>
@@ -527,6 +520,13 @@
       <description></description>
     </item>
     <item>
+      <title>양현</title>
+      <link>https://jaeyo.github.io/booktown/tags/%EC%96%91%ED%98%84/</link>
+      <pubDate>Sat, 17 Jan 2009 00:00:00 +0900</pubDate>
+      <guid>https://jaeyo.github.io/booktown/tags/%EC%96%91%ED%98%84/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>조현식</title>
       <link>https://jaeyo.github.io/booktown/tags/%EC%A1%B0%ED%98%84%EC%8B%9D/</link>
       <pubDate>Fri, 16 Jan 2009 00:00:00 +0900</pubDate>
@@ -545,13 +545,6 @@
       <link>https://jaeyo.github.io/booktown/tags/%EB%B0%95%EC%9E%AC%EC%84%A0/</link>
       <pubDate>Fri, 09 Jan 2009 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%EB%B0%95%EC%9E%AC%EC%84%A0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> [칼럼]</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%B9%BC%EB%9F%BC/</link>
-      <pubDate>Thu, 08 Jan 2009 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%B9%BC%EB%9F%BC/</guid>
       <description></description>
     </item>
     <item>
@@ -660,13 +653,6 @@
       <description></description>
     </item>
     <item>
-      <title>김요셉(김남우)</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%9A%94%EC%85%89%EA%B9%80%EB%82%A8%EC%9A%B0/</link>
-      <pubDate>Mon, 27 Oct 2008 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%9A%94%EC%85%89%EA%B9%80%EB%82%A8%EC%9A%B0/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>김준호</title>
       <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%A4%80%ED%98%B8/</link>
       <pubDate>Mon, 27 Oct 2008 00:00:00 +0900</pubDate>
@@ -730,10 +716,10 @@
       <description></description>
     </item>
     <item>
-      <title>김지민(예)-</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%A7%80%EB%AF%BC%EC%98%88-/</link>
+      <title>김지민</title>
+      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%A7%80%EB%AF%BC/</link>
       <pubDate>Mon, 18 Feb 2008 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%A7%80%EB%AF%BC%EC%98%88-/</guid>
+      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%A7%80%EB%AF%BC/</guid>
       <description></description>
     </item>
     <item>
@@ -800,17 +786,17 @@
       <description></description>
     </item>
     <item>
-      <title> 헤드윅과</title>
-      <link>https://jaeyo.github.io/booktown/tags/%ED%97%A4%EB%93%9C%EC%9C%85%EA%B3%BC/</link>
-      <pubDate>Wed, 20 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%ED%97%A4%EB%93%9C%EC%9C%85%EA%B3%BC/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>강세희</title>
       <link>https://jaeyo.github.io/booktown/tags/%EA%B0%95%EC%84%B8%ED%9D%AC/</link>
       <pubDate>Wed, 20 Jun 2007 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%EA%B0%95%EC%84%B8%ED%9D%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>김광철</title>
+      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EA%B4%91%EC%B2%A0/</link>
+      <pubDate>Wed, 20 Jun 2007 00:00:00 +0900</pubDate>
+      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EA%B4%91%EC%B2%A0/</guid>
       <description></description>
     </item>
     <item>
@@ -821,10 +807,10 @@
       <description></description>
     </item>
     <item>
-      <title> 들뢰즈와</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EB%93%A4%EB%A2%B0%EC%A6%88%EC%99%80/</link>
+      <title>박수영</title>
+      <link>https://jaeyo.github.io/booktown/tags/%EB%B0%95%EC%88%98%EC%98%81/</link>
       <pubDate>Mon, 18 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EB%93%A4%EB%A2%B0%EC%A6%88%EC%99%80/</guid>
+      <guid>https://jaeyo.github.io/booktown/tags/%EB%B0%95%EC%88%98%EC%98%81/</guid>
       <description></description>
     </item>
     <item>
@@ -832,20 +818,6 @@
       <link>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EA%B1%B4%EB%A3%A1/</link>
       <pubDate>Mon, 18 Jun 2007 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EA%B1%B4%EB%A3%A1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>코드인간론.m</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%BD%94%EB%93%9C%EC%9D%B8%EA%B0%84%EB%A1%A0.m/</link>
-      <pubDate>Mon, 18 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%BD%94%EB%93%9C%EC%9D%B8%EA%B0%84%EB%A1%A0.m/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>나는</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EB%82%98%EB%8A%94/</link>
-      <pubDate>Fri, 15 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EB%82%98%EB%8A%94/</guid>
       <description></description>
     </item>
     <item>
@@ -863,62 +835,6 @@
       <description></description>
     </item>
     <item>
-      <title>박수영</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EB%B0%95%EC%88%98%EC%98%81/</link>
-      <pubDate>Sun, 10 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EB%B0%95%EC%88%98%EC%98%81/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>김지민</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%A7%80%EB%AF%BC/</link>
-      <pubDate>Fri, 08 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%A7%80%EB%AF%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> 도서</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EB%8F%84%EC%84%9C/</link>
-      <pubDate>Mon, 04 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EB%8F%84%EC%84%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> 유목주의란</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%9C%A0%EB%AA%A9%EC%A3%BC%EC%9D%98%EB%9E%80/</link>
-      <pubDate>Mon, 04 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%9C%A0%EB%AA%A9%EC%A3%BC%EC%9D%98%EB%9E%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>악(惡)에</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%95%85%E6%83%A1%EC%97%90/</link>
-      <pubDate>Mon, 04 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%95%85%E6%83%A1%EC%97%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>주제</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%A3%BC%EC%A0%9C/</link>
-      <pubDate>Mon, 04 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%A3%BC%EC%A0%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>S</title>
-      <link>https://jaeyo.github.io/booktown/tags/s/</link>
-      <pubDate>Fri, 01 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/s/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>이승일(예)-</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EC%8A%B9%EC%9D%BC%EC%98%88-/</link>
-      <pubDate>Fri, 01 Jun 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EC%8A%B9%EC%9D%BC%EC%98%88-/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>최후의</title>
       <link>https://jaeyo.github.io/booktown/tags/%EC%B5%9C%ED%9B%84%EC%9D%98/</link>
       <pubDate>Thu, 31 May 2007 00:00:00 +0900</pubDate>
@@ -926,24 +842,10 @@
       <description></description>
     </item>
     <item>
-      <title>폭력과</title>
-      <link>https://jaeyo.github.io/booktown/tags/%ED%8F%AD%EB%A0%A5%EA%B3%BC/</link>
-      <pubDate>Thu, 31 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%ED%8F%AD%EB%A0%A5%EA%B3%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> 어떤</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%96%B4%EB%96%A4/</link>
+      <title>김청하</title>
+      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%B2%AD%ED%95%98/</link>
       <pubDate>Sat, 26 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%96%B4%EB%96%A4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>그냥</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B7%B8%EB%83%A5/</link>
-      <pubDate>Sat, 26 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B7%B8%EB%83%A5/</guid>
+      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%B2%AD%ED%95%98/</guid>
       <description></description>
     </item>
     <item>
@@ -954,136 +856,10 @@
       <description></description>
     </item>
     <item>
-      <title>&#39;페다고지&#39;를</title>
-      <link>https://jaeyo.github.io/booktown/tags/%ED%8E%98%EB%8B%A4%EA%B3%A0%EC%A7%80%EB%A5%BC/</link>
-      <pubDate>Tue, 22 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%ED%8E%98%EB%8B%A4%EA%B3%A0%EC%A7%80%EB%A5%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>사랑과</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%82%AC%EB%9E%91%EA%B3%BC/</link>
-      <pubDate>Tue, 22 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%82%AC%EB%9E%91%EA%B3%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>안녕,</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%95%88%EB%85%95/</link>
-      <pubDate>Tue, 22 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%95%88%EB%85%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;죄와</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%A3%84%EC%99%80/</link>
-      <pubDate>Fri, 18 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%A3%84%EC%99%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>연가</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%97%B0%EA%B0%80/</link>
-      <pubDate>Thu, 17 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%97%B0%EA%B0%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>인간관계에</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EC%97%90/</link>
-      <pubDate>Thu, 17 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EC%97%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>[낚시]</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EB%82%9A%EC%8B%9C/</link>
-      <pubDate>Mon, 14 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EB%82%9A%EC%8B%9C/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>김현동</title>
       <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%ED%98%84%EB%8F%99/</link>
       <pubDate>Mon, 14 May 2007 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%ED%98%84%EB%8F%99/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>진실과</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%A7%84%EC%8B%A4%EA%B3%BC/</link>
-      <pubDate>Fri, 11 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%A7%84%EC%8B%A4%EA%B3%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> 진정한</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%A7%84%EC%A0%95%ED%95%9C/</link>
-      <pubDate>Tue, 08 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%A7%84%EC%A0%95%ED%95%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;권태&gt;</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B6%8C%ED%83%9C/</link>
-      <pubDate>Tue, 08 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B6%8C%ED%83%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>자전거로</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%9E%90%EC%A0%84%EA%B1%B0%EB%A1%9C/</link>
-      <pubDate>Wed, 02 May 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%9E%90%EC%A0%84%EA%B1%B0%EB%A1%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>승일씨께_</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%8A%B9%EC%9D%BC%EC%94%A8%EA%BB%98_/</link>
-      <pubDate>Mon, 30 Apr 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%8A%B9%EC%9D%BC%EC%94%A8%EA%BB%98_/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> 『사상의</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%82%AC%EC%83%81%EC%9D%98/</link>
-      <pubDate>Thu, 26 Apr 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%82%AC%EC%83%81%EC%9D%98/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>치과</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%B9%98%EA%B3%BC/</link>
-      <pubDate>Thu, 19 Apr 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%B9%98%EA%B3%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>고래</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B3%A0%EB%9E%98/</link>
-      <pubDate>Fri, 13 Apr 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B3%A0%EB%9E%98/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>해리포터와</title>
-      <link>https://jaeyo.github.io/booktown/tags/%ED%95%B4%EB%A6%AC%ED%8F%AC%ED%84%B0%EC%99%80/</link>
-      <pubDate>Tue, 10 Apr 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%ED%95%B4%EB%A6%AC%ED%8F%AC%ED%84%B0%EC%99%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Show</title>
-      <link>https://jaeyo.github.io/booktown/tags/show/</link>
-      <pubDate>Mon, 09 Apr 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/show/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>김광철</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EA%B4%91%EC%B2%A0/</link>
-      <pubDate>Tue, 03 Apr 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EA%B4%91%EC%B2%A0/</guid>
       <description></description>
     </item>
     <item>
@@ -1094,51 +870,9 @@
       <description></description>
     </item>
     <item>
-      <title>인간은</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%9D%B8%EA%B0%84%EC%9D%80/</link>
-      <pubDate>Mon, 26 Mar 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%9D%B8%EA%B0%84%EC%9D%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> &#39;아프락시아&#39;</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%95%84%ED%94%84%EB%9D%BD%EC%8B%9C%EC%95%84/</link>
-      <pubDate>Sat, 24 Mar 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%95%84%ED%94%84%EB%9D%BD%EC%8B%9C%EC%95%84/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>황민우(예)-</title>
-      <link>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0%EC%98%88-/</link>
-      <pubDate>Wed, 07 Mar 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0%EC%98%88-/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>정영목-</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%A0%95%EC%98%81%EB%AA%A9-/</link>
-      <pubDate>Fri, 02 Mar 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%A0%95%EC%98%81%EB%AA%A9-/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>이냐리투에</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EB%83%90%EB%A6%AC%ED%88%AC%EC%97%90/</link>
-      <pubDate>Thu, 01 Mar 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EB%83%90%EB%A6%AC%ED%88%AC%EC%97%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>김청하(예)</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%B2%AD%ED%95%98%EC%98%88/</link>
-      <pubDate>Thu, 22 Feb 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%B2%AD%ED%95%98%EC%98%88/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>황민우</title>
       <link>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0/</link>
-      <pubDate>Tue, 20 Feb 2007 00:00:00 +0900</pubDate>
+      <pubDate>Wed, 07 Mar 2007 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0/</guid>
       <description></description>
     </item>
@@ -1150,24 +884,10 @@
       <description></description>
     </item>
     <item>
-      <title>이영기(예)-</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EC%98%81%EA%B8%B0%EC%98%88-/</link>
-      <pubDate>Wed, 24 Jan 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EC%9D%B4%EC%98%81%EA%B8%B0%EC%98%88-/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>대칭에</title>
       <link>https://jaeyo.github.io/booktown/tags/%EB%8C%80%EC%B9%AD%EC%97%90/</link>
       <pubDate>Thu, 18 Jan 2007 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%EB%8C%80%EC%B9%AD%EC%97%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>김청하</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%B2%AD%ED%95%98/</link>
-      <pubDate>Wed, 17 Jan 2007 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B9%80%EC%B2%AD%ED%95%98/</guid>
       <description></description>
     </item>
     <item>
@@ -1346,20 +1066,6 @@
       <description></description>
     </item>
     <item>
-      <title>황민우(예)</title>
-      <link>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0%EC%98%88/</link>
-      <pubDate>Sun, 13 Aug 2006 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0%EC%98%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>황민우(예)-푸른꽃의</title>
-      <link>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0%EC%98%88-%ED%91%B8%EB%A5%B8%EA%BD%83%EC%9D%98/</link>
-      <pubDate>Sun, 13 Aug 2006 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%ED%99%A9%EB%AF%BC%EC%9A%B0%EC%98%88-%ED%91%B8%EB%A5%B8%EA%BD%83%EC%9D%98/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>고계영</title>
       <link>https://jaeyo.github.io/booktown/tags/%EA%B3%A0%EA%B3%84%EC%98%81/</link>
       <pubDate>Tue, 08 Aug 2006 00:00:00 +0900</pubDate>
@@ -1406,13 +1112,6 @@
       <link>https://jaeyo.github.io/booktown/tags/%EB%A7%88%EC%84%B1%EC%9D%80/</link>
       <pubDate>Tue, 25 Jul 2006 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%EB%A7%88%EC%84%B1%EC%9D%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> 그녀는</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EA%B7%B8%EB%85%80%EB%8A%94/</link>
-      <pubDate>Fri, 21 Jul 2006 00:00:00 +0900</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EA%B7%B8%EB%85%80%EB%8A%94/</guid>
       <description></description>
     </item>
     <item>
@@ -1595,13 +1294,6 @@
       <link>https://jaeyo.github.io/booktown/tags/%EC%86%90%EB%8F%99%EC%B2%A0/</link>
       <pubDate>Wed, 21 Sep 2005 00:00:00 +0900</pubDate>
       <guid>https://jaeyo.github.io/booktown/tags/%EC%86%90%EB%8F%99%EC%B2%A0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title> 단상.</title>
-      <link>https://jaeyo.github.io/booktown/tags/%EB%8B%A8%EC%83%81./</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jaeyo.github.io/booktown/tags/%EB%8B%A8%EC%83%81./</guid>
       <description></description>
     </item>
   </channel>
