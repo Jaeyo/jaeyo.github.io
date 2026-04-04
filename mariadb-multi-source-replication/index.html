@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.121.1">
+  <meta name="generator" content="Hugo 0.157.0">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Jaeyong" />
+  <meta name="author" content="" />
   <meta property="og:url" content="http://jaeyo.github.io/mariadb-multi-source-replication/" />
   <link rel="canonical" href="http://jaeyo.github.io/mariadb-multi-source-replication/" /><link rel="alternate" type="application/atom+xml" href="http://jaeyo.github.io/index.xml" title="Hello, There">
 
@@ -24,13 +24,13 @@
       "articleSection" : "posts",
       "name" : "mariadb multi source replication",
       "headline" : "mariadb multi source replication",
-      "description" : "multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.\n# \/etc\/mysql\/maridb.conf.d\/50-server.cnf [mysqld] server_id=19823759 # master와 겹치지 않게 replicate-ignore-db=mysql # mysql 데이터베이스는 복제하지 않음 master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다\ngrant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’; mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.\nmysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p \u0026gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다.",
+      "description" : "multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.\n# \/etc\/mysql\/maridb.conf.d\/50-server.cnf [mysqld] server_id=19823759 # master와 겹치지 않게 replicate-ignore-db=mysql # mysql 데이터베이스는 복제하지 않음 master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다\ngrant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’; mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.\nmysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p \u0026gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다. 그러면 덤프 파일 상단에 change master … 구문이 생성되는데 multi source 로부터 replication 을 받아야 하기 때문에 아래와 같이 수정해준다.\n",
       "inLanguage" : "en-US",
-      "author" : "Jaeyong",
-      "creator" : "Jaeyong",
-      "publisher": "Jaeyong",
-      "accountablePerson" : "Jaeyong",
-      "copyrightHolder" : "Jaeyong",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
       "copyrightYear" : "2017",
       "datePublished": "2017-04-28 17:51:00 \u002b0000 UTC",
       "dateModified" : "2017-04-28 17:51:00 \u002b0000 UTC",
@@ -44,12 +44,14 @@
   <meta property="og:description" content="multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.
 # /etc/mysql/maridb.conf.d/50-server.cnf [mysqld] server_id=19823759 # master와 겹치지 않게 replicate-ignore-db=mysql # mysql 데이터베이스는 복제하지 않음 master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다
 grant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’; mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.
-mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &amp;gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다." />
+mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다. 그러면 덤프 파일 상단에 change master … 구문이 생성되는데 multi source 로부터 replication 을 받아야 하기 때문에 아래와 같이 수정해준다.
+" />
   <meta name="description" content="multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.
 # /etc/mysql/maridb.conf.d/50-server.cnf [mysqld] server_id=19823759 # master와 겹치지 않게 replicate-ignore-db=mysql # mysql 데이터베이스는 복제하지 않음 master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다
 grant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’; mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.
-mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &amp;gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다." />
-  <meta property="og:locale" content="ko" /><meta property="og:image" content="" />
+mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다. 그러면 덤프 파일 상단에 change master … 구문이 생성되는데 multi source 로부터 replication 을 받아야 하기 때문에 아래와 같이 수정해준다.
+" />
+  <meta property="og:locale" content="ko-KR" /><meta property="og:image" content="" />
   
 
   
@@ -160,10 +162,6 @@ li {
             </div>
             <div class="col-xs-6">
               
-              <div class="post-author">
-                <a target="_blank" href="https://jaeyo.github.io/">@Jaeyong</a>
-              </div>
-              
             </div>
           </div>
           
@@ -173,30 +171,30 @@ li {
           
           <h2 id="multi-source-replication-절차">multi source replication 절차</h2>
 <p>slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="font-style:italic"># /etc/mysql/maridb.conf.d/50-server.cnf</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="font-style:italic"># /etc/mysql/maridb.conf.d/50-server.cnf</span>
 </span></span><span style="display:flex;"><span>[mysqld]
 </span></span><span style="display:flex;"><span>server_id=19823759 <span style="font-style:italic"># master와 겹치지 않게</span>
 </span></span><span style="display:flex;"><span>replicate-ignore-db=mysql <span style="font-style:italic"># mysql 데이터베이스는 복제하지 않음</span>
 </span></span></code></pre></div><p>master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’;
 </span></span></code></pre></div><p>mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &gt; dump.sql
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p &gt; dump.sql
 </span></span></code></pre></div><p>락이 걸리는 걸 방지하기 위해 <code>—single-transaction</code> 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 <code>—master-data=1</code> 옵션 추가한다. 그러면 덤프 파일 상단에 <code>change master … </code> 구문이 생성되는데 multi source 로부터 replication 을 받아야 하기 때문에 아래와 같이 수정해준다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>CHANGE MASTER <span style="font-style:italic">&#39;master_name&#39;</span> TO
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>CHANGE MASTER <span style="font-style:italic">&#39;master_name&#39;</span> TO
 </span></span><span style="display:flex;"><span>master_host=<span style="font-style:italic">&#39;host_path&#39;</span>,
 </span></span><span style="display:flex;"><span>master_user=<span style="font-style:italic">&#39;account&#39;</span>,
 </span></span><span style="display:flex;"><span>master_password=<span style="font-style:italic">&#39;password&#39;</span>,
 </span></span><span style="display:flex;"><span>master_port=3306,
 </span></span><span style="display:flex;"><span>MASTER_LOG_FILE=<span style="font-style:italic">&#39;mysql-bin-changelog.052616&#39;</span>, MASTER_LOG_POS=886626; <span style="font-style:italic"># dump에 기록된 그대로 유지</span>
 </span></span></code></pre></div><p>만약 덤프 파일이 너무 커서 수정하기가 힘든 경우 아래와 같이 파일을 잘라서 수정한 후에 합치는 방법을 사용할 수 있다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>head -n 30 dump.sql &gt; new_dump.sql
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>head -n 30 dump.sql &gt; new_dump.sql
 </span></span><span style="display:flex;"><span>vim new_dump.sql
 </span></span><span style="display:flex;"><span>tail -n +30 dump.sql &gt;&gt; new_dump.sql
 </span></span></code></pre></div><p>slave가 될 데이터베이스에 덤프를 밀어넣는다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -h hostpath -u account -p database_name &lt; dump.sql
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mysql -h hostpath -u account -p database_name &lt; dump.sql
 </span></span></code></pre></div><p>여기서 database_name은 덤프 내 여러개의 데이터베이스가 담겨 있다고 해도 그 중 하나만 지정해도 되지만 지정된 데이터베이스는 미리 생성되어 있어야 한다.</p>
 <p>replication 스레드를 시작시킨다:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="font-weight:bold">start</span> slave <span style="font-style:italic">&#39;master_name&#39;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="font-weight:bold">start</span> slave <span style="font-style:italic">&#39;master_name&#39;</span>
 </span></span></code></pre></div><h2 id="기타-유의사항">기타 유의사항</h2>
 <ul>
 <li>replication 설정을 위해서는 super previleges가 필요한데 aws rds를 이용하면 일반 사용자가 super previleges를 가질 수 없다.</li>

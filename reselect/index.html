@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.121.1">
+  <meta name="generator" content="Hugo 0.157.0">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Jaeyong" />
+  <meta name="author" content="" />
   <meta property="og:url" content="http://jaeyo.github.io/reselect/" />
   <link rel="canonical" href="http://jaeyo.github.io/reselect/" /><link rel="alternate" type="application/atom+xml" href="http://jaeyo.github.io/index.xml" title="Hello, There">
 
@@ -24,13 +24,13 @@
       "articleSection" : "posts",
       "name" : "reselect",
       "headline" : "reselect",
-      "description" : "https:\/\/github.com\/reactjs\/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.\n컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상 가령 아래와 같은 코드가 있다고 가정하면,\nconst mapStateToProps = (state, ownProps) =\u0026gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.\n\/\/ selector const getUserContent = state =\u0026gt; state.",
+      "description" : " https:\/\/github.com\/reactjs\/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.\n컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상 가령 아래와 같은 코드가 있다고 가정하면,\nconst mapStateToProps = (state, ownProps) =\u0026gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.\n\/\/ selector const getUserContent = state =\u0026gt; state.userContent; const selectUserContentIds = createSelector( [ getUserContent ], \/\/ input selector userContent =\u0026gt; userContent.contentIds ); \/\/component const mapStateToProps = (state, ownProps) =\u0026gt; ({ contentIds: selectUserContentIds(state), }); 이러한 형태에서 먼저 눈에 띄는 장점은 컴포넌트 단에서 redux store의 구조를 알 필요없이 selector 만 호출할 수 있다는 점이다. 이외에도 reselect는 memoized selector 를 통해서 성능 향상을 꾀할 수 있다.\n",
       "inLanguage" : "en-US",
-      "author" : "Jaeyong",
-      "creator" : "Jaeyong",
-      "publisher": "Jaeyong",
-      "accountablePerson" : "Jaeyong",
-      "copyrightHolder" : "Jaeyong",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
       "copyrightYear" : "2018",
       "datePublished": "2018-10-06 11:44:00 \u002b0000 UTC",
       "dateModified" : "2018-10-06 11:44:00 \u002b0000 UTC",
@@ -41,15 +41,17 @@
 <title>reselect</title>
   <meta property="og:title" content="reselect" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="https://github.com/reactjs/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
+  <meta property="og:description" content=" https://github.com/reactjs/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상 가령 아래와 같은 코드가 있다고 가정하면,
-const mapStateToProps = (state, ownProps) =&amp;gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
-// selector const getUserContent = state =&amp;gt; state." />
-  <meta name="description" content="https://github.com/reactjs/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
+const mapStateToProps = (state, ownProps) =&gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
+// selector const getUserContent = state =&gt; state.userContent; const selectUserContentIds = createSelector( [ getUserContent ], // input selector userContent =&gt; userContent.contentIds ); //component const mapStateToProps = (state, ownProps) =&gt; ({ contentIds: selectUserContentIds(state), }); 이러한 형태에서 먼저 눈에 띄는 장점은 컴포넌트 단에서 redux store의 구조를 알 필요없이 selector 만 호출할 수 있다는 점이다. 이외에도 reselect는 memoized selector 를 통해서 성능 향상을 꾀할 수 있다.
+" />
+  <meta name="description" content=" https://github.com/reactjs/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.
 컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상 가령 아래와 같은 코드가 있다고 가정하면,
-const mapStateToProps = (state, ownProps) =&amp;gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
-// selector const getUserContent = state =&amp;gt; state." />
-  <meta property="og:locale" content="ko" /><meta property="og:image" content="" />
+const mapStateToProps = (state, ownProps) =&gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.
+// selector const getUserContent = state =&gt; state.userContent; const selectUserContentIds = createSelector( [ getUserContent ], // input selector userContent =&gt; userContent.contentIds ); //component const mapStateToProps = (state, ownProps) =&gt; ({ contentIds: selectUserContentIds(state), }); 이러한 형태에서 먼저 눈에 띄는 장점은 컴포넌트 단에서 redux store의 구조를 알 필요없이 selector 만 호출할 수 있다는 점이다. 이외에도 reselect는 memoized selector 를 통해서 성능 향상을 꾀할 수 있다.
+" />
+  <meta property="og:locale" content="ko-KR" /><meta property="og:image" content="" />
   
 
   
@@ -160,10 +162,6 @@ li {
             </div>
             <div class="col-xs-6">
               
-              <div class="post-author">
-                <a target="_blank" href="https://jaeyo.github.io/">@Jaeyong</a>
-              </div>
-              
             </div>
           </div>
           
@@ -172,7 +170,7 @@ li {
         <div class="post-content markdown-body">
           
           <ul>
-<li><a href="reselect">https://github.com/reactjs/reselect</a></li>
+<li><a href="/reselect/">https://github.com/reactjs/reselect</a></li>
 </ul>
 <p>reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.</p>
 <ol>
@@ -180,30 +178,30 @@ li {
 <li>selector 함수에서 반환되는 값을 캐싱하여 성능 향상</li>
 </ol>
 <p>가령 아래와 같은 코드가 있다고 가정하면,</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; {
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; {
 </span></span><span style="display:flex;"><span>	<span style="font-weight:bold">const</span> { contentIds } = state.userContent;
 </span></span><span style="display:flex;"><span>	<span style="font-weight:bold">return</span> {
 </span></span><span style="display:flex;"><span>		contentIds,
 </span></span><span style="display:flex;"><span>	};
 </span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div><p>reselect를 붙여 아래와 같은 형태로 정리할 수 있다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// selector
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">const</span> getUserContent = state =&gt; state.userContent;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// selector
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> getUserContent = state =&gt; state.userContent;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> selectUserContentIds = createSelector(
 </span></span><span style="display:flex;"><span>	[ getUserContent ], <span style="font-style:italic">// input selector
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>	userContent =&gt; userContent.contentIds
+</span></span></span><span style="display:flex;"><span>	userContent =&gt; userContent.contentIds
 </span></span><span style="display:flex;"><span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-style:italic">//component
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; ({
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; ({
 </span></span><span style="display:flex;"><span>	contentIds: selectUserContentIds(state),
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>이러한 형태에서 먼저 눈에 띄는 장점은 컴포넌트 단에서 redux store의 구조를 알 필요없이 selector 만 호출할 수 있다는 점이다.
 이외에도 reselect는 memoized selector 를 통해서 성능 향상을 꾀할 수 있다.</p>
 <p>여기서 주의할 점은, 만약 리스트 형태의 컴포넌트에서 selector를 사용할 경우 각 리스트 아이템마다 필요로 하는 데이터가 다르게 되기 떄문에 정상적으로 memoized 되지 않는다는 점이다. 이 경우에는 selector를 생성하는 로직을 함수로 한번 래핑하여 각 리스트 아이템들마다 다른 selector를 사용하도록 해야 한다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// selector
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">const</span> getUserContent = state =&gt; state.favoriteContent;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// selector
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> getUserContent = state =&gt; state.favoriteContent;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> selectTitleByContentId = (state, contentId) =&gt; createSelector(
 </span></span><span style="display:flex;"><span>	[ getUserContent ],
@@ -211,18 +209,18 @@ li {
 </span></span><span style="display:flex;"><span>)(state);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-style:italic">// list item component
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; ({
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; ({
 </span></span><span style="display:flex;"><span>	title: selectTitleByContentId(state, ownProps.contentId),
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>reselect의 또다른 특징으로는 composable 하다는 점이다.
 아래의 경우처럼 미리 만들어놓은 selector가 다른 selector의 input selector가 될 수 있어 selector들을 조합하는 것이 가능하다.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// selector
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">const</span> getUserContent = state =&gt; state.userContent;
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// selector
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> getUserContent = state =&gt; state.userContent;
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> getEntities = state =&gt; state.entities;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> selectUserContentIds = createSelector(
 </span></span><span style="display:flex;"><span>	[ getUserContent ], <span style="font-style:italic">// input selector
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>	userContent =&gt; userContent.contentIds
+</span></span></span><span style="display:flex;"><span>	userContent =&gt; userContent.contentIds
 </span></span><span style="display:flex;"><span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> selectUserContents = createSelector(
@@ -231,7 +229,7 @@ li {
 </span></span><span style="display:flex;"><span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="font-style:italic">//component
-</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; ({
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold">const</span> mapStateToProps = (state, ownProps) =&gt; ({
 </span></span><span style="display:flex;"><span>	contents: selectUserContents(state),
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div>
