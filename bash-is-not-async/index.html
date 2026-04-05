@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.157.0">
@@ -8,10 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
   <meta property="og:url" content="http://jaeyo.github.io/bash-is-not-async/" />
-  <link rel="canonical" href="http://jaeyo.github.io/bash-is-not-async/" /><link rel="alternate" type="application/atom+xml" href="http://jaeyo.github.io/index.xml" title="Hello, There">
-
-  
+  <link rel="canonical" href="http://jaeyo.github.io/bash-is-not-async/" />
   <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/bash-is-not-async/" />
+  
+  <link rel="alternate" hreflang="en" href="http://jaeyo.github.io/en/bash-is-not-async/" />
+  
 
   <script type="application/ld+json">
   {
@@ -25,7 +26,7 @@
       "name" : "오늘의 삽질 - 괜히 Bash 만 의심했다.",
       "headline" : "오늘의 삽질 - 괜히 Bash 만 의심했다.",
       "description" : "회사에서 만들어놓은 쉘 스크립트가 있었다. 필요한 패키지를 다운로드받아 설치하고 설정파일을 고치고 systemctl 로 띄우는 내용의 스크립트로 대략적인 모양새는 아래와 같다.\ninstall_blabla() { dest=$(mktemp \/tmp\/blabla_XXXX.deb) curl -fsSL http:\/\/blabla.com\/blabla.deb -o $dest dpkg -i $dest rm -f $dest } install_conf() { curl -fsSL http:\/\/blabla.com\/blabla.conf -o \/etc\/blabla\/blabla.conf sed -i -e \u0026#34;...\u0026#34; \/etc\/blabla\/blabla.conf } start_blabla() { systemctl start blabla } do_install() { install_blabla install_conf start_blabla } do_install 위의 스크립트에 따르면 아래의 로직을 타게 된다.\n",
-      "inLanguage" : "en-US",
+      "inLanguage" : "ko-KR",
       "author" : "",
       "creator" : "",
       "publisher": "",
@@ -111,8 +112,7 @@ li {
     <div class="row">
       <div class="col-xs-12">
         <div class="site-header">
-          
-<header>
+          <header>
   <div class="header-title">
     <a href="/"
       >Hello, There</a
@@ -140,6 +140,14 @@ li {
   
 </div>
 <div class="row end-xs">
+  
+  
+  
+  
+  <div class="lang-switch col-xs-3 col-xs-offset-9">
+    <a href="/en/bash-is-not-async/">English</a>
+  </div>
+  
   
 </div>
 <div class="header-line"></div>

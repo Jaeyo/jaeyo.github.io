@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.157.0">
@@ -8,10 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
   <meta property="og:url" content="http://jaeyo.github.io/reselect/" />
-  <link rel="canonical" href="http://jaeyo.github.io/reselect/" /><link rel="alternate" type="application/atom+xml" href="http://jaeyo.github.io/index.xml" title="Hello, There">
-
-  
+  <link rel="canonical" href="http://jaeyo.github.io/reselect/" />
   <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/reselect/" />
+  
+  <link rel="alternate" hreflang="en" href="http://jaeyo.github.io/en/reselect/" />
+  
 
   <script type="application/ld+json">
   {
@@ -25,7 +26,7 @@
       "name" : "reselect",
       "headline" : "reselect",
       "description" : " https:\/\/github.com\/reactjs\/reselect reselect는 redux에 붙여서 쓸 수 있는 selector 라이브러리로 역할은 아래의 두 가지로 정리된다.\n컴포넌트를 redux에 connect 시킬 때 store로부터 데이터를 꺼내와서 매핑시키는 부분 추상화 selector 함수에서 반환되는 값을 캐싱하여 성능 향상 가령 아래와 같은 코드가 있다고 가정하면,\nconst mapStateToProps = (state, ownProps) =\u0026gt; { const { contentIds } = state.userContent; return { contentIds, }; }; reselect를 붙여 아래와 같은 형태로 정리할 수 있다.\n\/\/ selector const getUserContent = state =\u0026gt; state.userContent; const selectUserContentIds = createSelector( [ getUserContent ], \/\/ input selector userContent =\u0026gt; userContent.contentIds ); \/\/component const mapStateToProps = (state, ownProps) =\u0026gt; ({ contentIds: selectUserContentIds(state), }); 이러한 형태에서 먼저 눈에 띄는 장점은 컴포넌트 단에서 redux store의 구조를 알 필요없이 selector 만 호출할 수 있다는 점이다. 이외에도 reselect는 memoized selector 를 통해서 성능 향상을 꾀할 수 있다.\n",
-      "inLanguage" : "en-US",
+      "inLanguage" : "ko-KR",
       "author" : "",
       "creator" : "",
       "publisher": "",
@@ -115,8 +116,7 @@ li {
     <div class="row">
       <div class="col-xs-12">
         <div class="site-header">
-          
-<header>
+          <header>
   <div class="header-title">
     <a href="/"
       >Hello, There</a
@@ -144,6 +144,14 @@ li {
   
 </div>
 <div class="row end-xs">
+  
+  
+  
+  
+  <div class="lang-switch col-xs-3 col-xs-offset-9">
+    <a href="/en/reselect/">English</a>
+  </div>
+  
   
 </div>
 <div class="header-line"></div>

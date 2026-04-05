@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>trouble shooting on Hello, There</title>
+    <title>Trouble Shooting on Hello, There</title>
     <link>http://jaeyo.github.io/en/tags/trouble-shooting/</link>
-    <description>Recent content in trouble shooting on Hello, There</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Trouble Shooting on Hello, There</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 05 Feb 2021 07:00:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/trouble-shooting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 07:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/trouble-shooting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL won&#39;t give me the data</title>
       <link>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</link>
       <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</guid>
-      <description>One of our team members reached out to me for help: a bug in the code she&amp;rsquo;s working on and she&amp;rsquo;s not sure what&amp;rsquo;s causing it.
-Here&amp;rsquo;s what happened
-There is a query that is running periodically to fetch data, and the logs are recording how many times it fetches data, but it keeps returning zero data as a result of the query.
-Strangely, when I run that query directly through the database tool, I get two data hits.</description>
+      <description>&lt;p&gt;One of my teammates reached out for help. There was a bug in some code they were modifying, and they had no idea what was causing it.&lt;/p&gt;&#xA;&lt;p&gt;Here’s what happened.&lt;/p&gt;&#xA;&lt;p&gt;There was a query that ran periodically to fetch data, and the logs recorded how many rows it returned. The problem was that it kept coming back with zero rows.&lt;/p&gt;&#xA;&lt;p&gt;Strangely, when I ran the exact same query directly in a database tool, I got two rows back.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Today&#39;s Rabbit Hole: I Blamed Bash for Nothing.</title>
+      <link>http://jaeyo.github.io/en/bash-is-not-async/</link>
+      <pubDate>Tue, 13 Aug 2019 01:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/bash-is-not-async/</guid>
+      <description>&lt;p&gt;At work, there was a shell script someone had written. It downloaded and installed the packages we needed, adjusted config files, and brought the service up with &lt;code&gt;systemctl&lt;/code&gt;. Roughly, it looked like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;install_blabla() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;dest=&lt;span style=&#34;font-weight:bold&#34;&gt;$(&lt;/span&gt;mktemp /tmp/blabla_XXXX.deb&lt;span style=&#34;font-weight:bold&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;curl -fsSL http://blabla.com/blabla.deb -o $dest&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;dpkg -i $dest&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;rm -f $dest&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;install_conf() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;sed -i -e &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt; /etc/blabla/blabla.conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;start_blabla() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;systemctl start blabla&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;do_install() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;install_blabla&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;install_conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;start_blabla&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;do_install&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you follow that script, the flow is:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Too Many Open Files</title>
+      <link>http://jaeyo.github.io/en/too-many-open-files/</link>
+      <pubDate>Tue, 25 Apr 2017 19:25:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/too-many-open-files/</guid>
+      <description>&lt;p&gt;I was at home strumming the guitar when a message came in saying my wife was on her way back. I grabbed my phone to go meet her at the subway station near our place, but I noticed Slack was piled up with notifications. We use Slack for team chat, so I opened it without thinking. In the channel that lights up whenever something goes wrong with the servers, several new messages were waiting. My heart skipped. When I looked more closely, I saw that a few different errors had fired over and over.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Where Did These Requests Come From?</title>
+      <link>http://jaeyo.github.io/en/weird-requests/</link>
+      <pubDate>Tue, 25 Apr 2017 12:00:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/weird-requests/</guid>
+      <description>&lt;p&gt;When we launched a new service, we adopted AWS CloudWatch for server monitoring. Until the very end we had weighed CloudWatch against New Relic. New Relic had more features and stronger references, but the agent refused to install on some of our servers. If we had had more time, we probably could have resolved that. But launch was right around the corner, and CloudWatch covered most of what we needed, so we went with CloudWatch.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.157.0">
@@ -8,10 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
   <meta property="og:url" content="http://jaeyo.github.io/mariadb-multi-source-replication/" />
-  <link rel="canonical" href="http://jaeyo.github.io/mariadb-multi-source-replication/" /><link rel="alternate" type="application/atom+xml" href="http://jaeyo.github.io/index.xml" title="Hello, There">
-
-  
+  <link rel="canonical" href="http://jaeyo.github.io/mariadb-multi-source-replication/" />
   <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/mariadb-multi-source-replication/" />
+  
+  <link rel="alternate" hreflang="en" href="http://jaeyo.github.io/en/mariadb-multi-source-replication/" />
+  
 
   <script type="application/ld+json">
   {
@@ -25,7 +26,7 @@
       "name" : "mariadb multi source replication",
       "headline" : "mariadb multi source replication",
       "description" : "multi source replication 절차 slave가 될 mysql 인스턴스의 설정에 아래의 부분을 추가한다.\n# \/etc\/mysql\/maridb.conf.d\/50-server.cnf [mysqld] server_id=19823759 # master와 겹치지 않게 replicate-ignore-db=mysql # mysql 데이터베이스는 복제하지 않음 master 데이터베이스에서 replication 용 계정 생성 후 권한을 부여한다\ngrant replication slave on *.* to ‘repl’@‘%’ identified by ‘!repl123’; mysqldump 를 이용해서 master가 될 데이터베이스에서 덤프를 받는다.\nmysqldump --databases database_1 database_2 --single_transaction --master-data=1 -h host_path -u account -p \u0026gt; dump.sql 락이 걸리는 걸 방지하기 위해 —single-transaction 옵션 추가해야 하며, 덤프를 받은 시점의 binlog 파일과 포지션을 확인하기 위해 —master-data=1 옵션 추가한다. 그러면 덤프 파일 상단에 change master … 구문이 생성되는데 multi source 로부터 replication 을 받아야 하기 때문에 아래와 같이 수정해준다.\n",
-      "inLanguage" : "en-US",
+      "inLanguage" : "ko-KR",
       "author" : "",
       "creator" : "",
       "publisher": "",
@@ -115,8 +116,7 @@ li {
     <div class="row">
       <div class="col-xs-12">
         <div class="site-header">
-          
-<header>
+          <header>
   <div class="header-title">
     <a href="/"
       >Hello, There</a
@@ -144,6 +144,14 @@ li {
   
 </div>
 <div class="row end-xs">
+  
+  
+  
+  
+  <div class="lang-switch col-xs-3 col-xs-offset-9">
+    <a href="/en/mariadb-multi-source-replication/">English</a>
+  </div>
+  
   
 </div>
 <div class="header-line"></div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.157.0">
@@ -8,10 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
   <meta property="og:url" content="http://jaeyo.github.io/error-while-building-qmk_firmware/" />
-  <link rel="canonical" href="http://jaeyo.github.io/error-while-building-qmk_firmware/" /><link rel="alternate" type="application/atom+xml" href="http://jaeyo.github.io/index.xml" title="Hello, There">
-
-  
+  <link rel="canonical" href="http://jaeyo.github.io/error-while-building-qmk_firmware/" />
   <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/error-while-building-qmk_firmware/" />
+  
+  <link rel="alternate" hreflang="en" href="http://jaeyo.github.io/en/error-while-building-qmk_firmware/" />
+  
 
   <script type="application/ld+json">
   {
@@ -25,7 +26,7 @@
       "name" : "qmk_firmware 빌드 시에 chibios 관련 에러 발생",
       "headline" : "qmk_firmware 빌드 시에 chibios 관련 에러 발생",
       "description" : "qmk_firmware는 programmable한 여러 키보드들을 지원하는 오픈소스 펌웨어다. 이 펌웨어가 지원하는 대표적인 키보드는 planck, ergodox 등이 있다. documentation 및 자세한 정보는 https:\/\/qmk.fm\/ 에서 확인할 수 있다. 처음 이 소스를 clone 받아서 빌드를 하기 위해서 documentation을 보면 아래와 같이 가이드를 해준다.\n$ make \u0026lt;my_keyboard\u0026gt;:\u0026lt;my_keymap\u0026gt; 하지만 그대로 따라치면 아래와 같은 에러를 볼 수 있다.\n$ make ergodo_infinity:default tmk_core\/chibios.mk:38: lib\/chibios-contrib\/os\/common\/startup\/ARMCMx\/compilers\/GCC\/mk\/startup_k20x7.mk: No such file or directory tmk_core\/chibios.mk:40: lib\/chibios\/os\/hal\/hal.mk: No such file or directory tmk_core\/chibios.mk:46: lib\/chibios-contrib\/os\/hal\/ports\/KINETIS\/K20x\/platform.mk: No such file or directory tmk_core\/chibios.mk:78: lib\/chibios-contrib\/os\/hal\/boards\/PJRC_TEENSY_3_1\/board.mk: No such file or directory tmk_core\/chibios.mk:79: lib\/chibios\/os\/hal\/osal\/rt\/osal.mk: No such file or directory tmk_core\/chibios.mk:81: lib\/chibios\/os\/rt\/rt.mk: No such file or directory tmk_core\/chibios.mk:87: lib\/chibios\/os\/common\/ports\/ARMCMx\/compilers\/GCC\/mk\/port_v7m.mk: No such file or directory tmk_core\/chibios.mk:89: lib\/chibios\/os\/hal\/lib\/streams\/streams.mk: No such file or directory quantum\/visualizer\/visualizer.mk:77: lib\/ugfx\/gfx.mk: No such file or directory make[1]: *** No rule to make target \u0060lib\/ugfx\/gfx.mk\u0026#39;. Stop. make: *** [ergodox_infinity:default] Error 1 이는 submodule이 적절히 업데이트 되지 않아 발생하는 문제다. 따라서 아래의 명령어로 submodule을 업데이트 시켜주면 정상적으로 다시 빌드를 할 수 있다.\n",
-      "inLanguage" : "en-US",
+      "inLanguage" : "ko-KR",
       "author" : "",
       "creator" : "",
       "publisher": "",
@@ -113,8 +114,7 @@ li {
     <div class="row">
       <div class="col-xs-12">
         <div class="site-header">
-          
-<header>
+          <header>
   <div class="header-title">
     <a href="/"
       >Hello, There</a
@@ -142,6 +142,14 @@ li {
   
 </div>
 <div class="row end-xs">
+  
+  
+  
+  
+  <div class="lang-switch col-xs-3 col-xs-offset-9">
+    <a href="/en/error-while-building-qmk_firmware/">English</a>
+  </div>
+  
   
 </div>
 <div class="header-line"></div>

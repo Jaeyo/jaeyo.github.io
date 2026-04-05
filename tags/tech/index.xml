@@ -6,8 +6,22 @@
     <description>Recent content in Tech on Hello, There</description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 07 Nov 2023 01:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://jaeyo.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>개발자 A 의 휴리스틱에 대한 소고</title>
+      <link>http://jaeyo.github.io/why-developers-need-heuristics/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/why-developers-need-heuristics/</guid>
+      <description>&lt;p&gt;개발자는 논리를 다룬다. 컴퓨터 화면 안에는 변수가 비교적 잘 통제된 세계가 있다. 문법은 정해져 있고, 타입은 선언되어 있고, 같은 입력을 넣으면 같은 결과가 나와야 한다. 어제 재현되던 버그가 오늘은 재현되지 않는다면 그건 대개 우리가 아직 원인을 모를 뿐이지, 원인 자체가 없는 것은 아니다.&lt;/p&gt;&#xA;&lt;p&gt;그래서 개발자는 논리적 사고에 익숙해진다. 문제를 분해하고, 원인을 추적하고, 조건을 명시하고, 반례를 확인하는 일. 이런 훈련은 대체로 옳다. 사실 코드를 다루는 일에서는 거의 필수에 가깝다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 모니터 바깥의 세계는 좀 다르다. 기술을 도입할지 말지, 어느 요구사항을 먼저 처리할지, 지금 이 조직에서 어떤 선택이 장기적으로 더 나은지 같은 문제들 앞에 서면 이야기가 달라진다. 이 문제들은 코드처럼 닫힌 체계 안에 있지 않다. 변수는 지나치게 많고, 중요한 정보는 대개 늦게 오거나 아예 오지 않으며, 의사결정은 충분한 데이터가 모이기를 기다려주지 않는다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI 에이전트와 소프트웨어의 액체화</title>
+      <link>http://jaeyo.github.io/ai-agent-paradigm-shift/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/ai-agent-paradigm-shift/</guid>
+      <description>&lt;p&gt;근래에 claude code 와 같은 AI 에이전트를 이것저것 만지다 보면, 기존 소프트웨어를 사용할 때와는 다른 종류의 감각을 만나게 된다는 생각이 든다. 이전의 소프트웨어들은 대개 개발자가 미리 설계해놓은 버튼과 메뉴, 폼과 API 의 흐름 안에서만 움직였다. 사용자는 허용된 경로를 따라 입력을 넣고, 소프트웨어는 그에 대응하는 정해진 출력을 내놓는다. 말하자면 이미 굳어진 길 위를 걷는 식이다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 AI 에이전트는 다르다. 사용자가 던지는 것은 종종 &amp;ldquo;무엇을 하라&amp;quot;는 목표 수준의 요청이고, 에이전트는 그 요청을 수행하기 위해 어떤 순서로 사고하고 어떤 tool 을 꺼내들지를 그때그때 판단한다. 판단 자체는 결국 LLM 엔진에 기대고 있지만, 중요한 것은 동작의 세부 로직이 사전에 빼곡하게 고정되어 있지 않다는 점이다. 이 지점이 내게는 이전의 소프트웨어들과 확연히 다른 결로 느껴진다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>시작하는 개발자들을 위한 기술 여행 가이드</title>
       <link>http://jaeyo.github.io/tech-travel-guide/</link>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on Hello, There</title>
+    <link>http://jaeyo.github.io/en/tags/ai/</link>
+    <description>Recent content in Ai on Hello, There</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents and Liquid Software</title>
+      <link>http://jaeyo.github.io/en/ai-agent-paradigm-shift/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/ai-agent-paradigm-shift/</guid>
+      <description>&lt;p&gt;AI agents (for example, Claude Code) feel fundamentally different from traditional software. Most software is built around logic the developer has already fixed in place; users can only interact within those allowed flows. An AI agent, by contrast, decides and carries out the concrete steps to fulfill a request. The actual reasoning may be delegated to an LLM, but the fact that behavior is determined by that judgment marks a sharp break from earlier software.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

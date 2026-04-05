@@ -4,208 +4,352 @@
     <title>Posts on Hello, There</title>
     <link>http://jaeyo.github.io/en/posts/</link>
     <description>Recent content in Posts on Hello, There</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 24 Aug 2024 17:31:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agents and Liquid Software</title>
+      <link>http://jaeyo.github.io/en/ai-agent-paradigm-shift/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/ai-agent-paradigm-shift/</guid>
+      <description>&lt;p&gt;AI agents (for example, Claude Code) feel fundamentally different from traditional software. Most software is built around logic the developer has already fixed in place; users can only interact within those allowed flows. An AI agent, by contrast, decides and carries out the concrete steps to fulfill a request. The actual reasoning may be delegated to an LLM, but the fact that behavior is determined by that judgment marks a sharp break from earlier software.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Sense for Reading Context</title>
+      <link>http://jaeyo.github.io/en/taste-in-context/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/taste-in-context/</guid>
+      <description>&lt;p&gt;Lately, whenever I read pieces about AI, I keep running into the English word &lt;em&gt;taste&lt;/em&gt;. In Korean it is often glossed as “preference,” but every time I see that, the translation feels a little lacking. “Preference” usually means a person’s stable, personal pattern of liking something. It is the kind of thing you mean when you say, “I prefer old-school coffee to an Americano.”&lt;/p&gt;&#xA;&lt;p&gt;But if you actually follow the contexts where &lt;em&gt;taste&lt;/em&gt; appears, it seems to point to something beyond mere liking. In those contexts, what I understand by &lt;em&gt;taste&lt;/em&gt; is closer to discernment, or an eye for what matters. Preference is thoroughly subjective and does not require logic. Discernment, by contrast, demands its own logic and standards. And those standards are rarely fixed. They move with the situation, the goal, and the person in front of you. &lt;em&gt;Taste&lt;/em&gt; is a standard of judgment built up over a long time, and when that standard fires in an instant, we call it intuition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hiking the Neighborhood Hill with My Daughter</title>
+      <link>http://jaeyo.github.io/en/hiking-with-daughter/</link>
+      <pubDate>Sat, 14 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/hiking-with-daughter/</guid>
+      <description>&lt;p&gt;My daughter and I climbed the hill behind our neighborhood. Call it a “back hill” and you picture some gentle bump, but this one rises to nearly 500 meters above sea level. Even for an adult it takes a solid hour to reach the top. For a five-year-old girl, that is no small journey. Like many trails, it begins gently enough, but past the halfway point the slope suddenly steepens. I honestly never expected we would make it all the way to the summit. The reason I suggested the hike in the first place was much simpler: I imagined we would walk part of the way up, sit on a bench, cool our throats with ice water, look back at how far we had come, and enjoy a modest little sense of achievement. She accepted immediately. Lately she has been in a sort of stamp-rally phase, excited to try anything she has never done before. The older I get, the flatter life can feel precisely because more and more of it is familiar, so I envied that freshness in her.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Craft of the Resume</title>
+      <link>http://jaeyo.github.io/en/resume-skill/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/resume-skill/</guid>
+      <description>&lt;br /&gt;&#xA;A resume sets the frame.&#xA;&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;p&gt;That is what I have felt lately after sitting on the interviewer’s side a few times. A resume is only a summary of a candidate’s history on paper, yet some resumes effectively pre-design the direction and structure of the interview. Unless interviewers are careful, they tend, without noticing it, to ask questions and form judgments inside the frame the resume has already built. That is especially true in experienced-hire interviews, where past work is the main thing being verified. Interviewers who understand this structural bias need preparation and practice so they do not get swept along by cognitive shortcuts. Candidates, for their part, can also play smart by understanding the same bias and responding strategically.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>&lt;The Presentation of Self in Everyday Life&gt; book review</title>
       <link>http://jaeyo.github.io/en/the-presentation-of-self-in-everyday-life/</link>
       <pubDate>Sat, 24 Aug 2024 17:31:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/the-presentation-of-self-in-everyday-life/</guid>
-      <description>There&amp;rsquo;s a scene that happened early in my career that I still remember decades later. I was going about my business as usual when I suddenly heard a loud noise that made me look over my cubicle. I looked over the cubicle and saw the team leader of another development team in the next cubicle yelling furiously into his cell phone. I realized that he was on the phone with sales and that the development team was taking on unnecessary work because of sales&amp;rsquo; greed or mistakes.</description>
+      <description>&lt;p&gt;There is one scene from the beginning of my career that still lingers vividly in my memory more than a decade later. I was working as usual when I suddenly heard someone shouting and looked up over the partition. The team leader of another development team on the next row was gripping his phone and speaking angrily into it. From the conversation, I gathered that he was talking to the sales team, and that the development team had been saddled with unnecessary work because of sales’ greed or mistakes.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>A Technical Travel Guide for Beginning Developers</title>
+      <link>http://jaeyo.github.io/en/tech-travel-guide/</link>
+      <pubDate>Tue, 07 Nov 2023 01:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/tech-travel-guide/</guid>
+      <description>&lt;p&gt;In 1996, something odd happened at OOPSLA, a conference on object‑oriented programming. The keynote in a room full of software developers was delivered—not by a programmer, but by an architect. It was odd enough that even the architect on stage seemed baffled to be there.&lt;/p&gt;&#xA;&lt;img src=&#34;christopher%20alexander.webp&#34; width=&#34;500&#34; style=&#34;margin: auto;&#34; /&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“Well, this is really strange for me. I’m giving a talk in front of all of you, but I don’t know the first thing about what you do.”&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Watching the movie &lt;Slam Dunk&gt;</title>
       <link>http://jaeyo.github.io/en/slam-dunk/</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/slam-dunk/</guid>
-      <description>I&amp;rsquo;ve been wanting to see Slam Dunk for a while, but I thought that if I put it off any longer, I&amp;rsquo;d have to leave the theater, so I rushed to Dongtan Megabox to see it.
-I wasn&amp;rsquo;t really expecting to be moved by it. I enjoyed the original comic, but it was just one of the many comics I read at the time. It was fun, but beyond that, my memory of it is hazy.</description>
+      <description>&lt;p&gt;I’d been wanting to see Slam Dunk for a while, but I figured that if I put it off any longer, it might leave theaters, so I hurried to Dongtan Megabox to catch it.&lt;/p&gt;&#xA;&lt;p&gt;I wasn’t really expecting to be moved by it. I enjoyed the original comic, but it was just one of the many comics I read at the time. It was fun, but beyond that, my memory of it is hazy. I don’t remember much of the story.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>A Chronicle of My Mechanical Keyboards</title>
+      <link>http://jaeyo.github.io/en/chronicle-of-mechanical-keyboard/</link>
+      <pubDate>Wed, 16 Nov 2022 14:55:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/chronicle-of-mechanical-keyboard/</guid>
+      <description>&lt;p&gt;After swapping my daily driver keyboard recently, I counted how many mechanical keyboards I’ve owned—and it had crept up to ten. That’s been over roughly a decade. Rotating through so many boards, mechanical keyboards turned into something like a hobby for me. I’m writing this chronicle to remember the ones I’ve used along the way.&lt;/p&gt;&#xA;&lt;p&gt;I first ran into mechanical keyboards at an internet café in Ilsan. I’d wandered in with time to kill; for its day the place was pretty high‑end. Logging into a game, I rested my hands on the keyboard—and the feel under my fingertips was oddly fresh. It wasn’t like any keyboard I’d known; the tactility was different in a good way. I ended up ignoring the game and just typing for a long while. I didn’t know it then, but that board had Cherry MX Blue switches.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The age of Stop-loss</title>
       <link>http://jaeyo.github.io/en/cut-off/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/cut-off/</guid>
-      <description>Some keywords are born and come into vogue as a reflection of the times. Sometime in the 2000s, I remember the &amp;ldquo;well-being&amp;rdquo; era. The phrase &amp;ldquo;green light&amp;rdquo; came into vogue in the context of social changes that made it more comfortable to discuss gender and sexuality issues in the public sphere. In the era of tightening livelihoods, we saw the rise of &amp;ldquo;Hell-Joseon&amp;rdquo; and the rise of new words for new kinds of lifestyles, such as &amp;ldquo;YOLO&amp;rdquo;, which is a word for a new kind of lifestyle that cannot withstand &amp;ldquo;Hell-Joseon&amp;rdquo;.</description>
+      <description>&lt;p&gt;Some keywords are born and catch on as reflections of their times. Looking back on the 2000s, I remember the age of “well-being.” The phrase “green light” gained popularity in the context of social changes that made it easier to discuss gender and sexuality more openly in public. As life grew harsher, we saw the emergence of the term “Hell Joseon,” and after that became unbearable, words like “YOLO,” names for new kinds of lifestyles, began to spread as well. In the age of cryptocurrency and pandemic-driven liquidity parties, words like “FIRE” and “financial freedom” were on everyone’s lips too.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Potato chips and internet memes</title>
       <link>http://jaeyo.github.io/en/catching-context/</link>
       <pubDate>Wed, 11 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/catching-context/</guid>
-      <description>I came across the article Potato Chips and Internet Memes in the newspaper and found it thought-provoking, so here&amp;rsquo;s an excerpt.
-&amp;hellip; The Internet, at least up to this point, favors fast and short information. The devices, the platforms, the mediums, the users. The phrase &amp;ldquo;fast and short&amp;rdquo; is a bit of a homophone, because in the internet world, information needs to be short to travel quickly.
-However, knowledge is usually not short.</description>
+      <description>&lt;p&gt;I came across the article &lt;a href=&#34;https://www.joongang.co.kr/article/25070260?utm_source=pocket_mylist#home&#34;&gt;Potato Chips and Internet Memes&lt;/a&gt; in the newspaper and found it thought-provoking, so here’s an excerpt.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;… The Internet, at least up to this point, favors fast and short information. The devices, the platforms, the mediums, the users. The phrase “fast and short” is almost tautological, because in the internet world, information needs to be short to travel quickly.&lt;/p&gt;&#xA;&lt;p&gt;However, knowledge is usually not short. Knowledge is a structure of information connected in a logical way. The deeper the knowledge, the larger and more complex the structure, the more important context is. If you take a book, break it down into sentence-by-sentence chunks, and read it out of order, you’ll understand very little of it, even if you see every word of it. That’s the internet and social media.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A retrospective of my 8th month in NAVER CLOUD</title>
       <link>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</link>
       <pubDate>Thu, 21 Apr 2022 10:40:55 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</guid>
-      <description>I moved to my current company, NAVER CLOUD, at the end of August last year. When I was in school, I graduated straight through without transfering schools, but since I started working, I&amp;rsquo;ve been changing jobs quite often.
-I&amp;rsquo;ve been through this many changes, each time to a different company and a different position, and it makes me think that changing jobs is like traveling. It&amp;rsquo;s a journey of leaving familiar neighborhoods and people and meeting new cultures in new places.</description>
+      <description>&lt;p&gt;I moved to my current company, NAVER CLOUD, at the end of August last year. When I was in school, I graduated straight through without transferring schools, but since I started working, I’ve changed jobs quite often.&lt;/p&gt;&#xA;&lt;p&gt;After going through so many moves, each time to a different company and a different role, I sometimes think changing jobs is like traveling. It’s a journey of leaving familiar neighborhoods and people behind and encountering new cultures in new places. From the outside, moving to another IT company, still as a developer, may all look the same, but in reality every move feels completely different. The people are different, the company is different, and the destination is different.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>*Hot Blood*: Notes After the Film and the Novel</title>
+      <link>http://jaeyo.github.io/en/hot-blood/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/hot-blood/</guid>
+      <description>&lt;p&gt;I am fond of noir films, so when I saw the trailer for &lt;em&gt;Hot Blood&lt;/em&gt; (&lt;em&gt;Tteugeoun pi&lt;/em&gt;), I rushed to book a ticket and went to see it. I liked it more than I expected, and afterward I tracked down the novel and read it too. That brought a different kind of pleasure from the film.&lt;/p&gt;&#xA;&lt;p&gt;The movie felt like a grand showdown among alpha males. Busan was a perfect backdrop for that story. The eccentric characters stayed with me, and the way they puffed themselves up and snarled at one another like lions fighting over territory was handled with style. It was violent, but the shabby and gloomy gangster world had its own strange pull.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>I met an old man who was lost.</title>
       <link>http://jaeyo.github.io/en/met-a-lost-old-man/</link>
       <pubDate>Fri, 18 Feb 2022 00:31:01 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/met-a-lost-old-man/</guid>
-      <description>A few days ago, I was waiting for a friend at a convenience store in my apartment. An elderly man walked in and suddenly said,
-&amp;ldquo;Where is building 109?&amp;rdquo;
-At first, I had to repeat myself a few times due to his inaccurate pronunciation. I soon realized that he was referring to building 109 in the apartment, so I turned on the map app and showed him the location. But after a while, he remained silent and asked again, &amp;ldquo;Where is building 109?</description>
+      <description>&lt;p&gt;A few days ago, I was waiting for a friend at a convenience store in my apartment complex. An elderly man walked in and suddenly said,&lt;/p&gt;&#xA;&lt;p&gt;“Where is building 109?”&lt;/p&gt;&#xA;&lt;p&gt;At first, I had to ask him to repeat himself several times because his pronunciation was hard to make out. I soon realized that he meant building 109 in the apartment complex, so I opened the map app and showed him where it was. But after a while he fell silent, then asked again, “Where is building 109?” I wondered whether I should be more specific, and then he added one more thing.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Thoughts about Rust</title>
       <link>http://jaeyo.github.io/en/thoughts-about-rust/</link>
       <pubDate>Tue, 08 Feb 2022 00:31:01 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/thoughts-about-rust/</guid>
-      <description>A few years ago, I had thought about learning Rust. I used to use Java as my main language, and around that time, I learned the Go language and used to build things, and I was quite deep in the Go language because it solved many of the regrets I had while using Java. At the same time, I was curious about Rust, which was always compared to Go. Since it doesn&amp;rsquo;t have GC, I thought it would be more effective for building more performance-critical things.</description>
+      <description>&lt;p&gt;A few years ago, I started thinking about learning Rust. Java had been my main language, but around that time I picked up Go and spent quite a while building things with it, because it solved many of the pain points I had felt while using Java. At the same time, I was curious about Rust, which was always being compared with Go. Since it has no GC, I thought it might be better suited to building more performance-critical systems.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Parents are the world to a child</title>
       <link>http://jaeyo.github.io/en/parents-are-everything-to-a-child/</link>
       <pubDate>Wed, 08 Dec 2021 16:25:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/parents-are-everything-to-a-child/</guid>
-      <description>The phrase &amp;ldquo;Parents are the world to a child&amp;rdquo; often runs through my head these days. When my child comes to me and pulls my arm to play, or cries loudly when she doesn&amp;rsquo;t get what she wants. I wonder if I&amp;rsquo;ve been neglecting my child because I&amp;rsquo;m a little tired or annoyed. A child can only eat what parent give them, and they can only play within the boundaries parent provide.</description>
+      <description>&lt;p&gt;The phrase “Parents are the world to a child” often crosses my mind these days. When my child comes over and tugs at my arm to play, or cries loudly after not getting what they want, I sometimes wonder whether I’ve neglected them because I’m tired or simply because I can’t be bothered. A child can only eat what parents give them, and they can only play within the boundaries parents provide. They can only discover new worlds and meet new friends through their parents. The more diligent I am, the more new and enjoyable experiences my child can have. I don’t know if I’ve ever had this much influence over someone else in my life.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Simple golang optimization experience</title>
       <link>http://jaeyo.github.io/en/golang-optimization/</link>
       <pubDate>Thu, 08 Jul 2021 14:40:55 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/golang-optimization/</guid>
-      <description>Last night, I optimized a module I wrote in golang and got more significant results than I expected, so I&amp;rsquo;m documenting them here.
-When declaring a slice, We can specify the initial size of the array inside the slice via the cap parameter. In situations where the size of the slice is known in advance, this can minimize array reallocation. I went through the entire code and added the cap parameter wherever I could.</description>
+      <description>&lt;p&gt;Last night, I optimized a module I wrote in golang and got more significant results than I expected, so I’m documenting them here.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;When declaring a slice, you can specify the initial capacity of its backing array via the &lt;code&gt;cap&lt;/code&gt; argument. When the eventual size of the slice is known in advance, this can reduce array reallocations. I went through the code and added &lt;code&gt;cap&lt;/code&gt; wherever I could, but profiling didn’t show any noticeable performance change.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Birthday</title>
       <link>http://jaeyo.github.io/en/birthday/</link>
       <pubDate>Wed, 30 Jun 2021 10:41:00 +0900</pubDate>
-      
       <guid>http://jaeyo.github.io/en/birthday/</guid>
-      <description>There are days when the mind is unusually noisy. It&amp;rsquo;s a day like today. I&amp;rsquo;ve been drowning in a sea of work, waiting for something to happen, and then I look at the clock and realize it&amp;rsquo;s midnight. I turn off the lights in my deserted office and stumble out. Unfinished tasks buzz in my head like the sound of mosquitoes. I rub my temples, but it doesn&amp;rsquo;t help. At the intersection of Seolleung Station, I am lucky to find an empty taxi.</description>
+      <description>&lt;p&gt;There are days when the mind is unusually noisy. Today is one of those days. I’ve been floundering under an unbearable load of work for what feels like forever, and when I finally glance at the clock, it’s already midnight. I turn off the lights in my deserted office and stumble outside. Unfinished work buzzes in my head like mosquitoes. I rub my temples, but it doesn’t help. At the intersection by Seolleung Station, I’m lucky enough to catch an empty taxi. Maybe he hears the fatigue in my voice when I give him the destination, because the driver steps on the gas without a word. I sink into the back seat like a shriveled twist of dried radish, pull my eyes away from the window, and look down at my phone. I scroll through the news, but nothing really registers, so I open KakaoTalk. I see your name, and for some reason there’s a glowing birthday emoji next to it. Oh, so today is your birthday.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Meeting good people in good places</title>
       <link>http://jaeyo.github.io/en/meeting-good-people-at-good-place/</link>
       <pubDate>Fri, 25 Jun 2021 12:00:01 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/meeting-good-people-at-good-place/</guid>
-      <description>I saw this on someone&amp;rsquo;s Facebook and it resonated with me.
-The reason everyone tells you to go to a good school, a good company, is to get a good guru. Quantum Leap is not just about physics, it&amp;rsquo;s not just about the growth of the company. It&amp;rsquo;s about people. To make Quantum Leap, it&amp;rsquo;s important to keep working hard, but it&amp;rsquo;s also important to think a lot and meet a lot of people.</description>
+      <description>&lt;p&gt;I saw this on someone’s Facebook and it resonated with me.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The reason everyone tells you to go to a good school or a good company is that good places tend to attract good mentors. Quantum leaps are not just about physics, and they are not just about a company’s growth either. They are about people. To make a quantum leap, it’s important to keep working hard, but it’s also important to think a lot and meet a lot of people. I’ve spent time in places that drain me, but whenever I can, I try to meet someone I would call a guru. Even ten minutes with someone like that can feel like a year’s worth of living. You can meet gurus at conferences, and you can find them on YouTube, but I usually meet them in coffee shops. I often take away more from a light, casual conversation than from the formal setting of a conference.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How I value myself</title>
       <link>http://jaeyo.github.io/en/the-value-that-i-value/</link>
       <pubDate>Thu, 25 Mar 2021 13:31:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/the-value-that-i-value/</guid>
-      <description>I watched a YouTube video called &amp;ldquo;희열의 순간&amp;rdquo;. It was a video with Ryu Si-min, and there were some interesting things in it. The part that stuck with me the most was &amp;ldquo;I shouldn&amp;rsquo;t care about what labels others put on me, but what meaning I give to my life is what matters.&amp;rdquo; It&amp;rsquo;s so obvious, but it&amp;rsquo;s something we often forget. It&amp;rsquo;s easy to compare ourselves to others, to line up our salaries, and to stick our necks out as if our company&amp;rsquo;s name value is our value.</description>
+      <description>&lt;p&gt;I recently watched a YouTube video called “희열의 순간.” It featured Yoo Si-min, and there were a few things in it that stayed with me. The line that struck me most was this: “What matters is not the labels other people put on me, but the meaning I give to my own life.” It sounds obvious, but it’s the kind of truth we forget all the time. It’s so easy to compare ourselves with other people, to rank ourselves by salary, and to act as though our employer’s prestige were the same thing as our own worth. That foolish attitude is contagious too.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>MySQL won&#39;t give me the data</title>
       <link>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</link>
       <pubDate>Fri, 05 Feb 2021 07:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/mysql-convert-tz-timezone/</guid>
-      <description>One of our team members reached out to me for help: a bug in the code she&amp;rsquo;s working on and she&amp;rsquo;s not sure what&amp;rsquo;s causing it.
-Here&amp;rsquo;s what happened
-There is a query that is running periodically to fetch data, and the logs are recording how many times it fetches data, but it keeps returning zero data as a result of the query.
-Strangely, when I run that query directly through the database tool, I get two data hits.</description>
+      <description>&lt;p&gt;One of my teammates reached out for help. There was a bug in some code they were modifying, and they had no idea what was causing it.&lt;/p&gt;&#xA;&lt;p&gt;Here’s what happened.&lt;/p&gt;&#xA;&lt;p&gt;There was a query that ran periodically to fetch data, and the logs recorded how many rows it returned. The problem was that it kept coming back with zero rows.&lt;/p&gt;&#xA;&lt;p&gt;Strangely, when I ran the exact same query directly in a database tool, I got two rows back.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Teacher</title>
+      <link>http://jaeyo.github.io/en/teacher/</link>
+      <pubDate>Sun, 18 Oct 2020 09:31:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/teacher/</guid>
+      <description>&lt;p&gt;This was not long after I had joined the company, still less than a year in. I was on a work call with someone at a provincial office of education. We finished the usual business and hung up, but something odd lingered afterward. It was the way he had addressed me: he called me &lt;em&gt;seonsaengnim&lt;/em&gt;, “teacher.” He wasn’t under the illusion that I was actually a schoolteacher, and it wasn’t simply because he worked for an education office. He probably couldn’t find a title that felt comfortable and fell back on that, the way I might call the owner of a neighborhood restaurant &lt;em&gt;sajangnim&lt;/em&gt;, “boss.” If I had at least been a &lt;em&gt;daeri&lt;/em&gt; or a &lt;em&gt;juim&lt;/em&gt;, he could have used my rank and said “Manager Kim” without a second thought. But because I was still at the awkward &lt;em&gt;sawon&lt;/em&gt; level, where rank titles feel clumsy, honorifics got messy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Share Memory by Communicating</title>
+      <link>http://jaeyo.github.io/en/share-memory-by-communicating/</link>
+      <pubDate>Fri, 09 Oct 2020 17:10:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/share-memory-by-communicating/</guid>
+      <description>&lt;p&gt;Go is a language heavily oriented toward concurrent programming. That shows up even in why the language exists. Multi-core processors feel like they have always been here, but commercial multi-core CPUs are not actually that old. Intel shipped the first mainstream dual-core processors around 2005–2006. In 2007, Google started work on Go so those multi-core machines could be exploited at the language level, natively.&lt;/p&gt;&#xA;&lt;p&gt;If you write multithreaded code in Go, you feel the difference. Compared with many other languages, concurrency is relatively easy to use. You do not implement the &lt;code&gt;Runnable&lt;/code&gt; interface or subclass &lt;code&gt;Thread&lt;/code&gt; and override &lt;code&gt;run&lt;/code&gt;, as in Java—you put the keyword &lt;code&gt;go&lt;/code&gt; in front of the function you want to run on another thread.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Age</title>
+      <link>http://jaeyo.github.io/en/age/</link>
+      <pubDate>Sun, 27 Sep 2020 16:25:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/age/</guid>
+      <description>&lt;p&gt;Many people think “ssangpal-nyeondo” (literally “double-eight year”) means 1988. It doesn’t. It actually refers to year 4288 in the Dangi era, which is AD 1955, a misunderstanding born of mixing two different calendar systems. The Gregorian year we use counts from an estimated year of Jesus’s birth; the Dangi era counts from the year Dangun is said to have founded Gojoseon. Thinking about how the years we take for granted are really tallied from some chosen moment, I wonder whether age is an extension of the same kind of reckoning. Counting from the year we were born is, in a sense, just another calendar.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Cultural images of the 20th century</title>
       <link>http://jaeyo.github.io/en/culture-image-of-20-century/</link>
       <pubDate>Sat, 16 May 2020 23:30:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/culture-image-of-20-century/</guid>
-      <description>Recently, I&amp;rsquo;ve been reading a book called “Cultural Images of the 20th Century”. I picked it up for 2,000 won at a used bookstore I happened to stop by. The book was written by the now deceased writer Lee Sung-wook, and the preface calls him a “cultural engineer”. The essays in this book are an extension of that title. Most of the articles were written in the late 90s and published in 2004, and they are mostly interesting descriptions of the life, culture, and society of the time from the author&amp;rsquo;s point of view.</description>
+      <description>&lt;p&gt;Lately I’ve been reading a book called “Cultural Images of the 20th Century.” I happened to pick it up at a used bookstore for just 2,000 won. It was written by the late Lee Sung-wook, whom the preface describes as a “cultural engineer.” The short pieces collected in the book feel like an extension of that label. Most of them were written in the late 1990s and gathered into a book in 2004, and they offer vivid, often entertaining descriptions of the everyday life, culture, and social mood of that era from the author’s point of view. What makes the book even more interesting is the fact that I’m reading it now, in 2020. Reading a contemporary writer’s account of society from one generation ago more than twenty years later gives the book an entirely new flavor.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Eight Years as a Developer: A Look Back (3)</title>
+      <link>http://jaeyo.github.io/en/look-back-on-8-years-3/</link>
+      <pubDate>Sat, 16 May 2020 23:20:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/look-back-on-8-years-3/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-1&#34;&gt;Eight Years as a Developer: A Look Back (1)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-2&#34;&gt;Eight Years as a Developer: A Look Back (2)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-3&#34;&gt;&lt;em&gt;&lt;strong&gt;Eight Years as a Developer: A Look Back (3)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;sk-cc-jul-2018--&#34;&gt;SK C&amp;amp;C (Jul 2018 ~ )&lt;/h2&gt;&#xA;&lt;h3 id=&#34;a-fresh-start&#34;&gt;A fresh start&lt;/h3&gt;&#xA;&lt;p&gt;On day one I saw an office with empty desks. Later I learned it was summer vacation season and many people were away—including my group’s lead. For the first few days I picked up a laptop and got used to systems and atmosphere.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eight Years as a Developer: A Look Back (2)</title>
+      <link>http://jaeyo.github.io/en/look-back-on-8-years-2/</link>
+      <pubDate>Mon, 11 May 2020 15:53:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/look-back-on-8-years-2/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-1&#34;&gt;Eight Years as a Developer: A Look Back (1)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-2&#34;&gt;&lt;em&gt;&lt;strong&gt;Eight Years as a Developer: A Look Back (2)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-3&#34;&gt;Eight Years as a Developer: A Look Back (3)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;ridi-jun-2016--mar-2018&#34;&gt;RIDI (Jun 2016 ~ Mar 2018)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;junior-versus-experienced-hire&#34;&gt;Junior versus experienced hire&lt;/h3&gt;&#xA;&lt;p&gt;The second company changed me a lot. I got a MacBook. Until then I had developed on Windows and never used one. I had to learn macOS first. Everything else was new too. My first job had used &lt;strong&gt;SVN&lt;/strong&gt;; here I learned &lt;strong&gt;Git&lt;/strong&gt;. The languages were unfamiliar &lt;strong&gt;PHP&lt;/strong&gt; and &lt;strong&gt;JavaScript&lt;/strong&gt;. &lt;strong&gt;PHP&lt;/strong&gt; was completely new—I spent about a week on syntax, the &lt;strong&gt;Laravel&lt;/strong&gt; framework, and &lt;strong&gt;Doctrine&lt;/strong&gt; ORM. We tracked work in Asana and I used Slack for the first time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eight Years as a Developer: A Look Back (1)</title>
+      <link>http://jaeyo.github.io/en/look-back-on-8-years-1/</link>
+      <pubDate>Sun, 10 May 2020 23:23:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/look-back-on-8-years-1/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-1&#34;&gt;&lt;em&gt;&lt;strong&gt;Eight Years as a Developer: A Look Back (1)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-2&#34;&gt;Eight Years as a Developer: A Look Back (2)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-3&#34;&gt;Eight Years as a Developer: A Look Back (3)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;It has been eight years since I set foot on the developer path. I honestly cannot say how much the me who started working in his late twenties differs from the me today. So I want to write down those eight years the way you might write a travel diary. I have never done one of those year-in-review posts many people write at New Year’s—so this is eight years of reflection in one go.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Stories of code contributions to open source projects</title>
       <link>http://jaeyo.github.io/en/contribute-code-into-telegraf/</link>
       <pubDate>Thu, 22 Aug 2019 19:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/contribute-code-into-telegraf/</guid>
-      <description>Throughout my career as a developer, I&amp;rsquo;ve relied heavily on open source - I wouldn&amp;rsquo;t be half as productive without Github - but despite this, I&amp;rsquo;m ashamed to say that I only contributed to open source for the first time last year. I&amp;rsquo;ve had the idea of contributing for a long time, but it&amp;rsquo;s safe to say that the whole process of choosing a project to contribute to, understanding the codebase, finding the source of a bug, communicating with the maintainers, and so on, was too daunting to take the plunge.</description>
+      <description>&lt;p&gt;Throughout my career as a developer, I’ve relied heavily on open source. Without GitHub, I wouldn’t be a quarter as productive as I am now. And yet, embarrassingly enough, it wasn’t until last year that I made my first open-source contribution. I had wanted to contribute for a long time, but choosing a project, understanding the codebase, finding the source of a bug, and communicating with maintainers all felt too daunting. Then, by chance, I ended up contributing to an open-source project for the first time and realized it wasn’t nearly as hard as I had imagined.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The importance of naming</title>
       <link>http://jaeyo.github.io/en/naming-is-important/</link>
       <pubDate>Fri, 16 Aug 2019 01:00:08 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/naming-is-important/</guid>
-      <description>It&amp;rsquo;s a common saying among developers that they spend more time naming variables than they do developing. Naming variables isn&amp;rsquo;t that hard, but it&amp;rsquo;s actually quite difficult and important.
-It happened the other day at a company meeting. We had an internal service called Alert Manager, and the idea of adding feature to that service came up. The idea was accepted, and as the discussion continued, the scope of the features we wanted to add broadened.</description>
+      <description>&lt;p&gt;It’s a common saying among developers that they spend more time naming variables than they do developing. Naming variables isn’t that hard, but it’s actually quite difficult and important.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://external-preview.redd.it/Vt3LLIlQT7R5a5FS4NV489JWvjcIzOx1Mb2ZTAe_hk0.png?auto=webp&amp;amp;s=df14a4f3d3aa76c1ea3eea67efd5c1cb7daadbac&#34; alt=&#34;importance of naming variable&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It happened the other day in a company meeting. We had an internal service called Alert Manager, and someone proposed adding a feature to it. The idea was accepted, but as the discussion continued, the scope of the proposed functionality kept expanding. Eventually we agreed that this broader concept should be separated from Alert Manager and turned into its own service. The problem was that we still had no name for the new service, so for convenience people kept referring to it as Alert Manager, which started confusing everyone, myself included. People could no longer tell whether a given feature belonged in the original Alert Manager or in the new service, and the confusion was even worse for people who had not been part of the conversation from the beginning. To stop the confusion from getting worse, I suggested we pause and at least come up with a working title. The name Admin Portal was chosen. Only after the new name appeared did the confusion begin to fade. We even found ourselves discussing the possible features of Admin Portal in much more concrete terms. It seemed easier for everyone to flesh out a service called Admin Portal than to imagine some still-unnamed thing. That made me think again about the importance of naming.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Moving to a new place</title>
       <link>http://jaeyo.github.io/en/move-to-another-place/</link>
       <pubDate>Thu, 15 Aug 2019 01:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/move-to-another-place/</guid>
-      <description>After living in Gwanak-gu for about two years, I decided to move to Yongin.
-The reason I moved here in the first place,
-because there is more infrastructure in Seoul Because my sister-in-law is close However, once I bought a car, none of this mattered much. Since I was always traveling by car on weekends and holidays, I started to go outside of Seoul more often than inside, and I started to enjoy the quiet and relaxing scenery rather than the crowded city.</description>
+      <description>&lt;p&gt;After living in Gwanak-gu for about two years, I decided to move to Yongin.&lt;/p&gt;&#xA;&lt;p&gt;The reason I moved here in the first place,&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;because there is more infrastructure in Seoul&lt;/li&gt;&#xA;&lt;li&gt;because my in-laws live nearby&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;However, once I bought a car, none of this mattered much. Since I was always traveling by car on weekends and holidays, I started to go outside of Seoul more often than inside, and I started to enjoy the quiet and relaxing scenery rather than the crowded city. Also, since I have a car, it’s not too much of a problem to visit places that are a bit far from my in-laws.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Git: Delete a Branch Locally, Then Remove It on the Remote</title>
+      <link>http://jaeyo.github.io/en/git-delete-branch-and-push/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/git-delete-branch-and-push/</guid>
+      <description>&lt;p&gt;In Git, you create a branch, do the work, merge it, and then naturally delete the feature branch. If you use something like GitHub pull requests, removing the remote branch is easy enough with the &lt;code&gt;Delete Branch&lt;/code&gt; button after merge. But if you merge locally, you have to clean up both the local branch and the one on the remote. Deleting the local branch is easy. The problem is that I can never remember the command for deleting the remote branch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Today&#39;s Rabbit Hole: I Blamed Bash for Nothing.</title>
+      <link>http://jaeyo.github.io/en/bash-is-not-async/</link>
+      <pubDate>Tue, 13 Aug 2019 01:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/bash-is-not-async/</guid>
+      <description>&lt;p&gt;At work, there was a shell script someone had written. It downloaded and installed the packages we needed, adjusted config files, and brought the service up with &lt;code&gt;systemctl&lt;/code&gt;. Roughly, it looked like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;install_blabla() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;dest=&lt;span style=&#34;font-weight:bold&#34;&gt;$(&lt;/span&gt;mktemp /tmp/blabla_XXXX.deb&lt;span style=&#34;font-weight:bold&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;curl -fsSL http://blabla.com/blabla.deb -o $dest&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;dpkg -i $dest&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;rm -f $dest&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;install_conf() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;curl -fsSL http://blabla.com/blabla.conf -o /etc/blabla/blabla.conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;sed -i -e &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#34;...&amp;#34;&lt;/span&gt; /etc/blabla/blabla.conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;start_blabla() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;systemctl start blabla&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;do_install() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;install_blabla&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;install_conf&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;start_blabla&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;do_install&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you follow that script, the flow is:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The weight of salary and years of experience</title>
       <link>http://jaeyo.github.io/en/better-than-yesterday/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/better-than-yesterday/</guid>
-      <description>&amp;ldquo;There comes a point where you have to do more than just develop and implement features.&amp;rdquo;
-&amp;ldquo;You can be a people manager or you can be an expert in one area or the other, the choice is yours.&amp;rdquo;
-(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
-These are thoughts I&amp;rsquo;ve had for quite some time, since I started working. As a developer, your primary job is to &amp;ldquo;write code that works as intended&amp;rdquo;. But at some point, you need to be able to do more than that, you need to be able to do plus alpha.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;“There comes a point where you have to do more than just develop and implement features.”&lt;/p&gt;&#xA;&lt;p&gt;“You can be a people manager or you can be an expert in one area or the other, the choice is yours.”&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;(from &lt;a href=&#34;https://taetaetae.github.io/2019/07/07/review-first-half-2019/&#34;&gt;https://taetaetae.github.io/2019/07/07/review-first-half-2019/&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;These are thoughts I’ve had for quite some time, ever since I started working. As a developer, your primary job is to “write code that works as intended.” But at some point, you have to do more than that. You need to bring something extra to the table.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>chibios error on building qmk_firmware</title>
       <link>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</link>
       <pubDate>Tue, 16 Oct 2018 10:34:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</guid>
-      <description>qmk_firmware is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware are planck, ergodox, etc. Documentation and more information can be found at https://qmk.fm/. To clone and build this source for the first time, the documentation will guide you as follows.
-$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; However, if you follow along, you&amp;rsquo;ll see the error below.
-$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.</description>
+      <description>&lt;p&gt;&lt;code&gt;qmk_firmware&lt;/code&gt; is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware include planck and ergodox. Documentation and more information can be found at &lt;a href=&#34;https://qmk.fm/&#34;&gt;https://qmk.fm/&lt;/a&gt;. When you first clone the repo and try to build it, the documentation tells you to run the following:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However, if you follow along, you’ll see the error below.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ make ergodo_infinity:default&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:78: lib/chibios-contrib/os/hal/boards/PJRC_TEENSY_3_1/board.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:79: lib/chibios/os/hal/osal/rt/osal.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:81: lib/chibios/os/rt/rt.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:87: lib/chibios/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:89: lib/chibios/os/hal/lib/streams/streams.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;quantum/visualizer/visualizer.mk:77: lib/ugfx/gfx.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make[1]: *** No rule to make target `lib/ugfx/gfx.mk&amp;#39;.  Stop.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make: *** [ergodox_infinity:default] Error 1&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is caused by the submodule not being updated properly, so update the submodule with the command below and you should be able to rebuild normally.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>AWS APIs, restricting access based on ip</title>
+      <title>reselect</title>
+      <link>http://jaeyo.github.io/en/reselect/</link>
+      <pubDate>Sat, 06 Oct 2018 11:44:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/reselect/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/en/reselect/&#34;&gt;https://github.com/reactjs/reselect&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Reselect is a selector library you can attach to Redux. Its role boils down to two things:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Abstracting the part where you pull data from the store and map it when you &lt;code&gt;connect&lt;/code&gt; a component to Redux.&lt;/li&gt;&#xA;&lt;li&gt;Caching the value returned by a selector function to improve performance.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Suppose you have code like this:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; mapStateToProps = (state, ownProps) =&amp;gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; { contentIds } = state.userContent;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;contentIds,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;};&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With Reselect you can reshape it like this:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AWS APIs, Restricting Access Based on IP</title>
       <link>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</link>
       <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</guid>
-      <description>If you want to restrict access to instances or load balancers on EC2 to specific IP bands, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs.
-For example, let&amp;rsquo;s say you want to restrict APIs that access the Parameter Store in AWS System Manager and read data based on IP.</description>
+      <description>&lt;p&gt;If you want to restrict access to instances or load balancers on EC2 to specific IP ranges, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs. For that, you need an IAM policy.&lt;/p&gt;&#xA;&lt;p&gt;For example, let’s say you want to restrict access to the APIs that read data from Parameter Store in AWS Systems Manager based on IP. First, let’s check the default policy for Parameter Store. You can find it under “AWS IAM -&amp;gt; Policies”.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>I Built a New Service</title>
+      <link>http://jaeyo.github.io/en/making-new-service/</link>
+      <pubDate>Fri, 01 Dec 2017 14:40:55 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/making-new-service/</guid>
+      <description>&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;53abc4e51073496cb2702d1ca57eeae9&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>I Read Jo Jung-rae’s World</title>
+      <link>http://jaeyo.github.io/en/shame/</link>
+      <pubDate>Tue, 21 Nov 2017 13:31:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/shame/</guid>
+      <description>&lt;p&gt;He wrote a poem called “The World That Passed” and lives with his friend Hyeongsu at a bar by the same name.&lt;/p&gt;&#xA;&lt;p&gt;In college he was active in the student movement. A professor the activists disliked announced that on the history exam, writing your name on the paper would be enough to pass. While everyone else took him at his word, shame kept this one student from doing it. He could not accept the idea of getting something for nothing, so instead of simply writing his name, he wrote his name and a poem on the answer sheet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Seoul National University of Science and Technology in 2006 (3)</title>
+      <link>http://jaeyo.github.io/en/snut-2006-3/</link>
+      <pubDate>Thu, 09 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/snut-2006-3/</guid>
+      <description>&lt;p&gt;When my mind gets noisy, I return to school. If I type Gongneung-dong into the navigation, it takes about an hour from home. It is not exactly close. Even so, whenever life feels heavy, I wander around the neighborhood as if on a field trip, treasure-hunting through Gongneung. The memories buried in every corner always feel fresh. For someone who spent most of his twenties there, Gongneung almost feels like a hometown.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Seoul National University of Science and Technology in 2006 (2)</title>
+      <link>http://jaeyo.github.io/en/snut-2006-2/</link>
+      <pubDate>Tue, 24 Oct 2017 01:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/snut-2006-2/</guid>
+      <description>&lt;p&gt;Every new semester brought a familiar sight: students ordering jajangmyeon on the campus lawns. Lawns were everywhere, near the main gate, by the carp pond, beside the first student union, and no one fenced them off, so it was perfectly natural to see freshmen and seniors sitting in a circle, calling in black-bean noodles. When the mood shifted, bottles of makgeolli would start making the rounds, and flushed freshmen who had blown off class would trail after seniors toward a second venue. Most of us ordered from Seoul Dae Banjeom. The food was cheap, but more than that, the delivery speed was absurdly fast. No matter where you were on campus, I never saw it take more than five minutes. The taste was exactly what you would expect from a campus Chinese joint: edible, nothing more. Seoul Dae Banjeom’s “speed” strategy was not limited to delivery. Urban legend had it that if you ordered directly at the counter during a break, your jajangmyeon would hit the table before you finished sitting down, and no one found that hard to believe. Looking back now, I have a new respect for the delivery riders who must have crossed those wide lawns all day yelling, “Jajangmyeon delivery!”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Seoul National University of Science and Technology in 2006 (1)</title>
+      <link>http://jaeyo.github.io/en/snut-2006-1/</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/snut-2006-1/</guid>
+      <description>&lt;p&gt;I dropped by my alma mater, Seoul National University of Science and Technology, for the first time in a long while. It was late at night and too dark to see properly, but quite a few buildings I had never seen before had gone up. Some were still under construction, and a lone excavator sat in the middle of one site. Where there had been a lawn a decade ago, a gleaming building now stood in imposing silence. The old Da Vinci Hall, rumored to be haunted, was gone, and something new had taken its place. The campus keeps getting better, and yet I could not help feeling a little sad that it was drifting, bit by bit, from the picture in my memory. So before it is too late, I want to set down what the school looked like in 2006.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building Ridistory’s Frontend</title>
+      <link>http://jaeyo.github.io/en/how-to-develop-ridistory-frontend/</link>
+      <pubDate>Sun, 08 Oct 2017 14:57:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/how-to-develop-ridistory-frontend/</guid>
+      <description>&lt;p&gt;This post is a copy of &lt;a href=&#34;https://ridicorp.com/story/how-to-develop-ridistory-front/&#34;&gt;an article I published on our company blog&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;br /&gt;&#xA;&lt;hr&gt;&#xA;&lt;br /&gt;&#xA;&lt;p&gt;There used to be a cartoon called &lt;em&gt;Montana Jones&lt;/em&gt;. If I remember right, it aired around the mid‑1990s. In each episode, an anthropomorphized lion and tiger explored ruins and ran into villains led by someone called Zero King. Zero King rode a robot built by his subordinate, Dr. Nitro, blocked the heroes’ path, and after a long chase the good guys always won. The banter between Zero King and Dr. Nitro was the best part.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Life Should Be Painted in Every Color</title>
+      <link>http://jaeyo.github.io/en/life-with-rainbow-colors/</link>
+      <pubDate>Sat, 08 Jul 2017 06:21:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/life-with-rainbow-colors/</guid>
+      <description>&lt;p&gt;From the morning it is stiflingly hot, and by afternoon a downpour falls out of nowhere. I am glad the heat breaks a little, but the air remains heavy. Summer is still summer.&lt;/p&gt;&#xA;&lt;p&gt;When I roll the word summer around in my mind, something like nostalgia rises up. I remember neglecting vacation homework and running through mountains and fields all day as a child. I remember horror movies on TV during tropical nights when the heat kept me from sleeping. I remember doubling up on a bicycle with friends and pedaling for half an hour to swim in a valley, or shivering with blue lips after hours at the neighborhood pool before eating cup noodles from the stationery shop next door. Scenes like that drift past.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I Want to Drive</title>
+      <link>http://jaeyo.github.io/en/drive/</link>
+      <pubDate>Thu, 18 May 2017 00:31:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/drive/</guid>
+      <description>&lt;p&gt;I want to drive. I think about it whenever I have a spare moment. The odd thing is, before I got my license I never once wanted to drive. I had even resolved to put it off as long as I could. When friends signed up at driving schools right after the CSAT in senior year, I was busy with part-time work and thought, “They don’t even have cars. Why rush the license?” On trips, when a friend wore themselves out on a long haul at the wheel, I was sorry for them, or so I said. It was lip service, really. I wasn’t genuinely sorry. I enjoyed sitting in the back seat and resting. The license I have now I only hurried to get because my wife and I had a Jeju trip coming up. If she hadn’t insisted that Jeju without a car is a pain, I’d probably still be unlicensed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MariaDB Multi-Source Replication</title>
+      <link>http://jaeyo.github.io/en/mariadb-multi-source-replication/</link>
+      <pubDate>Fri, 28 Apr 2017 17:51:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/mariadb-multi-source-replication/</guid>
+      <description>&lt;h2 id=&#34;multi-source-replication-procedure&#34;&gt;Multi-source replication procedure&lt;/h2&gt;&#xA;&lt;p&gt;Add the following to the configuration of the MySQL instance that will act as the slave:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;# /etc/mysql/maridb.conf.d/50-server.cnf&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[mysqld]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;server_id=19823759 &lt;span style=&#34;font-style:italic&#34;&gt;# must not collide with the master&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;replicate-ignore-db=mysql &lt;span style=&#34;font-style:italic&#34;&gt;# do not replicate the mysql database&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On the master database, create a replication user and grant privileges:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;grant replication slave on *.* to &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;repl&amp;#39;&lt;/span&gt;@&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt; identified by &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;!repl123&amp;#39;&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Use &lt;code&gt;mysqldump&lt;/code&gt; on the database that will act as the master to take a dump:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Too Many Open Files</title>
+      <link>http://jaeyo.github.io/en/too-many-open-files/</link>
+      <pubDate>Tue, 25 Apr 2017 19:25:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/too-many-open-files/</guid>
+      <description>&lt;p&gt;I was at home strumming the guitar when a message came in saying my wife was on her way back. I grabbed my phone to go meet her at the subway station near our place, but I noticed Slack was piled up with notifications. We use Slack for team chat, so I opened it without thinking. In the channel that lights up whenever something goes wrong with the servers, several new messages were waiting. My heart skipped. When I looked more closely, I saw that a few different errors had fired over and over.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Where Did These Requests Come From?</title>
+      <link>http://jaeyo.github.io/en/weird-requests/</link>
+      <pubDate>Tue, 25 Apr 2017 12:00:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/weird-requests/</guid>
+      <description>&lt;p&gt;When we launched a new service, we adopted AWS CloudWatch for server monitoring. Until the very end we had weighed CloudWatch against New Relic. New Relic had more features and stronger references, but the agent refused to install on some of our servers. If we had had more time, we probably could have resolved that. But launch was right around the corner, and CloudWatch covered most of what we needed, so we went with CloudWatch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Layers of Space</title>
+      <link>http://jaeyo.github.io/en/spaces/</link>
+      <pubDate>Tue, 25 Apr 2017 11:00:01 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/spaces/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;What we call memory in everyday life is memory given spatial form. Proust keeps summoning the village, roads, houses, and rooms of his childhood in &lt;em&gt;In Search of Lost Time&lt;/em&gt; because remembrance compresses certain stretches of time into something like a honeycomb of space. As Bachelard says in &lt;em&gt;The Poetics of Space&lt;/em&gt;, “What makes remembrance vivid is not time but space. We discover the beautiful fossils of duration made concrete through long dwelling, through space, and within space.”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stories from Job Interviews</title>
+      <link>http://jaeyo.github.io/en/job-interview/</link>
+      <pubDate>Thu, 25 Aug 2016 14:40:55 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/job-interview/</guid>
+      <description>&lt;p&gt;I once heard that the stress of preparing for a job change is about as heavy as the stress of divorce. For me that sounds a bit exaggerated, but I do agree the load is serious. With each round of interviews my self-esteem crumbled like sand on an open palm, and I caught myself regretting my whole life. What had I been doing all this time? I started to worry that if I kept preparing like that, it would shorten my life. From the company’s side, the story is simple: you’re rejected because you weren’t the right fit for the seat they needed to fill. From the candidate’s side, it becomes: so this is all I amount to, a spiral of self-reproach.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -1,33 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>career on Hello, There</title>
+    <title>Career on Hello, There</title>
     <link>http://jaeyo.github.io/en/tags/career/</link>
-    <description>Recent content in career on Hello, There</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Career on Hello, There</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 21 Apr 2022 10:40:55 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Craft of the Resume</title>
+      <link>http://jaeyo.github.io/en/resume-skill/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/resume-skill/</guid>
+      <description>&lt;br /&gt;&#xA;A resume sets the frame.&#xA;&lt;br /&gt;&#xA;&lt;br /&gt;&#xA;&lt;p&gt;That is what I have felt lately after sitting on the interviewer’s side a few times. A resume is only a summary of a candidate’s history on paper, yet some resumes effectively pre-design the direction and structure of the interview. Unless interviewers are careful, they tend, without noticing it, to ask questions and form judgments inside the frame the resume has already built. That is especially true in experienced-hire interviews, where past work is the main thing being verified. Interviewers who understand this structural bias need preparation and practice so they do not get swept along by cognitive shortcuts. Candidates, for their part, can also play smart by understanding the same bias and responding strategically.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A retrospective of my 8th month in NAVER CLOUD</title>
       <link>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</link>
       <pubDate>Thu, 21 Apr 2022 10:40:55 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/8th-month-after-joining-naver-cloud/</guid>
-      <description>I moved to my current company, NAVER CLOUD, at the end of August last year. When I was in school, I graduated straight through without transfering schools, but since I started working, I&amp;rsquo;ve been changing jobs quite often.
-I&amp;rsquo;ve been through this many changes, each time to a different company and a different position, and it makes me think that changing jobs is like traveling. It&amp;rsquo;s a journey of leaving familiar neighborhoods and people and meeting new cultures in new places.</description>
+      <description>&lt;p&gt;I moved to my current company, NAVER CLOUD, at the end of August last year. When I was in school, I graduated straight through without transferring schools, but since I started working, I’ve changed jobs quite often.&lt;/p&gt;&#xA;&lt;p&gt;After going through so many moves, each time to a different company and a different role, I sometimes think changing jobs is like traveling. It’s a journey of leaving familiar neighborhoods and people behind and encountering new cultures in new places. From the outside, moving to another IT company, still as a developer, may all look the same, but in reality every move feels completely different. The people are different, the company is different, and the destination is different.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Eight Years as a Developer: A Look Back (3)</title>
+      <link>http://jaeyo.github.io/en/look-back-on-8-years-3/</link>
+      <pubDate>Sat, 16 May 2020 23:20:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/look-back-on-8-years-3/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-1&#34;&gt;Eight Years as a Developer: A Look Back (1)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-2&#34;&gt;Eight Years as a Developer: A Look Back (2)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-3&#34;&gt;&lt;em&gt;&lt;strong&gt;Eight Years as a Developer: A Look Back (3)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;sk-cc-jul-2018--&#34;&gt;SK C&amp;amp;C (Jul 2018 ~ )&lt;/h2&gt;&#xA;&lt;h3 id=&#34;a-fresh-start&#34;&gt;A fresh start&lt;/h3&gt;&#xA;&lt;p&gt;On day one I saw an office with empty desks. Later I learned it was summer vacation season and many people were away—including my group’s lead. For the first few days I picked up a laptop and got used to systems and atmosphere.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eight Years as a Developer: A Look Back (2)</title>
+      <link>http://jaeyo.github.io/en/look-back-on-8-years-2/</link>
+      <pubDate>Mon, 11 May 2020 15:53:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/look-back-on-8-years-2/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-1&#34;&gt;Eight Years as a Developer: A Look Back (1)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-2&#34;&gt;&lt;em&gt;&lt;strong&gt;Eight Years as a Developer: A Look Back (2)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-3&#34;&gt;Eight Years as a Developer: A Look Back (3)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;ridi-jun-2016--mar-2018&#34;&gt;RIDI (Jun 2016 ~ Mar 2018)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;junior-versus-experienced-hire&#34;&gt;Junior versus experienced hire&lt;/h3&gt;&#xA;&lt;p&gt;The second company changed me a lot. I got a MacBook. Until then I had developed on Windows and never used one. I had to learn macOS first. Everything else was new too. My first job had used &lt;strong&gt;SVN&lt;/strong&gt;; here I learned &lt;strong&gt;Git&lt;/strong&gt;. The languages were unfamiliar &lt;strong&gt;PHP&lt;/strong&gt; and &lt;strong&gt;JavaScript&lt;/strong&gt;. &lt;strong&gt;PHP&lt;/strong&gt; was completely new—I spent about a week on syntax, the &lt;strong&gt;Laravel&lt;/strong&gt; framework, and &lt;strong&gt;Doctrine&lt;/strong&gt; ORM. We tracked work in Asana and I used Slack for the first time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eight Years as a Developer: A Look Back (1)</title>
+      <link>http://jaeyo.github.io/en/look-back-on-8-years-1/</link>
+      <pubDate>Sun, 10 May 2020 23:23:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/look-back-on-8-years-1/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-1&#34;&gt;&lt;em&gt;&lt;strong&gt;Eight Years as a Developer: A Look Back (1)&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-2&#34;&gt;Eight Years as a Developer: A Look Back (2)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://jaeyo.github.io/look-back-on-8-years-3&#34;&gt;Eight Years as a Developer: A Look Back (3)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;It has been eight years since I set foot on the developer path. I honestly cannot say how much the me who started working in his late twenties differs from the me today. So I want to write down those eight years the way you might write a travel diary. I have never done one of those year-in-review posts many people write at New Year’s—so this is eight years of reflection in one go.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The weight of salary and years of experience</title>
       <link>http://jaeyo.github.io/en/better-than-yesterday/</link>
       <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/better-than-yesterday/</guid>
-      <description>&amp;ldquo;There comes a point where you have to do more than just develop and implement features.&amp;rdquo;
-&amp;ldquo;You can be a people manager or you can be an expert in one area or the other, the choice is yours.&amp;rdquo;
-(from https://taetaetae.github.io/2019/07/07/review-first-half-2019/)
-These are thoughts I&amp;rsquo;ve had for quite some time, since I started working. As a developer, your primary job is to &amp;ldquo;write code that works as intended&amp;rdquo;. But at some point, you need to be able to do more than that, you need to be able to do plus alpha.</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;“There comes a point where you have to do more than just develop and implement features.”&lt;/p&gt;&#xA;&lt;p&gt;“You can be a people manager or you can be an expert in one area or the other, the choice is yours.”&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;(from &lt;a href=&#34;https://taetaetae.github.io/2019/07/07/review-first-half-2019/&#34;&gt;https://taetaetae.github.io/2019/07/07/review-first-half-2019/&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;These are thoughts I’ve had for quite some time, ever since I started working. As a developer, your primary job is to “write code that works as intended.” But at some point, you have to do more than that. You need to bring something extra to the table.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Stories from Job Interviews</title>
+      <link>http://jaeyo.github.io/en/job-interview/</link>
+      <pubDate>Thu, 25 Aug 2016 14:40:55 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/job-interview/</guid>
+      <description>&lt;p&gt;I once heard that the stress of preparing for a job change is about as heavy as the stress of divorce. For me that sounds a bit exaggerated, but I do agree the load is serious. With each round of interviews my self-esteem crumbled like sand on an open palm, and I caught myself regretting my whole life. What had I been doing all this time? I started to worry that if I kept preparing like that, it would shorten my life. From the company’s side, the story is simple: you’re rejected because you weren’t the right fit for the seat they needed to fill. From the candidate’s side, it becomes: so this is all I amount to, a spiral of self-reproach.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

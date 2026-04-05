@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on Hello, There</title>
+    <link>http://jaeyo.github.io/tags/ai/</link>
+    <description>Recent content in Ai on Hello, There</description>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 에이전트와 소프트웨어의 액체화</title>
+      <link>http://jaeyo.github.io/ai-agent-paradigm-shift/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/ai-agent-paradigm-shift/</guid>
+      <description>&lt;p&gt;근래에 claude code 와 같은 AI 에이전트를 이것저것 만지다 보면, 기존 소프트웨어를 사용할 때와는 다른 종류의 감각을 만나게 된다는 생각이 든다. 이전의 소프트웨어들은 대개 개발자가 미리 설계해놓은 버튼과 메뉴, 폼과 API 의 흐름 안에서만 움직였다. 사용자는 허용된 경로를 따라 입력을 넣고, 소프트웨어는 그에 대응하는 정해진 출력을 내놓는다. 말하자면 이미 굳어진 길 위를 걷는 식이다.&lt;/p&gt;&#xA;&lt;p&gt;하지만 AI 에이전트는 다르다. 사용자가 던지는 것은 종종 &amp;ldquo;무엇을 하라&amp;quot;는 목표 수준의 요청이고, 에이전트는 그 요청을 수행하기 위해 어떤 순서로 사고하고 어떤 tool 을 꺼내들지를 그때그때 판단한다. 판단 자체는 결국 LLM 엔진에 기대고 있지만, 중요한 것은 동작의 세부 로직이 사전에 빼곡하게 고정되어 있지 않다는 점이다. 이 지점이 내게는 이전의 소프트웨어들과 확연히 다른 결로 느껴진다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

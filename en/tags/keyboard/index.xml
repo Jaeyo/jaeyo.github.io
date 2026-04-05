@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>keyboard on Hello, There</title>
+    <title>Keyboard on Hello, There</title>
     <link>http://jaeyo.github.io/en/tags/keyboard/</link>
-    <description>Recent content in keyboard on Hello, There</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Keyboard on Hello, There</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 16 Oct 2018 10:34:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Oct 2018 10:34:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>chibios error on building qmk_firmware</title>
       <link>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</link>
       <pubDate>Tue, 16 Oct 2018 10:34:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/error-while-building-qmk_firmware/</guid>
-      <description>qmk_firmware is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware are planck, ergodox, etc. Documentation and more information can be found at https://qmk.fm/. To clone and build this source for the first time, the documentation will guide you as follows.
-$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt; However, if you follow along, you&amp;rsquo;ll see the error below.
-$ make ergodo_infinity:default tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory tmk_core/chibios.</description>
+      <description>&lt;p&gt;&lt;code&gt;qmk_firmware&lt;/code&gt; is an open source firmware that supports a number of programmable keyboards. Popular keyboards supported by this firmware include planck and ergodox. Documentation and more information can be found at &lt;a href=&#34;https://qmk.fm/&#34;&gt;https://qmk.fm/&lt;/a&gt;. When you first clone the repo and try to build it, the documentation tells you to run the following:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ make &amp;lt;my_keyboard&amp;gt;:&amp;lt;my_keymap&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However, if you follow along, you’ll see the error below.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ make ergodo_infinity:default&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:38: lib/chibios-contrib/os/common/startup/ARMCMx/compilers/GCC/mk/startup_k20x7.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:40: lib/chibios/os/hal/hal.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:46: lib/chibios-contrib/os/hal/ports/KINETIS/K20x/platform.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:78: lib/chibios-contrib/os/hal/boards/PJRC_TEENSY_3_1/board.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:79: lib/chibios/os/hal/osal/rt/osal.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:81: lib/chibios/os/rt/rt.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:87: lib/chibios/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tmk_core/chibios.mk:89: lib/chibios/os/hal/lib/streams/streams.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;quantum/visualizer/visualizer.mk:77: lib/ugfx/gfx.mk: No such file or directory&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make[1]: *** No rule to make target `lib/ugfx/gfx.mk&amp;#39;.  Stop.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make: *** [ergodox_infinity:default] Error 1&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is caused by the submodule not being updated properly, so update the submodule with the command below and you should be able to rebuild normally.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

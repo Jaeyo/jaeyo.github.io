@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aws on Hello, There</title>
+    <title>Aws on Hello, There</title>
     <link>http://jaeyo.github.io/en/tags/aws/</link>
-    <description>Recent content in aws on Hello, There</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Aws on Hello, There</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 30 Jan 2018 17:19:00 +0000</lastBuildDate><atom:link href="http://jaeyo.github.io/en/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2018 17:19:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AWS APIs, restricting access based on ip</title>
+      <title>AWS APIs, Restricting Access Based on IP</title>
       <link>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</link>
       <pubDate>Tue, 30 Jan 2018 17:19:00 +0000</pubDate>
-      
       <guid>http://jaeyo.github.io/en/aws-api-ip-based-access-control/</guid>
-      <description>If you want to restrict access to instances or load balancers on EC2 to specific IP bands, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs.
-For example, let&amp;rsquo;s say you want to restrict APIs that access the Parameter Store in AWS System Manager and read data based on IP.</description>
+      <description>&lt;p&gt;If you want to restrict access to instances or load balancers on EC2 to specific IP ranges, you can use Security Groups or ACLs. However, if you want to restrict access to other APIs provided by AWS based on IP, you cannot use Security Groups or ACLs. For that, you need an IAM policy.&lt;/p&gt;&#xA;&lt;p&gt;For example, let’s say you want to restrict access to the APIs that read data from Parameter Store in AWS Systems Manager based on IP. First, let’s check the default policy for Parameter Store. You can find it under “AWS IAM -&amp;gt; Policies”.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

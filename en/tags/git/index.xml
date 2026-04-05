@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Hello, There</title>
+    <link>http://jaeyo.github.io/en/tags/git/</link>
+    <description>Recent content in Git on Hello, There</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git: Delete a Branch Locally, Then Remove It on the Remote</title>
+      <link>http://jaeyo.github.io/en/git-delete-branch-and-push/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/git-delete-branch-and-push/</guid>
+      <description>&lt;p&gt;In Git, you create a branch, do the work, merge it, and then naturally delete the feature branch. If you use something like GitHub pull requests, removing the remote branch is easy enough with the &lt;code&gt;Delete Branch&lt;/code&gt; button after merge. But if you merge locally, you have to clean up both the local branch and the one on the remote. Deleting the local branch is easy. The problem is that I can never remember the command for deleting the remote branch.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.157.0">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="http://jaeyo.github.io/why-developers-need-heuristics/" />
+  <link rel="canonical" href="http://jaeyo.github.io/why-developers-need-heuristics/" />
+  <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/why-developers-need-heuristics/" />
+  
+
+  <script type="application/ld+json">
+  {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+           "@type": "WebPage",
+           "@id": "http:\/\/jaeyo.github.io\/"
+      },
+      "articleSection" : "posts",
+      "name" : "개발자 A 의 휴리스틱에 대한 소고",
+      "headline" : "개발자 A 의 휴리스틱에 대한 소고",
+      "description" : "개발자는 논리를 다룬다. 컴퓨터 화면 안에는 변수가 비교적 잘 통제된 세계가 있다. 문법은 정해져 있고, 타입은 선언되어 있고, 같은 입력을 넣으면 같은 결과가 나와야 한다. 어제 재현되던 버그가 오늘은 재현되지 않는다면 그건 대개 우리가 아직 원인을 모를 뿐이지, 원인 자체가 없는 것은 아니다.\n그래서 개발자는 논리적 사고에 익숙해진다. 문제를 분해하고, 원인을 추적하고, 조건을 명시하고, 반례를 확인하는 일. 이런 훈련은 대체로 옳다. 사실 코드를 다루는 일에서는 거의 필수에 가깝다.\n하지만 모니터 바깥의 세계는 좀 다르다. 기술을 도입할지 말지, 어느 요구사항을 먼저 처리할지, 지금 이 조직에서 어떤 선택이 장기적으로 더 나은지 같은 문제들 앞에 서면 이야기가 달라진다. 이 문제들은 코드처럼 닫힌 체계 안에 있지 않다. 변수는 지나치게 많고, 중요한 정보는 대개 늦게 오거나 아예 오지 않으며, 의사결정은 충분한 데이터가 모이기를 기다려주지 않는다.\n",
+      "inLanguage" : "ko-KR",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2026",
+      "datePublished": "2026-04-05 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2026-04-05 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/jaeyo.github.io\/why-developers-need-heuristics\/",
+      "keywords" : [ "tech", ]
+  }
+</script>
+<title>개발자 A 의 휴리스틱에 대한 소고</title>
+  <meta property="og:title" content="개발자 A 의 휴리스틱에 대한 소고" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="개발자는 논리를 다룬다. 컴퓨터 화면 안에는 변수가 비교적 잘 통제된 세계가 있다. 문법은 정해져 있고, 타입은 선언되어 있고, 같은 입력을 넣으면 같은 결과가 나와야 한다. 어제 재현되던 버그가 오늘은 재현되지 않는다면 그건 대개 우리가 아직 원인을 모를 뿐이지, 원인 자체가 없는 것은 아니다.
+그래서 개발자는 논리적 사고에 익숙해진다. 문제를 분해하고, 원인을 추적하고, 조건을 명시하고, 반례를 확인하는 일. 이런 훈련은 대체로 옳다. 사실 코드를 다루는 일에서는 거의 필수에 가깝다.
+하지만 모니터 바깥의 세계는 좀 다르다. 기술을 도입할지 말지, 어느 요구사항을 먼저 처리할지, 지금 이 조직에서 어떤 선택이 장기적으로 더 나은지 같은 문제들 앞에 서면 이야기가 달라진다. 이 문제들은 코드처럼 닫힌 체계 안에 있지 않다. 변수는 지나치게 많고, 중요한 정보는 대개 늦게 오거나 아예 오지 않으며, 의사결정은 충분한 데이터가 모이기를 기다려주지 않는다.
+" />
+  <meta name="description" content="개발자는 논리를 다룬다. 컴퓨터 화면 안에는 변수가 비교적 잘 통제된 세계가 있다. 문법은 정해져 있고, 타입은 선언되어 있고, 같은 입력을 넣으면 같은 결과가 나와야 한다. 어제 재현되던 버그가 오늘은 재현되지 않는다면 그건 대개 우리가 아직 원인을 모를 뿐이지, 원인 자체가 없는 것은 아니다.
+그래서 개발자는 논리적 사고에 익숙해진다. 문제를 분해하고, 원인을 추적하고, 조건을 명시하고, 반례를 확인하는 일. 이런 훈련은 대체로 옳다. 사실 코드를 다루는 일에서는 거의 필수에 가깝다.
+하지만 모니터 바깥의 세계는 좀 다르다. 기술을 도입할지 말지, 어느 요구사항을 먼저 처리할지, 지금 이 조직에서 어떤 선택이 장기적으로 더 나은지 같은 문제들 앞에 서면 이야기가 달라진다. 이 문제들은 코드처럼 닫힌 체계 안에 있지 않다. 변수는 지나치게 많고, 중요한 정보는 대개 늦게 오거나 아예 오지 않으며, 의사결정은 충분한 데이터가 모이기를 기다려주지 않는다.
+" />
+  <meta property="og:locale" content="ko-KR" /><meta property="og:image" content="" />
+  
+
+  
+    <style>body{font-family:bree serif,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin:0 20px;background:#fefefe;min-height:100vh;color:#2c2c2c;line-height:1.6}article{max-width:700px;margin-left:auto;margin-right:auto;padding:3rem 4rem;background:#fff;border-radius:0;box-shadow:0 0 40px rgba(0,0,0,5%);margin-top:2rem;margin-bottom:2rem;border:1px solid rgba(0,0,0,8%)}a{color:#1a1a1a;text-decoration:none;transition:all .2s ease}a:hover{color:#2d2d2d;transform:translateY(-1px);text-decoration:underline;text-decoration-color:rgba(0,0,0,.3)}.post-ads{margin:50px 0}.markdown-body{font-size:17px;max-width:100%;line-height:1.8;letter-spacing:.2px;color:#333;text-align:justify;hyphens:auto}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:2.5em;margin-bottom:1em;font-weight:400;line-height:1.3;letter-spacing:-.3px;color:#1a1a1a}.markdown-body h1{font-size:2em;text-align:center;margin-top:3em;margin-bottom:1.5em}.markdown-body h2{font-size:1.6em;margin-top:2.5em;padding-left:1em;border-left:3px solid rgba(0,0,0,.1)}.markdown-body h3{font-size:1.3em;margin-top:2em;font-style:italic}.markdown-body ul,.markdown-body ol{margin-bottom:1.5em;padding-left:2em;margin-left:1em}.markdown-body li{margin-bottom:.5em;line-height:1.7;letter-spacing:.1px}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:2em 0;padding:1.5em 2em;color:#5a5a5a;background:rgba(0,0,0,2%);border-left:4px solid rgba(0,0,0,.15);border-radius:0;position:relative;font-style:italic;text-align:center}.markdown-body blockquote::before{content:'“';position:absolute;top:-.3em;left:.3em;font-size:3rem;color:rgba(0,0,0,.1)}.markdown-body blockquote::after{content:'”';position:absolute;bottom:-.5em;right:.3em;font-size:3rem;color:rgba(0,0,0,.1)}.markdown-body pre{padding:20px;overflow:auto;border-radius:0;margin:2em 0;background:rgba(0,0,0,4%);border:1px solid rgba(0,0,0,.1);border-left:4px solid rgba(0,0,0,.2);position:relative;font-size:.9em}.markdown-body code{padding:.2em .4em;font-size:90%;background:rgba(0,0,0,4%);border-radius:3px;border:1px solid rgba(0,0,0,6%);font-family:monaco,menlo,consolas,monospace;color:#8b0000}.markdown-body pre>code{padding:0;font-size:100%;background-color:inherit;border:0;border-radius:0}.Chinese .markdown-body{line-height:200%}.site-date-catalog{font-size:2rem}.header-title{font-size:2rem;font-weight:700;margin-top:32px;font-family:bungee shade,sans-serif}.header-title a{text-decoration:none}.header-subtitle{color:#666}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;height:1px;background:rgba(0,0,0,.15);border:none;margin:2rem 0;position:relative}.header-line::after{content:'❖';position:absolute;top:-8px;left:50%;transform:translateX(-50%);background:#fff;padding:0 10px;color:rgba(0,0,0,.3);font-size:.8rem}.lang-switch{font-weight:600}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:8px 16px;background:rgba(0,0,0,4%);border:1px solid rgba(0,0,0,8%);border-radius:20px;font-size:.9rem;transition:all .2s ease;display:inline-block;margin:2px 4px}.posts-category:hover{background:rgba(0,0,0,8%);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.1)}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:12px}.post-header{margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(0,0,0,.15);position:relative;text-align:center}.post-header::after{content:'❦';position:absolute;bottom:-12px;left:50%;transform:translateX(-50%);font-size:1.2rem;color:rgba(0,0,0,.3);background:#fff;padding:0 10px}.post-title{font-size:2rem;font-weight:400;color:#1a1a1a;margin-bottom:1rem;line-height:1.3;font-family:playfair display,times new roman,serif;letter-spacing:-.5px;text-align:center}.post-tags{display:inline;font-weight:500;padding:6px 12px;margin-right:8px;margin-bottom:6px;background:rgba(0,0,0,4%);border:1px solid rgba(0,0,0,8%);border-radius:20px;font-size:.85rem;transition:all .2s ease}.post-tags:hover{background:rgba(0,0,0,8%);transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.1)}.post-date{font-weight:400;font-style:italic;color:rgba(0,0,0,.5);font-size:.9rem;letter-spacing:.5px;font-family:crimson text,times new roman,serif}.post-author{float:right;font-weight:400;color:rgba(0,0,0,.5);font-size:.9rem;font-style:italic;font-family:crimson text,times new roman,serif}.post-author a{color:inherit;text-decoration:none;transition:color .2s ease}.post-author a:hover{color:rgba(0,0,0,.8)}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-align:justify;text-justify:inter-word;margin-bottom:1.5em;letter-spacing:.2px;text-indent:1.5em}.post-content p:first-of-type{text-indent:0}}.related-content{background:rgba(255,255,255,.5);border:1px solid rgba(0,0,0,8%);border-radius:12px;padding:2rem;margin-bottom:50px;margin-top:100px;backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(0,0,0,5%)}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){.header-title,.header-subtitle,.header-items{text-align:center}.posts-line{font-size:16px}.markdown-body{font-size:17px;line-height:1.7;letter-spacing:.1px}.post-title{font-size:1.8rem;line-height:1.3}.post-content p{letter-spacing:.1px;margin-bottom:1.5em;text-indent:1em}article{padding:2rem;margin-top:1rem;margin-bottom:1rem}}@media screen and (max-width:48em){.posts-category{display:none}article{margin-top:1rem;margin-bottom:1rem;border-radius:12px}body{margin:0 10px}}</style>
+  
+  
+    <style>.container,.container-fluid{margin-right:auto;margin-left:auto}.container-fluid{padding-right:2rem;padding-left:2rem}.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-.5rem;margin-left:-.5rem}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-xs{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-xs-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-xs-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-xs-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-xs-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-xs{-ms-flex-pack:distribute;justify-content:space-around}.between-xs{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-xs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}@media only screen and (min-width:48em){.container{width:49rem}.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-sm{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-sm-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-sm-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-sm-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-sm-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-sm{-ms-flex-pack:distribute;justify-content:space-around}.between-sm{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-sm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:64em){.container{width:65rem}.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-offset-0,.col-md-offset-1,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-md{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-md-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-md-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-md-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-md-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-md{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-md{-ms-flex-pack:distribute;justify-content:space-around}.between-md{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-md{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:75em){.container{width:76rem}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-lg{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-lg-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-lg-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-lg-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-lg-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-lg{-ms-flex-pack:distribute;justify-content:space-around}.between-lg{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-lg{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}</style>
+  
+
+  
+
+  <link href="/index.xml" rel="alternate" type="application/rss+xml"
+    title="Hello, There">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+  
+  
+
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33TNK89CXR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-33TNK89CXR');
+</script>
+<style>
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+div {
+  font-family: 'GowunBatang-Regular';
+  line-height: 1.4;
+}
+h1 {
+  margin-top: 50px;
+}
+h2 {
+  margin-top: 45px;
+}
+h3 {
+  margin-top: 40px;
+}
+li {
+  line-height: 1.8;
+  margin: 5px 5px;
+}
+</style>
+
+</head>
+
+
+<body>
+  <article class="post Korean" id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          <header>
+  <div class="header-title">
+    <a href="/"
+      >Hello, There</a
+    >
+  </div>
+  <div class="header-subtitle">personal logs of everyday life and technology</div>
+</header>
+<div class="row end-md center-xs header-items">
+  
+  <div class="header-item">
+    <a href="/about" target="_blank">About Me</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="https://github.com/jaeyo" target="_blank">Github</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="https://www.linkedin.com/in/%EC%9E%AC%EC%9A%A9-%EC%9D%B4-a4205044?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgsuFM68IQ7CWJGX1yAKkyQ%3D%253" target="_blank">LinkedIn</a>
+  </div>
+  
+  <div class="header-item">
+    <a href="https://www.facebook.com/jaeyo.developer" target="_blank">Facebook</a>
+  </div>
+  
+</div>
+<div class="row end-xs">
+  
+  
+  
+</div>
+<div class="header-line"></div>
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">개발자 A 의 휴리스틱에 대한 소고</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2026-04-05 00:00:00 UTC">
+                05 Apr 2026
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>개발자는 논리를 다룬다. 컴퓨터 화면 안에는 변수가 비교적 잘 통제된 세계가 있다. 문법은 정해져 있고, 타입은 선언되어 있고, 같은 입력을 넣으면 같은 결과가 나와야 한다. 어제 재현되던 버그가 오늘은 재현되지 않는다면 그건 대개 우리가 아직 원인을 모를 뿐이지, 원인 자체가 없는 것은 아니다.</p>
+<p>그래서 개발자는 논리적 사고에 익숙해진다. 문제를 분해하고, 원인을 추적하고, 조건을 명시하고, 반례를 확인하는 일. 이런 훈련은 대체로 옳다. 사실 코드를 다루는 일에서는 거의 필수에 가깝다.</p>
+<p>하지만 모니터 바깥의 세계는 좀 다르다. 기술을 도입할지 말지, 어느 요구사항을 먼저 처리할지, 지금 이 조직에서 어떤 선택이 장기적으로 더 나은지 같은 문제들 앞에 서면 이야기가 달라진다. 이 문제들은 코드처럼 닫힌 체계 안에 있지 않다. 변수는 지나치게 많고, 중요한 정보는 대개 늦게 오거나 아예 오지 않으며, 의사결정은 충분한 데이터가 모이기를 기다려주지 않는다.</p>
+<p>문제는 여기서부터다. 개발자는 논리의 세계에 오래 머물수록 현실의 의사결정에도 같은 종류의 정합성을 기대하게 된다. 하지만 현실은 그렇게 친절하지 않다. 많은 경우 우리는 완전한 정보도, 충분한 시간도, 무한한 인지 자원도 갖지 못한 채 결정을 내려야 한다. 휴리스틱은 바로 이런 자리에서 등장한다.</p>
+<h2 id="휴리스틱은-비합리성의-다른-이름이-아니다">휴리스틱은 비합리성의 다른 이름이 아니다</h2>
+<p>휴리스틱을 흔히 &ldquo;대충 판단하는 방식&rdquo; 정도로 이해하기 쉽다. 틀린 말은 아니지만 충분한 설명은 아니다. 휴리스틱은 복잡한 문제를 빠르게 다루기 위해 사용하는 간단한 규칙이자 사고의 지름길에 가깝다. 모든 변수를 다 계산하지 못하는 상황에서, 일단 쓸 만한 답에 도달하기 위해 사용하는 현실적인 방법이라고 보는 편이 더 맞다.</p>
+<p>여기에는 휴리스틱을 둘러싼 오해가 하나 있다. 많은 사람들이 휴리스틱을 논리의 반대편에 놓고 본다. 즉 논리는 정교하고, 휴리스틱은 조악하다고 여긴다. 하지만 실제로는 그렇게 단순하게 나눌 수 없다. 휴리스틱은 주먹구구가 아니라, 제한된 합리성 아래에서 작동하는 압축된 규칙에 더 가깝다. 최적화를 포기한 것이지 사고 자체를 포기한 것은 아니다.</p>
+<p>가령 여행 계획 하나를 세운다고 해도 우리는 교통비, 이동 시간, 체력, 날씨, 동선, 감정적 만족감, 동행인의 취향 같은 것들을 모두 계산해 최적해를 구하지 못한다. 너무 많은 계산이 필요하고, 애초에 계산할 수 없는 값도 많기 때문이다. 이럴 때 사람은 만족화에 가깝게 움직인다. 최선의 답이 아니라 충분히 괜찮은 답을 택하는 것이다.</p>
+<p>생각해보면 이건 현실 도피라기보다 현실 적응에 가깝다. 정확성을 조금 희생하더라도 인지 비용을 크게 줄일 수 있기 때문이다. 의사결정은 결과의 정확성만으로 이루어지지 않는다. 거기에는 그 결정을 내리기 위해 들인 시간과 에너지 또한 비용으로 포함된다.</p>
+<h2 id="개발자는-휴리스틱을-피할-수-없다">개발자는 휴리스틱을 피할 수 없다</h2>
+<p>개발자는 흔히 논리적 사고의 사람으로 이해되는 경우가 많지만, 실제로는 휴리스틱을 아주 자주 쓴다. 단지 그것을 휴리스틱이라고 부르지 않을 뿐이다.</p>
+<p>예를 들어 새로운 기술을 검토할 때 우리는 공식 문서, 벤치마크, 레퍼런스 아키텍처를 읽는다. 하지만 끝내 결정을 내리는 순간에는 과거 경험에서 익숙했던 패턴, 팀이 감당할 수 있는 복잡도, 지금 조직의 운영 성숙도 같은 것들이 크게 개입한다. 겉으로는 기술 검토처럼 보여도 실제로는 상당 부분 경험 기반의 압축된 판단이 작동한다.</p>
+<p>이 점에서 개발자의 업무는 두 층으로 나뉜다. 코드 작성, 디버깅, 정형화된 설계처럼 상대적으로 닫힌 체계에 가까운 문제에서는 논리적 사고가 더 유효하다. 반면 기술 선택, 우선순위 조정, 조직 협업, 제품 방향성 같은 열린 체계의 문제에서는 휴리스틱이 더 자주 필요해진다.</p>
+<p>이 대비는 팀원과 매니저의 차이에서도 종종 드러난다. 엔지니어 팀원은 명확한 제약 안에서 정답에 가까운 해를 찾는 일을 많이 한다. 반면 매니저는 불완전한 정보 속에서 여러 이해관계와 변수를 감수하며 결정을 내려야 한다. 그래서 닫힌 체계에서는 논리가, 열린 체계에서는 휴리스틱이 더 자주 호출된다.</p>
+<p>물론 이 구분을 너무 딱딱하게 볼 필요는 없다. 팀원도 새로운 기술을 도입할 때는 휴리스틱을 쓴다. 매니저도 리스크를 점검하고 지표를 해석할 때는 논리를 써야 한다. 결국 중요한 것은 어느 한쪽을 신앙처럼 붙드는 일이 아니라, 지금 문제가 어느 세계에 더 가까운지 구분하는 일이다.</p>
+<h2 id="휴리스틱의-힘은-패턴-인식과-추상화에서-나온다">휴리스틱의 힘은 패턴 인식과 추상화에서 나온다</h2>
+<p>휴리스틱이 유용한 이유는 인간이 세상을 전부 계산하지 않고도 살아갈 수 있게 해주기 때문이다. 이 과정에서 핵심이 되는 것은 패턴 인식과 추상화다.</p>
+<p>사람은 복잡한 현실을 있는 그대로 다루지 못한다. 대신 그것을 잘라내고, 묶고, 요약한다. 중요해 보이는 단서를 남기고 나머지는 생략한다. 이 추상화가 있어야 비슷한 상황을 같은 계열의 문제로 인식할 수 있고, 그래야 이전 경험이 다음 판단에 재사용될 수 있다.</p>
+<p>그래서 잘 길들여진 휴리스틱은 일종의 연장통과 비슷하다. 모든 문제를 해결하는 정교한 기계를 들고 다니는 것이 아니라, 자주 맞닥뜨리는 문제를 빠르게 처리할 수 있는 몇 가지 투박한 도구를 넣어두는 쪽에 가깝다. 이 도구들은 완벽하지 않다. 하지만 의외로 많은 상황에서 충분히 쓸 만하다.</p>
+<p>실제로 휴리스틱은 단지 빠르기만 한 것이 아니다. 때로는 더 실용적이기도 하다. 정보가 불완전하고 시간이 제한된 상황에서는 모든 변수를 다 고려하려는 시도가 오히려 판단을 늦추고, 늦어진 판단이 더 큰 비용을 만들기도 한다. 이런 상황에서는 탐색을 적절한 시점에서 멈추고, 가장 중요한 단서 하나 또는 몇 개를 기준으로 결정을 내리는 편이 더 낫다.</p>
+<h2 id="문제는-휴리스틱이-늘-편향을-데리고-온다는-점이다">문제는 휴리스틱이 늘 편향을 데리고 온다는 점이다</h2>
+<p>그렇다고 휴리스틱을 낭만적으로 볼 수만은 없다. 휴리스틱은 유용하지만, 거의 언제나 편향을 끌고 들어온다.</p>
+<p>대표적인 것이 가용성 휴리스틱이다. 머릿속에 쉽게 떠오르는 사례일수록 실제보다 더 자주 일어난다고 느끼는 경향이다. 최근에 본 장애 사례 하나가 머리에 강하게 남아 있으면, 그 위험을 실제보다 크게 평가할 수 있다. 정박 휴리스틱도 비슷하다. 처음 접한 숫자나 기준이 이후 판단의 중심축이 되어버리는 현상이다. 대표성 휴리스틱은 더 익숙하다. 어떤 대상이 내가 가진 전형적인 이미지와 닮았다는 이유만으로 그 성격이나 결과를 성급히 추정하는 방식이다.</p>
+<p>감정 역시 문제다. 감정 휴리스틱은 우리가 생각보다 훨씬 자주 판단에 개입한다. 어떤 기술이나 팀, 브랜드, 사람에 대해 이미 긍정적이거나 부정적인 감정을 가지고 있다면, 그 감정이 이후 평가를 은근히 밀어버린다. 사람은 자신이 감정적으로 기울어져 있다는 사실조차 잘 모를 때가 많다.</p>
+<p>더 위험한 것은 통제의 환상과 사후판단편향이다. 운이 좋았던 결과를 내 실력의 증거로 오해하거나, 결과를 알고 난 뒤에는 원래 그렇게 될 줄 알고 있었다고 착각하는 것. 이 두 가지가 합쳐지면 휴리스틱은 점점 더 거칠어진다. 자기 판단을 의심하지 않게 되기 때문이다.</p>
+<p>이쯤 되면 휴리스틱은 믿을 수 없는 것처럼 보일 수도 있다. 하지만 그렇다고 다시 모든 판단을 알고리즘으로 돌릴 수는 없다. 현실은 여전히 불완전하고, 우리는 여전히 제한된 존재이기 때문이다. 결국 중요한 것은 휴리스틱을 없애는 일이 아니라, 편향을 관리 가능한 수준으로 낮추는 일이다.</p>
+<h2 id="그래서-필요한-것은-휴리스틱의-훈련이다">그래서 필요한 것은 휴리스틱의 훈련이다</h2>
+<p>같은 문제를 봐도 더 나은 직관을 내는 사람이 있고, 엉뚱한 판단을 반복하는 사람이 있다. 이 차이는 휴리스틱을 쓰느냐 마느냐에서 나오지 않는다. 어떤 휴리스틱을, 어떤 맥락에서, 얼마나 점검하며 쓰느냐에서 나온다.</p>
+<p>첫째는 경험의 축적이다. 휴리스틱은 결국 경험을 압축해 만든 규칙이므로, 도메인 지식과 사례가 쌓일수록 정교해질 가능성이 높다. 다만 여기서 경험은 단순 반복과 같지 않다. 같은 일을 오래 했다는 사실만으로 휴리스틱이 좋아지지는 않는다. 경험을 추상화해 패턴으로 정리해야 비로소 다음 판단에 도움이 된다.</p>
+<p>둘째는 기록과 복기다. 어떤 판단을 왜 내렸는지, 그때 중요하게 봤던 단서는 무엇이었는지, 결과는 어땠는지를 남겨두면 자신의 휴리스틱이 어떤 환경에서 잘 작동하고 어떤 환경에서 자주 빗나가는지 보이기 시작한다. 기록은 사후판단편향을 줄이는 데에도 유효하다. 사람은 생각보다 쉽게 과거의 자신을 미화한다.</p>
+<p>셋째는 반증을 찾는 습관이다. 휴리스틱은 대개 첫 판단을 빠르게 만들어주지만, 그 첫 판단이 맞는지는 별개의 문제다. 따라서 중요한 결정일수록 내 판단에 반하는 증거를 일부러 찾아봐야 한다. 혼자서는 어렵다면 다른 사람의 시각을 들이는 편이 낫다. 팀의 판단이 언제나 옳다는 뜻은 아니지만, 최소한 한 사람의 확증편향을 조금 누그러뜨릴 가능성은 커진다.</p>
+<p>넷째는 시스템 2의 개입이다. 이 시스템 2 라는 것은 카너먼이 이야기한 두 가지 인지 체계에서 나온 개념인데, 빠르고 자동적인 첫 판단 이후에 개입하는 느리고 의식적인 검토를 의미한다. 인간의 첫 판단은 대개 빠르고 자동적이다. 문제는 그 다음이다. 지금 내 판단이 직관인지, 논리인지, 혹은 직관이 논리의 얼굴을 쓰고 들어온 것인지 잠깐 멈춰서 점검할 수 있어야 한다. 모든 결정에 이렇게까지 할 필요는 없다. 하지만 비용이 큰 결정이라면 그 정도의 느린 검토는 충분히 값어치를 한다.</p>
+<h2 id="논리를-버리자는-이야기는-아니다">논리를 버리자는 이야기는 아니다</h2>
+<p>휴리스틱을 이야기하다 보면 자칫 &ldquo;결국 논리는 한계가 있으니 직관을 믿자&quot;는 식으로 흘러가기 쉽다. 하지만 내가 보기엔 정반대다. 논리는 여전히 중요하다. 다만 그것이 모든 문제를 지배하는 만능 열쇠는 아니라는 점을 인정해야 한다.</p>
+<p>닫힌 체계에서는 논리가 강하다. 열린 체계에서는 휴리스틱이 강하다. 그리고 현실의 많은 문제는 이 둘이 뒤섞여 있다. 그러니 필요한 것은 둘 중 하나를 선택하는 일이 아니라, 어느 시점에서 어느 도구를 꺼내야 하는지를 아는 감각이다.</p>
+<p>휴리스틱은 사고의 지름길이다. 지름길이라는 말에는 늘 약간의 의심이 따라붙는다. 괜히 돌아가는 길보다 더 위험한 것 아닌가 싶기 때문이다. 실제로 그럴 때도 많다. 하지만 잘 닦여 있는 지름길은 우리를 더 빨리, 더 적은 비용으로 목적지 가까이 데려다주기도 한다.</p>
+<p>개발자에게 필요한 것은 자신의 휴리스틱이 어디서 왔는지 알고, 어디서 자주 틀리는지 점검하고, 더 나은 방향으로 계속 벼리는 일인지도 모르겠다. 현실의 의사결정은 코드처럼 완전하게 재현되지 않는다. 그렇기 때문에 오히려 더, 잘 길들여진 휴리스틱이 필요하다.</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+            <div class="post-tags">
+              <a href="/tags/tech/">
+                tech
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+<div class="related-content">
+  <h3>Related Posts</h3>
+  <ul>
+    
+    <li><a href="/ai-agent-paradigm-shift/">AI 에이전트와 소프트웨어의 액체화</a></li>
+    
+    <li><a href="/tech-travel-guide/">시작하는 개발자들을 위한 기술 여행 가이드</a></li>
+    
+    <li><a href="/thoughts-about-rust/">Rust 사용 소감</a></li>
+    
+  </ul>
+</div>
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+          <div class="post-comments">
+            <div id="disqus_thread"></div>
+<script>
+  window.addEventListener("load", () => {
+    (function() {
+      
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://jaeyo-blog.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  });
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+
+          </div>
+          
+        
+
+        <div class="site-footer">
+  
+  
+</div>
+
+      </div>
+    </div>
+  </article>
+
+  
+
+<script>
+  
+  
+    
+    
+  
+</script>
+
+  
+
+</body>
+
+</html>

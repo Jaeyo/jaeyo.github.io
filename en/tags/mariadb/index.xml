@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mariadb on Hello, There</title>
+    <link>http://jaeyo.github.io/en/tags/mariadb/</link>
+    <description>Recent content in Mariadb on Hello, There</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 28 Apr 2017 17:51:00 +0000</lastBuildDate>
+    <atom:link href="http://jaeyo.github.io/en/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MariaDB Multi-Source Replication</title>
+      <link>http://jaeyo.github.io/en/mariadb-multi-source-replication/</link>
+      <pubDate>Fri, 28 Apr 2017 17:51:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/mariadb-multi-source-replication/</guid>
+      <description>&lt;h2 id=&#34;multi-source-replication-procedure&#34;&gt;Multi-source replication procedure&lt;/h2&gt;&#xA;&lt;p&gt;Add the following to the configuration of the MySQL instance that will act as the slave:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;# /etc/mysql/maridb.conf.d/50-server.cnf&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[mysqld]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;server_id=19823759 &lt;span style=&#34;font-style:italic&#34;&gt;# must not collide with the master&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;replicate-ignore-db=mysql &lt;span style=&#34;font-style:italic&#34;&gt;# do not replicate the mysql database&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On the master database, create a replication user and grant privileges:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;grant replication slave on *.* to &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;repl&amp;#39;&lt;/span&gt;@&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt; identified by &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;!repl123&amp;#39;&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Use &lt;code&gt;mysqldump&lt;/code&gt; on the database that will act as the master to take a dump:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
