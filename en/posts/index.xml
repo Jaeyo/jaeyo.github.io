@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Hello, There</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://jaeyo.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Developer&#39;s Reflections on Heuristics</title>
+      <link>http://jaeyo.github.io/en/why-developers-need-heuristics/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/why-developers-need-heuristics/</guid>
+      <description>&lt;p&gt;Developers work with logic. Inside a computer screen is a world where the variables are relatively well controlled. Syntax is fixed, types are declared, and the same input is supposed to produce the same output. If a bug reproduced yesterday but not today, that usually means we still do not know the cause, not that there is no cause.&lt;/p&gt;&#xA;&lt;p&gt;That is why developers grow used to logical thinking. Breaking problems down, tracing causes, stating conditions, checking counterexamples. This kind of training is usually right. In fact, when dealing with code, it is close to essential.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AI Agents and Liquid Software</title>
       <link>http://jaeyo.github.io/en/ai-agent-paradigm-shift/</link>

@@ -56,6 +56,16 @@
   </url><url>
     <loc>http://jaeyo.github.io/why-developers-need-heuristics/</loc>
     <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://jaeyo.github.io/en/why-developers-need-heuristics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-KR"
+                href="http://jaeyo.github.io/why-developers-need-heuristics/"
+                />
   </url><url>
     <loc>http://jaeyo.github.io/tags/ai/</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
