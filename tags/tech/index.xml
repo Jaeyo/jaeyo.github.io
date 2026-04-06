@@ -6,8 +6,15 @@
     <description>Recent content in Tech on Hello, There</description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://jaeyo.github.io/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>간단한 AI 에이전트 코드 까보기</title>
+      <link>http://jaeyo.github.io/how-simple-ai-agent-works/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/how-simple-ai-agent-works/</guid>
+      <description>&lt;h2 id=&#34;들어가기-전에&#34;&gt;들어가기 전에&lt;/h2&gt;&#xA;&lt;p&gt;요즘 업무를 하다보면 claude code 나 cursor 같은 ai agent 를 자주 사용하게 된다. 여기저기서 줏어들은 지식을 기반으로 통밥을 굴려 이 프로그램이 어떤 식으로 굴러가는지는 피상적으로 파악은 하고 있었다. 하지만 실제로 코드를 까본 경험은 없었다. 내가 경험한 대부분의 에이전트는 이미 너무 기능이 많고 성숙해져있어 코드 베이스가 필요 이상으로 복잡한 탓이다.&lt;/p&gt;&#xA;&lt;p&gt;그러다 마침 아주 기초적인 형태의 AI 에이전트 코드를 발견하게 되었다. &lt;code&gt;gemini-writer&lt;/code&gt; 라는 프로젝트다. 소설이나 단편 글을 쓰기 위한 도구인 것 같은데. 코드가 생각보다 단순했다. 하지만 그 단순함 속에 AI 에이전트의 본질이 고스란히 담겨 있는 것 같아 분석을 해보기로 했다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>개발자 A 의 휴리스틱에 대한 소고</title>
       <link>http://jaeyo.github.io/why-developers-need-heuristics/</link>
