@@ -6,8 +6,22 @@
     <description>Recent content on Hello, There</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://jaeyo.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conditions for Being a Senior Developer</title>
+      <link>http://jaeyo.github.io/en/interface-of-organizations/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/interface-of-organizations/</guid>
+      <description>&lt;p&gt;I once paused while reading someone&amp;rsquo;s resume. It described how they attempted several large-scale technical changes involving multiple organizations but failed each time, diagnosing the root cause as &amp;ldquo;a collaboration method that failed to define problems together.&amp;rdquo; My eyes stayed on that paragraph for quite a while.&lt;/p&gt;&#xA;&lt;p&gt;Wow, this is how a true senior tackles this problem.&lt;/p&gt;&#xA;&lt;p&gt;When I thought of the word &amp;ldquo;senior,&amp;rdquo; what came to mind first was technical depth. Abilities like solving complex problems, spotting architectural flaws others miss, and the deft touch to stabilize systems during crises. Of course, those things are important too, but as organizations grow larger, I started thinking that a true senior&amp;rsquo;s real capability lies in designing interfaces between organizations with different interests.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Analyzing a Simple AI Agent Code</title>
+      <link>http://jaeyo.github.io/en/how-simple-ai-agent-works/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/how-simple-ai-agent-works/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Lately, I find myself using AI agents like Claude Code and Cursor frequently in my work. Based on knowledge gathered from various sources, I had a rough understanding of how these programs work at a high level. However, I had never actually dug into the code itself. Most agents I&amp;rsquo;ve encountered are already too feature-rich and mature, making their codebases unnecessarily complex.&lt;/p&gt;&#xA;&lt;p&gt;Then I came across a very basic AI agent code called &lt;code&gt;gemini-writer&lt;/code&gt;. It seems to be a tool for writing novels or short stories. The code was simpler than I expected, but it seemed to capture the essence of what an AI agent is all about. So I decided to analyze it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Reflections on Heuristics</title>
       <link>http://jaeyo.github.io/en/why-developers-need-heuristics/</link>

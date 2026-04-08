@@ -2,8 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://jaeyo.github.io/en/tags/career/</loc>
+    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-KR"
+                href="http://jaeyo.github.io/tags/career/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://jaeyo.github.io/en/tags/career/"
+                />
+  </url><url>
+    <loc>http://jaeyo.github.io/en/interface-of-organizations/</loc>
+    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://jaeyo.github.io/en/tags/daily/</loc>
+    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-KR"
+                href="http://jaeyo.github.io/tags/daily/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://jaeyo.github.io/en/tags/daily/"
+                />
+  </url><url>
     <loc>http://jaeyo.github.io/en/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-KR"
@@ -16,7 +45,7 @@
                 />
   </url><url>
     <loc>http://jaeyo.github.io/en/posts/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-KR"
@@ -28,11 +57,8 @@
                 href="http://jaeyo.github.io/en/posts/"
                 />
   </url><url>
-    <loc>http://jaeyo.github.io/en/why-developers-need-heuristics/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://jaeyo.github.io/en/tags/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-KR"
@@ -44,8 +70,21 @@
                 href="http://jaeyo.github.io/en/tags/"
                 />
   </url><url>
+    <loc>http://jaeyo.github.io/en/how-simple-ai-agent-works/</loc>
+    <lastmod>2026-04-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-KR"
+                href="http://jaeyo.github.io/how-simple-ai-agent-works/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://jaeyo.github.io/en/how-simple-ai-agent-works/"
+                />
+  </url><url>
     <loc>http://jaeyo.github.io/en/tags/tech/</loc>
-    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-KR"
@@ -56,6 +95,9 @@
                 hreflang="en-US"
                 href="http://jaeyo.github.io/en/tags/tech/"
                 />
+  </url><url>
+    <loc>http://jaeyo.github.io/en/why-developers-need-heuristics/</loc>
+    <lastmod>2026-04-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://jaeyo.github.io/en/tags/ai/</loc>
     <lastmod>2026-04-04T00:00:00+00:00</lastmod>
@@ -76,34 +118,8 @@
     <loc>http://jaeyo.github.io/en/taste-in-context/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://jaeyo.github.io/en/tags/daily/</loc>
-    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko-KR"
-                href="http://jaeyo.github.io/tags/daily/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://jaeyo.github.io/en/tags/daily/"
-                />
-  </url><url>
     <loc>http://jaeyo.github.io/en/hiking-with-daughter/</loc>
     <lastmod>2025-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://jaeyo.github.io/en/tags/career/</loc>
-    <lastmod>2025-05-22T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko-KR"
-                href="http://jaeyo.github.io/tags/career/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://jaeyo.github.io/en/tags/career/"
-                />
   </url><url>
     <loc>http://jaeyo.github.io/en/resume-skill/</loc>
     <lastmod>2025-05-22T00:00:00+00:00</lastmod>

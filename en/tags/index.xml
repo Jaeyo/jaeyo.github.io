@@ -6,12 +6,26 @@
     <description>Recent content in Tags on Hello, There</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://jaeyo.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Career</title>
+      <link>http://jaeyo.github.io/en/tags/career/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/tags/career/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Daily</title>
+      <link>http://jaeyo.github.io/en/tags/daily/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/en/tags/daily/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Tech</title>
       <link>http://jaeyo.github.io/en/tags/tech/</link>
-      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://jaeyo.github.io/en/tags/tech/</guid>
       <description></description>
     </item>
@@ -20,20 +34,6 @@
       <link>http://jaeyo.github.io/en/tags/ai/</link>
       <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://jaeyo.github.io/en/tags/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Daily</title>
-      <link>http://jaeyo.github.io/en/tags/daily/</link>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://jaeyo.github.io/en/tags/daily/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Career</title>
-      <link>http://jaeyo.github.io/en/tags/career/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://jaeyo.github.io/en/tags/career/</guid>
       <description></description>
     </item>
     <item>

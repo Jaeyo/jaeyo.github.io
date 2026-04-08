@@ -6,8 +6,15 @@
     <description>Recent content on Hello, There</description>
     <generator>Hugo</generator>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://jaeyo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>시니어 개발자의 조건</title>
+      <link>http://jaeyo.github.io/interface-of-organizations/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://jaeyo.github.io/interface-of-organizations/</guid>
+      <description>&lt;p&gt;누군가의 이력서를 읽다가 멈칫한 적이 있다. 꽤 큰 규모의 기술적 변화를 여러 조직이 엮어서 시도했으나 매번 실패했고, 그 원인을 &amp;lsquo;문제를 함께 정의하지 못한 협업 방식&amp;rsquo;으로 진단한 내용이었는데, 그 문단에서 시선이 한참이나 머물렀다.&lt;/p&gt;&#xA;&lt;p&gt;와, 진짜 시니어는 이 문제를 이렇게 풀어내는구나.&lt;/p&gt;&#xA;&lt;p&gt;그동안 내가 시니어라는 단어를 떠올릴 때 먼저 생각나던 것은 기술적 깊이였다. 복잡한 문제를 풀어내는 능력, 남들이 못 보는 아키텍처 결함을 찾아내는 눈, 위기 상황에서 시스템을 안정화시키는 손놀림 같은 것들. 물론 그런 것들도 중요하겠지만, 조직의 규모가 커질수록 진짜 시니어의 실력은 서로 다른 이해관계를 가진 조직들 사이에 인터페이스를 설계하는 능력이지 않을까 하는 생각이 들었다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>간단한 AI 에이전트 코드 까보기</title>
       <link>http://jaeyo.github.io/how-simple-ai-agent-works/</link>

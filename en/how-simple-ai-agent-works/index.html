@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="en-US">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.157.0">
@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="http://jaeyo.github.io/contribute-code-into-telegraf/" />
-  <link rel="canonical" href="http://jaeyo.github.io/contribute-code-into-telegraf/" />
-  <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/contribute-code-into-telegraf/" />
+  <meta property="og:url" content="http://jaeyo.github.io/en/how-simple-ai-agent-works/" />
+  <link rel="canonical" href="http://jaeyo.github.io/en/how-simple-ai-agent-works/" />
+  <link rel="alternate" hreflang="ko" href="http://jaeyo.github.io/how-simple-ai-agent-works/" />
   
-  <link rel="alternate" hreflang="en" href="http://jaeyo.github.io/en/contribute-code-into-telegraf/" />
+  <link rel="alternate" hreflang="en" href="http://jaeyo.github.io/en/how-simple-ai-agent-works/" />
   
 
   <script type="application/ld+json">
@@ -23,30 +23,32 @@
            "@id": "http:\/\/jaeyo.github.io\/"
       },
       "articleSection" : "posts",
-      "name" : "오픈소스 프로젝트에 코드 기여한 이야기",
-      "headline" : "오픈소스 프로젝트에 코드 기여한 이야기",
-      "description" : "그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔다. 아닌게 아니라 당장에 Github이 없으면 나는 지금 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 코드 베이스를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.\n",
-      "inLanguage" : "ko-KR",
+      "name" : "Analyzing a Simple AI Agent Code",
+      "headline" : "Analyzing a Simple AI Agent Code",
+      "description" : "Introduction Lately, I find myself using AI agents like Claude Code and Cursor frequently in my work. Based on knowledge gathered from various sources, I had a rough understanding of how these programs work at a high level. However, I had never actually dug into the code itself. Most agents I\u0026rsquo;ve encountered are already too feature-rich and mature, making their codebases unnecessarily complex.\nThen I came across a very basic AI agent code called gemini-writer. It seems to be a tool for writing novels or short stories. The code was simpler than I expected, but it seemed to capture the essence of what an AI agent is all about. So I decided to analyze it.\n",
+      "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
       "publisher": "",
       "accountablePerson" : "",
       "copyrightHolder" : "",
-      "copyrightYear" : "2019",
-      "datePublished": "2019-08-22 19:00:00 \u002b0000 UTC",
-      "dateModified" : "2019-08-22 19:00:00 \u002b0000 UTC",
-      "url" : "http:\/\/jaeyo.github.io\/contribute-code-into-telegraf\/",
-      "keywords" : [ "tech","open source","telegraf", ]
+      "copyrightYear" : "2026",
+      "datePublished": "2026-04-06 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2026-04-06 00:00:00 \u002b0000 UTC",
+      "url" : "http:\/\/jaeyo.github.io\/en\/how-simple-ai-agent-works\/",
+      "keywords" : [ "tech", ]
   }
 </script>
-<title>오픈소스 프로젝트에 코드 기여한 이야기</title>
-  <meta property="og:title" content="오픈소스 프로젝트에 코드 기여한 이야기" />
+<title>Analyzing a Simple AI Agent Code</title>
+  <meta property="og:title" content="Analyzing a Simple AI Agent Code" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔다. 아닌게 아니라 당장에 Github이 없으면 나는 지금 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 코드 베이스를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.
+  <meta property="og:description" content="Introduction Lately, I find myself using AI agents like Claude Code and Cursor frequently in my work. Based on knowledge gathered from various sources, I had a rough understanding of how these programs work at a high level. However, I had never actually dug into the code itself. Most agents I&rsquo;ve encountered are already too feature-rich and mature, making their codebases unnecessarily complex.
+Then I came across a very basic AI agent code called gemini-writer. It seems to be a tool for writing novels or short stories. The code was simpler than I expected, but it seemed to capture the essence of what an AI agent is all about. So I decided to analyze it.
 " />
-  <meta name="description" content="그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔다. 아닌게 아니라 당장에 Github이 없으면 나는 지금 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 코드 베이스를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.
+  <meta name="description" content="Introduction Lately, I find myself using AI agents like Claude Code and Cursor frequently in my work. Based on knowledge gathered from various sources, I had a rough understanding of how these programs work at a high level. However, I had never actually dug into the code itself. Most agents I&rsquo;ve encountered are already too feature-rich and mature, making their codebases unnecessarily complex.
+Then I came across a very basic AI agent code called gemini-writer. It seems to be a tool for writing novels or short stories. The code was simpler than I expected, but it seemed to capture the essence of what an AI agent is all about. So I decided to analyze it.
 " />
-  <meta property="og:locale" content="ko-KR" /><meta property="og:image" content="" />
+  <meta property="og:locale" content="en-US" /><meta property="og:image" content="" />
   
 
   
@@ -112,7 +114,7 @@ li {
         <div class="site-header">
           <header>
   <div class="header-title">
-    <a href="/"
+    <a href="/en/"
       >Hello, There</a
     >
   </div>
@@ -140,11 +142,11 @@ li {
 <div class="row end-xs">
   
   
-  
-  
   <div class="lang-switch col-xs-3 col-xs-offset-9">
-    <a href="/en/contribute-code-into-telegraf/"></a>
+    <a href="/how-simple-ai-agent-works/"></a>
   </div>
+  
+  
   
   
 </div>
@@ -152,13 +154,13 @@ li {
 
         </div>
         <header class="post-header">
-          <h1 class="post-title">오픈소스 프로젝트에 코드 기여한 이야기</h1>
+          <h1 class="post-title">Analyzing a Simple AI Agent Code</h1>
           
           <div class="row post-desc">
             <div class="col-xs-6">
               
-              <time class="post-date" datetime="2019-08-22 19:00:00 UTC">
-                22 Aug 2019
+              <time class="post-date" datetime="2026-04-06 00:00:00 UTC">
+                06 Apr 2026
               </time>
               
             </div>
@@ -171,81 +173,154 @@ li {
 
         <div class="post-content markdown-body">
           
-          <p>그동안 개발자로 일하면서 오픈소스의 도움을 많이 받아왔다. 아닌게 아니라 당장에 Github이 없으면 나는 지금 생산성의 반의 반도 못 내고 있을 것이다. 하지만 부끄럽게도 작년에야 처음으로 오픈소스에 기여를 하게 되었다. 사실 기여를 하고자 하는 생각은 아주 오래전부터 가지고 있었다. 하지만 기여할 프로젝트를 고르는 문제부터 시작해서, 코드 베이스를 파악하고, 버그의 원인을 찾고, 메인테이너와 소통하고 하는 일들이 너무 어렵게 느껴져 시도하지 못했다고 하는게 맞을 것 같다. 그러던 차에 우연찮게 처음으로 오픈소스 프로젝트에 기여하게 되었고 그 과정이 생각보다 어렵지 않다는 것을 알게 되었다.</p>
-<p>내가 참여한 오픈소스는 <a href="https://github.com/influxdata/telegraf">Telegraf</a> 였다. 뭐 이름이 생소하게 들릴 수 있지만 그래도 모니터링 쪽 동네에서는 나름 방귀 좀 뀌는 프로젝트다. 일반적으로 모니터링이라고 하면 서버 모니터링 (IaaS 레벨의 모니터링)과 애플리케이션 모니터링(APM) 정도를 많이 떠올릴 텐데, 이 Telegraf 는 서버 모니터링 쪽에서 활약하고 있는 메트릭 수집 에이전트다.</p>
-<p>모니터링은 일반적으로 <code>수집</code> -&gt; <code>저장</code> -&gt; <code>분석</code> -&gt; <code>시각화</code> 정도의 플로우를 타게 된다. (중간에 순서가 조금 바뀌는 경우는 있다.) 여기서 Telegraf 는 <code>수집</code>단을 맡고 있다. Elastic stack 의 <code>metricbeat</code>와 포지셔닝이 비슷하다고 할 수 있을 것이다.</p>
-<p>말 나온 김에 모니터링 영역에서 Elastic 스택과 TICK 스택을 비교해보자면, <code>Beat</code> -&gt; <code>Logstash</code> -&gt; <code>Elasticsearch</code> -&gt; <code>Kibana</code> 의 플로우를 가지고 있는 Elastic 스택은 기본적으로 로그 모니터링에 근간을 두고 있다. 애초에 Elasticsearch 라는 솔루션이 풀 텍스트 인덱싱을 하는 Lucene 으로 만들어진 물건이니. 물론 요즘에는 로그와 메트릭 뿐만 아니라 APM 까지 만들어서 애플리케이션 레벨의 모니터링까지 영역을 넓히고 있긴 하다.</p>
-<p>그에 반해, TICK 스택은 메트릭 기반의 모니터링이라고 볼 수 있다. 여기서 메트릭과 로그의 차이점이라고 하면, 로그는 단순히 문자열 형태의 메시지라면 메트릭은 수치값을 가지는 형태라고 볼 수 있을 것이다. 애초에 Telegraf 자체도 메트릭 수집에 특화되어 있고 데이터 저장소인 InfluxDB 도 시계열 데이터를 저장하는 데이터베이스로 만들어져 있다.</p>
-<p>여기서 TICK 스택이라고 하면 <code>Telegraf</code>, <code>InfluxDB</code>, <code>Chronograf</code>, <code>Kapacitor</code> 로 이루어진 스택을 이야기하는데 그런 것 치고 시각화 영역을 Chronograf 로 쓰는 경우는 별로 없다. 사실 <code>Chronograf</code> 보다는 <code>Grafana</code> 가 시각화 도구로서 기능도 더 많고 기타 여러 데이터 소스와의 접합도 좋아서 <code>TIG</code> (<code>Telegraf</code> - <code>InfluxDB</code> - <code>Grafana</code>) 형태의 스택이 더 많이 쓰이는 것 같다. 근데 문제는 <code>Grafana</code> 쪽에서는 TICK 스택보다는 <code>Prometheus</code> 랑 더 친하고 요즘 container 기반 에코 시스템에서 Prometheus 가 더 잘 나간다는 사실이다. 그리고 둘 다 Go 언어로 만들어져 있다. 사실 요즘 container 기반의 에코 시스템 위의 툴들은 열에 여덟은 Go 언어를 사용하고 있는 것 같다. 이쪽 동네의 de facto 언어가 되어가는 느낌이다.</p>
-<p>아무튼 각설하고, Telegraf 앞서 말했든 메트릭 수집 에이전트다. 하지만 Telegraf 를 설명하는 말에는 항상 수식어가 하나 더 붙는다. &ldquo;플러그인 기반&rdquo; 이 그것이다. Telegraf 는 다양한 플러그인을 통해서 다양한 종류의 메트릭들을 수집할 수 있다. 그리고 수집된 메트릭을 꼭 InfluxDB 에만 넣을 수 있는 것도 아니라 다른 Output Plugin 을 통해서 다른 종류의 데이터 저장소에 집어 넣는 것도 가능하다.</p>
-<p><img src="https://www.influxdata.com/wp-content/uploads/Telegraf-GREY-Diagram.png" alt="Telegraf"></p>
-<p>위의 그림은 Telegraf 공식 웹페이지에 있는 그림으로 TICK 스택의 아키텍처를 자세하게 보여준다. 여담으로 작년말에 확인해 봤을 때는 저 그림에 &ldquo;200개 이상의 플러그인 지원&rdquo; 관련된 문구가 써있었는데 실제로 확인해봤을 땐 198개 였다. 뭐 그냥 그려려니 했다. 아무튼 Telegraf 에서 지원하는 플러그인 리스트는 Telegraf Github 에 들어가면 README 에서 바로 확인할 수 있는데 오늘 날짜 master 브랜치 기준으로 아래와 같다.</p>
-<ul>
-<li>Input Plugins: activemq, aerospike, amqp_consumer, apache, aurora, aws cloudwatch, bcache, beanstalkd, bind, bond, burrow, cassandra, ceph, cgroup, chrony, cisco_telemetry_gnmi, cisco_telemetry_mdt, cloud_pubsub, cloud_pubsub_push, conntrack, consul, couchbase, couchdb, cpu, DC/OS, diskio, disk, disque, dmcache, dns query time, docker, docker_log, dovecot, ecs, elasticsearch, exec, fail2ban, fibaro, file, filestat, filecount, fireboard, fluentd, github, graylog, haproxy, hddtemp, httpjson, http_listener, http_listener_v2, http, http_response, icinga2, influxdb, influxdb_listener, internal, interrupts, ipmi_sensor, ipset, iptables, ipvs, jenkins, jolokia2, jolokia, jti_openconfig_telemetry, kafka_consumer, kapacitor, kinesis, kernel, kernel_vmstat, kibana, kubernetes, kube_inventory, leofs, linux_sysctl_fs, logparser, lustre2, mailchimp, mcrouter, memcached, mem, mesos, minecraft, mongodb, mqtt_consumer, multifile, mysql, nats_consumer, nats, neptune_apex, net, net_response, netstat, nginx, nginx_plus_api, nginx_plus, nginx_upstream_check, nginx_vts, nsq_consumer, nsq, nstat, ntpq, nvidia_smi, openldap, opensmtpd, openweathermap, pf, pgbouncer, phpfpm, phusion passenger, ping, postfix, postgresql_extensible, postgresql, powerdns, powerdns_recursor, processes, procstat, prometheus, puppetagent, rabbitmq, raindrops, redis, rethinkdb, riak, salesforce, sensors, smart, snmp_legacy, snmp, socket_listener, solr, sql server, stackdriver, statsd, swap, syslog, sysstat, system, tail, temp, tcp_listener, teamspeak, tengine, tomcat, twemproxy, udp_listener, unbound, uswgi, varnish, vsphere VMware vSphere, webhooks, filestack, github, mandrill, papertrail, particle, rollbar, win_perf_counters, win_services, wireless, x509_cert, zfs, zipkin, zookeeper</li>
-<li>Parsers: InfluxDB Line Protocol, Collectd, CSV, Dropwizard, FormUrlencoded, Graphite, Grok, JSON, Logfmt, Nagios, Value, Wavefront</li>
-<li>Serializers: InfluxDB Line Protocol, JSON, Graphite, ServiceNow, SplunkMetric, Carbon2, Wavefront</li>
-<li>Processor Plugins: converter, date, enum, override, parser, pivot, printer, regex, rename, strings, topk, unpivot</li>
-<li>Aggregator Plugins: basicstats, final, histogram, minmax, valuecounter</li>
-<li>Output Plugins: influxdb, influxdb_v2, amon, amqp (rabbitmq), application_insights, aws kinesis, aws cloudwatch, azure_monitor, cloud_pubsub, cratedb, datadog, discard, elasticsearch, file, graphite, graylog, health, http, instrumental, kafka, librato, mqtt, nats, nsq, opentsdb, prometheus, riemann, riemann_legacy, socket_writer, stackdriver, syslog, tcp, udp, wavefront</li>
-</ul>
-<hr>
-<p>Telegraf 에 대한 자세한 설명은 생략하기로 하고, 회사에서 업무의 일환으로 Telegraf 를 사용중에 있다. 이전까지는 운영중인 Linux 기반의 서버들에서 메트릭을 수집하기 위한 용도였는데 윈도우 서버도 추가적으로 지원해야 하는 요구사항이 발생되었다. Telegraf 는 윈도우 역시 지원하기 때문에 별 고민없이 설치하고 테스트를 하기 시작했다. 다만 리눅스와 윈도우는 메트릭을 수집하는 방법에 차이가 있어 리눅스 서버와는 다른 윈도우용 기본 설정 파일을 받아서 구성했다.</p>
-<p>헌데 설정파일을 받아놓고 슥 한번 훑어보는데 이상한 부분이 눈에 띄었다.</p>
-<p><img src="/contribute-code-into-telegraf/1.png" alt="Duplicated Configuration"></p>
-<p>Network 관련된 메트릭을 수집하는 설정을 설정 파일 위쪽에서 한 번 본 것 같은데 아래에서 또 발견되었다. 보통 이런 경우는 &ldquo;Telegraf 의 기본 설정 파일이 잘못 되었구나&rdquo; 라고 여기기 보다는 &ldquo;내가 뭘 잘못 했구나&rdquo; 라고 생각하기 쉽다. 자연히 나도 붙여넣기하면서 실수 했겠거니 하면서 새롭게 윈도우용 설정 파일을 다시 받았다. 하지만 새로 받은 설정 파일에도 해당 섹션은 중복되어 있었다.</p>
-<p><img src="/contribute-code-into-telegraf/2.png" alt="guide"></p>
-<p>그제서야 기본 설정 파일이 잘못되어 있는 걸 확인하고는 Telegraf 에 대한 사내 가이드 문서에 위와 같은 내용을 추가하였다. 그러고나서 문득 생각해보니, 이건 PR을 꽁으로 한 번 할 수 있는 기회가 아닌가 하는 생각이 들었다. 나는 곧바로 중복된 설정을 제거하는 내용의 PR을 만들어 올렸고, 명백한 설정 오류였기 때문에 별 문제없이 바로 merge가 되었다. 메인테이너로부터 &ldquo;Thanks!&rdquo; 라는 코멘트를 받았다.</p>
-<p>사실 이 코멘트를 보고 기분이 좀 이상했다. 지금껏 밤낮 가리지 않고 열심히 코딩에 매진해오긴 했지만 내가 쓴 코드(사실은 간단한 설정 파일 수정이지만)로 인해 누군가에게 고맙다는 말을 들어본 적이 없었다. 물론 내가 쓴 코드로 회사가 돈을 벌긴 하지만 그렇다고 해서 회사가 내게 고맙다는 말을 해주진 않는다. 대신 월급을 준다. (이 경우엔 당연히 월급이 더 좋다.)</p>
-<p>개인적으로 칭찬에 약한 타입이라 뭔가 Telegraf 프로젝트에 더 기여하고 싶다는 생각이 들었다.</p>
-<p>사실 위에서도 이야기했듯이 이전에도 오픈소스에 대한 기여를 시도해본 적이 몇 번 있었다. 하지만 그 때는 확실히 접근법이 좋지 않았던 것 같다.</p>
+          <h2 id="introduction">Introduction</h2>
+<p>Lately, I find myself using AI agents like Claude Code and Cursor frequently in my work. Based on knowledge gathered from various sources, I had a rough understanding of how these programs work at a high level. However, I had never actually dug into the code itself. Most agents I&rsquo;ve encountered are already too feature-rich and mature, making their codebases unnecessarily complex.</p>
+<p>Then I came across a very basic AI agent code called <code>gemini-writer</code>. It seems to be a tool for writing novels or short stories. The code was simpler than I expected, but it seemed to capture the essence of what an AI agent is all about. So I decided to analyze it.</p>
+<p>This article is a record of walking through that code, exploring how an AI agent actually communicates with an LLM and how it performs tasks step by step.</p>
+<h2 id="tool-using-capability">Tool-Using Capability</h2>
+<p>In one sentence, an AI agent can be defined as: <strong>A system that enables an LLM to use tools.</strong></p>
+<p>When the model decides &ldquo;I need to create a file to complete this task,&rdquo; a function that actually creates the file is called. When it thinks &ldquo;I should add content here,&rdquo; that content is actually written to a file.</p>
+<p>Looking at the gemini-writer code, this structure becomes clear.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-style:italic"># Part of the main loop in writer.py</span>
+</span></span><span style="display:flex;"><span>response = client.models.generate_content(
+</span></span><span style="display:flex;"><span>    model=MODEL_NAME,
+</span></span><span style="display:flex;"><span>    contents=contents,
+</span></span><span style="display:flex;"><span>    config=generate_config,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic"># Extract function calls from model response</span>
+</span></span><span style="display:flex;"><span>function_calls_list = []
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">for</span> part <span style="font-weight:bold">in</span> model_content.parts:
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">if</span> hasattr(part, <span style="font-style:italic">&#39;function_call&#39;</span>) <span style="font-weight:bold">and</span> part.function_call:
+</span></span><span style="display:flex;"><span>        fc = part.function_call
+</span></span><span style="display:flex;"><span>        function_calls_list.append({
+</span></span><span style="display:flex;"><span>            <span style="font-style:italic">&#34;name&#34;</span>: fc.name,
+</span></span><span style="display:flex;"><span>            <span style="font-style:italic">&#34;args&#34;</span>: dict(fc.args) <span style="font-weight:bold">if</span> fc.args <span style="font-weight:bold">else</span> {}
+</span></span><span style="display:flex;"><span>        })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic"># Execute detected tool calls</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">for</span> fc <span style="font-weight:bold">in</span> function_calls_list:
+</span></span><span style="display:flex;"><span>    func_name = fc[<span style="font-style:italic">&#34;name&#34;</span>]
+</span></span><span style="display:flex;"><span>    args = fc[<span style="font-style:italic">&#34;args&#34;</span>]
+</span></span><span style="display:flex;"><span>    tool_func = tool_map.get(func_name)
+</span></span><span style="display:flex;"><span>    result = tool_func(**args)
+</span></span></code></pre></div><p>Let&rsquo;s follow the flow:</p>
 <ol>
-<li>오픈소스에 기여를 해보고 싶은데&hellip;</li>
-<li>기왕 하는거 좀 크고 유명한 데에 해보고 싶은데&hellip;</li>
-<li>크고 유명한 오픈소스 프로젝트를 클론 받는다.</li>
-<li>main 문을 찾아 시작점부터 따라가본다&hellip;. 3분 후 포기한다.</li>
-<li>공식 문서를 찾아 정독해본다&hellip;. 30분 후 포기한다.</li>
-<li>해당 프로젝트의 아주 초기 버전을 체크아웃해 다시 소스를 따라가본다&hellip;. 5분 후 포기한다.</li>
-<li>포기한다.</li>
+<li>The client sends the current situation (contents) and the list of available tools (tools) to the LLM.</li>
+<li>The LLM assesses the situation and, if it concludes &ldquo;I need to create a file now,&rdquo; includes a function_call in its response.</li>
+<li>The agent parses this function_call and executes the corresponding Python function.</li>
+<li>The execution result is sent back to the LLM.</li>
+<li>The LLM decides the next action based on that result.</li>
 </ol>
-<p>위의 방법은 사실 지금보기에는 오픈소스 기여에 대한 아주 좋지 않은 접근법이라고 생각된다. 사실 기여를 할 오픈소스를 고를 때는 본인이 사용중인 것들 중에서 고르는 것이 제일 유리하다고 생각한다. 나한테는 Telegraf 가 그런 것 중 하나였고, 그 외에도 여러가지로 덤벼볼만한 요소들이 좀 있었다.</p>
-<ol>
-<li>실제 사용중인 프로그램</li>
-<li>익숙하게 사용하던 Go 언어로 구현됨</li>
-<li>플러그인 기반이라 코드 파악과 수정이 쉬움</li>
-<li>플로그인 별로 README 문서가 있어 파악에 용이</li>
-</ol>
-<p>이 중에서도 특히 3번이 굉장히 유효했다. 말 그대로 플러그인 기반이기 때문에 Telegraf 의 코어 부분을 손대지 않는 한 다른 코드는 볼 필요없이 내가 고치고 싶은 플러그인의 코드만 보면 됐고 대부분의 경우 플러그인은 하나 내지 두 개의 파일 안에 전부 담겨있다. 게다가 플러그인이 어떤 인터페이스를 가져야 하는지에 대한 부분도 문서에 상세히 설명되어 있으니 코드를 따라가기도 더 쉬웠다.</p>
-<p>게다가 더 좋았던 건, Go 언어를 사용하면서 테스트를 어떻게 작성해야 할 지 고민할 때가 많은데, Telegraf 의 경우에는 테스트 파일들도 잘 구성되어 있어 테스트를 작성하는 요령을 익히기가 좋다는 것이다. (사실 테스트가 없으면 merge 가 안된다.)</p>
-<p>그리고 추가적으로, 새로운 플러그인을 만든 사람의 경우에는 아래와 같이 Release Note에 이름을 박아준다.</p>
-<p><img src="/contribute-code-into-telegraf/3.png" alt="release-note"></p>
-<p>아직 bugfix 성 밖에 기여를 못해서 여기에 이름을 올리지는 못했지만 조만간 올렸으면 한다.</p>
-<hr>
-<blockquote>
-<p>2019-09-04 추가,</p>
-<p><img src="/contribute-code-into-telegraf/4.png" alt="made-it"></p>
-<p>성공!</p>
-</blockquote>
-
+<p>This flow is the basic operating principle of an agent.</p>
+<h2 id="tool-definitions">Tool Definitions</h2>
+<p>The interesting point is that the LLM doesn&rsquo;t actually execute those functions. The LLM only receives a description saying &ldquo;these tools are available&rdquo; and decides when and what to use.</p>
+<p>gemini-writer provides three tools:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-style:italic"># From utils.py</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">def</span> get_tool_definitions() -&gt; types.Tool:
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> types.Tool(
+</span></span><span style="display:flex;"><span>        function_declarations=[
+</span></span><span style="display:flex;"><span>            types.FunctionDeclaration(
+</span></span><span style="display:flex;"><span>                name=<span style="font-style:italic">&#34;create_project&#34;</span>,
+</span></span><span style="display:flex;"><span>                description=<span style="font-style:italic">&#34;Creates a new project folder in the &#39;output&#39; directory...&#34;</span>,
+</span></span><span style="display:flex;"><span>                parameters=types.Schema(...)
+</span></span><span style="display:flex;"><span>            ),
+</span></span><span style="display:flex;"><span>            types.FunctionDeclaration(
+</span></span><span style="display:flex;"><span>                name=<span style="font-style:italic">&#34;write_file&#34;</span>,
+</span></span><span style="display:flex;"><span>                description=<span style="font-style:italic">&#34;Writes content to a markdown file...&#34;</span>,
+</span></span><span style="display:flex;"><span>                parameters=types.Schema(...)
+</span></span><span style="display:flex;"><span>            ),
+</span></span><span style="display:flex;"><span>            types.FunctionDeclaration(
+</span></span><span style="display:flex;"><span>                name=<span style="font-style:italic">&#34;compress_context&#34;</span>,
+</span></span><span style="display:flex;"><span>                description=<span style="font-style:italic">&#34;INTERNAL TOOL - Automatically called when token limit approached...&#34;</span>,
+</span></span><span style="display:flex;"><span>                parameters=types.Schema(...)
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>    )
+</span></span></code></pre></div><p>Each tool has a name, description, and specification of what parameters it should receive. When this definition is shown to the LLM, the model understands &ldquo;Ah, if I want to write a file, I should call write_file and pass filename and content.&rdquo;</p>
+<p>It&rsquo;s like handing the LLM a tool user manual.</p>
+<h2 id="actual-tool-implementation">Actual Tool Implementation</h2>
+<p>Meanwhile, the functions that actually do the work exist separately.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-style:italic"># From tools/writer.py</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">def</span> write_file_impl(filename: str, content: str, mode: Literal[<span style="font-style:italic">&#34;create&#34;</span>, <span style="font-style:italic">&#34;append&#34;</span>, <span style="font-style:italic">&#34;overwrite&#34;</span>]) -&gt; str:
+</span></span><span style="display:flex;"><span>    project_folder = get_active_project_folder()
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">if</span> <span style="font-weight:bold">not</span> project_folder:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">return</span> <span style="font-style:italic">&#34;Error: No active project folder...&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    file_path = os.path.join(project_folder, filename)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">if</span> mode == <span style="font-style:italic">&#34;create&#34;</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">if</span> os.path.exists(file_path):
+</span></span><span style="display:flex;"><span>            <span style="font-weight:bold">return</span> <span style="font-style:italic">f</span><span style="font-style:italic">&#34;Error: File &#39;</span><span style="font-weight:bold;font-style:italic">{</span>filename<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#39; already exists...&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">with</span> open(file_path, <span style="font-style:italic">&#39;w&#39;</span>, encoding=<span style="font-style:italic">&#39;utf-8&#39;</span>) <span style="font-weight:bold">as</span> f:
+</span></span><span style="display:flex;"><span>            f.write(content)
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">return</span> <span style="font-style:italic">f</span><span style="font-style:italic">&#34;Successfully created file &#39;</span><span style="font-weight:bold;font-style:italic">{</span>filename<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">&#39;...&#34;</span>
+</span></span></code></pre></div><p>When the LLM requests a <code>write_file</code> call, the agent finds and executes this <code>write_file_impl</code> function. Then it converts the result to a string and sends it back to the LLM.</p>
+<p>The important point here is that <strong>the LLM doesn&rsquo;t actually touch the file system</strong>. The LLM only declares &ldquo;I will create a file,&rdquo; and the Python code handles the actual work.</p>
+<h2 id="think---act---observe">Think -&gt; Act -&gt; Observe</h2>
+<p>Looking at gemini-writer&rsquo;s main loop, the working mechanism of an AI agent becomes clear at a glance.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>1. Add user input to contents
+</span></span><span style="display:flex;"><span>2. Send contents <span style="font-weight:bold">and</span> tools to LLM <span style="font-weight:bold">and</span> receive response
+</span></span><span style="display:flex;"><span>3. Check <span style="font-weight:bold">if</span> there are function calls <span style="font-weight:bold">in</span> the response
+</span></span><span style="display:flex;"><span>4. If there are function calls:
+</span></span><span style="display:flex;"><span>   - Execute the corresponding Python function
+</span></span><span style="display:flex;"><span>   - Package the execution result as a function response
+</span></span><span style="display:flex;"><span>   - Add the result to contents (as user input format)
+</span></span><span style="display:flex;"><span>5. If there are no function calls:
+</span></span><span style="display:flex;"><span>   - Consider the task complete <span style="font-weight:bold">and</span> exit the loop
+</span></span><span style="display:flex;"><span>6. Check token count, compress <span style="font-weight:bold">if</span> necessary
+</span></span><span style="display:flex;"><span>7. Go back to step 2 <span style="font-weight:bold">and</span> repeat
+</span></span></code></pre></div><p>In gemini-writer, this loop is set to repeat up to 300 times. Each iteration is called an &ldquo;iteration,&rdquo; which is the unit of the agent &ldquo;thinking once and acting once.&rdquo;</p>
+<h2 id="context-management">Context Management</h2>
+<p>One of the most important aspects when designing an AI agent is context management. LLMs have a limit on the number of tokens they can process at once. gemini-writer uses the Gemini model, which supports up to 1 million tokens. That seems generous, but during long tasks, you&rsquo;ll eventually hit the limit.</p>
+<p>That&rsquo;s why gemini-writer is equipped with an automatic compression feature.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-style:italic"># From writer.py</span>
+</span></span><span style="display:flex;"><span>TOKEN_LIMIT = 1000000
+</span></span><span style="display:flex;"><span>COMPRESSION_THRESHOLD = 900000  <span style="font-style:italic"># Start compression at 90%</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic"># In the main loop</span>
+</span></span><span style="display:flex;"><span>token_count = estimate_token_count(client, MODEL_NAME, contents)
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">if</span> token_count &gt;= COMPRESSION_THRESHOLD:
+</span></span><span style="display:flex;"><span>    compression_result = compress_context_impl(
+</span></span><span style="display:flex;"><span>        messages=simple_messages,
+</span></span><span style="display:flex;"><span>        client=client,
+</span></span><span style="display:flex;"><span>        model=MODEL_NAME,
+</span></span><span style="display:flex;"><span>        keep_recent=10
+</span></span><span style="display:flex;"><span>    )
+</span></span></code></pre></div><p>When the token count exceeds 900,000, it summarizes and compresses past conversations. The method keeps the 10 most recent messages as-is and replaces everything before that with a single summary.</p>
+<p>The compression function calls the LLM again to create the summary.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-style:italic"># From tools/compression.py</span>
+</span></span><span style="display:flex;"><span>summary_prompt = <span style="font-style:italic">&#34;&#34;&#34;Please provide a comprehensive summary of the conversation history below. Include:
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">1. The main task or goal discussed
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">2. Key decisions made
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">3. Files created and their purposes
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">4. Progress made so far
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">5. Any important context for continuing the work
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>summary_response = client.models.generate_content(
+</span></span><span style="display:flex;"><span>    model=model,
+</span></span><span style="display:flex;"><span>    contents=contents,
+</span></span><span style="display:flex;"><span>    config=types.GenerateContentConfig(temperature=0.7)
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>In other words, <strong>the LLM summarizes past conversations, and then continues the next task based on that summary</strong>.</p>
+<h2 id="recovery-mode">Recovery Mode</h2>
+<p>gemini-writer supports a recovery mode. If an interrupt occurs during work or the token limit is reached, the agent saves the current state to a file.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>./my_project/.context_summary_20260406_222702.md
+</span></span></code></pre></div><p>This file contains a summary of the conversation up to that point. When restarted with this file next time, the agent can restore the previous state and continue the work.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-style:italic"># From writer.py</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">if</span> args.recover:
+</span></span><span style="display:flex;"><span>    context = load_context_from_file(args.recover)
+</span></span><span style="display:flex;"><span>    initial_message = <span style="font-style:italic">f</span><span style="font-style:italic">&#34;[RECOVERED CONTEXT]</span><span style="font-weight:bold;font-style:italic">\n\n</span><span style="font-weight:bold;font-style:italic">{</span>context<span style="font-weight:bold;font-style:italic">}</span><span style="font-weight:bold;font-style:italic">\n\n</span><span style="font-style:italic">Please continue...&#34;</span>
+</span></span></code></pre></div>
         </div>
 
         <div class="row middle-xs">
           <div class="col-xs-12">
             
             <div class="post-tags">
-              <a href="/tags/tech/">
+              <a href="/en/tags/tech/">
                 tech
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/open-source/">
-                open source
-              </a>
-            </div>
-            
-            <div class="post-tags">
-              <a href="/tags/telegraf/">
-                telegraf
               </a>
             </div>
             
@@ -264,11 +339,11 @@ li {
   <h3>Related Posts</h3>
   <ul>
     
-    <li><a href="/git-delete-branch-and-push/">Git - branch 삭제 후 push</a></li>
+    <li><a href="/en/why-developers-need-heuristics/">Reflections on Heuristics</a></li>
     
-    <li><a href="/bash-is-not-async/">오늘의 삽질 - 괜히 Bash 만 의심했다.</a></li>
+    <li><a href="/en/ai-agent-paradigm-shift/">AI Agents and Liquid Software</a></li>
     
-    <li><a href="/better-than-yesterday/">연봉과 연차의 무게</a></li>
+    <li><a href="/en/tech-travel-guide/">A Technical Travel Guide for Beginning Developers</a></li>
     
   </ul>
 </div>
